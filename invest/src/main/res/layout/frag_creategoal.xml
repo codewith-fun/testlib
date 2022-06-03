@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:mask="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/frag_toolBar"
+        android:name="investwell.client.fragment.others.ToolbarFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/frag_toolBar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_goal_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_cardheader"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/iv_goalicon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:padding="10dp" />
+
+                        <investwell.utils.customView.CustomTextViewBold
+                            android:id="@+id/tv_goaltitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@id/iv_goalicon"
+                            android:gravity="left"
+                            android:paddingLeft="10dp"
+                            android:textColor="?attr/primaryTextColor"
+                            android:textSize="@dimen/textView_all_size_16"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/rl_cardheader"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:orientation="vertical">
+
+                            <investwell.utils.customView.CustomTextViewRegular
+                                style="@style/FormTextViewStyling"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="@string/txt_goaltitle" />
+
+                            <investwell.utils.customView.CustomEditText
+                                android:id="@+id/et_goalname"
+                                style="@style/SpinnerStyling"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#FF5C5C5C"
+                                android:hint="@string/create_goal_header_txt"
+                                android:imeOptions="actionNext"
+                                android:inputType="textCapSentences"
+                                android:maxLines="1"
+                                android:textAllCaps="true" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:orientation="vertical">
+
+                            <investwell.utils.customView.CustomTextViewRegular
+                                style="@style/FormTextViewStyling"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="@string/delay_cal_amnt_txt" />
+
+                            <investwell.utils.customView.CustomEditText
+                                android:id="@+id/et_targetamount"
+                                style="@style/SpinnerStyling"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#FF5C5C5C"
+                                android:hint="@string/create_goal_target_amnt_txt"
+                                android:imeOptions="actionNext"
+                                android:inputType="number"
+                                android:maxLines="1"
+                                android:textAllCaps="true"
+                                android:textSize="@dimen/textView_all_size_14" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:orientation="vertical">
+
+                            <investwell.utils.customView.CustomTextViewRegular
+                                style="@style/FormTextViewStyling"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="@string/delay_cal_end_date_txt" />
+
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#FF5C5C5C"
+                                android:hint="@string/delay_cal_ddmmyyyy_txt"
+                                android:inputType="date"
+                                android:maxLines="1"
+                                android:visibility="gone"
+                                mask:mask="##-##-####" />
+
+
+                            <investwell.utils.edittext.MaskedEditText
+                                android:id="@+id/et_targetdate"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/delay_cal_ddmmyyyy_txt"
+                                android:inputType="date"
+                                android:maxLines="1"
+                                android:textSize="@dimen/textView_all_size_14"
+                                app:mask="##-##-####" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:orientation="vertical">
+
+                            <investwell.utils.customView.CustomTextViewRegular
+                                style="@style/FormTextViewStyling"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="@string/delay_cal_rate_txt" />
+
+                            <investwell.utils.customView.CustomEditText
+                                android:id="@+id/et_expectedreturn"
+                                style="@style/SpinnerStyling"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#FF5C5C5C"
+                                android:hint="@string/delay_cal_expected_return_txt"
+                                android:imeOptions="actionNext"
+                                android:inputType="numberDecimal"
+                                android:maxLines="1"
+                                android:textAllCaps="true" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:orientation="vertical">
+
+                            <investwell.utils.customView.CustomTextViewRegular
+                                style="@style/FormTextViewStyling"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="@string/delay_cal_rate_inflamation_txt" />
+
+
+                            <investwell.utils.customView.CustomEditText
+                                android:id="@+id/et_inflation"
+                                style="@style/SpinnerStyling"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#FF5C5C5C"
+                                android:hint="@string/create_goal_hint_inflation_txt"
+                                android:imeOptions="actionNext"
+                                android:inputType="numberDecimal"
+                                android:maxLines="1"
+                                android:text="@string/create_goal_5_00_txt"
+                                android:textAllCaps="true" />
+
+                        </LinearLayout>
+
+                        <investwell.utils.customView.CustomTextViewRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="20dp"
+
+                            android:textColor="@color/colorYellow"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <investwell.utils.customView.CustomTextViewBold
+                android:id="@+id/tv_createGoal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cv_goal_detail"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="40dp"
+                android:background="?attr/primaryBtnDrawable"
+                android:paddingLeft="70dp"
+                android:paddingTop="10dp"
+                android:paddingRight="70dp"
+                android:paddingBottom="10dp"
+                android:text="@string/create_goal_next_btn_txt"
+                android:textColor="?attr/primaryButtonTextColor"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

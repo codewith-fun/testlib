@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/CardViewStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_all_very_small">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/margin_all_small"
+        android:layout_height="match_parent">
+
+        <investwell.utils.customView.CustomTextViewBold
+            android:id="@+id/tv_scheme_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:maxLines="3"
+            android:textColor="?attr/primaryTextColor"
+            android:textSize="@dimen/textView_all_size_14"
+            android:textStyle="bold"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Scheme oidghrewihgeiorhgrieughuirewghiurhgrereifghifhjwefjwfrejhf" />
+
+
+        <investwell.utils.customView.CustomTextViewRegular
+            android:id="@+id/tv_scheme_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/colorGrey_400"
+            android:textSize="@dimen/textView_all_size_14"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="@+id/tv_scheme_name"
+            app:layout_constraintTop_toBottomOf="@+id/tv_scheme_name"
+            tools:text="TextView" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_progress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            app:layout_constrainedWidth="true"
+
+            app:layout_constraintStart_toStartOf="@+id/tv_scheme_category"
+            app:layout_constraintTop_toBottomOf="@+id/tv_scheme_category">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/v_progress"
+                android:layout_width="150dp"
+                android:layout_height="5dp"
+                app:cardBackgroundColor="@color/colorOrange"
+                app:cardCornerRadius="4dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <investwell.utils.customView.CustomTextViewRegular
+                android:id="@+id/tv_percentage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_all_very_small"
+                android:layout_marginLeft="@dimen/margin_all_very_small"
+                android:textSize="@dimen/textView_all_size_10"
+                android:textStyle="normal"
+                app:layout_constraintStart_toEndOf="@+id/v_progress"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="25% allocated" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <investwell.utils.customView.CustomTextViewRegular
+            android:id="@+id/textView34"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/txt_1Year"
+            android:textColor="#636363"
+            android:textSize="@dimen/textView_all_size_10"
+            app:layout_constraintEnd_toStartOf="@+id/textView35"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cl_progress" />
+
+        <investwell.utils.customView.CustomTextViewRegular
+            android:id="@+id/textView35"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/txt_3Years"
+            android:textColor="#636363"
+            android:textSize="@dimen/textView_all_size_10"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textView34"
+            app:layout_constraintEnd_toStartOf="@+id/textView36"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/textView34" />
+
+        <investwell.utils.customView.CustomTextViewRegular
+            android:id="@+id/textView36"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:text="@string/txt_5_Years"
+            android:textColor="#636363"
+            android:textSize="@dimen/textView_all_size_10"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textView35"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/textView35" />
+
+        <investwell.utils.customView.CustomTextViewBold
+            android:id="@+id/yearOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="?attr/primaryTextColor"
+            android:textStyle="bold"
+            tools:text="@string/app_name"
+            android:textSize="@dimen/textView_all_size_14"
+            app:layout_constraintStart_toStartOf="@+id/textView34"
+            app:layout_constraintTop_toBottomOf="@+id/textView34" />
+
+        <investwell.utils.customView.CustomTextViewBold
+            android:id="@+id/yearTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            tools:text="@string/app_name"
+            android:textColor="?attr/primaryTextColor"
+            android:textStyle="bold"
+            android:textSize="@dimen/textView_all_size_14"
+
+            app:layout_constraintStart_toStartOf="@+id/textView35"
+            app:layout_constraintTop_toBottomOf="@+id/textView35" />
+
+        <investwell.utils.customView.CustomTextViewBold
+            android:id="@+id/yearThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="?attr/primaryTextColor"
+            android:textStyle="bold"
+            android:textSize="@dimen/textView_all_size_14"
+            tools:text="@string/app_name"
+            app:layout_constraintStart_toStartOf="@+id/textView36"
+            app:layout_constraintTop_toBottomOf="@+id/textView36" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

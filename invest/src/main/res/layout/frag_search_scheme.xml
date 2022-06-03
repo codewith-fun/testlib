@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:shimmer="http://schemas.android.com/apk/res-auto"
+android:animateLayoutChanges="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/primary_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:visibility="gone"
+        android:theme="@style/AppTheme">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="?attr/actionBarColor"
+            app:contentInsetStart="15dp"
+            app:contentInsetEnd="15dp"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:id="@+id/ivBackPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@mipmap/ic_arrow_back"
+                    app:tint="?attr/actionBarIconColor"
+                    android:clickable="true"/>
+
+                <investwell.utils.customView.CustomTextViewRegular
+                    android:id="@+id/tv_search_tool_title"
+                    android:layout_width="wrap_content"
+                    android:text="@string/toolBar_title_invest_now"
+                    android:textColor="?attr/actionBarTextColor"
+                    android:layout_toEndOf="@+id/ivBackPrimary"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_all_small"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/ivBackPrimary"
+                    tools:ignore="RelativeOverlap"
+                    android:editable="false"/>
+
+
+
+
+                <ImageView
+                    android:id="@+id/iv_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    app:tint="?attr/actionBarIconColor"
+                    android:contentDescription="@string/app_name"
+                    android:focusable="true"
+                    android:padding="@dimen/padding_all_very_small"
+                    app:srcCompat="@drawable/search"
+                    android:visibility="gone"/>
+
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:visibility="gone"
+        android:theme="@style/AppTheme">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="?attr/actionBarColor"
+            app:contentInsetStart="15dp"
+            app:contentInsetEnd="15dp"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:id="@+id/ivBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@mipmap/ic_arrow_back"
+                    app:tint="?attr/actionBarIconColor"
+                    android:clickable="true"/>
+
+                <investwell.utils.customView.CustomEditText
+                    android:id="@+id/etSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/ivBack"
+                    android:layout_toLeftOf="@+id/iv_clear_search"
+                    android:drawableLeft="@drawable/search"
+                    android:hint="@string/text_mutual_funds_search"
+                    android:textSize="@dimen/textView_all_size_14"
+                    android:maxLines="1"
+                    android:textColorHint="?attr/actionBarTextColor"
+                    android:inputType="text"
+                    android:imeOptions="actionSearch"
+                    style="@style/TextInputEditTextTheme"
+                    android:drawableTint="?attr/actionBarIconColor"
+                    android:layout_marginLeft="10dp"
+                    android:drawablePadding="10dp"/>
+
+
+
+
+
+                <ImageView
+                    android:id="@+id/iv_clear_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:contentDescription="@string/app_name"
+                    android:focusable="true"
+                    android:padding="@dimen/padding_all_very_small"
+                    android:visibility="gone"
+                    app:srcCompat="@mipmap/ic_cross_icon" />
+
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <TextView
+            android:id="@+id/tvLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/no_record_available"
+            android:textColor="?attr/primaryTextColor"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:visibility="gone"
+
+            />
+
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmer_view_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            shimmer:duration="800"
+            tools:ignore="MissingConstraints"
+            android:visibility="gone"
+            >
+
+
+            <LinearLayout
+                android:id="@+id/fullScreenShedow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+
+                <include layout="@layout/placeholder_item_line_thin" />
+
+                <include layout="@layout/placeholder_item_line_thin" />
+
+                <include layout="@layout/placeholder_item_line_thin" />
+
+                <include layout="@layout/placeholder_item_line_thin" />
+                <include layout="@layout/placeholder_item_line_thin" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/singleShedow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+                <include
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/placeholder_item_line_thin"
+                    android:layout_alignParentTop="true"/>
+
+
+            </RelativeLayout>
+
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_above="@+id/shimmer_view_container"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_invest_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutAnimation="@anim/layout_animation_fall_down" />
+    </RelativeLayout>
+</LinearLayout>

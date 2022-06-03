@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <fragment
+        android:id="@+id/frag_toolBar"
+        android:name="investwell.client.fragment.others.ToolbarFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <investwell.utils.customView.CustomTextViewBold
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="@string/txt_GreatYoureallset"
+            android:textAllCaps="false"
+            android:textColor="#FF58CA5B"
+            android:textSize="@dimen/textView_all_size_16"
+            android:textStyle="bold" />
+
+        <investwell.utils.customView.CustomTextViewRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_all_regular"
+            android:layout_marginBottom="@dimen/margin_all_regular"
+            android:text="@string/txt_HowwouldyouliketoInvest"
+            android:textSize="@dimen/textView_all_size_24" />
+
+
+        <investwell.utils.customView.CustomTextViewRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:layout_marginTop="10dp"
+            android:text="@string/doc_string"
+            android:textSize="@dimen/textView_all_size_14" />
+
+        <investwell.utils.customView.CustomButton
+            android:id="@+id/sip_btn"
+            android:layout_width="match_parent"
+            android:layout_height="82dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/sip_new"
+            android:textAllCaps="false" />
+
+        <investwell.utils.customView.CustomButton
+            android:id="@+id/lumpsum_btn"
+            android:layout_width="match_parent"
+            android:layout_height="82dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/lumpsum_new"
+            android:textAllCaps="false" />
+
+        <LinearLayout
+            android:id="@+id/ll_transfer_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="7dp"
+                android:background="@color/colorGrey_500" />
+
+            <investwell.utils.customView.CustomButton
+                android:id="@+id/transfer_button"
+                android:layout_width="match_parent"
+                android:layout_height="82dp"
+                android:background="@drawable/transfer_fund_btn"
+                android:textAllCaps="false" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
+

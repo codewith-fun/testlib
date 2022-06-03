@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <investwell.utils.customView.CustomTextViewRegular
+        android:id="@+id/seekbar_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/header_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="?attr/accentColor"
+        android:orientation="horizontal">
+
+
+        <fragment
+            android:id="@+id/frag_toolBar"
+            android:name="investwell.client.fragment.others.ToolbarFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/ic_arrow_back"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header_toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/ly_topscroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/accentColor"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <investwell.utils.customView.CustomTextViewBold
+                    android:id="@+id/tv_yourincome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/tax_investment_your_income_txt"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_yourincome">
+
+                    <SeekBar
+                        android:id="@+id/sb_slab"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxHeight="3dp"
+                        android:padding="20dp"
+                        android:progressDrawable="@drawable/seekbar_progressbar"
+                        android:scrollbarSize="10dp"
+                        android:soundEffectsEnabled="true"
+                        android:thumb="@drawable/seekbar_thmb"
+                        android:thumbTint="@color/colorOrange" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-20dp"
+                    android:layout_marginBottom="10dp">
+
+                    <investwell.utils.customView.CustomTextViewBold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="start|left"
+                        android:text="@string/tax_investment_sliderstart_txt"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold" />
+
+                    <investwell.utils.customView.CustomTextViewBold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/tax_investment_slider_middle_txt"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold" />
+
+                    <investwell.utils.customView.CustomTextViewBold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end|right"
+                        android:text="@string/tax_investment_slider_end_txt"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ly_topscroll"
+                android:orientation="vertical">
+
+                <investwell.utils.customView.CustomTextViewRegular
+                    android:id="@+id/tv_investment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/tax_investment_investment_in_elss_txt" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <investwell.utils.customView.CustomTextViewBold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:paddingRight="5dp"
+                        android:text="@string/Rs"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/main_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#20FFFFFF"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_investment">
+
+                    <SeekBar
+                        android:id="@+id/sb_amount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:backgroundTint="@color/colorOrange"
+                        android:padding="20dp"
+                        android:soundEffectsEnabled="true"
+                        android:thumb="@drawable/seekbar_thmb"
+                        android:thumbTint="@color/colorOrange" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-20dp"
+                    android:orientation="horizontal">
+
+                    <investwell.utils.customView.CustomTextViewBold
+                        android:id="@+id/seekbar_min"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textStyle="bold" />
+
+                    <investwell.utils.customView.CustomTextViewBold
+                        android:id="@+id/seekbar_max"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:gravity="right|end"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:padding="10dp"
+                    style="@style/CardViewStyle">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <investwell.utils.customView.CustomTextViewRegular
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="@string/tax_investment_tax_saving_txt" />
+
+                        <investwell.utils.customView.CustomTextViewBold
+                            android:id="@+id/item_menu_main_tax_saving"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/tax_investment_dash_txt"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <investwell.utils.customView.CustomTextViewRegular
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:padding="5dp"
+                                    android:text="@string/tax_investment_monthly_sip_txt" />
+
+                                <investwell.utils.customView.CustomTextViewBold
+                                    android:id="@+id/resultsip"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="@string/dash_txt"
+                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                                    android:textColor="@color/colorGreen"
+                                    android:textStyle="bold" />
+
+                                <investwell.utils.customView.CustomButton
+                                    android:id="@+id/sip_btn"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_weight="1"
+                                    android:background="?attr/secondaryBtnDrawable"
+                                    android:text="@string/tax_investment_one_time_continue_sip_txt"
+                                    android:textAllCaps="false"
+                                    android:textColor="?attr/secondaryButtonTextColor"
+                                    android:textSize="@dimen/textView_all_size_14" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <investwell.utils.customView.CustomTextViewRegular
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:padding="5dp"
+                                    android:text="@string/tax_investment_one_time_investment_txt" />
+
+                                <investwell.utils.customView.CustomTextViewBold
+                                    android:id="@+id/resultlump"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="@string/tax_investment_dash_txt"
+                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                                    android:textColor="@color/colorOrange"
+                                    android:textStyle="bold" />
+
+                                <investwell.utils.customView.CustomButton
+                                    android:id="@+id/lumpsum_btn"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_weight="1"
+                                    android:background="?attr/primaryBtnDrawable"
+                                    android:text="@string/tax_investment_one_time_investment_txttax_investment_continue_lumpsum_txt"
+                                    android:textAllCaps="false"
+                                    android:textColor="?attr/primaryButtonTextColor"
+                                    android:textSize="@dimen/textView_all_size_12" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <investwell.utils.customView.CustomTextViewRegular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cal_layout"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="10dp"
+                    android:text="@string/calculator_disclamer"
+                    android:textColor="?attr/primaryTextColor"
+                    android:textSize="@dimen/textView_all_size_12"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <fragment
+        android:id="@+id/frag_toolBar"
+        android:name="investwell.client.fragment.others.ToolbarFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="FragmentTagUsage" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/frag_toolBar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_scheme"
+                style="@style/CardViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginStart="@dimen/margin_all_regular"
+                android:layout_marginTop="@dimen/margin_all_regular"
+                android:layout_marginEnd="@dimen/margin_all_regular">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+
+                    <investwell.utils.customView.CustomTextViewRegular
+                        android:id="@+id/tv_SchemeName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="6"
+                        android:text="@string/nav_scheme_scheme_name_txt"
+                        android:textAllCaps="false"
+                        android:textColor="?attr/primaryTextColor"
+                        android:textSize="@dimen/textView_all_size_14" />
+
+
+                    <ImageView
+                        android:id="@+id/iv_scheme"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="@dimen/margin_all_small"
+                        android:layout_weight="4"
+                        android:contentDescription="@string/app_name"
+                        android:padding="@dimen/padding_all_very_small"
+                        android:src="@mipmap/logo_login" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <investwell.utils.customView.CustomTextInputLayout
+                android:id="@+id/til_search"
+                style="@style/TextInputLayoutTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cv_scheme"
+                android:layout_marginStart="@dimen/margin_all_regular"
+                android:layout_marginTop="@dimen/margin_all_small"
+                android:layout_marginEnd="@dimen/margin_all_regular"
+                app:boxCornerRadiusBottomEnd="40dp"
+                app:boxCornerRadiusBottomStart="40dp"
+                app:boxCornerRadiusTopEnd="40dp"
+                app:boxCornerRadiusTopStart="40dp">
+
+                <investwell.utils.customView.CustomTextInputEditText
+                    android:id="@+id/et_search_scheme"
+                    style="@style/TextInputEditTextTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@null"
+                    android:drawableStart="@drawable/search"
+                    android:drawablePadding="@dimen/padding_all_very_small"
+                    android:drawableTint="@color/colorGrey_500"
+                    android:hint="@string/simply_save_search_scheme_txt"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapSentences"
+                    android:textSize="@dimen/textView_all_size_12"
+                    tools:targetApi="m" />
+            </investwell.utils.customView.CustomTextInputLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvSchemeSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/til_search"
+                android:visibility="gone" />
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tl_nav"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/til_search"
+                style="@style/TabLayoutTheme"
+                app:tabTextColor="@color/colorGrey_600"/>
+
+            <View
+                android:id="@+id/v_div1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/tl_nav"
+                android:background="@color/colorGrey_500" />
+
+            <View
+                android:id="@+id/v_div_2"
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:layout_below="@+id/v_div1"
+                android:layout_marginTop="40dp"
+                android:background="@color/colorGrey_500" />
+
+            <investwell.utils.EnhancedWrapContentViewPager
+                android:id="@+id/pager_nav"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/v_div_2" />
+
+            <investwell.utils.customView.CustomTextViewBold
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/v_div1"
+                android:layout_marginStart="@dimen/margin_all_regular"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="@dimen/margin_all_regular"
+                android:text="@string/Scheme"
+                android:textSize="@dimen/textView_all_size_12"
+                android:textColor="?attr/primaryTextColor"
+                android:textStyle="bold" />
+
+            <investwell.utils.customView.CustomTextViewBold
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/v_div1"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="12dp"
+                android:textSize="@dimen/textView_all_size_12"
+                android:layout_marginEnd="60dp"
+                android:layout_marginBottom="@dimen/margin_all_regular"
+                android:text="@string/NAV"
+                android:textColor="?attr/primaryTextColor"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

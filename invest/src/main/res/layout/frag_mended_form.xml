@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mask="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- TODO: Update blank fragment layout_gridview_type_two_a -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <fragment
+            android:id="@+id/frag_toolBar"
+            android:name="investwell.client.fragment.others.ToolbarFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_all_small"
+                    mask:cardCornerRadius="5dp"
+style="@style/CardViewStyle"
+                    android:visibility="gone"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <investwell.utils.customView.CustomTextViewRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tvMessageDigital"
+                            android:padding="5dp"
+                            android:textColor="?attr/primaryTextColor"
+                            android:text="@string/digital_mandate_deff"
+                            android:textSize="@dimen/textView_all_size_10" />
+
+                        <investwell.utils.customView.CustomTextViewRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:textColor="?attr/primaryTextColor"
+                            android:paddingBottom="5dp"
+                            android:padding="@dimen/padding_all_very_small"
+                            android:text="@string/paper_mandate"
+                            android:textSize="@dimen/textView_all_size_10" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+
+                        <investwell.utils.customView.CustomTextViewRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/txt_MandateType"
+                            android:textColor="?attr/primaryTextColor"
+                            android:textColorHint="@color/colorGrey_250"
+                            android:textSize="@dimen/textView_all_size_10" />
+
+                        <Spinner
+                            android:id="@+id/mandate_type_spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/txt_Pleaseenternomineename"
+                            android:inputType="text"
+                            android:maxLines="1" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.7dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@color/colorGrey_500" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+
+                        <investwell.utils.customView.CustomTextViewRegular
+                            android:textColor="?attr/primaryTextColor"
+                            android:textColorHint="@color/colorGrey_250"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/additional_switch_amount_txt"
+                            android:textSize="@dimen/textView_all_size_10" />
+
+                        <investwell.utils.customView.CustomEditText
+                            android:id="@+id/amount"
+                            style="@style/spinner_text_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#FF5C5C5C"
+                            android:hint="@string/additional_sip_amount_txt"
+                            android:textColor="?attr/primaryTextColor"
+                            android:textColorHint="@color/colorGrey_250"
+                            android:inputType="number"
+                            android:maxLines="1"
+                            tools:targetApi="lollipop" />
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.7dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="7dp"
+                        android:background="@color/colorGrey_500" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-5dp"
+                            android:orientation="vertical">
+
+                            <investwell.utils.customView.CustomTextViewRegular
+                                android:textColor="?attr/primaryTextColor"
+                                android:textColorHint="@color/colorGrey_250"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:baselineAligned="false"
+                                android:text="@string/txt_EditFromDate"
+                                android:visibility="gone" />
+
+                            <CheckBox
+                                android:buttonTint="?attr/primaryButtonBackground"
+                                android:textColor="?attr/primaryTextColor"
+                                android:id="@+id/perpetusal_checkbox"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:text="@string/txt_FromTodaytoUntilCancelled"
+                                android:textSize="@dimen/textView_all_size_12" />
+                        </LinearLayout>
+
+
+                        <investwell.utils.customView.CustomTextViewRegular
+                            android:id="@+id/mandate_date"
+                            style="@style/spinner_text_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/txt_DDMMYYYY"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:textColor="?attr/primaryTextColor"
+                            android:textColorHint="@color/colorGrey_250"/>
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.7dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="7dp"
+                        android:background="@color/colorGrey_500" />
+
+                    <LinearLayout
+                        android:id="@+id/to_date_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical"
+                        android:visibility="gone"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <investwell.utils.customView.CustomTextViewRegular
+                                android:textColor="?attr/primaryTextColor"
+                                android:textColorHint="@color/colorGrey_250"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/delay_cal_end_date_txt"
+                                android:textSize="@dimen/textView_all_size_10" />
+
+                        </LinearLayout>
+
+
+                        <investwell.utils.edittext.MaskedEditText
+                            android:id="@+id/to_date"
+                            style="@style/spinner_text_style"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="?attr/primaryTextColor"
+                            android:textColorHint="@color/colorGrey_250"
+                            android:hint="DDMMYYYY"
+
+                            android:inputType="date"
+                            android:maxLines="1"
+                            mask:mask="##-##-####"
+
+
+                            />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+
+                        <investwell.utils.customView.CustomTextViewRegular
+                            android:textColor="?attr/primaryTextColor"
+                            android:textColorHint="@color/colorGrey_250"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/txt_first_applicant"
+                            android:textSize="@dimen/textView_all_size_10" />
+
+                        <investwell.utils.customView.CustomEditText
+                            android:id="@+id/first_name"
+                            style="@style/spinner_text_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="?attr/primaryTextColor"
+                            android:textColorHint="@color/colorGrey_250"
+                            android:hint="@string/txt_Pleaseenterfirstname"
+                            android:inputType="text"
+                            android:maxLines="1" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.7dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="7dp"
+                        android:background="@color/colorGrey_500" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+
+                        <investwell.utils.customView.CustomTextViewRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="?attr/primaryTextColor"
+                            android:textColorHint="@color/colorGrey_250"
+                            android:text="@string/txt_SecondRecords"
+                            android:textSize="@dimen/textView_all_size_10" />
+
+                        <investwell.utils.customView.CustomEditText
+                            android:id="@+id/last_name"
+                            style="@style/spinner_text_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="?attr/primaryTextColor"
+                            android:textColorHint="@color/colorGrey_250"
+                            android:hint="@string/txt_Pleasecondname"
+
+                            android:inputType="text"
+                            android:maxLines="1"
+                            tools:targetApi="lollipop" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.7dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="7dp"
+                        android:background="@color/colorGrey_500" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+
+                        <investwell.utils.customView.CustomTextViewRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/txt_IFSC"
+                            android:textColor="?attr/primaryTextColor"
+                            android:textColorHint="@color/colorGrey_250"
+                            android:textSize="@dimen/textView_all_size_10" />
+
+
+                        <investwell.utils.customView.CustomEditText
+                            android:id="@+id/et_ifsc_code"
+                            style="@style/spinner_text_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="?attr/primaryTextColor"
+                            android:textColorHint="@color/colorGrey_250"
+                            android:hint="@string/txt_EnterIFSCcode"
+                            android:inputType="textCapCharacters"
+                            android:maxLength="11"
+                            android:maxLines="1" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.7dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="7dp"
+                        android:background="@color/colorGrey_500" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+
+                        <investwell.utils.customView.CustomTextViewRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/txt_Bank"
+                            android:textColor="?attr/primaryTextColor"
+                            android:textColorHint="@color/colorGrey_250"
+                            android:textSize="@dimen/textView_all_size_10" />
+
+                        <investwell.utils.customView.CustomTextViewRegular
+                            android:id="@+id/bank_name"
+                            style="@style/spinner_text_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="?attr/primaryTextColor"
+                            android:textColorHint="@color/colorGrey_250"
+                            android:inputType="none"
+                            android:maxLines="1" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.7dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="7dp"
+                        android:background="@color/colorGrey_500" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+
+                        <investwell.utils.customView.CustomTextViewRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/txt_Branch"
+                            android:textColor="?attr/primaryTextColor"
+                            android:textColorHint="@color/colorGrey_250"
+                            android:textSize="@dimen/textView_all_size_10" />
+
+                        <investwell.utils.customView.CustomTextViewRegular
+                            android:id="@+id/branch_name"
+                            style="@style/spinner_text_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint=""
+                            android:textColor="?attr/primaryTextColor"
+                            android:textColorHint="@color/colorGrey_250"
+                            android:inputType="none"
+                            android:maxLines="1" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.7dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="7dp"
+                        android:background="@color/colorGrey_500" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+
+                        <investwell.utils.customView.CustomTextViewRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/new_purcahse_form_micr_txt"
+                            android:textColor="?attr/primaryTextColor"
+                            android:textColorHint="@color/colorGrey_250"
+                            android:textSize="@dimen/textView_all_size_10" />
+
+
+                        <investwell.utils.customView.CustomEditText
+                            android:id="@+id/etMicr"
+                            style="@style/spinner_text_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="?attr/primaryTextColor"
+                            android:textColorHint="@color/colorGrey_250"
+                            android:hint="@string/additional_purchase_micr_hint_txt"
+                            android:inputType="number"
+                            android:maxLines="1" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.7dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="7dp"
+                        android:background="@color/colorGrey_500" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+
+                        <investwell.utils.customView.CustomTextViewRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:inputType="none"
+                            android:textColor="?attr/primaryTextColor"
+                            android:textColorHint="@color/colorGrey_250"
+                            android:text="@string/txt_AccountType"
+                            android:textSize="@dimen/textView_all_size_10" />
+
+                        <Spinner
+                            android:id="@+id/et_spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="none"
+                            android:textColor="?attr/primaryTextColor"
+                            android:textColorHint="@color/colorGrey_250"
+                            android:maxLines="1" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.7dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/colorGrey_500" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+
+                        <investwell.utils.customView.CustomTextViewRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="?attr/primaryTextColor"
+                            android:textColorHint="@color/colorGrey_250"
+                            android:text="@string/bank_details_form_account_no_txt"
+                            android:textSize="@dimen/textView_all_size_10" />
+
+                        <investwell.utils.customView.CustomEditText
+                            android:id="@+id/et_account_number"
+                            style="@style/spinner_text_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="?attr/primaryTextColor"
+                            android:textColorHint="@color/colorGrey_250"
+                            android:hint="@string/txt_Enter_account_number"
+                            android:inputType="number"
+                            android:maxLines="1" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.7dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="7dp"
+                        android:background="@color/colorGrey_500" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+
+                        <investwell.utils.customView.CustomButton
+                            android:id="@+id/continue_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="?attr/primaryBtnDrawable"
+                            android:text="@string/personal_details_btn_continue_txt"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorWhite" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <ProgressBar
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:foregroundGravity="center"
+        android:indeterminateTint="#fff"
+        android:visibility="gone" />
+</FrameLayout>
+
+

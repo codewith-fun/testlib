@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/services_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        style="@style/CardViewStyle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.2"
+                    android:orientation="vertical">
+                    <investwell.utils.customView.CustomTextViewBold
+                        android:id="@+id/tvBankName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mendate_list_name_txt"
+                        android:textColor="?attr/primaryTextColor"
+                        android:textSize="@dimen/textView_all_size_14"
+                        android:textStyle="bold" />
+
+                    <investwell.utils.customView.CustomTextViewRegular
+                        android:id="@+id/tvStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="@string/mendate_list_status_txt"
+                        android:textSize="@dimen/textView_all_size_14"
+                        android:visibility="gone"/>
+
+                    <investwell.utils.customView.CustomTextViewBold
+                        android:id="@+id/tvAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="@string/mendate_list_pending_txt"
+                        android:textColor="@color/colorGreen"
+                        android:textSize="@dimen/textView_all_size_14"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7.8"
+                    android:gravity="right">
+
+                    <LinearLayout
+                        android:id="@+id/lvUpload"
+                        android:layout_height="match_parent"
+                        android:layout_width="wrap_content"
+                        android:orientation="vertical" >
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:id="@+id/ivUpload"
+                            android:layout_gravity="center"
+                            android:src="@mipmap/upload"
+                            />
+                        <investwell.utils.customView.CustomTextViewBold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:layout_gravity="center"
+                            android:text="Upload Mandate"
+                            android:textColor="@color/btnPrimaryBackgroundColor"
+                            android:textSize="10sp"
+                            />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ivNach"
+                        android:layout_marginLeft="15dp"
+                        android:src="@mipmap/nach" />
+                </LinearLayout> t>
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp">
+
+                <investwell.utils.customView.CustomTextViewRegular
+                    android:id="@+id/tvAccount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mendate_list_1234_txt"
+                    android:textSize="@dimen/textView_all_size_14"
+                    android:textColor="?attr/primaryTextColor"
+                    android:textStyle="italic" />
+
+                <investwell.utils.customView.CustomTextViewRegular
+                    android:id="@+id/tvAccountType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="16dp"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/mendate_list_savings_txt"
+                    android:textColor="?attr/primaryTextColor"
+                    android:textSize="@dimen/textView_all_size_10"
+                    android:textStyle="italic" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/colorGrey_200" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <investwell.utils.customView.CustomTextViewRegular
+                    android:id="@+id/tvMandateCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|left"
+                    android:text="@string/mendate_list_mandatecode_txt"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:textColor="?attr/primaryTextColor"
+                    android:textSize="@dimen/textView_all_size_10" />
+
+                <investwell.utils.customView.CustomTextViewRegular
+                    android:id="@+id/tvDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical|left"
+                    android:text="@string/mendate_list_mandate_code_txt"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:textColor="?attr/primaryTextColor"
+                    android:textSize="@dimen/textView_all_size_14"
+                    tools:ignore="RelativeOverlap" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

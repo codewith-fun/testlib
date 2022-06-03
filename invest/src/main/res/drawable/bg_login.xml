@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/login_bg" />
+
+    <item>
+        <bitmap android:gravity="bottom"
+        android:src="@drawable/footer_bg"/>
+    </item>
+
+</layer-list>

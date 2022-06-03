@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="140dp"
+    android:layout_margin="@dimen/margin_all_very_small"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <androidx.cardview.widget.CardView
+
+            android:id="@+id/cv_img"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            app:cardElevation="@dimen/card_all_elevation"
+            app:cardBackgroundColor="?attr/cardBgColor"
+            app:cardCornerRadius="35dp">
+
+            <ImageView
+                android:id="@+id/bucket_icon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/app_name"
+                android:gravity="center"
+                android:src="@mipmap/add_cart" />
+        </androidx.cardview.widget.CardView>
+
+
+        <investwell.utils.customView.CustomTextViewRegular
+            android:id="@+id/tv_scheme_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cv_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_all_small"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/padding_all_small"
+            android:textAlignment="center"
+            android:textColor="?attr/secondaryTextColor"
+            android:textSize="@dimen/textView_all_size_10" />
+    </RelativeLayout>
+</LinearLayout>

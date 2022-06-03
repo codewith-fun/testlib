@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="140dp"
+    android:layout_margin="@dimen/margin_all_very_small"
+    android:orientation="vertical"
+    app:cardBackgroundColor="?attr/cardBgColor"
+    app:cardCornerRadius="@dimen/card_corner_all_radius_small"
+    app:cardElevation="@dimen/card_all_elevation">
+
+
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/relImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/dialogBackground">
+
+
+            <ImageView
+                android:id="@+id/bucket_icon"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="@dimen/margin_all_regular"
+                android:contentDescription="@string/app_name"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/relImage"
+            android:background="@color/colorGrey_250" />
+
+        <investwell.utils.customView.CustomTextViewRegular
+            android:id="@+id/tv_scheme_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relImage"
+            android:layout_centerHorizontal="true"
+            android:padding="@dimen/padding_all_small"
+            android:textAlignment="center"
+            android:textColor="?attr/secondaryTextColor"
+            android:textSize="@dimen/textView_all_size_10" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <investwell.utils.customView.CustomTextViewBold
+        android:id="@+id/tv_section_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_all_small"
+        android:layout_marginTop="@dimen/margin_all_regular"
+        android:layout_marginRight="@dimen/margin_all_small"
+        android:layout_marginBottom="@dimen/margin_all_small"
+        android:visibility="gone"
+        android:text="@string/dashboard_type_two_investment_in_equity_market_header_txt"
+        android:textColor="?attr/secondaryTextColor"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_section_type_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutAnimation="@anim/layout_animation_fall_down" />
+</LinearLayout>

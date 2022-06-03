@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+
+        <androidx.cardview.widget.CardView
+
+            android:id="@+id/cv_detail_second"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           style="@style/CardViewStyle"
+            android:layout_margin="@dimen/margin_10dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <investwell.utils.customView.CustomTextViewRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/colorBlue"
+                    android:textStyle="bold"
+                    android:textColor="?attr/primaryTextColor"
+                    android:textSize="@dimen/textView_all_size_14"
+                    android:layout_margin="5dp"/>
+
+                <investwell.utils.customView.CustomTextViewRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="10sp"
+                    android:textColor="?attr/primaryTextColor"
+
+                    android:layout_below="@+id/colorBlue"
+                    android:text="@string/folio_scheme_balance_units_txt"/>
+
+
+                <investwell.utils.customView.CustomTextViewBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/banalce_unit"
+                    android:textColor="?attr/primaryTextColor"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_below="@+id/textView" />
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>

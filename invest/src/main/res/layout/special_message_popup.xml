@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+
+    <ImageView
+        android:id="@+id/ivBanner"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@color/colorGrey_200"
+        android:scaleType="fitXY"
+       />
+
+
+    <ImageView
+        android:id="@+id/ivClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/margin_5dp"
+        android:padding="@dimen/margin_10dp"
+        android:background="@drawable/close_image" />
+
+
+    <investwell.utils.customView.CustomTextViewRegular
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvMessage"
+        android:layout_below="@+id/ivBanner"
+        android:layout_marginLeft="@dimen/login_middle_content_top_margin_30"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="@dimen/login_middle_content_top_margin_30"
+        android:text="@string/login_social_header_txt"
+        android:textSize="@dimen/textView_all_size_16"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold" />
+
+
+    <CheckBox
+                                android:buttonTint="?attr/primaryButtonBackground"
+                                android:textColor="?attr/primaryTextColor"
+        android:id="@+id/checkBox"
+        android:textSize="@dimen/textView_all_size_12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvMessage"
+        android:text="@string/validation_txt"
+        android:layout_marginLeft="@dimen/login_middle_content_top_margin_30"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:layout_marginRight="@dimen/login_middle_content_top_margin_30" />
+
+
+    <investwell.utils.customView.CustomButton
+        android:id="@+id/btnKnowMore"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height_footer"
+        android:layout_below="@+id/checkBox"
+        android:layout_marginLeft="@dimen/login_middle_content_top_margin_30"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:layout_marginRight="@dimen/login_middle_content_top_margin_30"
+        android:layout_marginBottom="@dimen/code_fp_margin20"
+        android:background="?attr/primaryBtnDrawable"
+        android:text="@string/know_more_txt"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/textView_all_size_12"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

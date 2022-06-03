@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+         xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cv_toolBar_parent"
+    android:layout_width="match_parent"
+    android:layout_height="?actionBarSize"
+    android:background="?attr/actionBarColor"
+    app:cardBackgroundColor="?attr/actionBarColor"
+    app:cardElevation="@dimen/card_all_elevation"
+    tools:context="investwell.client.fragment.others.ToolbarFragment"
+    tools:targetApi="lollipop">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="?actionBarSize">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_all_small"
+            android:layout_marginRight="@dimen/margin_all_small"
+            android:padding="@dimen/padding_all_small"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:contentDescription="@string/app_name"
+            android:focusable="true"
+            android:src="@mipmap/ic_arrow_back"
+            app:tint="?attr/actionBarIconColor"
+            android:visibility="gone" />
+
+
+        <LinearLayout
+            android:id="@+id/rl_middle_search_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/ivBack"
+            android:layout_toRightOf="@+id/ivBack"
+            android:orientation="vertical"
+            android:visibility="visible"
+            tools:ignore="RelativeOverlap">
+
+            <investwell.utils.customView.CustomTextViewBold
+                android:id="@+id/tv_toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/app_name"
+                android:textColor="?attr/actionBarTextColor"
+                android:textSize="@dimen/textView_all_size_14"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_end_content_primary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal"
+            android:layout_marginRight="@dimen/margin_5dp"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/iv_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:contentDescription="@string/app_name"
+                android:focusable="true"
+                android:padding="@dimen/padding_all_very_small"
+                android:src="@mipmap/ic_share"
+                app:tint="?attr/actionBarIconColor"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:contentDescription="@string/app_name"
+                android:focusable="true"
+                android:padding="@dimen/padding_all_very_small"
+                android:src="@mipmap/ic_refresh"
+                app:tint="?attr/actionBarIconColor"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_fatca_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:contentDescription="@string/app_name"
+                android:focusable="true"
+                android:padding="@dimen/padding_all_very_small"
+                android:layout_marginRight="@dimen/margin_all_regular"
+                android:layout_marginEnd="@dimen/margin_all_regular"
+                app:tint="?attr/actionBarIconColor"
+                android:visibility="gone"
+                app:srcCompat="@drawable/ic_info" />
+
+            <ImageView
+                android:id="@+id/iv_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:contentDescription="@string/app_name"
+                android:focusable="true"
+                android:padding="@dimen/padding_all_very_small"
+                app:tint="?attr/actionBarIconColor"
+                android:visibility="gone"
+                app:srcCompat="@drawable/search" />
+
+            <FrameLayout
+                android:id="@+id/fl_cart"
+                style="?attr/actionButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clipToPadding="false"
+                android:focusable="true"
+                android:visibility="visible"
+                android:layout_marginLeft="@dimen/margin_10dp">
+
+                <ImageView
+                    android:id="@+id/cart_icon"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/app_name"
+                    android:src="@mipmap/ic_action_cart_black"
+                    app:tint="?attr/actionBarIconColor" />
+
+                <investwell.utils.customView.CustomTextViewRegular
+                    android:id="@+id/tv_cart_badge"
+                    android:layout_width="@dimen/dashboard_cart_badge_size"
+                    android:layout_height="@dimen/dashboard_cart_badge_size"
+                    android:layout_gravity="right|end|top"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="-5dp"
+                    android:layout_marginRight="-5dp"
+                    android:background="@drawable/badge_background"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="@string/lumpsum_txt_zero"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/textView_all_size_10"
+                    android:visibility="gone"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
+
+                <investwell.utils.customView.CustomTextViewRegular
+                    android:id="@+id/tv_cart_badge_nfo"
+                    android:layout_width="@dimen/dashboard_cart_badge_size"
+                    android:layout_height="@dimen/dashboard_cart_badge_size"
+                    android:layout_gravity="right|end|top"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="-5dp"
+                    android:layout_marginRight="-5dp"
+                    android:background="@drawable/badge_background"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="@string/lumpsum_txt_zero"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/textView_all_size_10"
+                    android:visibility="gone"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
+            </FrameLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btn_add_new"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="@dimen/padding_all_small"
+                    android:background="@null"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:padding="@dimen/padding_all_very_small"
+                    app:tint="?attr/primaryButtonBackground"
+                    android:textAllCaps="false"
+                    android:textColor="?attr/secondaryButtonTextColor"
+                    android:textSize="@dimen/textView_all_size_10"
+                    android:visibility="gone"
+                    android:layout_marginEnd="@dimen/padding_all_small" />
+
+                <investwell.utils.customView.CustomButton
+                    android:id="@+id/cease_btn"
+                    android:layout_width="60dp"
+                    android:layout_height="22dp"
+                    android:layout_marginBottom="@dimen/margin_all_small"
+                    android:layout_marginEnd="@dimen/margin_all_small"
+                    android:layout_marginStart="@dimen/margin_all_small"
+                    android:layout_marginTop="@dimen/margin_all_small"
+                    android:background="?attr/secondaryBtnDrawable"
+                    android:text="CEASE"
+                    android:textAllCaps="false"
+                    android:textColor="?attr/secondaryButtonTextColor"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:visibility="gone"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <!--
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/toolbarDividerColor" />-->
+    </RelativeLayout>
+</androidx.cardview.widget.CardView><!-- -->
+

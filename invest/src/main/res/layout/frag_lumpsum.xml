@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/frag_toolBar"
+        android:name="investwell.client.fragment.others.ToolbarFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/viewLine"
+        android:layout_below="@+id/frag_toolBar"
+        android:fillViewport="true">
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="100dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <investwell.utils.customView.CustomTextViewRegular
+                    android:id="@+id/tvNothing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="100dp"
+                    android:drawableTop="@mipmap/ic_no_data"
+                    android:gravity="center"
+                    android:text="@string/no_data_found"
+                    android:textColor="?attr/primaryTextColor"
+
+                    android:textIsSelectable="true"
+                    android:textSize="@dimen/textView_all_size_14"
+                    android:visibility="gone" />
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/lumpsum_recycle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/paymentView"
+                    style="@style/CardViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_all_small"
+                    android:layout_marginTop="@dimen/margin_5dp"
+                    android:layout_marginRight="@dimen/margin_all_small"
+                    android:layout_marginBottom="@dimen/margin_5dp"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:id="@+id/linerNSE"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <investwell.utils.customView.CustomTextViewRegular
+                                android:id="@+id/tvPayment"
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:text="@string/lumpsum_payment_txt"
+                                android:textColor="?attr/primaryTextColor" />
+
+                            <Spinner
+                                android:id="@+id/spPaymentType"
+                                style="@style/SpinnerStyling"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_toRightOf="@+id/tvPayment" />
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:id="@+id/line1"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@+id/bank_layout"
+                            android:layout_marginLeft="75dp"
+                            android:layout_toRightOf="@+id/tvPayment"
+                            android:background="@color/colorBlack" />
+
+                        <LinearLayout
+                            android:id="@+id/bank_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/spPaymentType"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <investwell.utils.customView.CustomTextViewRegular
+                                android:id="@+id/tvBank"
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:text="@string/lumpsum_bank_txt"
+                                android:textColor="?attr/primaryTextColor" />
+
+                            <Spinner
+                                android:id="@+id/spBank"
+                                style="@style/SpinnerStyling"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_toRightOf="@+id/tvBank" />
+                        </LinearLayout>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="75dp"
+                            android:background="@color/colorBlack" />
+
+
+                        <LinearLayout
+                            android:id="@+id/linerNetbanking"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+
+                            <RadioGroup
+                                android:id="@+id/radioGroup1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="70dp"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/radio1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:buttonTint="?attr/primaryButtonBackground"
+                                    android:text="@string/lumpsum_send_email_txt"
+                                    android:textColor="?attr/primaryTextColor" />
+
+                                <RadioButton
+                                    android:id="@+id/radio2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:buttonTint="?attr/primaryButtonBackground"
+                                    android:checked="true"
+                                    android:text="@string/lumpsum_pay_now_txt"
+                                    android:textColor="?attr/primaryTextColor" />
+
+                            </RadioGroup>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/linerRTGS"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:orientation="horizontal">
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_weight="1">
+
+                                    <EditText
+                                        android:id="@+id/etRtgs"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="@string/lumpsum_rtgs_txt"
+                                        android:inputType="textEmailAddress"
+                                        android:paddingLeft="5dp"
+                                        android:textSize="@dimen/textView_all_size_14" />
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="1">
+
+                                    <EditText
+                                        android:id="@+id/etMicr"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="@string/new_purcahse_form_micr_txt"
+                                        android:inputType="textEmailAddress"
+                                        android:paddingLeft="5dp"
+                                        android:textSize="@dimen/textView_all_size_14" />
+                                </com.google.android.material.textfield.TextInputLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:orientation="horizontal">
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_weight="1">
+
+                                    <EditText
+                                        android:id="@+id/etBank"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="@string/new_purcahse_form_bank_txt"
+                                        android:inputType="textEmailAddress"
+                                        android:paddingLeft="5dp"
+                                        android:textSize="@dimen/textView_all_size_14" />
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="1">
+
+                                    <EditText
+                                        android:id="@+id/etBranch"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="@string/new_purcahse_form_branch_txt"
+                                        android:inputType="textEmailAddress"
+                                        android:paddingLeft="5dp"
+                                        android:textSize="@dimen/textView_all_size_14" />
+                                </com.google.android.material.textfield.TextInputLayout>
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_weight="1">
+
+                                    <EditText
+                                        android:id="@+id/etUTR"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="@string/lumpsum_utr_txt"
+                                        android:inputType="textEmailAddress"
+                                        android:paddingLeft="5dp"
+                                        android:textSize="@dimen/textView_all_size_14" />
+                                </com.google.android.material.textfield.TextInputLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <investwell.utils.customView.CustomTextViewRegular
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="8dp"
+                                        android:text="@string/lumpsum_transfer_date_txt"
+                                        android:textColor="@color/colorPrimary" />
+
+                                    <investwell.utils.edittext.MaskedEditText
+                                        android:id="@+id/etTransferDate"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="-4dp"
+                                        android:hint="@string/lumpsum_ddmmyyyy_txt"
+                                        android:inputType="date"
+                                        android:paddingLeft="5dp"
+                                        android:textSize="@dimen/textView_all_size_14"
+                                        app:mask="##-##-####" />
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linerCheque"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:orientation="horizontal">
+
+                                <investwell.utils.customView.CustomTextInputLayout
+                                    style="@style/TextInputLayoutTheme"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_weight="1">
+
+                                    <investwell.utils.customView.CustomEditText
+                                        android:id="@+id/etCheckAcount"
+
+                                        style="@style/TextInputEditTextTheme"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="@string/bank_details_form_account_no_txt"
+                                        android:inputType="textEmailAddress"
+                                        android:paddingLeft="5dp"
+                                        android:textSize="@dimen/textView_all_size_14" />
+                                </investwell.utils.customView.CustomTextInputLayout>
+
+                                <investwell.utils.customView.CustomTextInputLayout
+                                    style="@style/TextInputLayoutTheme"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="1">
+
+                                    <investwell.utils.customView.CustomEditText
+                                        android:id="@+id/etCheckNo"
+
+                                        style="@style/TextInputEditTextTheme"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="@string/new_purchase_form_check_number_txt"
+                                        android:inputType="textEmailAddress"
+                                        android:paddingLeft="5dp"
+                                        android:textSize="@dimen/textView_all_size_14" />
+                                </investwell.utils.customView.CustomTextInputLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:orientation="horizontal">
+
+                                <investwell.utils.customView.CustomTextInputLayout
+                                    style="@style/TextInputLayoutTheme"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_weight="1">
+
+                                    <investwell.utils.customView.CustomEditText
+                                        android:id="@+id/etCheckBank"
+
+                                        style="@style/TextInputEditTextTheme"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="@string/new_purcahse_form_bank_txt"
+                                        android:inputType="textEmailAddress"
+                                        android:paddingLeft="5dp"
+                                        android:textSize="@dimen/textView_all_size_14" />
+                                </investwell.utils.customView.CustomTextInputLayout>
+
+                                <investwell.utils.customView.CustomTextInputLayout
+                                    style="@style/TextInputLayoutTheme"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="1">
+
+                                    <investwell.utils.customView.CustomEditText
+                                        android:id="@+id/etCheckBranch"
+
+                                        style="@style/TextInputEditTextTheme"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="@string/new_purcahse_form_branch_txt"
+                                        android:inputType="textEmailAddress"
+                                        android:paddingLeft="5dp"
+                                        android:textSize="@dimen/textView_all_size_14" />
+                                </investwell.utils.customView.CustomTextInputLayout>
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <investwell.utils.customView.CustomTextInputLayout
+                                    style="@style/TextInputLayoutTheme"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_weight="1">
+
+                                    <investwell.utils.customView.CustomEditText
+                                        android:id="@+id/etCheckMicr"
+
+                                        style="@style/TextInputEditTextTheme"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="@string/new_purcahse_form_micr_txt"
+                                        android:inputType="textEmailAddress"
+                                        android:paddingLeft="5dp"
+                                        android:textSize="@dimen/textView_all_size_14" />
+                                </investwell.utils.customView.CustomTextInputLayout>
+
+                                <investwell.utils.customView.CustomTextInputLayout
+                                    style="@style/TextInputLayoutTheme"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="1">
+
+                                    <investwell.utils.customView.CustomEditText
+                                        android:id="@+id/etCheckDate"
+
+                                        style="@style/TextInputEditTextTheme"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="@string/new_purchase_form_cheque_txt"
+                                        android:inputType="textEmailAddress"
+                                        android:paddingLeft="5dp"
+                                        android:textSize="@dimen/textView_all_size_14" />
+
+
+                                </investwell.utils.customView.CustomTextInputLayout>
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linerMandate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <investwell.utils.customView.CustomTextViewRegular
+                                    android:id="@+id/tvMandate"
+                                    android:layout_width="60dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:text="@string/lumpsum_mandate_txt"
+                                    android:textColor="?attr/primaryTextColor" />
+
+                                <Spinner
+                                    android:id="@+id/spMandateList"
+                                    style="@style/SpinnerStyling"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_toRightOf="@+id/tvMandate"
+                                    android:textColor="?attr/primaryTextColor" />
+
+
+                            </RelativeLayout>
+
+                            <View
+                                android:id="@+id/line3"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_below="@+id/bank_layout"
+                                android:layout_marginLeft="75dp"
+                                android:layout_toRightOf="@+id/tvPayment"
+                                android:background="@color/colorBlack" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <CheckBox
+                    android:id="@+id/checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lumpsum_recycle"
+                    android:layout_marginLeft="10dp"
+                    android:checked="true"
+                    android:buttonTint="?attr/primaryButtonBackground"
+                    android:text="@string/lumpsum_first_pay_txt"
+                    android:textColor="?attr/primaryTextColor"
+                    android:theme="@style/TextInputEditTextTheme"
+                    android:visibility="gone" />
+
+                <CheckBox
+                    android:id="@+id/cb_until_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lumpsum_recycle"
+                    android:layout_marginLeft="10dp"
+
+                    android:buttonTint="?attr/primaryButtonBackground"
+                    android:checked="true"
+                    android:text="@string/lumpsum_until_cancel_txt"
+                    android:textColor="?attr/primaryTextColor"
+                    android:theme="@style/TextInputEditTextTheme"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="@dimen/margin_all_regular"
+                    android:layout_marginBottom="@dimen/margin_all_regular"
+                    android:background="@color/colorGrey_200" />
+
+                <include
+                    android:id="@+id/disc"
+                    layout="@layout/footer_add_transac_disclaimer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom" />
+            </LinearLayout>
+        </ScrollView>
+    </androidx.core.widget.NestedScrollView>
+
+    <View
+        android:id="@+id/viewLine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/linerButtom"
+        android:background="@color/colorGrey_200"
+        tools:ignore="UnknownIdInLayout" />
+
+    <LinearLayout
+        android:id="@+id/linerButtom"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:background="@color/colorWhite">
+
+
+            <investwell.utils.customView.CustomTextViewRegular
+                style="@style/FormTextViewStyling"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:text="@string/Rs"
+                android:textColor="?attr/primaryTextColor"
+                android:textSize="@dimen/textView_all_size_18" />
+
+
+            <investwell.utils.customView.CustomTextViewRegular
+                android:id="@+id/total_value"
+                style="@style/FormTextViewStyling"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:text="@string/lumpsum_txt_zero"
+                android:textColor="?attr/primaryTextColor"
+                android:textSize="@dimen/textView_all_size_18"
+                tools:ignore="NestedWeights" />
+
+
+            <investwell.utils.customView.CustomButton
+                android:id="@+id/add_scheme"
+                android:layout_width="@dimen/btn_mini_width"
+                android:layout_height="@dimen/btn_height_footer"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10dp"
+
+                android:background="?attr/tertiaryBtnDrawable"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="@string/lumpsum_add_scheme_txt"
+                android:textAllCaps="false"
+                android:textColor="?attr/primaryTextColor"
+                android:textSize="@dimen/textView_all_size_10" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?attr/dialogBackground">
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorGrey_200" />
+
+            <investwell.utils.customView.CustomButton
+                android:id="@+id/place_order"
+                android:layout_width="@dimen/btn_mini_width"
+                android:layout_height="@dimen/btn_height_footer"
+                android:layout_centerInParent="true"
+                android:layout_margin="@dimen/margin_all_small"
+                android:background="?attr/primaryBtnDrawable"
+                android:text="@string/lumpsum_order_now_btn_txt"
+                android:textAllCaps="false"
+                android:textColor="?attr/primaryButtonTextColor"
+                android:textSize="@dimen/textView_all_size_10" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

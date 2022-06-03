@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_parent_fact_sheet_holding"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/padding_all_very_small">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <investwell.utils.customView.CustomTextViewRegular
+            android:id="@+id/score"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:padding="@dimen/padding_all_very_small"
+            android:text="@string/app_name"
+            android:textColor="?attr/secondaryTextColor"
+            android:textSize="@dimen/textView_all_size_14" />
+
+
+        <investwell.utils.customView.CustomTextViewRegular
+            android:id="@+id/asset"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="end"
+            android:padding="@dimen/padding_all_very_small"
+            android:text="@string/app_name"
+android:textColor="?attr/secondaryTextColor"
+            android:textSize="@dimen/textView_all_size_14"
+            tools:ignore="RelativeOverlap" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

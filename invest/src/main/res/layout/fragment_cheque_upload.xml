@@ -1,0 +1,168 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8F8"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <fragment
+        android:id="@+id/frag_toolBar"
+        android:name="investwell.client.fragment.others.ToolbarFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:id="@+id/relButtom"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp">
+
+
+
+        <investwell.utils.customView.CustomButton
+            android:id="@+id/tvReupload"
+            android:layout_width="@dimen/btn_width_footer"
+            android:layout_height="@dimen/btn_height_footer"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@+id/tvSave"
+            android:background="?attr/secondaryBtnDrawable"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:text="@string/txt_upload_cheque"
+            android:textColor="?attr/secondaryButtonTextColor"
+            android:textSize="@dimen/textView_all_size_14" />
+
+        <investwell.utils.customView.CustomButton
+            android:id="@+id/tvSave"
+            android:textAllCaps="false"
+            android:layout_width="@dimen/btn_width_footer"
+            android:layout_height="@dimen/btn_height_footer"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:background="?attr/primaryBtnDrawable"
+            android:gravity="center"
+            android:text="@string/cheque_upload_save_txt"
+            android:textColor="?attr/primaryButtonTextColor"
+            android:textSize="@dimen/textView_all_size_14" />
+    </LinearLayout>
+
+
+    <investwell.utils.customView.CustomTextViewRegular
+        android:id="@+id/tvDummy1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relTop"
+        android:layout_margin="20dp"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:textColor="?attr/accentColor"
+        android:text="@string/txt_cheque_upload"
+        android:textSize="@dimen/textView_all_size_14" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/relButtom"
+        android:layout_below="@+id/tvDummy1"
+        android:layout_margin="15dp"
+        app:cardElevation="15dp"
+        android:elevation="15dp"
+        app:cardCornerRadius="15dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/relButtom"
+        android:layout_below="@+id/tvDummy1"
+        android:visibility="gone"
+        android:id="@+id/image_layout"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:background="@drawable/edittext_square2">
+
+
+
+        <ImageView
+            android:id="@+id/cheque_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp" />
+
+
+    </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ivChequePreview"
+            android:layout_gravity="center"
+            android:background="@mipmap/cheque_preview"
+            android:layout_margin="10dp"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_layout"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_above="@+id/relButtom"
+        android:layout_below="@+id/tvDummy1">
+
+
+
+
+        <androidx.cardview.widget.CardView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:cardBackgroundColor="@color/colorPrimary"
+            app:cardCornerRadius="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/colorWhite"
+                    android:padding="10dp"
+                    android:layout_margin="10dp"
+                    android:backgroundTint="@color/colorWhite"
+                    android:background="@mipmap/gallery"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/gallery_btn"
+                    />
+
+                <investwell.utils.customView.CustomTextViewRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="22dp"
+                    android:layout_marginTop="-15dp"
+                    android:layout_gravity="center"
+                    />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

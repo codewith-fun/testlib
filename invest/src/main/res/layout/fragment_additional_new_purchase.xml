@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <fragment
+                android:id="@+id/frag_toolBar"
+                android:name="investwell.client.fragment.others.ToolbarFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!--Header Layout transaction-->
+                    <include layout="@layout/layout_header_additional_transac" />
+
+
+                    <!-- Layout transaction Amount-->
+                    <LinearLayout
+                        android:id="@+id/ll_et_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_all_regular"
+                        android:background="@drawable/et_transac_bg"
+                        android:orientation="vertical"
+                        android:padding="@dimen/padding_all_very_small">
+
+                        <investwell.utils.customView.CustomEditText
+                            android:id="@+id/et_amnt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin_all_small"
+                            android:background="@null"
+                            android:hint="@string/additional_sip_hint_txt"
+                            android:imeOptions="actionDone"
+                            android:inputType="number"
+                            android:maxLines="1"
+                            android:padding="@dimen/padding_all_very_small"
+                            android:textSize="@dimen/textView_all_size_14" />
+                    </LinearLayout>
+
+                    <investwell.utils.customView.CustomTextViewRegular
+                        android:id="@+id/tv_service_msg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/margin_all_very_small"
+                        android:padding="@dimen/padding_all_very_small"
+                        android:text="@string/app_name"
+                        android:textColor="?attr/secondaryTextColor"
+                        android:textSize="@dimen/textView_all_size_14"
+                        android:visibility="gone" />
+                    <!-- Select Scheme Type  Fragment-->
+                    <fragment
+                        android:id="@+id/chooser_scheme_type_fragment"
+                        android:name="investwell.client.fragment.others.ChooserSchemeTypeFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_all_small"
+                        android:layout_marginLeft="@dimen/margin_all_small"
+                        android:layout_marginEnd="@dimen/margin_all_small"
+                        android:layout_marginRight="@dimen/margin_all_small"
+                        android:layout_marginBottom="@dimen/margin_all_small" />
+
+                    <!-- Select Target Scheme  layout_gridview_type_two_a-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_all_small"
+                        android:layout_marginLeft="@dimen/margin_all_small"
+                        android:layout_marginTop="@dimen/margin_all_very_small"
+                        android:layout_marginEnd="@dimen/margin_all_small"
+                        android:layout_marginRight="@dimen/margin_all_small"
+                        android:orientation="vertical">
+
+                        <investwell.utils.customView.CustomTextViewRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_all_small"
+                            android:layout_marginLeft="@dimen/margin_all_small"
+                            android:layout_marginEnd="@dimen/margin_all_small"
+                            android:layout_marginRight="@dimen/margin_all_small"
+                            android:text="@string/additional_stp_select_target_scheme_txt"
+                            android:textSize="@dimen/textView_all_size_14" />
+
+                    </LinearLayout>
+                    <!-- Select Frequency Fragment-->
+                    <fragment
+                        android:id="@+id/chooser_fragment"
+                        android:name="investwell.client.fragment.others.ChooserFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_all_small"
+                        android:layout_marginLeft="@dimen/margin_all_small"
+                        android:layout_marginEnd="@dimen/margin_all_small"
+                        android:layout_marginRight="@dimen/margin_all_small" />
+
+
+                    <!-- Select Mandate  layout_gridview_type_two_a-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_all_small"
+                        android:layout_marginLeft="@dimen/margin_all_small"
+                        android:layout_marginTop="@dimen/margin_all_very_small"
+                        android:layout_marginEnd="@dimen/margin_all_small"
+                        android:layout_marginRight="@dimen/margin_all_small"
+                        android:orientation="vertical">
+
+                        <investwell.utils.customView.CustomTextViewRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_all_small"
+                            android:layout_marginLeft="@dimen/margin_all_small"
+                            android:layout_marginEnd="@dimen/margin_all_small"
+                            android:layout_marginRight="@dimen/margin_all_small"
+                            android:text="@string/additional_sip_select_mandate_txt"
+                            android:textSize="@dimen/textView_all_size_14" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin_all_small"
+                            android:background="@drawable/spinner_bg"
+                            android:orientation="vertical"
+
+                            android:padding="@dimen/padding_all_very_small">
+
+                            <Spinner
+                                android:id="@+id/spinner_mandate"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/margin_all_very_small"
+                                android:padding="@dimen/padding_all_very_small" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <!-- Select Bank  layout_gridview_type_two_a-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_all_small"
+                        android:layout_marginLeft="@dimen/margin_all_small"
+                        android:layout_marginTop="@dimen/margin_all_very_small"
+                        android:layout_marginEnd="@dimen/margin_all_small"
+                        android:layout_marginRight="@dimen/margin_all_small"
+                        android:orientation="vertical">
+
+                        <investwell.utils.customView.CustomTextViewRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_all_small"
+                            android:layout_marginLeft="@dimen/margin_all_small"
+                            android:layout_marginEnd="@dimen/margin_all_small"
+                            android:layout_marginRight="@dimen/margin_all_small"
+                            android:text="@string/new_purcahse_form_bank_txt"
+                            android:textSize="@dimen/textView_all_size_14" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin_all_small"
+                            android:background="@drawable/spinner_bg"
+                            android:orientation="vertical"
+
+                            android:padding="@dimen/padding_all_very_small">
+
+                            <Spinner
+                                android:id="@+id/spinner_bank"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/margin_all_very_small"
+                                android:padding="@dimen/padding_all_very_small" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_bank_btn_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_all_small"
+                        android:layout_marginLeft="@dimen/margin_all_small"
+                        android:layout_marginEnd="@dimen/margin_all_small"
+                        android:layout_marginRight="@dimen/margin_all_small"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        android:weightSum="10">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:orientation="vertical">
+
+                            <investwell.utils.customView.CustomButton
+                                android:id="@+id/btn_send_me_link_on_mail"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/margin_all_small"
+                                android:background="?attr/primaryBtnDrawable"
+                                android:text="@string/additinal_purchase_send_link_on_email_txt"
+                                android:textAllCaps="false"
+                                android:textColor="?attr/primaryButtonTextColor"
+                                android:textSize="@dimen/textView_all_size_14" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:orientation="vertical">
+
+                            <investwell.utils.customView.CustomButton
+                                android:id="@+id/btn_pay_now"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/margin_all_small"
+                                android:background="?attr/secondaryBtnDrawable"
+                                android:text="@string/txt_PayNow"
+                                android:textAllCaps="false"
+                                android:textColor="?attr/secondaryButtonTextColor"
+                                android:textSize="@dimen/textView_all_size_14" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <!--Footer Section One-->
+                    <LinearLayout
+                        android:id="@+id/ll_footer_section_one"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_all_small"
+                        android:layout_marginLeft="@dimen/margin_all_small"
+                        android:layout_marginTop="@dimen/margin_all_very_small"
+                        android:layout_marginEnd="@dimen/margin_all_small"
+                        android:layout_marginRight="@dimen/margin_all_small"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <!--RTGS CODE-->
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/margin_all_regular"
+                                android:layout_weight="1"
+                                android:background="@drawable/et_transac_bg"
+                                android:orientation="vertical"
+                                android:padding="@dimen/padding_all_very_small">
+
+                                <investwell.utils.customView.CustomEditText
+                                    android:id="@+id/et_rtgs"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/margin_all_small"
+                                    android:background="@null"
+                                    android:hint="@string/additional_purchase_rtgs_hint_txt"
+                                    android:imeOptions="actionNext"
+                                    android:inputType="text"
+                                    android:maxLines="1"
+                                    android:padding="@dimen/padding_all_very_small"
+                                    android:textSize="@dimen/textView_all_size_14" />
+                            </LinearLayout>
+                            <!--MICR CODE-->
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/margin_all_regular"
+                                android:layout_weight="1"
+                                android:background="@drawable/et_transac_bg"
+                                android:orientation="vertical"
+                                android:padding="@dimen/padding_all_very_small">
+
+                                <investwell.utils.customView.CustomEditText
+                                    android:id="@+id/et_micr"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/margin_all_small"
+                                    android:background="@null"
+                                    android:hint="@string/additional_purchase_micr_hint_txt"
+                                    android:imeOptions="actionNext"
+                                    android:inputType="text"
+                                    android:maxLines="1"
+                                    android:padding="@dimen/padding_all_very_small"
+                                    android:textSize="@dimen/textView_all_size_14" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <!--Instrument Bank-->
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/margin_all_regular"
+                                android:layout_weight="1"
+                                android:background="@drawable/et_transac_bg"
+                                android:orientation="vertical"
+                                android:padding="@dimen/padding_all_very_small">
+
+                                <investwell.utils.customView.CustomEditText
+                                    android:id="@+id/et_instrument_bank"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/margin_all_small"
+                                    android:background="@null"
+                                    android:hint="@string/additional_purchase_instrument_hint_txt"
+                                    android:imeOptions="actionNext"
+                                    android:inputType="text"
+                                    android:maxLines="1"
+                                    android:padding="@dimen/padding_all_very_small"
+                                    android:textSize="@dimen/textView_all_size_14" />
+                            </LinearLayout>
+                            <!--Instrument Branch-->
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/margin_all_regular"
+                                android:layout_weight="1"
+                                android:background="@drawable/et_transac_bg"
+                                android:orientation="vertical"
+                                android:padding="@dimen/padding_all_very_small">
+
+                                <investwell.utils.customView.CustomEditText
+                                    android:id="@+id/et_instrument_branch"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/margin_all_small"
+                                    android:background="@null"
+                                    android:hint="@string/additional_purchase_instrument_branch_hint_txt"
+                                    android:imeOptions="actionNext"
+                                    android:inputType="text"
+                                    android:maxLines="1"
+                                    android:padding="@dimen/padding_all_very_small"
+                                    android:textSize="@dimen/textView_all_size_14" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <!--UTR No.-->
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/margin_all_regular"
+                                android:layout_weight="1"
+                                android:background="@drawable/et_transac_bg"
+                                android:orientation="vertical"
+                                android:padding="@dimen/padding_all_very_small">
+
+                                <investwell.utils.customView.CustomEditText
+                                    android:id="@+id/et_utr_no"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/margin_all_small"
+                                    android:background="@null"
+                                    android:hint="@string/additional_purchase_utr_no_hint_txt"
+                                    android:imeOptions="actionNext"
+                                    android:inputType="text"
+                                    android:maxLines="1"
+                                    android:padding="@dimen/padding_all_very_small"
+                                    android:textSize="@dimen/textView_all_size_14" />
+                            </LinearLayout>
+                            <!--Transfer Date-->
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/margin_all_regular"
+                                android:layout_weight="1"
+                                android:background="@drawable/et_transac_bg"
+                                android:orientation="vertical"
+                                android:padding="@dimen/padding_all_very_small">
+
+                                <investwell.utils.edittext.MaskedEditText
+                                    android:id="@+id/et_transfer_date"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/margin_all_small"
+                                    android:background="@null"
+                                    android:hint="@string/additional_purchase_transafer_date_hint_txt"
+                                    android:imeOptions="actionDone"
+                                    android:inputType="date"
+                                    android:maxLines="1"
+                                    android:padding="@dimen/padding_all_very_small"
+                                    android:textSize="@dimen/textView_all_size_14"
+                                    app:mask="##-##-####" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <!--Footer Section Two-->
+                    <LinearLayout
+                        android:id="@+id/ll_footer_section_two"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_all_small"
+                        android:layout_marginLeft="@dimen/margin_all_small"
+                        android:layout_marginTop="@dimen/margin_all_very_small"
+                        android:layout_marginEnd="@dimen/margin_all_small"
+                        android:layout_marginRight="@dimen/margin_all_small"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <!--Account No.-->
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/margin_all_regular"
+                                android:layout_weight="1"
+                                android:background="@drawable/et_transac_bg"
+                                android:orientation="vertical"
+                                android:padding="@dimen/padding_all_very_small">
+
+                                <investwell.utils.customView.CustomEditText
+                                    android:id="@+id/et_account_no"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/margin_all_small"
+                                    android:background="@null"
+                                    android:hint="@string/additional_purchase_account_no_hint_txt"
+                                    android:imeOptions="actionNext"
+                                    android:inputType="number"
+                                    android:maxLines="1"
+                                    android:padding="@dimen/padding_all_very_small"
+                                    android:textSize="@dimen/textView_all_size_14" />
+                            </LinearLayout>
+                            <!--Cheque No.-->
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/margin_all_regular"
+                                android:layout_weight="1"
+                                android:background="@drawable/et_transac_bg"
+                                android:orientation="vertical"
+                                android:padding="@dimen/padding_all_very_small">
+
+                                <investwell.utils.customView.CustomEditText
+                                    android:id="@+id/et_cheque_no"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/margin_all_small"
+                                    android:background="@null"
+                                    android:hint="@string/additional_purchase_cheque_no_hint_txt"
+                                    android:imeOptions="actionNext"
+                                    android:inputType="number"
+                                    android:maxLines="1"
+                                    android:padding="@dimen/padding_all_very_small"
+                                    android:textSize="@dimen/textView_all_size_14" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <!--Instrument Bank-->
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/margin_all_regular"
+                                android:layout_weight="1"
+                                android:background="@drawable/et_transac_bg"
+                                android:orientation="vertical"
+                                android:padding="@dimen/padding_all_very_small">
+
+                                <investwell.utils.customView.CustomEditText
+                                    android:id="@+id/et_instrument_bank_secondary"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/margin_all_small"
+                                    android:background="@null"
+                                    android:hint="@string/additional_purchase_instrument_hint_txt"
+                                    android:imeOptions="actionNext"
+                                    android:inputType="text"
+                                    android:maxLines="1"
+                                    android:padding="@dimen/padding_all_very_small"
+                                    android:textSize="@dimen/textView_all_size_14" />
+                            </LinearLayout>
+                            <!--Instrument Branch-->
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/margin_all_regular"
+                                android:layout_weight="1"
+                                android:background="@drawable/et_transac_bg"
+                                android:orientation="vertical"
+                                android:padding="@dimen/padding_all_very_small">
+
+                                <investwell.utils.customView.CustomEditText
+                                    android:id="@+id/et_instrument_branch_secondary"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/margin_all_small"
+                                    android:background="@null"
+
+                                    android:hint="@string/additional_purchase_instrument_branch_hint_txt"
+                                    android:imeOptions="actionNext"
+                                    android:inputType="text"
+                                    android:padding="@dimen/padding_all_very_small"
+                                    android:textSize="@dimen/textView_all_size_14" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <!--MICR No.-->
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/margin_all_regular"
+                                android:layout_weight="1"
+                                android:background="@drawable/et_transac_bg"
+                                android:orientation="vertical"
+                                android:padding="@dimen/padding_all_very_small">
+
+                                <investwell.utils.customView.CustomEditText
+                                    android:id="@+id/et_micr_no_secondary"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/margin_all_small"
+                                    android:background="@null"
+                                    android:hint="@string/additional_purchase_micr_hint_txt"
+                                    android:imeOptions="actionNext"
+                                    android:inputType="text"
+                                    android:maxLines="1"
+                                    android:padding="@dimen/padding_all_very_small"
+                                    android:textSize="@dimen/textView_all_size_14" />
+                            </LinearLayout>
+                            <!--Cheque Date-->
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/margin_all_regular"
+                                android:layout_weight="1"
+                                android:background="@drawable/et_transac_bg"
+                                android:orientation="vertical"
+                                android:padding="@dimen/padding_all_very_small">
+
+                                <investwell.utils.customView.CustomEditText
+                                    android:id="@+id/et_cheque_date"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/margin_all_small"
+                                    android:background="@null"
+                                    android:imeOptions="actionDone"
+                                    android:inputType="date"
+                                    android:maxLines="1"
+                                    android:padding="@dimen/padding_all_very_small"
+                                    android:textSize="@dimen/textView_all_size_14" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_all_small"
+                        android:background="@drawable/spinner_bg"
+                        android:orientation="vertical"
+
+                        android:padding="@dimen/padding_all_very_small">
+
+                        <Spinner
+                            android:id="@+id/spinner_scheme"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin_all_very_small"
+                            android:padding="@dimen/padding_all_very_small" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </ScrollView>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom">
+
+            <include layout="@layout/layout_footer_additonal_transactions" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

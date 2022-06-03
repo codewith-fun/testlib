@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="?attr/accentColor">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="left"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:src="@mipmap/ic_arrow_back" />
+
+        <investwell.utils.customView.CustomTextViewBold
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_toRightOf="@+id/ivBack"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:text="@string/txt_aadhar"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/textView_all_size_18"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/done"
+        android:layout_below="@+id/relToolBar"/>
+
+    <investwell.utils.customView.CustomButton
+        android:id="@+id/done"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="?attr/primaryBtnDrawable"
+        android:text="@string/txt_done_mandate"
+        android:textAllCaps="false"
+        android:layout_margin="@dimen/margin_all_regular"
+        android:textColor="?attr/primaryButtonTextColor" />
+</RelativeLayout>

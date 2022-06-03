@@ -1,0 +1,111 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linerMain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="?attr/primaryButtonBackground">
+
+
+        <investwell.utils.customView.CustomTextViewBold
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textView_all_size_16"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/ivCloseBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/margin_10dp"
+            android:layout_marginRight="@dimen/margin_10dp"
+            android:background="@drawable/close_icon"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="20dp">
+
+
+        <investwell.utils.customView.CustomTextViewRegular
+            android:id="@+id/tvMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textColor="?attr/primaryTextColor"
+            android:textIsSelectable="true"
+            android:textSize="@dimen/textView_all_size_14" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="@dimen/code_fp_margin15"
+        android:layout_marginLeft="@dimen/code_fp_margin15"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal">
+
+        <investwell.utils.customView.CustomTextViewBold
+            android:id="@+id/tvLogin"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:background="?attr/primaryBtnDrawable"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/margin_10dp"
+            android:text="@string/txt_sign_in"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/textView_all_size_18"
+            android:textStyle="bold"
+            />
+
+        <investwell.utils.customView.CustomTextViewBold
+            android:id="@+id/tvSignup"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:background="?attr/primaryBtnDrawable"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:gravity="center"
+            android:text="@string/login_sign_up_txt"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/textView_all_size_18"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/padding_all_small">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_amc_top"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerInside"
+                android:src="@mipmap/ic_launcher" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/cv_amc_top">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_Video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_all_small"
+                android:layout_marginEnd="@dimen/margin_all_small"
+                android:layout_marginBottom="@dimen/margin_all_small"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:cardElevation="0dp">
+
+                <ImageView
+                    android:id="@+id/ivVideoPlay"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/ic_video_play" />
+            </androidx.cardview.widget.CardView>
+
+            <investwell.utils.customView.CustomTextViewRegular
+                android:id="@+id/tv_schemename"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/margin_all_small"
+                android:layout_marginEnd="@dimen/margin_all_small"
+                android:layout_toEndOf="@+id/cv_Video"
+                android:textColor="?attr/primaryTextColor"
+                android:textSize="@dimen/textView_all_size_12"
+                app:layout_constrainedWidth="true"
+                app:layout_constraintBottom_toBottomOf="@+id/cv_Video"
+                app:layout_constraintEnd_toStartOf="@+id/cv_Video"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/cv_Video"
+                tools:text="sample" />
+
+            <View
+                android:id="@+id/v_div"
+                android:layout_width="0dp"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/margin_all_small"
+                android:background="@color/colorGrey_250"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cv_Video"
+                android:visibility="invisible"/>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_schemename"
+                android:layout_marginStart="@dimen/margin_all_very_small"
+                android:layout_marginTop="5dp"
+                android:layout_toStartOf="@+id/nfo_cart"
+                android:layout_toEndOf="@+id/cv_Video"
+                app:layout_constrainedWidth="true"
+                app:layout_constraintEnd_toStartOf="@+id/nfo_cart"
+                app:layout_constraintStart_toStartOf="@+id/tv_schemename"
+                app:layout_constraintTop_toBottomOf="@+id/v_div">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:orientation="vertical">
+
+
+                        <investwell.utils.customView.CustomTextViewRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center|left"
+                            android:text="@string/txt_investment"
+                            android:textSize="@dimen/textView_all_size_12" />
+
+                        <investwell.utils.customView.CustomTextViewRegular
+                            android:id="@+id/tv_investment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center|left"
+                            android:textColor="?attr/primaryTextColor"
+                            android:textSize="@dimen/textView_all_size_12"
+                            tools:text="@string/app_name" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:orientation="vertical">
+
+
+                        <investwell.utils.customView.CustomTextViewRegular
+                            android:id="@+id/nfo_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:gravity="start"
+
+                            android:textSize="@dimen/textView_all_size_12"
+                            tools:text="@string/app_name" />
+
+                        <investwell.utils.customView.CustomTextViewRegular
+                            android:id="@+id/tv_investmentBy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:gravity="center|left"
+                            android:textColor="?attr/primaryTextColor"
+                            android:textSize="@dimen/textView_all_size_12"
+                            tools:text="@string/app_name" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/nfo_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_schemename"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/margin_all_small"
+                android:contentDescription="@string/app_name"
+                android:src="@mipmap/add_cart"
+                app:layout_constraintBottom_toBottomOf="@+id/relativeLayout2"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/v_div" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/CardViewStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+        <investwell.utils.customView.CustomTextViewBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/padding_all_regular"
+            android:paddingLeft="@dimen/padding_all_regular"
+            android:paddingTop="@dimen/padding_all_small"
+            android:paddingEnd="@dimen/padding_all_regular"
+            android:paddingRight="@dimen/padding_all_regular"
+            android:paddingBottom="@dimen/padding_all_small"
+            android:text="@string/factsheet_short_term_returns_header_title"
+            android:textColor="?attr/secondaryTextColor"
+            android:textSize="@dimen/textView_all_size_14"
+            android:textStyle="bold" />
+        <!--Long Term Table Layout-->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_all_very_small"
+            android:divider="#c9c9c9"
+            android:showDividers="middle">
+            <!-- Long term Table row one-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#c9c9c9" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/tableRowHeaderColor"
+
+                android:divider="#c9c9c9"
+                android:showDividers="middle"
+                tools:ignore="UselessParent">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <investwell.utils.customView.CustomTextViewBold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingStart="@dimen/padding_all_small"
+                        android:paddingLeft="@dimen/padding_all_small"
+                        android:paddingTop="@dimen/padding_all_small"
+                        android:paddingEnd="@dimen/padding_all_small"
+                        android:paddingRight="@dimen/padding_all_small"
+                        android:paddingBottom="@dimen/padding_all_small"
+                        android:textColor="?attr/primaryTextColor"
+                        android:textSize="@dimen/textView_all_size_14"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <investwell.utils.customView.CustomTextViewBold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="?attr/primaryTextColor"
+                        android:gravity="center"
+                        android:padding="@dimen/padding_all_small"
+                        android:text="@string/factsheet_tv_row_header_element_one_month"
+
+                        android:textAllCaps="true"
+                        android:textSize="@dimen/textView_all_size_14"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <investwell.utils.customView.CustomTextViewBold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="?attr/primaryTextColor"
+                        android:gravity="center"
+                        android:padding="@dimen/padding_all_small"
+                        android:text="@string/factsheet_tv_row_header_element_three_month"
+                        android:textAllCaps="true"
+                        android:textSize="@dimen/textView_all_size_14"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <investwell.utils.customView.CustomTextViewBold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="?attr/primaryTextColor"
+                        android:gravity="center"
+                        android:padding="@dimen/padding_all_small"
+                        android:text="@string/factsheet_tv_row_header_element_six_month"
+                        android:textAllCaps="true"
+                        android:textSize="@dimen/textView_all_size_14"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <investwell.utils.customView.CustomTextViewBold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="?attr/primaryTextColor"
+                        android:gravity="center"
+                        android:padding="@dimen/padding_all_small"
+                        android:text="@string/factsheet_tv_row_header_element_one_year"
+                        android:textAllCaps="true"
+                        android:textSize="@dimen/textView_all_size_14"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#c9c9c9" />
+            <!-- Long term Table row Two-->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/dialogBackground"
+                android:divider="#c9c9c9"
+                android:showDividers="middle"
+                tools:ignore="UselessParent">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <investwell.utils.customView.CustomTextViewBold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:gravity="start|center"
+                        android:paddingStart="@dimen/padding_all_small"
+                        android:paddingLeft="@dimen/padding_all_small"
+                        android:paddingTop="@dimen/padding_all_regular"
+                        android:paddingEnd="@dimen/padding_all_small"
+                        android:paddingRight="@dimen/padding_all_small"
+                        android:textColor="?attr/primaryTextColor"
+                        android:paddingBottom="@dimen/padding_all_regular"
+                        android:text="@string/factsheet_short_term_scheme_row_title"
+                        android:textSize="@dimen/textView_all_size_10"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <investwell.utils.customView.CustomTextViewRegular
+                        android:id="@+id/tv_row_scheme_element_one_month"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:gravity="center"
+
+                        android:textAllCaps="true"
+                        android:textColor="?attr/primaryTextColor"
+
+                        android:textSize="@dimen/textView_all_size_14"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <investwell.utils.customView.CustomTextViewRegular
+                        android:id="@+id/tv_row_scheme_element_three_month"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:gravity="center"
+
+                        android:textAllCaps="true"
+
+                        android:textColor="?attr/primaryTextColor"
+                        android:textSize="@dimen/textView_all_size_14"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <investwell.utils.customView.CustomTextViewRegular
+                        android:id="@+id/tv_row_scheme_element_six_month"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:gravity="center"
+
+                        android:textAllCaps="true"
+
+                        android:textColor="?attr/primaryTextColor"
+                        android:textSize="@dimen/textView_all_size_14"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <investwell.utils.customView.CustomTextViewRegular
+                        android:id="@+id/tv_row_scheme_element_one_year"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:gravity="center"
+                        android:textAllCaps="true"
+
+
+                        android:textColor="?attr/primaryTextColor"
+                        android:textSize="@dimen/textView_all_size_14"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#c9c9c9" />
+            <!-- Long term Table long_row Three-->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/dialogBackground"
+                android:divider="#c9c9c9"
+                android:showDividers="middle"
+                tools:ignore="UselessParent">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <investwell.utils.customView.CustomTextViewBold
+                        android:id="@+id/tv_row_benchmark_element_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start|center"
+                        android:paddingStart="@dimen/padding_all_small"
+                        android:paddingLeft="@dimen/padding_all_small"
+                        android:paddingTop="@dimen/padding_all_regular"
+                        android:paddingEnd="@dimen/padding_all_small"
+                        android:paddingRight="@dimen/padding_all_small"
+                        android:textColor="?attr/primaryTextColor"
+                        android:paddingBottom="@dimen/padding_all_regular"
+                        android:text="@string/factsheet_short_term_benchmark_row_title"
+                        android:textSize="@dimen/textView_all_size_10"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <investwell.utils.customView.CustomTextViewRegular
+                        android:id="@+id/tv_row_benchmark_element_one_month"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:gravity="center"
+                        android:textAllCaps="true"
+
+
+                        android:textColor="?attr/primaryTextColor"
+                        android:textSize="@dimen/textView_all_size_14"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <investwell.utils.customView.CustomTextViewRegular
+                        android:id="@+id/tv_row_benchmark_element_three_month"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:gravity="center"
+                        android:textAllCaps="true"
+
+
+                        android:textColor="?attr/primaryTextColor"
+                        android:textSize="@dimen/textView_all_size_14"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <investwell.utils.customView.CustomTextViewRegular
+                        android:id="@+id/tv_row_benchmark_element_six_month"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:gravity="center"
+
+                        android:textAllCaps="true"
+                        android:textColor="?attr/primaryTextColor"
+
+                        android:textSize="@dimen/textView_all_size_14"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <investwell.utils.customView.CustomTextViewRegular
+                        android:id="@+id/tv_row_benchmark_element_one_year"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:gravity="center"
+
+                        android:textAllCaps="true"
+                        android:textColor="?attr/primaryTextColor"
+
+                        android:textSize="@dimen/textView_all_size_14"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

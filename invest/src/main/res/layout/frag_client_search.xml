@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:shimmer="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_all_very_small"
+
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_all_very_small">
+
+
+            <investwell.utils.customView.CustomTextViewRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/margin_all_small"
+                android:layout_marginLeft="@dimen/margin_all_small"
+                android:text="@string/Searchby"
+                android:textColor="?attr/primaryTextColor"
+                android:textSize="@dimen/textView_all_size_16" />
+
+            <RadioGroup
+                android:id="@+id/search_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_all_small"
+                    android:layout_marginLeft="@dimen/margin_all_small"
+                    android:buttonTint="?attr/primaryButtonBackground"
+                    android:checked="true"
+                    android:text="@string/Group"
+
+                    android:textColor="?attr/primaryTextColor" />
+
+                <RadioButton
+                    android:id="@+id/investor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_all_small"
+                    android:layout_marginLeft="@dimen/margin_all_small"
+                    android:buttonTint="?attr/primaryButtonBackground"
+                    android:text="@string/Investor"
+                    android:textColor="?attr/primaryTextColor" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorGrey_250" />
+
+        <RelativeLayout
+            android:id="@+id/rl_middle_search_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/margin_all_small"
+            android:layout_marginTop="@dimen/margin_all_small"
+            android:layout_marginEnd="@dimen/margin_all_small"
+            android:layout_marginRight="@dimen/margin_all_small"
+            android:layout_marginBottom="@dimen/margin_all_small"
+            android:background="#eee"
+            android:orientation="vertical"
+            android:visibility="visible"
+            tools:ignore="RelativeOverlap,UselessParent">
+
+            <investwell.utils.customView.CustomEditText
+                android:id="@+id/et_search_view"
+                style="@style/TextInputEditTextTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:fontFamily="sans-serif-condensed"
+                android:hint="@string/client_search_bar_hint_txt"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="@dimen/padding_all_small"
+                android:textColor="?attr/primaryTextColor"
+                android:textColorHint="?attr/secondaryTextColor"
+                android:textSize="@dimen/textView_all_size_14" />
+
+            <ImageView
+                android:id="@+id/iv_clear_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:contentDescription="@string/app_name"
+                android:focusable="true"
+                android:padding="@dimen/padding_all_very_small"
+                android:visibility="gone"
+                app:srcCompat="@drawable/ic_clear_search" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorGrey_250" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="false"
+        android:layoutAnimation="@anim/layout_animation_fall_down"
+        android:orientation="horizontal">
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <investwell.utils.customView.CustomTextViewRegular
+            android:id="@+id/tvLoading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_all_small"
+            android:layout_marginTop="100dp"
+            android:layout_marginRight="@dimen/margin_all_small"
+            android:drawableTop="@mipmap/ic_no_data"
+            android:gravity="center"
+            android:text="@string/no_record_available"
+            android:textColor="?attr/primaryTextColor"
+            android:textIsSelectable="true"
+            android:textSize="@dimen/textView_all_size_14"
+            android:visibility="gone" />
+
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmer_view_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone"
+            shimmer:duration="400"
+            tools:ignore="MissingConstraints">
+
+
+            <RelativeLayout
+                android:id="@+id/singleShedow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <include
+                    layout="@layout/placeholder_item_line_thin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true" />
+
+            </RelativeLayout>
+
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+        <LinearLayout
+            android:id="@+id/llMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycleView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layoutAnimation="@anim/layout_animation_fall_down" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

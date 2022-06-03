@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/view10"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_margin="@dimen/margin_all_regular"
+        android:background="@color/colorGrey_200"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view9"
+        android:layout_width="0dp"
+        android:layout_height="10dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="32dp"
+        android:background="@color/colorGrey_200"
+        app:layout_constraintEnd_toStartOf="@+id/view10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view10" />
+
+    <View
+        android:id="@+id/view11"
+        android:layout_width="0dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="@dimen/margin_all_small"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/colorGrey_200"
+        app:layout_constraintEnd_toStartOf="@+id/view10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view9" />
+
+    <View
+        android:id="@+id/view12"
+        android:layout_width="100dp"
+        android:layout_height="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="@dimen/margin_all_small"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/colorGrey_200"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view11" />
+
+    <include
+        android:id="@+id/data"
+        layout="@layout/shimmer_top_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_all_large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view12" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_top_dash"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="@dimen/padding_all_regular"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/data">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:id="@+id/c1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="end"
+                android:layout_margin="@dimen/margin_10dp"
+                android:background="@drawable/placeholder_factsheet_cart"
+                android:backgroundTint="@color/colorGrey_200"
+                app:layout_constraintEnd_toStartOf="@+id/c2"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:targetApi="lollipop" />
+
+            <View
+                android:id="@+id/c2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="end"
+                android:layout_margin="@dimen/margin_10dp"
+                android:background="@drawable/placeholder_factsheet_cart"
+                android:backgroundTint="@color/colorGrey_200"
+                app:layout_constraintEnd_toStartOf="@+id/c3"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/c1"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:targetApi="lollipop" />
+
+            <View
+                android:id="@+id/c3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="end"
+                android:layout_margin="@dimen/margin_10dp"
+                android:background="@drawable/placeholder_factsheet_cart"
+                android:backgroundTint="@color/colorGrey_200"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/c2"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:targetApi="lollipop" />
+
+            <View
+                android:id="@+id/view13"
+                android:layout_width="75dp"
+                android:layout_height="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_all_regular"
+                android:background="@color/colorGrey_200"
+                app:layout_constraintEnd_toEndOf="@+id/c1"
+                app:layout_constraintStart_toStartOf="@+id/c1"
+                app:layout_constraintTop_toBottomOf="@id/c1" />
+
+            <View
+                android:id="@+id/view14"
+                android:layout_width="75dp"
+                android:layout_height="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_all_regular"
+                android:background="@color/colorGrey_200"
+                app:layout_constraintEnd_toEndOf="@+id/c2"
+                app:layout_constraintStart_toStartOf="@+id/c2"
+                app:layout_constraintTop_toBottomOf="@id/c2" />
+
+            <View
+                android:id="@+id/view15"
+                android:layout_width="75dp"
+                android:layout_height="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_all_regular"
+                android:background="@color/colorGrey_200"
+                app:layout_constraintEnd_toEndOf="@+id/c3"
+                app:layout_constraintStart_toStartOf="@+id/c3"
+                app:layout_constraintTop_toBottomOf="@id/c3" />
+
+            <View
+                android:id="@+id/c4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="end"
+                android:layout_margin="@dimen/margin_10dp"
+                android:background="@drawable/placeholder_factsheet_cart"
+                android:backgroundTint="@color/colorGrey_200"
+                app:layout_constraintEnd_toEndOf="@+id/c1"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="@+id/c1"
+                app:layout_constraintTop_toBottomOf="@+id/view13"
+                tools:targetApi="lollipop" />
+
+            <View
+                android:id="@+id/c5"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="end"
+                android:layout_margin="@dimen/margin_10dp"
+                android:background="@drawable/placeholder_factsheet_cart"
+                android:backgroundTint="@color/colorGrey_200"
+                app:layout_constraintEnd_toEndOf="@+id/c2"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="@+id/c2"
+                app:layout_constraintTop_toBottomOf="@+id/view14"
+                tools:targetApi="lollipop" />
+
+            <View
+                android:id="@+id/c6"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="end"
+                android:layout_margin="@dimen/margin_10dp"
+                android:background="@drawable/placeholder_factsheet_cart"
+                android:backgroundTint="@color/colorGrey_200"
+                app:layout_constraintBottom_toBottomOf="@+id/c5"
+                app:layout_constraintEnd_toEndOf="@+id/c3"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="@+id/c3"
+                app:layout_constraintTop_toTopOf="@+id/c5"
+                tools:targetApi="lollipop" />
+            <View
+                android:id="@+id/view17"
+                android:layout_width="75dp"
+                android:layout_height="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_all_regular"
+                android:background="@color/colorGrey_200"
+                app:layout_constraintEnd_toEndOf="@+id/c4"
+                app:layout_constraintStart_toStartOf="@+id/c4"
+                app:layout_constraintTop_toBottomOf="@id/c4" />
+
+            <View
+                android:id="@+id/view18"
+                android:layout_width="75dp"
+                android:layout_height="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_all_regular"
+                android:background="@color/colorGrey_200"
+                app:layout_constraintEnd_toEndOf="@+id/c5"
+                app:layout_constraintStart_toStartOf="@+id/c5"
+                app:layout_constraintTop_toBottomOf="@id/c5" />
+
+            <View
+                android:id="@+id/view19"
+                android:layout_width="75dp"
+                android:layout_height="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_all_regular"
+                android:background="@color/colorGrey_200"
+                app:layout_constraintEnd_toEndOf="@+id/c6"
+                app:layout_constraintStart_toStartOf="@+id/c6"
+                app:layout_constraintTop_toBottomOf="@id/c6" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

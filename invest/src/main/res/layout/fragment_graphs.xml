@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="investwell.client.fragment.allocation.CategoryAllocation">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/category_chart"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_all_regular"/>
+
+            <androidx.cardview.widget.CardView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_all_small"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="?attr/cardBgColor"
+                app:cardCornerRadius="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="?attr/primaryButtonBackground"
+                        android:padding="5dp">
+
+                        <investwell.utils.customView.CustomTextViewBold
+
+                            android:layout_height="wrap_content"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+
+                           android:padding="@dimen/padding_all_very_small"
+                            android:text="@string/graphs_category_heading_txt"
+
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/textView_all_size_14"
+                            android:textStyle="bold" />
+
+                        <investwell.utils.customView.CustomTextViewBold
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/padding_all_very_small"
+                            android:text="@string/graph_category_market_value_txt"
+                            android:gravity="end"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/textView_all_size_14"
+                            android:textStyle="bold" />
+
+                        <investwell.utils.customView.CustomTextViewBold
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/padding_all_very_small"
+                            android:gravity="end"
+                            android:text="@string/graph_category_percentage_txt"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/textView_all_size_14"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorGrey_250" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/category_recycle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    </androidx.recyclerview.widget.RecyclerView>
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

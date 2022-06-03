@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/margin_all_very_small"
+    android:visibility="gone"
+    android:layout_height="match_parent">
+    <investwell.utils.customView.CustomTextViewBold
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_all_small"
+        android:layout_marginTop="@dimen/margin_all_regular"
+        android:layout_marginRight="@dimen/margin_all_small"
+        android:layout_marginBottom="@dimen/margin_all_small"
+        android:text="@string/dashboard_type_two_other_services_header_txt"
+        android:textColor="?attr/secondaryTextColor"
+        android:textStyle="bold" />
+    <investwell.utils.customView.CustomTextViewRegular
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableTop="@mipmap/ic_no_data"
+        android:gravity="center"
+        android:text="@string/no_data_found"
+                    android:textColor="?attr/primaryTextColor"
+        android:textIsSelectable="true"
+        android:visibility="gone"
+        android:textSize="@dimen/textView_all_size_14" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_other_services"
+        android:layoutAnimation="@anim/layout_animation_fall_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

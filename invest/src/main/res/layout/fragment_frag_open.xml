@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context="investwell.client.fragment.nfo.Fragments.FragOpen">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/open_recycle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:scrollbars="none" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_no_data_found"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <investwell.utils.customView.CustomTextViewRegular
+              android:id="@+id/tvNothing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTop="@mipmap/ic_no_data"
+            android:gravity="center"
+            android:text="@string/no_data_found"
+                    android:textColor="?attr/primaryTextColor"
+            android:textIsSelectable="true"
+            android:textSize="@dimen/textView_all_size_14" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:adjustViewBounds="true"
+        android:background="@color/colorWhite"
+        android:padding="5dp"
+        android:src="@mipmap/logo_login"
+       />
+
+    <LinearLayout
+        android:id="@+id/linerMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:paddingBottom="20dp"
+        android:orientation="vertical">
+
+        <investwell.utils.customView.CustomTextViewRegular
+            android:id="@+id/title_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:gravity="center"
+            android:text="@string/pin_pattern_header_txt"
+            android:textColor="?attr/primaryTextColor"
+            android:textSize="@dimen/textView_all_size_16" />
+
+        <investwell.common.applock.pinlock.PFCodeView
+            android:id="@+id/code_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <investwell.utils.customView.CustomTextViewRegular
+                    android:id="@+id/button_1"
+                    style="?pf_key_button"
+                    android:layout_width="@dimen/button_lock_screen_fp_size"
+                    android:layout_height="@dimen/button_lock_screen_fp_size"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/pin_pattern_1_no_txt"
+                    android:textSize="@dimen/textView_all_size_30"
+                    android:theme="@style/PFLockScreenButtonStyle" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <investwell.utils.customView.CustomTextViewRegular
+                    android:id="@+id/button_2"
+                    style="?pf_key_button"
+                    android:layout_width="@dimen/button_lock_screen_fp_size"
+                    android:layout_height="@dimen/button_lock_screen_fp_size"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/pin_pattern_2_no_txt"
+                    android:textSize="@dimen/textView_all_size_30"
+                    android:theme="@style/PFLockScreenButtonStyle" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <investwell.utils.customView.CustomTextViewRegular
+                    android:id="@+id/button_3"
+                    style="?pf_key_button"
+                    android:layout_width="@dimen/button_lock_screen_fp_size"
+                    android:layout_height="@dimen/button_lock_screen_fp_size"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/pin_pattern_3_no_txt"
+                    android:textSize="@dimen/textView_all_size_30"
+                    android:theme="@style/PFLockScreenButtonStyle" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <investwell.utils.customView.CustomTextViewRegular
+                    android:id="@+id/button_4"
+                    style="?pf_key_button"
+                    android:layout_width="@dimen/button_lock_screen_fp_size"
+                    android:layout_height="@dimen/button_lock_screen_fp_size"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/pin_pattern_4_no_txt"
+                    android:textSize="@dimen/textView_all_size_30"
+                    android:theme="@style/PFLockScreenButtonStyle" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <investwell.utils.customView.CustomTextViewRegular
+                    android:id="@+id/button_5"
+                    style="?pf_key_button"
+                    android:layout_width="@dimen/button_lock_screen_fp_size"
+                    android:layout_height="@dimen/button_lock_screen_fp_size"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/pin_pattern_5_no_txt"
+                    android:textSize="@dimen/textView_all_size_30"
+                    android:theme="@style/PFLockScreenButtonStyle" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <investwell.utils.customView.CustomTextViewRegular
+                    android:id="@+id/button_6"
+                    style="?pf_key_button"
+                    android:layout_width="@dimen/button_lock_screen_fp_size"
+                    android:layout_height="@dimen/button_lock_screen_fp_size"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/pin_pattern_6_no_txt"
+                    android:textSize="@dimen/textView_all_size_30"
+                    android:theme="@style/PFLockScreenButtonStyle" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <investwell.utils.customView.CustomTextViewRegular
+                    android:id="@+id/button_7"
+                    style="?pf_key_button"
+                    android:layout_width="@dimen/button_lock_screen_fp_size"
+                    android:layout_height="@dimen/button_lock_screen_fp_size"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/pin_pattern_7_no_txt"
+                    android:textSize="@dimen/textView_all_size_30"
+                    android:theme="@style/PFLockScreenButtonStyle" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <investwell.utils.customView.CustomTextViewRegular
+                    android:id="@+id/button_8"
+                    style="?pf_key_button"
+                    android:layout_width="@dimen/button_lock_screen_fp_size"
+                    android:layout_height="@dimen/button_lock_screen_fp_size"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/pin_pattern_8_no_txt"
+                    android:textSize="@dimen/textView_all_size_30"
+                    android:theme="@style/PFLockScreenButtonStyle" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <investwell.utils.customView.CustomTextViewRegular
+                    android:id="@+id/button_9"
+                    style="?pf_key_button"
+                    android:layout_width="@dimen/button_lock_screen_fp_size"
+                    android:layout_height="@dimen/button_lock_screen_fp_size"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/pin_pattern_9_no_txt"
+                    android:textSize="@dimen/textView_all_size_30"
+                    android:theme="@style/PFLockScreenButtonStyle" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <investwell.utils.customView.CustomTextViewRegular
+                    android:id="@+id/button_left"
+                    android:layout_width="@dimen/button_lock_screen_fp_size"
+                    android:layout_height="@dimen/button_lock_screen_fp_size"
+                    android:layout_gravity="center"
+                    android:background="@drawable/side_button_background_pf"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:text="@string/pin_pattern_forgot_txt"
+                    android:textColor="@android:color/black" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <investwell.utils.customView.CustomTextViewRegular
+                    android:id="@+id/button_0"
+                    style="?pf_key_button"
+                    android:layout_width="@dimen/button_lock_screen_fp_size"
+                    android:layout_height="@dimen/button_lock_screen_fp_size"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/pin_pattern_0_no_txt"
+                    android:textSize="@dimen/textView_all_size_30"
+                    android:theme="@style/PFLockScreenButtonStyle" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <investwell.utils.customView.CustomTextViewRegular
+                    android:layout_width="@dimen/button_lock_screen_fp_size"
+                    android:layout_height="@dimen/button_lock_screen_fp_size"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/button_delete"
+                    style="?pf_delete_button"
+                    android:layout_width="@dimen/button_lock_screen_fp_size"
+                    android:layout_height="@dimen/button_lock_screen_fp_size"
+                    android:layout_gravity="center"
+                    android:background="@drawable/side_button_background_pf"
+                    android:gravity="center"
+                    android:theme="@style/PFLockScreenDeleteButtonStyle"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/button_finger_print"
+                    android:layout_width="@dimen/button_lock_screen_fp_size"
+                    android:layout_height="@dimen/button_lock_screen_fp_size"
+                    android:layout_gravity="center"
+                    android:gravity="center" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <investwell.utils.customView.CustomButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linButtom"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@null"
+        android:text="@string/pin_pattern_reset_btn_txt"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/textView_all_size_30"
+        android:textStyle="bold"
+        android:visibility="gone"
+        tools:ignore="UnknownId" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <investwell.utils.customView.CustomTextViewRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@null"
+            android:text="@string/pin_pattern_next_btn_txt"
+            android:textColor="?attr/primaryTextColor"
+            android:textSize="@dimen/textView_all_size_20"
+            android:visibility="visible" />
+
+    </LinearLayout>
+</RelativeLayout>

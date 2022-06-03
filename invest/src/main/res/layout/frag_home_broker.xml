@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:shimmer="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_dashboard_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <!--<android.support.v7.widget.CardView
+                android:id="@+id/cardview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+
+                app:cardCornerRadius="10dp">-->
+
+
+            <LinearLayout
+                android:id="@+id/llMain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="?attr/dialogBackground"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp">
+
+
+                    <TextView
+                        android:id="@+id/tvName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_toLeftOf="@+id/ivArrow"
+                        android:gravity="start"
+                        android:text=""
+                        android:textColor="?attr/secondaryTextColor"
+                        android:textIsSelectable="true"
+                        android:textSize="17sp"
+                        android:textStyle="bold|italic" />
+
+
+                    <ImageView
+                        android:id="@+id/ivArrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/down_arrow" />
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_Detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="start"
+                                android:text="@string/broker_aum_value"
+                                android:textColor="?attr/primaryTextColor"
+                                android:textIsSelectable="true"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:id="@+id/tv_market_value"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="start"
+                                android:textColor="?attr/secondaryTextColor"
+
+                                android:textIsSelectable="true"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.35"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="start"
+                                android:text="@string/broker_No_of_Clients"
+                                android:textColor="?attr/primaryTextColor"
+                                android:textIsSelectable="true"
+                                android:textSize="11sp" />
+
+
+                            <TextView
+                                android:id="@+id/purchase_cost"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="start"
+                                android:textColor="?attr/primaryTextColor"
+
+                                android:textIsSelectable="true"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.35"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="start"
+                                android:text="@string/broker_No_of_SIP"
+                                android:textColor="?attr/primaryTextColor"
+                                android:textIsSelectable="true"
+                                android:textSize="11sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="-2dp"
+                                android:orientation="horizontal">
+
+
+                                <TextView
+                                    android:id="@+id/gain"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="start"
+                                    android:textColor="?attr/primaryTextColor"
+
+                                    android:textIsSelectable="true"
+                                    android:textSize="16dp"
+                                    android:textStyle="bold" />
+
+
+                                <ImageView
+                                    android:id="@+id/gain_arrow"
+                                    android:layout_width="15dp"
+                                    android:layout_height="wrap_content" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.30"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="start"
+                                android:text="@string/broker_SIP_per_month"
+                                android:textColor="?attr/primaryTextColor"
+                                android:textIsSelectable="true"
+                                android:textSize="11sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="-2dp"
+                                android:gravity="start"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/days_change"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="start"
+                                    android:textColor="?attr/primaryTextColor"
+                                    android:textIsSelectable="true"
+                                    android:textSize="16dp"
+                                    android:textStyle="bold" />
+
+                                <ImageView
+                                    android:id="@+id/day_arrow"
+                                    android:layout_width="15dp"
+                                    android:layout_height="wrap_content" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.35"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="start"
+                                android:text="@string/change_sip_txt"
+                                android:textColor="?attr/primaryTextColor"
+                                android:textIsSelectable="true"
+                                android:textSize="11sp" />
+
+
+                            <TextView
+                                android:id="@+id/tvChnageinSip"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="start"
+                                android:textColor="?attr/primaryTextColor"
+
+                                android:textIsSelectable="true"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.35"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="start"
+                                android:text="@string/change_client_txt"
+                                android:textColor="?attr/primaryTextColor"
+                                android:textIsSelectable="true"
+                                android:textSize="11sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="-2dp"
+                                android:orientation="horizontal">
+
+
+                                <TextView
+                                    android:id="@+id/tvChangeinClient"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="start"
+                                    android:textColor="?attr/primaryTextColor"
+
+                                    android:textIsSelectable="true"
+                                    android:textSize="16dp"
+                                    android:textStyle="bold" />
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:text="@string/change_txt"
+                        android:textColor="@color/colorGrey_600"
+                        android:layout_marginTop="@dimen/margin_5dp"
+                        android:textIsSelectable="true"
+                        android:textSize="14dp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--</android.support.v7.widget.CardView>-->
+
+            <!--Flavour Of the month-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_flavour"
+                style="@style/CardViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_10dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:visibility="gone">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_route_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_all_small"
+                    android:layout_marginBottom="@dimen/margin_all_small"
+
+
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_dashboard_route_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/margin_all_small"
+                        android:layout_marginLeft="@dimen/margin_all_small"
+                        android:layout_marginEnd="@dimen/margin_all_small"
+                        android:layout_marginRight="@dimen/margin_all_small"
+                        android:contentDescription="@string/app_name"
+                        android:paddingStart="@dimen/padding_all_small"
+                        android:paddingLeft="@dimen/padding_all_small"
+                        android:src="@mipmap/ic_invest_route_flavour" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/padding_all_small"
+                        android:layout_marginRight="@dimen/margin_all_small"
+                        android:paddingStart="@dimen/margin_all_small"
+                        android:paddingLeft="@dimen/padding_all_small"
+                        android:paddingTop="@dimen/padding_all_very_small"
+                        android:paddingBottom="@dimen/padding_all_very_small"
+                        tools:ignore="RtlSymmetry">
+
+                        <LinearLayout
+                            android:id="@+id/ll_dashboard_goal_container"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <investwell.utils.customView.CustomTextViewBold
+                                android:id="@+id/tv_route"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-condensed"
+                                android:text="@string/dashboard_flavour_of_month_txt"
+                                android:textColor="?attr/primaryTextColor"
+                                android:textSize="@dimen/textView_all_size_14"
+                                android:textStyle="bold" />
+
+                            <investwell.utils.customView.CustomTextViewRegular
+                                android:id="@+id/tv_dashboard_route_header_desc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/margin_all_very_small"
+                                android:layout_marginLeft="@dimen/margin_all_very_small"
+                                android:fontFamily="sans-serif-condensed"
+                                android:text="@string/dashboard_flavour_of_month_header_txt"
+                                android:textColor="?attr/primaryTextColor"
+                                android:textSize="@dimen/textView_all_size_14" />
+                        </LinearLayout>
+
+                        <investwell.utils.customView.CustomTextViewRegular
+                            android:id="@+id/tv_dashboard_route_desc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/ll_dashboard_goal_container"
+                            android:ellipsize="end"
+                            android:fontFamily="sans-serif-condensed"
+                            android:maxLines="1"
+                            android:text="@string/dashboard_flavour_month_desc_txt"
+                            android:textColor="?attr/secondaryTextColor"
+                            android:textSize="@dimen/textView_all_size_12" />
+
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <!--Financial Tools Calculators-->
+            <include
+                layout="@layout/layout_financial_tool"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_investment_routes_container" />
+        </LinearLayout>
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmer_view_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone"
+
+            shimmer:duration="800"
+            tools:ignore="MissingConstraints">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/placeholder_item_card" />
+
+                <include layout="@layout/placeholder_item_card" /> <include layout="@layout/placeholder_item_card" />
+
+                <include layout="@layout/placeholder_item_card" />
+
+
+            </LinearLayout>
+
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+    </RelativeLayout>
+</ScrollView>

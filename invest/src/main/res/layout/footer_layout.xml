@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/colorGrey_600"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:id="@+id/linerFooter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="?attr/dialogBackground"
+        android:orientation="vertical"
+        android:paddingBottom="5dp"
+        android:visibility="gone">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top|left"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                android:layout_height="100dp"
+                android:src="@mipmap/header_login_logo" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <investwell.utils.customView.CustomTextViewBold
+                    android:id="@+id/tv_broker_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start|center"
+                    android:textColor="?attr/primaryTextColor"
+
+                    android:textStyle="bold"
+                    android:textSize="12sp" />
+                <investwell.utils.customView.CustomTextViewRegular
+                    android:id="@+id/tv_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start|center"
+                    android:textColor="?attr/secondaryTextColor"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <investwell.utils.customView.CustomTextViewRegular
+                        android:id="@+id/tv_call"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start|center"
+                        android:textColor="?attr/primaryTextColor"
+                        android:textSize="12sp" />
+
+                    <investwell.utils.customView.CustomTextViewRegular
+                        android:id="@+id/tv_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:gravity="start|center"
+                        android:textColor="?attr/primaryTextColor"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+
+                <investwell.utils.customView.CustomTextViewRegular
+                    android:id="@+id/tv_web"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start|center"
+                    android:textColor="?attr/primaryTextColor"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

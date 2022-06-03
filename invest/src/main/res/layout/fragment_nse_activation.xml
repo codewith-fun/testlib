@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <fragment
+        android:id="@+id/frag_toolBar"
+        android:name="investwell.client.fragment.others.ToolbarFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/activationArea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/frag_toolBar"
+        android:gravity="center"
+        tools:ignore="MissingConstraints"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            app:srcCompat="@mipmap/ic_profile_activation"
+            android:layout_marginTop="80dp"/>
+
+        <investwell.utils.customView.CustomTextViewBold
+            android:id="@+id/activationText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center_horizontal"
+            android:text="By which mode you want to authanticate your profile?"
+            android:textColor="@color/browser_actions_title_color"
+            android:textSize="@dimen/textView_all_size_20"
+            app:layout_constraintBottom_toTopOf="@+id/instant"
+            app:layout_constraintTop_toBottomOf="@+id/imageView8"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:layout_marginTop="30dp" />
+
+        <investwell.utils.customView.CustomButton
+            android:id="@+id/instant"
+            style="@style/AVLoadingIndicatorView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/tertiaryBtnDrawable"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Instant Activation, Right Now"
+            android:textAllCaps="false"
+            android:textColor="#0f99f1"
+            android:textSize="@dimen/textView_all_size_16"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/activationText"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:layout_marginTop="100dp"/>
+
+        <investwell.utils.customView.CustomButton
+            android:id="@+id/later"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:background="?attr/tertiaryBtnDrawable"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Later Activation, Send Email"
+            android:textAllCaps="false"
+            android:textColor="#0f99f1"
+            android:textSize="@dimen/textView_all_size_16"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/instant"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/webviewArea"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/frag_toolBar"
+        android:gravity="center"
+        tools:ignore="MissingConstraints"
+        android:visibility="gone" >
+        <WebView
+            android:id="@+id/activationWebview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9"
+            />
+              <investwell.utils.customView.CustomButton
+                  android:id="@+id/doneActivation"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginBottom="32dp"
+                  android:background="?attr/primaryBtnDrawable"
+                  android:fontFamily="sans-serif-condensed"
+                  android:text="Continue, If you have done."
+                  android:textAllCaps="false"
+                  android:textColor="#ffffff"
+                  android:textSize="@dimen/textView_all_size_16"
+                  app:layout_constraintTop_toBottomOf="@+id/instant"
+                  android:paddingLeft="30dp"
+                  android:paddingRight="30dp"
+                  android:layout_marginTop="20dp"
+                  android:layout_weight="0.1"/>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

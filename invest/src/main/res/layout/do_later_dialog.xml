@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="4dp"
+    android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/textMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:textColor="@color/darkTabBackgroundColor"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/margin_all_small"
+            android:layout_marginEnd="@dimen/margin_all_small"
+            android:paddingStart="@dimen/padding_all_small"
+            android:paddingEnd="@dimen/padding_all_small"
+            android:text=""
+            android:textStyle="bold"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints" />
+        <View
+            android:id="@+id/h_div"
+            android:layout_width="match_parent"
+            android:background="@color/colorGrey_250"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textMsg"
+            android:layout_marginTop="5dp"
+            android:layout_height="1dp"/>
+
+        <TextView
+            android:id="@+id/textOk"
+            android:layout_width="0dp"
+            app:layout_constrainedWidth="true"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:fontFamily="@font/lato_bold"
+            android:text="Ok"
+            android:padding="15dp"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/btnPrimaryBackgroundColor"
+            android:background="?attr/selectableItemBackground"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/h_div" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

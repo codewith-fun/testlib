@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    app:cardBackgroundColor="?attr/cardBgColor"
+    app:cardElevation="2dp">
+<View
+    android:layout_width="match_parent"
+    android:layout_gravity="top"
+    android:background="@color/colorGrey_100"
+    android:layout_height="4dp"/>
+    <com.ebanx.swipebtn.SwipeButton
+        android:id="@+id/btn_swipe_transact"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/margin_all_regular"
+        android:layout_marginTop="@dimen/margin_all_small"
+        android:layout_marginEnd="@dimen/margin_all_regular"
+        android:layout_marginBottom="@dimen/margin_all_small"
+        app:button_background="@drawable/shape_button"
+        app:button_image_disabled="@mipmap/transact_circle"
+        app:button_image_enabled="@mipmap/transact"
+        app:button_image_height="50dp"
+        app:button_image_width="50dp"
+        app:has_activate_state="true"
+        app:initial_state="disabled"
+        app:inner_text="@string/btn_swipe_to_transact"
+        app:inner_text_background="@drawable/shape_rounded"
+        app:inner_text_bottom_padding="@dimen/padding_all_small"
+        app:inner_text_color="@android:color/white"
+        app:inner_text_size="@dimen/textView_all_size_14"
+        app:inner_text_top_padding="@dimen/padding_all_small" />
+</androidx.cardview.widget.CardView>

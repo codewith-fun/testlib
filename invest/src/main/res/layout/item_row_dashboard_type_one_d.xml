@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+       xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv_dashboard_investment"
+    card_view:cardBackgroundColor="@android:color/transparent"
+    card_view:cardElevation="0dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_investment_route_title_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding_all_very_small"
+            android:layout_marginLeft="@dimen/margin_all_very_small"
+            android:layout_marginEnd="@dimen/margin_all_very_small"
+            android:layout_marginRight="@dimen/margin_all_very_small"
+            android:layout_marginBottom="@dimen/margin_all_regular"
+            android:visibility="gone"
+            android:paddingEnd="@dimen/padding_all_large"
+            android:paddingRight="@dimen/padding_all_large">
+
+
+            <investwell.utils.customView.CustomTextViewBold
+                android:id="@+id/tv_dashboard_items_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/dasbboard_invest_route_title_txt"
+                android:textAllCaps="true"
+                android:textColor="@color/darkColorHeaderTitle"
+                android:textSize="@dimen/textView_all_size_14"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="2dp"
+                android:layout_marginStart="@dimen/margin_10dp"
+                android:layout_below="@+id/tv_dashboard_items_title"
+                android:background="@color/colorWhite"
+                android:layout_marginLeft="@dimen/margin_10dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_investment_routes_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_dashboard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layoutAnimation="@anim/layout_animation_fall_down" />
+
+
+        </RelativeLayout>
+    </LinearLayout></androidx.cardview.widget.CardView>

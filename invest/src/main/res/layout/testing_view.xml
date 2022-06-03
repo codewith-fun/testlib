@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+                        android:buttonTint="?attr/primaryButtonBackground"
+                        android:textColor="?attr/primaryTextColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:checked="false"
+            android:padding="10dp"
+            android:text="@string/testing_view_check_nse_txt" />
+
+
+        <RadioButton
+                        android:buttonTint="?attr/primaryButtonBackground"
+                        android:textColor="?attr/primaryTextColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:checked="false"
+            android:padding="10dp"
+            android:text="@string/testing_view_check_bse_txt" />
+
+
+        <RadioButton
+                        android:buttonTint="?attr/primaryButtonBackground"
+                        android:textColor="?attr/primaryTextColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:checked="true"
+            android:padding="10dp"
+            android:text="@string/testing_view_check_live_txt" />
+    </RadioGroup>
+
+
+    <investwell.utils.customView.CustomButton
+        android:id="@+id/check_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radiogroup"
+        android:layout_centerHorizontal="true"
+        android:background="?attr/secondaryBtnDrawable"
+        android:layout_margin="10dp"
+        android:textColor="?attr/secondaryButtonTextColor"
+        android:text="@string/testing_view_btn_check_txt" />
+
+</RelativeLayout>

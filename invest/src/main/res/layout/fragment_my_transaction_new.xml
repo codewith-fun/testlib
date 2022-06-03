@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:shimmer="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF4F5F9"
+    tools:context="investwell.client.fragment.others.MyTransactionNew">
+
+    <investwell.utils.customView.CustomTextViewRegular
+        android:id="@+id/tvNothing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:drawableTop="@mipmap/ic_no_data"
+        android:gravity="center"
+        android:text="@string/no_data_found"
+        android:textColor="?attr/primaryTextColor"
+        android:textIsSelectable="true"
+        android:textSize="@dimen/textView_all_size_14"
+        android:visibility="gone" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/ll_toolBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <fragment
+                android:id="@+id/frag_toolBar"
+                android:name="investwell.client.fragment.others.ToolbarFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <include
+            android:id="@+id/content_no_data"
+            layout="@layout/content_no_data_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ll_toolBar"
+            android:visibility="gone" />
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmer_view_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_below="@+id/ll_toolBar"
+            android:orientation="vertical"
+            android:visibility="gone"
+            shimmer:duration="800">
+
+
+            <LinearLayout
+                android:id="@+id/singleShedow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <include layout="@layout/placeholder_item_line_thin" />
+
+                <include layout="@layout/placeholder_item_line_thin" />
+
+                <include layout="@layout/placeholder_item_line_thin"
+
+                    />
+
+                <include layout="@layout/placeholder_item_line_thin"
+
+                    />
+
+                <include layout="@layout/placeholder_item_line_thin" />
+
+                <include layout="@layout/placeholder_item_line_thin" />
+
+                <include layout="@layout/placeholder_item_line_thin"
+
+                    />
+
+                <include layout="@layout/placeholder_item_line_thin"
+
+                    />
+
+                <include layout="@layout/placeholder_item_line_thin" />
+
+                <include layout="@layout/placeholder_item_line_thin" />
+
+                <include layout="@layout/placeholder_item_line_thin"
+
+                    />
+
+                <include layout="@layout/placeholder_item_line_thin"
+
+                    />
+
+
+            </LinearLayout>
+
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/transaction_recyclier"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ll_toolBar"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layoutAnimation="@anim/layout_animation_fall_down" />
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:background="?attr/primaryButtonBackground"
+        app:backgroundTint="?attr/primaryButtonBackground"
+        android:id="@+id/filter_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        app:tint="@color/colorWhite"
+        android:layout_margin="16dp"
+        app:srcCompat="@drawable/filter_icon" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_all_small"
+        style="@style/CardViewStyle"
+        app:cardCornerRadius="@dimen/card_corner_all_radius_small">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_all_small">
+
+            <ImageView
+                android:id="@+id/ivProfile"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_all_small"
+                android:layout_marginRight="@dimen/margin_all_small"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:src="@mipmap/profileplaceholder" />
+
+            <investwell.utils.customView.CustomTextViewRegular
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_all_very_small"
+                android:layout_toEndOf="@+id/ivProfile"
+                android:layout_toRightOf="@+id/ivProfile"
+                android:textColor="?attr/primaryTextColor"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/textView_all_size_12" />
+
+            <LinearLayout
+                android:id="@+id/ll_family_head"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:layout_toEndOf="@+id/ivProfile"
+                android:layout_toRightOf="@+id/ivProfile"
+                android:orientation="horizontal">
+
+
+                <investwell.utils.customView.CustomTextViewRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/client_search_item_family_head_txt"
+                    android:textIsSelectable="true"
+                    android:textColor="?attr/primaryTextColor"
+                    android:textSize="@dimen/textView_all_size_10" />
+
+                <investwell.utils.customView.CustomTextViewRegular
+                    android:id="@+id/tvFamilyHead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="?attr/primaryTextColor"
+                    android:textIsSelectable="true"
+                    android:textSize="@dimen/textView_all_size_10" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_email"
+                android:layout_below="@+id/ll_family_head"
+                android:layout_width="wrap_content"
+                android:layout_toEndOf="@+id/ivProfile"
+                android:layout_toRightOf="@+id/ivProfile"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <investwell.utils.customView.CustomTextViewRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/personal_details_email_txt"
+                    android:textColor="?attr/primaryTextColor"
+                    android:textIsSelectable="true"
+                    android:textSize="@dimen/textView_all_size_10" />
+
+                <investwell.utils.customView.CustomTextViewRegular
+                    android:id="@+id/tvEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textColor="?attr/primaryTextColor"
+                    android:textIsSelectable="true"
+                    android:textSize="@dimen/textView_all_size_10" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/linerMiddleBody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_email"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/margin_all_small"
+                android:layout_toStartOf="@+id/relPhone"
+                android:layout_toLeftOf="@+id/relPhone"
+                android:layout_toEndOf="@+id/ivProfile"
+                android:layout_toRightOf="@+id/ivProfile"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/margin_all_regular"
+                        android:layout_marginRight="@dimen/margin_all_regular"
+                        android:orientation="vertical">
+
+
+                        <investwell.utils.customView.CustomTextViewRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/client_search_item_pan_txt"
+                            android:textIsSelectable="true"
+                            android:textColor="?attr/primaryTextColor"
+                            android:textSize="@dimen/textView_all_size_10" />
+
+                        <investwell.utils.customView.CustomTextViewRegular
+                            android:id="@+id/tvPAN"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:textColor="?attr/primaryTextColor"
+                            android:textIsSelectable="true"
+                            android:textSize="@dimen/textView_all_size_10" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/margin_all_regular"
+                        android:layout_marginRight="@dimen/margin_all_regular"
+                        android:orientation="vertical">
+
+
+                        <investwell.utils.customView.CustomTextViewRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/txt_mobile"
+                            android:textIsSelectable="true"
+                            android:textColor="?attr/primaryTextColor"
+                            android:textSize="@dimen/textView_all_size_10" />
+
+                        <investwell.utils.customView.CustomTextViewRegular
+                            android:id="@+id/tvMobile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:textColor="?attr/primaryTextColor"
+                            android:textIsSelectable="true"
+                            android:textSize="@dimen/textView_all_size_10" />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_5dp"
+                    android:orientation="vertical">
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/relPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/linerMiddleBody"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_option"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:id="@+id/ivEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/margin_5dp"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        app:srcCompat="@mipmap/email" />
+
+
+                    <ImageView
+                        android:id="@+id/ivUserProfile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/margin_5dp"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        app:srcCompat="@mipmap/profile" />
+
+                    <ImageView
+                        android:id="@+id/ivPhoneLavel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        app:srcCompat="@mipmap/call" />
+                </LinearLayout>
+
+
+                <investwell.utils.customView.CustomTextViewRegular
+                    android:id="@+id/phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_option"
+                    android:text="1234567890"
+                    android:textColor="?attr/primaryTextColor"
+                    android:textIsSelectable="true"
+                    android:textSize="@dimen/textView_all_size_12"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

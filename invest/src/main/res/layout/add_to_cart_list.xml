@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="10dp"
+    android:orientation="vertical">
+
+
+    <fragment
+        android:id="@+id/frag_toolBar"
+        android:name="investwell.client.fragment.others.ToolbarFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/relMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/frag_toolBar">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_cart_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/create_acnt_btn" />
+
+        <investwell.utils.customView.CustomButton
+            android:id="@+id/create_acnt_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:background="?attr/primaryBtnDrawable"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="@string/lumpsum_order_now_btn_txt"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/textView_all_size_16" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linerEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/frag_toolBar"
+        android:background="#fff"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/cart" />
+
+
+        <investwell.utils.customView.CustomTextViewRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/empty_cart_header_txt"
+            android:textColor="#333333"
+            android:textSize="@dimen/textView_all_size_18" />
+
+
+        <investwell.utils.customView.CustomTextViewRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/empty_cart_desc_txt"
+            android:textAlignment="center"
+            android:textColor="#727272"
+            android:textSize="@dimen/textView_all_size_16" />
+
+        <investwell.utils.customView.CustomButton
+            android:id="@+id/scheme_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_grey_border"
+            android:padding="10dp"
+            android:text="@string/empty_cart_add_scheme_btn_txt"
+            android:textAllCaps="false"
+            android:textColor="#070d59" />
+
+    </LinearLayout>
+</RelativeLayout>

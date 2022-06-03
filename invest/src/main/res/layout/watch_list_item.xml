@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="10"
+    android:padding="@dimen/padding_all_very_small"
+    android:baselineAligned="false">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_all_small"
+        android:layout_marginLeft="@dimen/margin_all_small"
+        android:layout_weight="8"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_all_very_small"
+        tools:ignore="UselessParent">
+
+
+        <investwell.utils.customView.CustomTextViewBold
+            android:id="@+id/colorBlue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_all_small"
+            android:layout_marginRight="@dimen/margin_all_small"
+            android:text="@string/app_name"
+            android:textColor="?attr/secondaryTextColor"
+            android:textSize="@dimen/textView_all_size_14" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <investwell.utils.customView.CustomTextViewRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/watch_list_nav_txt"
+                android:textColor="?attr/primaryTextColor"
+                android:textSize="@dimen/textView_all_size_14" />
+
+            <investwell.utils.customView.CustomTextViewRegular
+                android:id="@+id/nav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right|end"
+                android:text="@string/app_name"
+                android:textSize="@dimen/textView_all_size_14"
+                android:textColor="?attr/primaryTextColor"
+                android:textStyle="bold"
+                tools:ignore="RtlHardcoded" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+android:padding="@dimen/padding_all_very_small"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <investwell.utils.customView.CustomTextViewRegular
+            android:id="@+id/tv_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          android:text="@string/app_name"
+            android:layout_gravity="center"
+            android:textSize="@dimen/textView_all_size_14"
+            tools:ignore="RtlHardcoded" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ll_dashboard_flavour_four"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/cv_flavour_four"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="?attr/cardBgColor"
+        app:cardElevation="@dimen/card_all_elevation">
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout_flavour_four"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            app:tabGravity="fill"
+
+
+             style="@style/TabLayoutTheme"
+            app:tabTextColor="@color/colorGrey_600"/>
+    </androidx.cardview.widget.CardView>
+    <investwell.utils.CustomViewPager
+        android:id="@+id/viewpager_dashboard_flavour_four"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

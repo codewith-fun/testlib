@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    style="@style/CardViewStyle"
+    android:layout_margin="@dimen/margin_all_large"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:tools="http://schemas.android.com/tools">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:background="?attr/primaryButtonBackground"
+                android:fitsSystemWindows="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ivClose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/margin_all_very_small"
+                    android:layout_marginRight="@dimen/margin_all_very_small"
+                    android:background="@drawable/closebutton"
+                    android:contentDescription="@string/app_name" />
+
+                <investwell.utils.customView.CustomTextViewRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/margin_all_small"
+                    android:layout_marginLeft="@dimen/margin_all_small"
+                    android:text="@string/transaction_filter_header_txt"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/textView_all_size_16"
+                    tools:ignore="RelativeOverlap" />
+            </RelativeLayout>
+
+
+            <investwell.utils.customView.CustomTextViewRegular
+                android:layout_width="match_parent"
+                android:textColor="?attr/primaryTextColor"
+
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_all_small"
+                android:layout_marginLeft="@dimen/margin_all_small"
+                android:layout_marginTop="@dimen/margin_all_small"
+                android:text="@string/lastDay_txt" />
+
+            <Spinner
+                android:id="@+id/lastDay_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_all_very_small"
+                android:layout_marginLeft="@dimen/margin_all_very_small"
+                android:layout_marginTop="@dimen/margin_all_very_small"
+                android:scrollbars="none" />
+
+
+
+            <investwell.utils.customView.CustomTextViewRegular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="?attr/primaryTextColor"
+
+                android:layout_marginStart="@dimen/margin_all_small"
+                android:layout_marginLeft="@dimen/margin_all_small"
+                android:layout_marginTop="@dimen/margin_all_very_small"
+                android:text="@string/transaction_filter_transaction_type_txt" />
+
+            <Spinner
+                android:id="@+id/type_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_all_very_small"
+                android:layout_marginLeft="@dimen/margin_all_very_small"
+                android:layout_marginTop="@dimen/margin_all_very_small"
+                android:scrollbars="none" />
+
+            <investwell.utils.customView.CustomTextViewRegular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="?attr/primaryTextColor"
+
+                android:layout_marginStart="@dimen/margin_all_small"
+                android:layout_marginLeft="@dimen/margin_all_small"
+                android:layout_marginTop="@dimen/margin_all_very_small"
+                android:text="@string/order_type"
+                android:visibility="gone"/>
+
+            <Spinner
+                android:id="@+id/order_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_all_very_small"
+                android:layout_marginLeft="@dimen/margin_all_very_small"
+                android:layout_marginTop="@dimen/margin_all_very_small"
+                android:scrollbars="none"
+                android:visibility="gone"/>
+
+
+            <investwell.utils.customView.CustomTextViewRegular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="?attr/primaryTextColor"
+
+                android:layout_marginStart="@dimen/margin_all_small"
+                android:layout_marginLeft="@dimen/margin_all_small"
+                android:layout_marginTop="@dimen/margin_all_very_small"
+                android:text="@string/transaction_status_txt" />
+
+            <Spinner
+                android:id="@+id/status_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_all_very_small"
+                android:layout_marginLeft="@dimen/margin_all_very_small"
+                android:layout_marginTop="@dimen/margin_all_very_small"
+                android:scrollbars="none" />
+
+
+            <investwell.utils.customView.CustomButton
+                android:id="@+id/apply_btn"
+                android:layout_width="@dimen/btn_width_footer"
+                android:layout_height="@dimen/btn_height_footer"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/margin_all_regular"
+                android:background="?attr/primaryBtnDrawable"
+                android:text="@string/transaction_filter_btn_apply_txt"
+                android:textAllCaps="false"
+                android:textColor="?attr/primaryButtonTextColor" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

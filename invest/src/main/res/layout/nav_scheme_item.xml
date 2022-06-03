@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cv_fund_picks"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/cardBgColor">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_amc_top"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_all_small"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:contentDescription="@string/app_name"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:padding="@dimen/padding_all_very_small"
+            android:src="@mipmap/ic_launcher" />
+    </androidx.cardview.widget.CardView>
+
+    <investwell.utils.customView.CustomTextViewRegular
+        android:id="@+id/tv_schemename"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_all_regular"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="@string/nav_scheme_scheme_name_txt"
+        android:textColor="?attr/primaryTextColor"
+        android:textSize="@dimen/textView_all_size_12"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="@+id/cv_amc_top"
+        app:layout_constraintEnd_toStartOf="@+id/tv_scheme_value"
+        app:layout_constraintStart_toEndOf="@+id/cv_amc_top"
+        app:layout_constraintTop_toTopOf="@+id/cv_amc_top" />
+
+    <investwell.utils.customView.CustomTextViewRegular
+        android:id="@+id/tv_schemedate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constrainedWidth="true"
+        android:textSize="@dimen/textView_all_size_10"
+        app:layout_constraintBottom_toBottomOf="@+id/cv_amc_top"
+        app:layout_constraintEnd_toEndOf="@+id/tv_schemename"
+        app:layout_constraintStart_toStartOf="@+id/tv_schemename"
+        app:layout_constraintTop_toBottomOf="@+id/tv_schemename" />
+    <ImageView
+        android:id="@+id/nav_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginEnd="@dimen/margin_all_small"
+        android:layout_marginRight="@dimen/margin_all_small"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/app_name"
+        android:padding="@dimen/padding_all_very_small"
+        android:src="@mipmap/add_cart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <investwell.utils.customView.CustomTextViewBold
+        android:id="@+id/tv_scheme_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_all_small"
+        android:gravity="center"
+        android:paddingStart="@dimen/padding_all_small"
+        android:paddingLeft="@dimen/padding_all_small"
+        android:paddingEnd="@dimen/padding_all_small"
+        android:paddingRight="@dimen/padding_all_small"
+        android:textColor="@color/colorGrey_500"
+        android:textSize="@dimen/textView_all_size_14"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/nav_cart"
+        app:layout_constraintEnd_toStartOf="@+id/nav_cart"
+        app:layout_constraintTop_toTopOf="@+id/nav_cart"
+        tools:text="1.45" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <investwell.utils.customView.CustomTextViewBold
+        android:id="@+id/tv_error_message"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/padding_all_very_small"
+        android:textColor="@color/colorGrey_500"
+        android:textSize="@dimen/textView_all_size_12"
+        android:textStyle="bold"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_error_image"
+        tools:text="Error Message" />
+
+    <ImageView
+        android:id="@+id/iv_error_image"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:contentDescription="@string/app_name"
+        android:padding="@dimen/padding_all_small"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/bg_no_interent" />
+    <View
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_error_message"
+        android:layout_margin="@dimen/margin_10dp"
+        android:background="@color/colorGrey_200"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="1dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            style="@style/CardViewStyle">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="7dp">
+
+                <LinearLayout
+                    android:id="@+id/rowFirst"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.25"
+                        android:layout_marginTop="5dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/tvDocName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="13sp"
+                                android:textColor="@color/browser_actions_text_color"
+                                android:layout_marginBottom="5dp"
+                                android:text=""
+                                android:textStyle="bold"/>
+                            <TextView
+                                android:id="@+id/tvDate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="11sp"
+                                android:textColor="@color/colorGrey_600"
+                                android:text="" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_scheme_value"
+                        android:layout_weight="0.75"
+                        android:gravity="right|center" >
+
+                            <ImageView
+                                android:id="@+id/ivDocView"
+                                android:layout_width="38dp"
+                                android:layout_height="36dp"
+                                android:gravity="right"
+                                android:src="@mipmap/ic_view_blue"
+                                android:layout_gravity="center"
+                                android:padding="5dp"
+                                 />
+
+                            <ImageView
+                                android:id="@+id/ivDocDown"
+                                android:layout_width="38dp"
+                                android:layout_height="36dp"
+                                android:gravity="right"
+                                android:src="@mipmap/ic_download_blue"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:padding="5dp"
+                                />
+
+                        </LinearLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</LinearLayout>

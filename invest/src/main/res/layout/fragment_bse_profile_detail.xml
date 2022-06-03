@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:shimmer="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+
+    <RelativeLayout
+        android:id="@+id/top_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/primaryButtonBackground"
+        android:paddingBottom="40dp">
+
+        <fragment
+            android:id="@+id/frag_toolBar"
+            android:name="investwell.client.fragment.others.ToolbarFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/frag_toolBar"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:orientation="vertical">
+
+                <investwell.utils.customView.CustomTextViewRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/bse_profile_detail_folio_txt"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/textView_all_size_12" />
+
+                <investwell.utils.customView.CustomTextViewBold
+                    android:id="@+id/folio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textColor="@color/colorWhite"
+
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
+
+                <investwell.utils.customView.CustomTextViewRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bse_profile_detail_scheme_name_txt"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/textView_all_size_12" />
+
+                <investwell.utils.customView.CustomTextViewBold
+                    android:id="@+id/colorBlue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
+
+                <investwell.utils.customView.CustomTextViewRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bse_profile_detail_holder_name_txt"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/textView_all_size_12" />
+
+                <investwell.utils.customView.CustomTextViewBold
+                    android:id="@+id/investor_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textColor="@color/colorWhite"
+
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/joint1_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
+
+                <investwell.utils.customView.CustomTextViewRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bse_profile_detail_joint_1_name_txt"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/textView_all_size_12" />
+
+                <investwell.utils.customView.CustomTextViewBold
+                    android:id="@+id/joint_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textColor="@color/colorWhite"
+
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/joint2_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <investwell.utils.customView.CustomTextViewRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bse_profile_detail_joint_2_name_txt"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/textView_all_size_12" />
+
+                <investwell.utils.customView.CustomTextViewBold
+                    android:id="@+id/joint_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/nominee_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
+
+                <investwell.utils.customView.CustomTextViewRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bse_profile_detail_nominee_txt"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/textView_all_size_12" />
+
+                <investwell.utils.customView.CustomTextViewBold
+                    android:id="@+id/nominee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <androidx.cardview.widget.CardView
+        style="@style/CardViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_image"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="-30dp"
+        android:layout_marginRight="10dp">
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmer_view_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible"
+            shimmer:duration="800"
+            tools:ignore="MissingConstraints">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/placeholder_item_line_thin" />
+
+                <include layout="@layout/placeholder_item_line_thin" />
+
+                <include layout="@layout/placeholder_item_line_thin" />
+
+                <include layout="@layout/placeholder_item_line_thin" />
+
+                <include layout="@layout/placeholder_item_line_thin" />
+
+                <include layout="@layout/placeholder_item_line_thin" />
+                <include layout="@layout/placeholder_item_line_thin" />
+
+                <include layout="@layout/placeholder_item_line_thin" />
+
+                <include layout="@layout/placeholder_item_line_thin" />
+
+                <include layout="@layout/placeholder_item_line_thin" />
+
+                <include layout="@layout/placeholder_item_line_thin" />
+
+                <include layout="@layout/placeholder_item_line_thin" />
+
+            </LinearLayout>
+
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/folio_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutAnimation="@anim/layout_animation_fall_down" />
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

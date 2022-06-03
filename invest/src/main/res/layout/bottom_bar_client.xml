@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+         xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="?actionBarSize"
+    android:layout_alignParentBottom="true"
+    app:cardBackgroundColor="?attr/cardBgColor"
+    app:cardElevation="4dp">
+<View
+    android:layout_width="match_parent"
+    android:layout_gravity="top"
+    android:background="@color/colorGrey_200"
+    android:layout_height="2dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="horizontal">
+        <!--Home-->
+        <LinearLayout
+            android:id="@+id/ll_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            android:background="?selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables">
+
+            <View
+                android:id="@+id/divider_home"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="?attr/accentColor"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_home"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/app_name"
+                android:padding="@dimen/padding_all_very_small"
+                android:layout_marginTop="@dimen/margin_all_very_small"
+                tools:src="@mipmap/ic_bottombar_home_inactive"
+                />
+
+            <investwell.utils.customView.CustomTextViewRegular
+                android:id="@+id/tv_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="@dimen/margin_all_very_small"
+                android:layout_marginEnd="@dimen/margin_all_very_small"
+                android:fontFamily="sans-serif-condensed"
+                tools:text="@string/main_bottom_tab_menu_dashboard"
+                android:textAlignment="center"
+                android:textColor="@color/colorGrey_250"
+                android:textSize="@dimen/textView_all_size_12" />
+
+        </LinearLayout>
+        <!--PortfolioFragment-->
+        <LinearLayout
+            android:id="@+id/ll_portfolio"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?selectableItemBackground"
+            android:clickable="true"
+
+            android:focusable="true"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables">
+
+            <View
+                android:id="@+id/divider_portfolio"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="?attr/accentColor"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_portfolio"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/app_name"
+                android:padding="@dimen/padding_all_very_small"
+                android:layout_marginTop="@dimen/margin_all_very_small"
+
+                tools:src="@mipmap/ic_bottombar_portfolio_inactive"
+                />
+
+            <investwell.utils.customView.CustomTextViewRegular
+                android:id="@+id/tv_portfolio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="@dimen/margin_all_very_small"
+                android:layout_marginEnd="@dimen/margin_all_very_small"
+                android:fontFamily="sans-serif-condensed"
+                tools:text="@string/main_bottom_tab_menu_portfolio"
+                android:textColor="@color/colorGrey_250"
+                android:textSize="@dimen/textView_all_size_12"
+                app:tint="@color/colorGrey_250" />
+
+        </LinearLayout>
+        <!--Transactions-->
+        <LinearLayout
+            android:id="@+id/ll_transaction"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables">
+
+            <View
+                android:id="@+id/divider_transaction"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="?attr/accentColor"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_transaction"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/app_name"
+                android:padding="@dimen/padding_all_very_small"
+                android:layout_marginTop="@dimen/margin_all_very_small"
+                tools:src="@mipmap/ic_bottombar_tranc_inactive"
+                />
+
+            <investwell.utils.customView.CustomTextViewRegular
+                android:id="@+id/tv_transaction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="@dimen/margin_all_very_small"
+                android:layout_marginEnd="@dimen/margin_all_very_small"
+                android:fontFamily="sans-serif-condensed"
+                tools:text="@string/main_bottom_tab_menu_transactions"
+                android:textAlignment="center"
+                android:textColor="@color/colorGrey_250"
+                android:textSize="@dimen/textView_all_size_12"
+                app:tint="@color/colorGrey_250" />
+
+        </LinearLayout>
+
+
+        <!--More-->
+        <LinearLayout
+            android:id="@+id/ll_more"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?selectableItemBackground"
+            android:clickable="true"
+
+            android:focusable="true"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables">
+
+            <View
+                android:id="@+id/divider_more"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="?attr/accentColor"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_more"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/app_name"
+                android:padding="@dimen/padding_all_very_small"
+                android:layout_marginTop="@dimen/margin_all_very_small"
+
+                tools:src="@mipmap/ic_bottombar_more_inactive" />
+
+            <investwell.utils.customView.CustomTextViewRegular
+                android:id="@+id/tv_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="@dimen/margin_all_very_small"
+                android:layout_marginEnd="@dimen/margin_all_very_small"
+                android:fontFamily="sans-serif-condensed"
+                tools:text="@string/main_bottom_tab_menu_more"
+                android:textAlignment="center"
+                android:textColor="@color/colorGrey_250"
+                android:textSize="@dimen/textView_all_size_12" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?attr/selectableItemBackground"
+    android:orientation="vertical"
+    tools:targetApi="m">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:id="@+id/ll_route_container"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_home_bg"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:contentDescription="@string/app_name"
+                android:src="@mipmap/app_icon_s"
+                android:scaleType="fitXY"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_all_very_small">
+
+                <ImageView
+                    android:id="@+id/iv_dashboard_route_icon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/margin_all_small"
+                    android:layout_marginLeft="@dimen/margin_all_small"
+                    android:layout_marginEnd="@dimen/margin_all_small"
+                    android:layout_marginRight="@dimen/margin_all_small"
+                    android:contentDescription="@string/app_name"
+                    android:paddingStart="@dimen/padding_all_small"
+                    android:paddingLeft="@dimen/padding_all_small"
+                    android:src="@mipmap/app_icon_r"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/padding_all_small"
+                    android:paddingStart="@dimen/margin_all_small"
+                    android:paddingTop="@dimen/padding_all_very_small"
+                    android:paddingBottom="@dimen/padding_all_very_small"
+                    android:layout_gravity="center_vertical"
+                    tools:ignore="RtlSymmetry">
+
+                    <LinearLayout
+                        android:id="@+id/ll_dashboard_goal_container"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <investwell.utils.customView.CustomTextViewBold
+                            android:id="@+id/tv_route"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textColor="?attr/primaryTextColor"
+                            android:textSize="@dimen/textView_all_size_14"
+                            android:textStyle="bold" />
+
+                        <investwell.utils.customView.CustomTextViewRegular
+                            android:id="@+id/tv_dashboard_route_header_desc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_all_very_small"
+                            android:layout_marginLeft="@dimen/margin_all_very_small"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textColor="?attr/primaryTextColor"
+                            android:textSize="@dimen/textView_all_size_12"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <investwell.utils.customView.CustomTextViewRegular
+                        android:id="@+id/tv_dashboard_route_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ll_dashboard_goal_container"
+                        android:ellipsize="end"
+                        android:fontFamily="sans-serif-condensed"
+                        android:maxLines="1"
+                        android:textColor="?attr/secondaryTextColor"
+                        android:textSize="@dimen/textView_all_size_12" />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <View
+            android:id="@+id/v_divider_routes"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorGrey_250" />
+    </LinearLayout>
+
+</LinearLayout>

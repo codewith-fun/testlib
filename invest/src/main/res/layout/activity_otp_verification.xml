@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back_arrow" />
+
+    <investwell.utils.customView.CustomTextViewBold
+        android:id="@+id/tv_header_sms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/verify_email"
+        android:textColor="?attr/primaryTextColor"
+        android:textSize="@dimen/textView_all_size_30"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/tv_email_desc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <investwell.utils.customView.CustomTextViewRegular
+        android:id="@+id/tv_email_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/textView_all_size_16"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_header_sms" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toTopOf="@+id/ll_pin_view"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_email_desc"
+        app:srcCompat="@drawable/bg_verify_email" />
+
+    <LinearLayout
+        android:id="@+id/ll_pin_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="vertical"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toTopOf="@+id/btn_verify_sms"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4">
+
+        <investwell.utils.PinEntryView
+            android:id="@+id/editTextCodeEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:accentType="character"
+            app:digitBackground="@drawable/background_border"
+            app:digitTextColor="@color/colorBlack"
+            app:digitTextSize="20sp"
+            app:mask=""
+            app:pinInputType="text" />
+
+    </LinearLayout>
+
+    <investwell.utils.customView.CustomButton
+        android:id="@+id/btn_verify_sms"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="?attr/primaryBtnDrawable"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/verify"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/textView_all_size_16"
+        app:layout_constraintBottom_toTopOf="@+id/tv_sms_resend"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_pin_view"
+        app:layout_constraintWidth_percent=".5" />
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avi_email_otp_resend"
+        style="@style/AVLoadingIndicatorView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="50dp"
+        android:visibility="gone"
+        app:indicatorColor="@color/colorWhite"
+        app:indicatorName="BallPulseSyncIndicator"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_sms_resend"
+        app:layout_constraintEnd_toEndOf="@+id/tv_sms_resend"
+        app:layout_constraintStart_toStartOf="@+id/tv_sms_resend"
+        app:layout_constraintTop_toTopOf="@+id/tv_sms_resend" />
+    <investwell.utils.customView.CustomTextViewBold
+        android:id="@+id/tv_sms_resend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="?attr/selectableItemBackground"
+        android:fontFamily="sans-serif-condensed"
+        android:padding="@dimen/padding_all_very_small"
+        android:text="@string/otp_verifiction_resend_btn_txt"
+        android:textColor="?attr/accentColor"
+        android:textSize="@dimen/textView_all_size_14"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tv_change_mobile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_verify_sms" />
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avi_email_verify"
+        style="@style/AVLoadingIndicatorView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="50dp"
+        android:visibility="gone"
+        app:indicatorColor="@color/colorWhite"
+        app:indicatorName="BallPulseSyncIndicator"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_verify_sms"
+        app:layout_constraintEnd_toEndOf="@+id/btn_verify_sms"
+        app:layout_constraintStart_toStartOf="@+id/btn_verify_sms"
+        app:layout_constraintTop_toTopOf="@+id/btn_verify_sms" />
+    <investwell.utils.customView.CustomTextViewBold
+        android:id="@+id/tv_change_mobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:padding="@dimen/padding_all_very_small"
+        android:text="@string/change_mobile_number"
+        android:visibility="invisible"
+        android:textColor="?attr/accentColor"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_sms_resend" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,201 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:id="@+id/rl_cas"
+    tools:context="investwell.client.fragment.CASUpload.FragPreCASUpload">
+
+    <fragment
+        android:id="@+id/frag_toolBar"
+        android:name="investwell.client.fragment.others.ToolbarFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10dp"
+            android:layout_above="@+id/btnContinue"
+            android:layout_below="@+id/frag_toolBar"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/code_fp_margin20"
+                        android:gravity="center"
+                        android:src="@mipmap/provide_case" />
+
+
+                    <investwell.utils.customView.CustomTextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/margin_10dp"
+                        android:gravity="center"
+                        android:text="@string/txt_provide_cas"
+                        android:textColor="?attr/primaryTextColor"
+                        android:textSize="@dimen/textView_all_size_16" />
+
+
+                    <investwell.utils.customView.CustomTextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/margin_10dp"
+
+                        android:gravity="center"
+                        android:text="@string/txt_consolidated"
+                        android:textSize="@dimen/textView_all_size_14" />
+
+
+                    <investwell.utils.customView.CustomTextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/code_fp_margin15"
+                        android:gravity="center"
+                        android:text="@string/txt_generate_cas"
+                        android:textColor="?attr/primaryTextColor"
+                        android:textSize="@dimen/textView_all_size_14" />
+
+                    <investwell.utils.customView.CustomTextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/code_fp_margin20"
+                        android:layout_marginTop="@dimen/margin_5dp"
+                        android:text="@string/txt_karvy"
+                        android:textSize="@dimen/textView_all_size_14" />
+
+
+                    <investwell.utils.customView.CustomTextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/code_fp_margin20"
+                        android:layout_marginTop="@dimen/margin_5dp"
+                        android:autoLink="web"
+                        android:textColor="?attr/primaryTextColor"
+                        android:id="@+id/tv_carvy_url"
+                        android:textSize="@dimen/textView_all_size_10" />
+
+                    <investwell.utils.customView.CustomTextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/code_fp_margin20"
+                        android:layout_marginTop="@dimen/margin_5dp"
+                        android:text="@string/txt_cams"
+                        android:textSize="@dimen/textView_all_size_14" />
+
+
+                    <investwell.utils.customView.CustomTextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/code_fp_margin20"
+                        android:layout_marginTop="@dimen/margin_5dp"
+                        android:autoLink="web"
+                        android:id="@+id/tv_cams_url"
+                        android:textColor="?attr/primaryTextColor"
+
+                        android:textSize="@dimen/textView_all_size_10" />
+
+                    <investwell.utils.customView.CustomTextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/code_fp_margin15"
+                        android:gravity="center"
+                        android:text="@string/txt_receive_cas"
+                        android:textColor="?attr/primaryTextColor"
+                        android:textSize="@dimen/textView_all_size_14" />
+
+                    <investwell.utils.customView.CustomTextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/code_fp_margin20"
+                        android:layout_marginTop="@dimen/margin_5dp"
+                        android:text="@string/txt_karvy_receive"
+                        android:textSize="@dimen/textView_all_size_14" />
+
+
+                    <investwell.utils.customView.CustomTextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/code_fp_margin15"
+                        android:gravity="center"
+                        android:text="@string/txt_forward_cas"
+                        android:textColor="?attr/primaryTextColor"
+                        android:textSize="@dimen/textView_all_size_14" />
+
+                    <investwell.utils.customView.CustomTextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvupload_cas"
+                        android:autoLink="email"
+                        android:layout_marginLeft="@dimen/code_fp_margin20"
+                        android:layout_marginTop="@dimen/margin_5dp"
+                        android:text=""
+                        android:textSize="@dimen/textView_all_size_14" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:layout_marginBottom="@dimen/margin_10dp"
+                    android:background="@color/colorGrey_250">
+
+                    <investwell.utils.customView.CustomTextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="@dimen/margin_10dp"
+                        android:padding="@dimen/margin_5dp"
+                        android:text="@string/txt_note"
+                        android:textSize="@dimen/textView_all_size_14" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+
+
+    <investwell.utils.customView.CustomButton
+        android:id="@+id/btnContinue"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height_footer"
+        android:layout_alignParentBottom="true"
+
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/code_fp_margin20"
+        android:layout_marginRight="@dimen/code_fp_margin20"
+        android:layout_marginBottom="@dimen/textView_all_size_20"
+        android:background="?attr/primaryBtnDrawable"
+        android:text="@string/txt_cas_pre_btn"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/textView_all_size_18" />
+
+
+</RelativeLayout>

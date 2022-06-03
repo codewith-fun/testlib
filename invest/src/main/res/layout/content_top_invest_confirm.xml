@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+style="@style/CardViewStyle"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_margin="@dimen/margin_all_small">
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:id="@+id/imgcard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_scheme"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/imgcard"
+        android:orientation="vertical">
+
+        <investwell.utils.customView.CustomTextViewBold
+            android:id="@+id/tv_scheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="?attr/primaryTextColor"
+            android:textSize="@dimen/textView_all_size_16"
+            android:textStyle="bold" />
+
+        <investwell.utils.customView.CustomTextViewRegular
+            android:id="@+id/tv_scheme_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:textColor="?attr/secondaryTextColor"
+            android:textSize="@dimen/textView_all_size_12" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+</androidx.cardview.widget.CardView>

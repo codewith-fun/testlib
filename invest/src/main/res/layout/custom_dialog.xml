@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linerMain"
+    style="@style/CardViewStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_all_very_small">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="?attr/primaryButtonBackground">
+
+            <investwell.utils.customView.CustomTextViewBold
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="@string/alert_dialog_confirmation_header_txt"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textView_all_size_16"
+                android:textStyle="bold" />
+            <ImageView
+                android:id="@+id/ivCloseBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/margin_10dp"
+                android:visibility="gone"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:background="@drawable/close_icon"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/margin_10dp"
+                android:contentDescription="@string/app_name" />
+        </RelativeLayout>
+
+        <investwell.utils.customView.CustomTextViewRegular
+            android:id="@+id/msg_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relativeLayout"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:text="@string/alert_dialog_logout_desc_txt"
+            android:textColor="?attr/primaryTextColor"
+            android:textSize="@dimen/textView_all_size_14" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_below="@id/msg_txt"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <investwell.utils.customView.CustomButton
+                android:id="@+id/cancel"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_height_small2"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="?attr/secondaryBtnDrawable"
+                android:gravity="center"
+                android:text="@string/alert_dialog_btn_no_txt"
+                android:textColor="?attr/secondaryButtonTextColor"
+                android:textSize="@dimen/textView_all_size_16"
+                android:textStyle="bold" />
+
+
+            <investwell.utils.customView.CustomButton
+                android:id="@+id/tvOk"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_height_small2"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="?attr/primaryBtnDrawable"
+                android:gravity="center"
+                android:text="@string/alert_dialog_yes_btn_txt"
+                android:textColor="?attr/primaryButtonTextColor"
+                android:textSize="@dimen/textView_all_size_16"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

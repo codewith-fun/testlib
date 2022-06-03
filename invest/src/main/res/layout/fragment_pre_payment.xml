@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <investwell.utils.customView.CustomTextViewRegular
+        android:id="@+id/tvNothing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:drawableTop="@mipmap/ic_no_data"
+        android:gravity="center"
+        android:text="@string/no_data_found"
+        android:textColor="?attr/primaryTextColor"
+        android:textIsSelectable="true"
+        android:textSize="@dimen/textView_all_size_14"
+        android:visibility="gone" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/prepayment_recycle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+       />
+
+    <LinearLayout
+        android:id="@+id/linerButtom"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:background="?attr/accentColor">
+
+
+            <TextView
+                style="@style/FormTextViewStyling"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:text="@string/Rs"
+                android:visibility="invisible"
+                android:textColor="@color/colorWhite"
+                android:textSize="20dp" />
+
+
+            <TextView
+                android:id="@+id/total_value"
+                style="@style/FormTextViewStyling"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="@string/lumpsum_txt_zero"
+                android:textColor="@color/colorWhite"
+                android:textSize="20dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?attr/primaryButtonBackground">
+
+            <investwell.utils.customView.CustomButton
+                android:id="@+id/place_order"
+                android:layout_width="@dimen/btn_mini_width"
+                android:layout_height="@dimen/btn_height_footer"
+                android:background="?attr/tertiaryBtnDrawable"
+                android:text="@string/pre_payment_btn_txt"
+                android:textAllCaps="false"
+                android:layout_gravity="center"
+                android:textSize="@dimen/textView_all_size_10"
+                android:layout_margin="@dimen/margin_all_small"
+                android:textColor="?attr/tertiaryButtonTextColor" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

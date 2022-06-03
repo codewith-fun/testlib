@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content">
+
+    <investwell.utils.customView.CustomTextViewRegular
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/colorBlue"
+        android:visibility="gone"
+        android:layout_marginTop="5dp"
+        android:textColor="#000"
+
+        android:textSize="13dp"/>
+
+
+
+    <investwell.utils.customView.CustomTextViewRegular
+        android:id="@+id/tv_scheme"
+        android:layout_width="wrap_content"
+        android:layout_margin="4dp"
+        android:text="@string/app_name"
+        android:textSize="14sp"
+        android:textColor="?attr/primaryTextColor"
+        android:layout_height="wrap_content"/>
+    <investwell.utils.customView.CustomTextViewRegular
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_margin="4dp"
+        android:textColor="?attr/secondaryTextColor"
+        android:layout_below="@+id/tv_scheme"
+        android:text="@string/app_name"
+        android:textSize="12sp"
+        android:layout_height="wrap_content"/>
+    <investwell.utils.customView.CustomTextViewBold
+        android:id="@+id/tv_amount"
+        android:layout_margin="4dp"
+        android:layout_alignParentEnd="true"
+        android:text="@string/app_name"
+        android:layout_width="wrap_content"
+
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true" />
+    <investwell.utils.customView.CustomTextViewRegular
+        android:id="@+id/tv_nav_amount"
+        android:layout_margin="4dp"
+        android:layout_toLeftOf="@+id/tv_units"
+        android:text="@string/app_name"
+        android:layout_width="wrap_content"
+        android:textSize="12sp"
+        android:textColor="?attr/primaryTextColor"
+        android:layout_below="@+id/tv_amount"
+        android:layout_height="wrap_content"/>
+    <investwell.utils.customView.CustomTextViewRegular
+        android:id="@+id/tv_units"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/tv_amount"
+        android:layout_margin="4dp"
+        android:text="@string/app_name"
+        android:textSize="12sp"
+        android:textColor="?attr/secondaryTextColor"
+        android:layout_alignParentEnd="true"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true" />
+
+</RelativeLayout>

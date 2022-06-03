@@ -1,0 +1,182 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:id="@+id/appbar"
+        android:theme="@style/AppTheme">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="?attr/actionBarColor">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/ivBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:clickable="true"
+
+                    android:contentDescription="@string/app_name"
+                    android:focusable="true"
+                    android:src="@mipmap/ic_arrow_back"
+                    app:tint="?attr/actionBarIconColor" />
+                <LinearLayout
+                    android:id="@+id/rl_middle_search_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/ivBack"
+                    android:layout_toRightOf="@+id/ivBack"
+                    android:orientation="vertical"
+                    android:visibility="visible"
+                    tools:ignore="RelativeOverlap"
+                    android:layout_marginLeft="@dimen/margin_all_small"
+                    android:layout_marginStart="@dimen/margin_all_small">
+                    <investwell.utils.customView.CustomTextViewBold
+                        android:id="@+id/tv_toolbar_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:textStyle="bold"
+                        android:text="@string/incomplete_profile_signature_txt"
+                        android:inputType="textCapSentences"
+                        android:textColor="?attr/actionBarTextColor"
+                        android:textSize="@dimen/textView_all_size_14" />
+                </LinearLayout>
+
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relButtom"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/tvClear">
+
+            <investwell.utils.customView.CustomTextViewRegular
+                android:layout_width="wrap_content"
+                android:visibility="invisible"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/PleaseSignbox"
+                android:textColor="?attr/accentColor"
+                android:textSize="@dimen/textView_all_size_14" />
+        </RelativeLayout>
+
+
+        <investwell.utils.customView.CustomButton
+            android:id="@+id/tvClear"
+
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@+id/tvSave"
+            android:background="?attr/secondaryBtnDrawable"
+            android:gravity="center"
+            android:text="@string/cheque_upload_clear_txt"
+            android:textColor="?attr/secondaryButtonTextColor"
+            android:textSize="@dimen/textView_all_size_14" />
+
+        <investwell.utils.customView.CustomButton
+            android:id="@+id/tvSave"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:background="?attr/primaryBtnDrawable"
+            android:gravity="center"
+            android:text="@string/cheque_upload_save_txt"
+            android:textColor="?attr/primaryButtonTextColor"
+            android:textSize="@dimen/textView_all_size_14" />
+    </RelativeLayout>
+
+
+    <investwell.utils.customView.CustomTextViewRegular
+        android:id="@+id/tvDummy1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appbar"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/margin_all_small"
+        android:text="@string/Iherebycertify"
+        android:textColor="?attr/secondaryTextColor"
+        android:textSize="@dimen/textView_all_size_14" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/relButtom"
+        android:layout_below="@+id/tvDummy1"
+        android:layout_margin="@dimen/margin_all_small"
+        android:background="@drawable/edittext_square2">
+
+        <investwell.utils.signature.SignatureView
+            xmlns:sign="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/signature_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            sign:backgroundColor="@color/colorWhite"
+            sign:enableSignature="true"
+            sign:penColor="@color/colorPrimary"
+            sign:penSize="2dp" />
+
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:largeHeap="true"
+            android:layout_margin="10dp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+
+
+     <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:background="?attr/primaryButtonBackground"
+        app:backgroundTint="?attr/primaryButtonBackground"
+        android:id="@+id/gallery_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:layout_marginBottom="60dp"
+        android:layout_marginRight="10dp"
+        app:srcCompat="@drawable/photos" />
+
+
+</RelativeLayout>

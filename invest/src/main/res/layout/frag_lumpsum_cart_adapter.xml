@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    style="@style/CardViewStyle"
+    android:layout_margin="@dimen/margin_all_very_small"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent">
+
+        <investwell.utils.customView.CustomTextViewBold
+            android:id="@+id/colorBlue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/margin_all_small"
+            android:layout_marginLeft="@dimen/margin_all_small"
+            android:singleLine="true"
+            tools:text="@string/app_name"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:freezesText="true"
+            android:layout_marginEnd="@dimen/margin_all_small"
+            android:textColor="?attr/primaryTextColor"
+            android:textSize="@dimen/textView_all_size_14"
+            android:textStyle="bold"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintBottom_toBottomOf="@+id/delete_btn"
+            app:layout_constraintEnd_toStartOf="@+id/refresh_btn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/delete_btn" />
+
+        <ImageView
+            android:id="@+id/refresh_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_margin="@dimen/margin_all_very_small"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/padding_all_small"
+            app:layout_constraintEnd_toStartOf="@+id/delete_btn"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_dashboard_refresh"
+            app:tint="?attr/accentColor" />
+
+        <ImageView
+            android:id="@+id/delete_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_all_very_small"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/padding_all_small"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/recycle_bin"
+            app:tint="?attr/accentColor" />
+
+        <View
+            android:id="@+id/v_div"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/margin_all_small"
+            android:layout_marginBottom="@dimen/margin_all_small"
+            android:background="@color/colorGrey_250"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/delete_btn" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/ll_amount"
+            android:padding="@dimen/padding_all_small"
+
+            android:layout_marginEnd="@dimen/margin_all_small"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/v_div">
+
+            <investwell.utils.customView.CustomTextViewRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/additional_switch_amount_txt"
+                android:textColor="?attr/primaryTextColor"
+                android:textSize="@dimen/textView_all_size_14" />
+
+            <investwell.utils.customView.CustomEditText
+                android:id="@+id/amount"
+                style="@style/TextInputEditTextTheme"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="?attr/roundGray"
+                android:hint="@string/lumpsum_cart_0_txt"
+                android:inputType="number"
+                android:maxLength="8"
+                android:maxLines="1"
+                android:padding="4dp"
+                android:textColorHint="?attr/primaryTextColor"
+                android:textSize="@dimen/textView_all_size_14" />
+
+            <investwell.utils.customView.CustomTextViewRegular
+                android:id="@+id/min_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textAlignment="center"
+                android:textColor="?attr/primaryTextColor"
+                android:textSize="@dimen/textView_all_size_14"
+                android:textStyle="italic" />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/RlFolio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:textColor="?attr/primaryTextColor"
+            android:visibility="gone"
+            android:paddingStart="@dimen/padding_all_small"
+            android:paddingEnd="@dimen/padding_all_very_small"
+            android:paddingBottom="@dimen/padding_all_small"
+            android:layout_marginEnd="@dimen/margin_all_small"
+            app:layout_constraintTop_toBottomOf="@+id/ll_amount"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <investwell.utils.customView.CustomTextViewRegular
+                android:id="@+id/textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/new_purcahse__form_folio_no_txt"
+                android:textColor="?attr/primaryTextColor"
+                android:textSize="@dimen/textView_all_size_10"
+                android:layout_alignParentStart="true" />
+
+            <investwell.utils.customView.CustomTextViewRegular
+                android:id="@+id/tvFolioNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_5dp"
+                android:layout_toRightOf="@+id/textview"
+                android:text=""
+                android:textColor="?attr/primaryTextColor"
+                android:textSize="@dimen/textView_all_size_10"
+                android:layout_marginStart="@dimen/margin_5dp"
+                android:layout_toEndOf="@+id/textview"
+                tools:ignore="RelativeOverlap" />
+
+            <ImageView
+                android:id="@+id/ivEditFolio"
+                android:layout_width="@dimen/textView_all_size_18"
+                android:layout_height="@dimen/textView_all_size_18"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/ic_additional_transact_edit"
+                android:layout_alignParentEnd="true"
+                android:contentDescription="@string/app_name" />
+        </RelativeLayout>
+        <investwell.utils.customView.CustomTextViewRegular
+            android:id="@+id/tv_auth_scheme"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/RlFolio"
+            android:padding="@dimen/padding_all_small"
+            android:text="@string/order_auth_message"
+            android:background="@color/colorGrey_100"
+            android:layout_marginTop="@dimen/margin_all_very_small"
+            android:visibility="gone"
+            android:textSize="@dimen/textView_all_size_14"
+            android:textColor="@color/colorRed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

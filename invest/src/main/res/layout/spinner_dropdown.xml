@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<investwell.utils.customView.CustomTextViewRegular xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:ellipsize="marquee"
+    android:paddingStart="@dimen/padding_all_small"
+    android:paddingLeft="@dimen/padding_all_small"
+    android:paddingTop="@dimen/padding_all_small"
+    android:paddingEnd="@dimen/padding_all_small"
+    android:paddingRight="@dimen/padding_all_small"
+    android:paddingBottom="@dimen/padding_all_small"
+    android:maxLines="2"
+    android:layout_margin="@dimen/margin_all_small"
+    android:textColor="?attr/primaryTextColor"
+    android:textSize="@dimen/textView_all_size_12" />

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <fragment
+        android:id="@+id/frag_toolBar"
+        android:name="investwell.client.fragment.others.ToolbarFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/ll_login_child_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_login_logo"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:id="@+id/radioGroup1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tvGender"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:buttonTint="?attr/primaryButtonBackground"
+                        android:textColor="?attr/primaryTextColor"
+                        android:id="@+id/radioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:paddingLeft="30dp"
+                        android:text="@string/pin_text_default_screen_lock"
+                        android:textSize="@dimen/textView_all_size_18" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="62dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/pin_text_default_screen_lock_details"
+                        android:textSize="@dimen/textView_all_size_14" />
+
+
+                    <RadioButton
+                        android:buttonTint="?attr/primaryButtonBackground"
+                        android:textColor="?attr/primaryTextColor"
+                        android:id="@+id/radioButton2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30sp"
+                        android:checked="false"
+                        android:paddingLeft="30dp"
+                        android:text="@string/pin_text_Create_PIN"
+
+                        android:textSize="@dimen/textView_all_size_18" />
+
+                    <TextView
+                        android:id="@+id/tvPIN"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="62dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/pin_text_Create_PIN_Details"
+                        android:textSize="@dimen/textView_all_size_14" />
+
+                    <RadioButton
+                        android:buttonTint="?attr/primaryButtonBackground"
+                        android:textColor="?attr/primaryTextColor"
+                        android:id="@+id/radioButton3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30sp"
+                        android:checked="false"
+                        android:paddingLeft="30dp"
+                        android:text="@string/pin_text_SKIP"
+
+                        android:textSize="@dimen/textView_all_size_18" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="62dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/pin_text_KIP_Details"
+
+                        android:textSize="@dimen/textView_all_size_14" />
+                </RadioGroup>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <investwell.utils.customView.CustomButton
+            android:id="@+id/btnContinue"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_height_medium"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/login_middle_content_top_margin_30"
+            android:layout_marginBottom="10dp"
+            android:background="?attr/primaryBtnDrawable"
+            android:text="@string/personal_details_btn_continue_txt"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/textView_all_size_18"
+            android:textStyle="bold"
+            />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

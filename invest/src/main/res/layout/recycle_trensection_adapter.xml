@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/ll_add_trans"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/dialogBackground"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:padding="10dp"
+        tools:targetApi="m">
+
+        <investwell.utils.customView.CustomTextViewBold
+            android:id="@+id/tv_trans"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+
+            android:textColor="?attr/primaryTextColor"
+            android:textSize="@dimen/textView_all_size_10" />
+    </LinearLayout>
+</LinearLayout>
+

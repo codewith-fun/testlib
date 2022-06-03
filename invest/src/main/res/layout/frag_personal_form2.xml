@@ -1,0 +1,750 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <fragment
+        android:id="@+id/frag_toolBar"
+        android:name="investwell.client.fragment.others.ToolbarFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/margin_all_small"
+        android:layout_marginTop="@dimen/margin_all_very_small"
+        android:layout_marginRight="@dimen/margin_all_small"
+        android:orientation="vertical">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            tools:ignore="UselessParent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_all_very_small"
+
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/personal_detail_form_stepper_height"
+                    android:layout_margin="@dimen/margin_all_small"
+                    android:background="@drawable/step_two"
+                    android:contentDescription="@string/app_name" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="left|center"
+                    android:visibility="gone"
+                    tools:ignore="RtlHardcoded">
+
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/margin_all_small"
+                            android:orientation="horizontal">
+
+                            <investwell.utils.customView.CustomTextViewRegular
+                                style="@style/FormTextViewStyling"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/margin_all_very_small"
+                                android:layout_weight="1"
+                                android:text="@string/text_HoldingNature" />
+
+                            <RadioGroup
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+
+                                <RadioButton
+                        android:buttonTint="?attr/primaryButtonBackground"
+                        android:textColor="?attr/primaryTextColor"
+                                    android:id="@+id/single"
+                                    style="@style/spinner_text_style"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:checked="true"
+                                    android:text="@string/text_Single"
+                                    android:textSize="@dimen/textView_all_size_14"
+                                    tools:targetApi="lollipop" />
+
+                                <RadioButton
+                        android:buttonTint="?attr/primaryButtonBackground"
+                        android:textColor="?attr/primaryTextColor"
+                                    android:id="@+id/joint"
+                                    style="@style/spinner_text_style"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/text_Joint"
+                                    android:textSize="@dimen/textView_all_size_14"
+                                    tools:targetApi="lollipop" />
+                            </RadioGroup>
+
+
+                        </LinearLayout>
+
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/margin_all_very_small"
+                    android:layout_marginTop="@dimen/margin_all_very_small"
+                    android:layout_marginRight="@dimen/margin_all_very_small"
+                    android:background="#FF5C5C5C"
+                    android:visibility="gone" />
+
+
+                <LinearLayout
+                    android:id="@+id/layout_second_pan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/margin_all_very_small"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <investwell.utils.customView.CustomTextViewRegular
+                        style="@style/FormTextViewStyling"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_all_very_small"
+                        android:layout_marginLeft="@dimen/margin_all_very_small"
+                        android:text="@string/text_PANOfSecondApplicant" />
+
+                    <investwell.utils.customView.CustomEditText
+                        android:id="@+id/second_pan"
+                        style="@style/spinner_text_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#FF5C5C5C"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        tools:targetApi="lollipop" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_second_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <investwell.utils.customView.CustomTextViewRegular
+                        style="@style/FormTextViewStyling"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_all_very_small"
+                        android:layout_marginLeft="@dimen/margin_all_very_small"
+                        android:text="@string/text_NameOfSecondApplicant"
+                        android:textSize="@dimen/textView_all_size_18" />
+
+                    <investwell.utils.customView.CustomTextViewRegular
+                        android:id="@+id/second_name"
+                        style="@style/spinner_text_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/text_Pleaseentersecondapplicant"
+                        android:inputType="text"
+                        android:maxLines="1" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="@dimen/margin_all_very_small"
+                        android:layout_marginRight="@dimen/margin_all_very_small"
+                        android:background="#FF5C5C5C" />
+
+
+                </LinearLayout>
+
+                <!--House No Card-->
+                <androidx.cardview.widget.CardView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_all_very_small"
+                    android:layout_marginLeft="@dimen/margin_all_very_small"
+                    android:layout_marginTop="@dimen/margin_all_very_small"
+                    android:layout_marginEnd="@dimen/margin_all_very_small"
+                    android:layout_marginRight="@dimen/margin_all_very_small"
+                    android:layout_marginBottom="@dimen/margin_all_very_small"
+                    app:cardBackgroundColor="?attr/cardBgColor"
+                    app:cardCornerRadius="@dimen/card_corner_all_radius_small"
+                    app:cardElevation="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="@dimen/padding_all_very_small">
+
+
+                        <investwell.utils.customView.CustomTextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_all_very_small"
+                            android:layout_marginBottom="@dimen/margin_all_very_small"
+                            android:textColorHint="?attr/secondaryTextColor">
+
+                            <investwell.utils.customView.CustomTextInputEditText
+                            style="@style/TextInputEditTextTheme"
+                                android:id="@+id/et_address"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:hint="@string/personal_details_house_no_hint_txt"
+                                android:imeOptions="actionNext"
+                                android:inputType="text"
+                                android:maxLength="100"
+                                android:maxLines="1"
+                                android:padding="@dimen/padding_all_very_small"
+                                android:singleLine="true"
+                                android:textSize="@dimen/textView_all_size_14"
+                                app:hintAnimationEnabled="true"
+                                app:hintTextAppearance="@dimen/textView_all_size_14"
+                                tools:targetApi="lollipop" />
+                        </investwell.utils.customView.CustomTextInputLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_gravity="bottom"
+                        android:background="?attr/primaryButtonBackground" />
+                </androidx.cardview.widget.CardView>
+
+                <!--Street Card-->
+                <androidx.cardview.widget.CardView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_all_very_small"
+                    android:layout_marginLeft="@dimen/margin_all_very_small"
+                    android:layout_marginTop="@dimen/margin_all_very_small"
+                    android:layout_marginEnd="@dimen/margin_all_very_small"
+                    android:layout_marginRight="@dimen/margin_all_very_small"
+                    android:layout_marginBottom="@dimen/margin_all_very_small"
+                    app:cardBackgroundColor="?attr/cardBgColor"
+                    app:cardCornerRadius="@dimen/card_corner_all_radius_small"
+                    app:cardElevation="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="@dimen/padding_all_very_small">
+
+
+                        <investwell.utils.customView.CustomTextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_all_very_small"
+                            android:layout_marginBottom="@dimen/margin_all_very_small"
+
+                            android:textColorHint="?attr/secondaryTextColor">
+
+                            <investwell.utils.customView.CustomTextInputEditText
+                            style="@style/TextInputEditTextTheme"
+                                android:id="@+id/et_street"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:hint="@string/personal_details_street_name_hint_txt"
+                                android:imeOptions="actionNext"
+                                android:inputType="text"
+                                android:maxLength="100"
+                                android:maxLines="1"
+                                android:padding="@dimen/padding_all_very_small"
+                                android:singleLine="true"
+                                android:textSize="@dimen/textView_all_size_14"
+                                app:hintAnimationEnabled="true"
+                                app:hintTextAppearance="@dimen/textView_all_size_14"
+                                tools:targetApi="lollipop" />
+                        </investwell.utils.customView.CustomTextInputLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_gravity="bottom"
+                        android:background="?attr/primaryButtonBackground" />
+                </androidx.cardview.widget.CardView>
+
+                <!--Landmark Card-->
+                <androidx.cardview.widget.CardView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_all_very_small"
+                    android:layout_marginLeft="@dimen/margin_all_very_small"
+                    android:layout_marginTop="@dimen/margin_all_very_small"
+                    android:layout_marginEnd="@dimen/margin_all_very_small"
+                    android:layout_marginRight="@dimen/margin_all_very_small"
+                    android:layout_marginBottom="@dimen/margin_all_very_small"
+                    android:visibility="gone"
+                    app:cardBackgroundColor="?attr/cardBgColor"
+                    app:cardCornerRadius="@dimen/card_corner_all_radius_small"
+                    app:cardElevation="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <investwell.utils.customView.CustomTextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="?attr/accentColor">
+
+                            <investwell.utils.customView.CustomTextInputEditText
+                            style="@style/TextInputEditTextTheme"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:hint="@string/personal_details_landmark_name_hint_txt"
+                                android:imeOptions="actionNext"
+                                android:inputType="text"
+                                android:padding="@dimen/padding_all_very_small"
+                                android:singleLine="true"
+                                android:textSize="@dimen/textView_all_size_14"
+                                app:hintAnimationEnabled="true"
+                                app:hintTextAppearance="@dimen/textView_all_size_14"
+                                tools:targetApi="lollipop" />
+                        </investwell.utils.customView.CustomTextInputLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_gravity="bottom"
+                        android:background="?attr/primaryButtonBackground" />
+                </androidx.cardview.widget.CardView>
+                <!--Country Card-->
+                <androidx.cardview.widget.CardView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_all_very_small"
+                    android:layout_marginLeft="@dimen/margin_all_very_small"
+                    android:layout_marginTop="@dimen/margin_all_very_small"
+                    android:layout_marginEnd="@dimen/margin_all_very_small"
+                    android:layout_marginRight="@dimen/margin_all_very_small"
+                    android:layout_marginBottom="@dimen/margin_all_very_small"
+                    android:visibility="gone"
+                    app:cardBackgroundColor="?attr/cardBgColor"
+                    app:cardCornerRadius="@dimen/card_corner_all_radius_small"
+                    app:cardElevation="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <investwell.utils.customView.CustomTextViewRegular
+                            style="@style/FormTextViewStyling"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_all_very_small"
+                            android:layout_marginLeft="@dimen/margin_all_very_small"
+                            android:text="@string/Country" />
+
+                        <Spinner
+                            android:id="@+id/country_spinner"
+                            style="@style/spinner_text_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/padding_all_very_small" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_gravity="bottom"
+                            android:background="?attr/primaryButtonBackground" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!--City Card-->
+                <androidx.cardview.widget.CardView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_all_very_small"
+                    android:layout_marginLeft="@dimen/margin_all_very_small"
+                    android:layout_marginTop="@dimen/margin_all_very_small"
+                    android:layout_marginEnd="@dimen/margin_all_very_small"
+                    android:layout_marginRight="@dimen/margin_all_very_small"
+                    android:layout_marginBottom="@dimen/margin_all_very_small"
+                    app:cardBackgroundColor="?attr/cardBgColor"
+                    app:cardCornerRadius="@dimen/card_corner_all_radius_small"
+                    app:cardElevation="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="@dimen/padding_all_very_small">
+
+
+                        <investwell.utils.customView.CustomTextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_all_very_small"
+
+                            android:layout_marginBottom="@dimen/margin_all_very_small"
+                            android:textColorHint="?attr/secondaryTextColor">
+
+                            <investwell.utils.customView.CustomTextInputEditText
+                            style="@style/TextInputEditTextTheme"
+                                android:id="@+id/et_city"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:hint="@string/personal_details_city_name_hint_txt"
+                                android:imeOptions="actionNext"
+                                android:inputType="text"
+                                android:padding="@dimen/padding_all_very_small"
+                                android:singleLine="true"
+                                android:textSize="@dimen/textView_all_size_14"
+                                app:hintAnimationEnabled="true"
+                                app:hintTextAppearance="@dimen/textView_all_size_14"
+                                tools:targetApi="lollipop" />
+                        </investwell.utils.customView.CustomTextInputLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_gravity="bottom"
+                        android:background="?attr/primaryButtonBackground" />
+                </androidx.cardview.widget.CardView>
+
+                <!--State Card-->
+                <androidx.cardview.widget.CardView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_all_very_small"
+                    android:layout_marginLeft="@dimen/margin_all_very_small"
+                    android:layout_marginTop="@dimen/margin_all_very_small"
+                    android:layout_marginEnd="@dimen/margin_all_very_small"
+                    android:layout_marginRight="@dimen/margin_all_very_small"
+                    android:layout_marginBottom="@dimen/margin_all_very_small"
+                    app:cardBackgroundColor="?attr/cardBgColor"
+                    app:cardCornerRadius="@dimen/card_corner_all_radius_small"
+                    app:cardElevation="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/margin_all_very_small"
+                        android:layout_marginBottom="@dimen/margin_all_very_small"
+
+                        android:orientation="vertical"
+                        android:padding="@dimen/padding_all_very_small">
+
+
+                        <investwell.utils.customView.CustomTextViewRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_all_very_small"
+                            android:layout_marginLeft="@dimen/margin_all_very_small"
+                            android:text="@string/nse_fatca_state_txt"
+                            android:textColorHint="?attr/secondaryTextColor"
+
+                            android:textSize="@dimen/textView_all_size_14" />
+
+                        <Spinner
+                            android:id="@+id/state_spinner"
+                            style="@style/spinner_text_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginStart="@dimen/margin_all_very_small"
+                            android:layout_marginLeft="@dimen/margin_all_very_small" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_gravity="bottom"
+                        android:background="?attr/primaryButtonBackground" />
+                </androidx.cardview.widget.CardView>
+
+                <!--Pin Card-->
+                <androidx.cardview.widget.CardView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_all_very_small"
+                    android:layout_marginLeft="@dimen/margin_all_very_small"
+                    android:layout_marginTop="@dimen/margin_all_very_small"
+                    android:layout_marginEnd="@dimen/margin_all_very_small"
+                    android:layout_marginRight="@dimen/margin_all_very_small"
+                    android:layout_marginBottom="@dimen/margin_all_very_small"
+                    app:cardBackgroundColor="?attr/cardBgColor"
+                    app:cardCornerRadius="@dimen/card_corner_all_radius_small"
+                    app:cardElevation="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="@dimen/padding_all_very_small">
+
+
+                        <investwell.utils.customView.CustomTextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_all_very_small"
+
+                            android:layout_marginBottom="@dimen/margin_all_very_small"
+                            android:textColorHint="?attr/secondaryTextColor">
+
+                            <investwell.utils.customView.CustomTextInputEditText
+                            style="@style/TextInputEditTextTheme"
+                                android:id="@+id/et_pin"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:hint="@string/personal_details_pin_name_hint_txt"
+                                android:imeOptions="actionDone"
+                                android:inputType="number"
+                                android:padding="@dimen/padding_all_very_small"
+                                android:singleLine="true"
+                                android:textSize="@dimen/textView_all_size_14"
+                                app:hintAnimationEnabled="true"
+                                app:hintTextAppearance="@dimen/textView_all_size_12"
+                                tools:targetApi="lollipop" />
+                        </investwell.utils.customView.CustomTextInputLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_gravity="bottom"
+                        android:background="?attr/primaryButtonBackground" />
+                </androidx.cardview.widget.CardView>
+
+
+                <LinearLayout
+                    android:id="@+id/foreigner_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+
+                        <investwell.utils.customView.CustomTextViewRegular
+                            style="@style/FormTextViewStyling"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_all_very_small"
+                            android:layout_marginLeft="@dimen/margin_all_very_small"
+                            android:text="@string/ForeignAddress" />
+
+                        <investwell.utils.customView.CustomEditText
+                            android:id="@+id/foreign_address"
+                            style="@style/spinner_text_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#FF5C5C5C"
+                            android:imeOptions="actionNext"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            tools:targetApi="lollipop" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/margin_all_very_small"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+
+                        <investwell.utils.customView.CustomTextViewRegular
+                            style="@style/FormTextViewStyling"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_all_very_small"
+                            android:layout_marginLeft="@dimen/margin_all_very_small"
+                            android:text="@string/Country" />
+
+                        <investwell.utils.customView.CustomEditText
+                            android:id="@+id/foreign_country"
+                            style="@style/spinner_text_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#FF5C5C5C"
+                            android:imeOptions="actionNext"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            tools:targetApi="lollipop" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+
+                        <investwell.utils.customView.CustomTextViewRegular
+                            style="@style/FormTextViewStyling"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_all_very_small"
+                            android:layout_marginLeft="@dimen/margin_all_very_small"
+                            android:text="@string/nse_fatca_state_txt" />
+
+                        <investwell.utils.customView.CustomEditText
+                            android:id="@+id/foreign_state"
+                            style="@style/spinner_text_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#FF5C5C5C"
+                            android:imeOptions="actionNext"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            tools:targetApi="lollipop" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+
+                        <investwell.utils.customView.CustomTextViewRegular
+                            style="@style/FormTextViewStyling"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_all_very_small"
+                            android:layout_marginLeft="@dimen/margin_all_very_small"
+                            android:text="@string/City" />
+
+                        <investwell.utils.customView.CustomEditText
+                            android:id="@+id/foreign_city"
+                            style="@style/spinner_text_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#FF5C5C5C"
+                            android:imeOptions="actionNext"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            tools:targetApi="lollipop" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+
+                        <investwell.utils.customView.CustomTextViewRegular
+                            style="@style/FormTextViewStyling"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_all_very_small"
+                            android:layout_marginLeft="@dimen/margin_all_very_small"
+                            android:text="@string/PinCode" />
+
+                        <investwell.utils.customView.CustomEditText
+                            android:id="@+id/foreign_pin"
+                            style="@style/spinner_text_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#FF5C5C5C"
+                            android:imeOptions="actionDone"
+                            android:inputType="number"
+                            android:maxLines="1"
+                            tools:targetApi="lollipop" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:orientation="horizontal">
+
+
+                    <investwell.utils.customView.CustomButton
+                        android:id="@+id/btn_previous_nse_fatca"
+                        android:layout_width="@dimen/btn_width_footer"
+                        android:layout_height="@dimen/btn_height_footer"
+                        android:layout_margin="@dimen/margin_all_small"
+                        android:layout_weight="1"
+                        android:background="?attr/secondaryBtnDrawable"
+                        android:imeOptions="actionDone"
+                        android:text="@string/Back"
+                        android:textAllCaps="false"
+                        android:textColor="?attr/secondaryButtonTextColor" />
+
+
+                    <investwell.utils.customView.CustomButton
+                        android:id="@+id/btn_continue_nse_fatca"
+                        android:layout_width="@dimen/btn_width_footer"
+                        android:layout_height="@dimen/btn_height_footer"
+                        android:layout_margin="@dimen/margin_all_small"
+                        android:layout_weight="1"
+                        android:background="?attr/primaryBtnDrawable"
+                        android:imeOptions="actionDone"
+                        android:text="@string/personal_details_btn_continue_txt"
+                        android:textAllCaps="false"
+                        android:textColor="?attr/primaryButtonTextColor" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

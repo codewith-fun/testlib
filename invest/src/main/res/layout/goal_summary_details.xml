@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:shimmer="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <fragment
+        android:id="@+id/frag_toolBar"
+        android:name="investwell.client.fragment.others.ToolbarFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer_scheme_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        shimmer:duration="800"
+        tools:ignore="MissingConstraints">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/placeholder_item_card" />
+
+            <include layout="@layout/placeholder_item_line_thin" />
+
+            <include layout="@layout/placeholder_item_line_thin" />
+
+            <include layout="@layout/placeholder_item_line_thin" />
+
+            <include layout="@layout/placeholder_item_line_thin" />
+
+            <include layout="@layout/placeholder_item_line_thin" />
+
+            <include layout="@layout/placeholder_item_line_thin" />
+
+            <include layout="@layout/placeholder_item_line_thin" />
+
+            <include layout="@layout/placeholder_item_line_thin" />
+
+            <include layout="@layout/placeholder_item_line_thin" />
+
+
+        </LinearLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_all_very_small">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_all_very_small">
+
+            <ImageView
+                android:id="@+id/ivImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:contentDescription="@string/app_name" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/margin_all_small"
+                android:layout_marginLeft="@dimen/margin_all_small"
+                android:layout_toEndOf="@+id/ivImage"
+                android:layout_toRightOf="@+id/ivImage"
+                android:orientation="vertical">
+
+                <investwell.utils.customView.CustomTextViewBold
+                    android:id="@+id/tvGoalName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/colorGrey_600"
+                    android:textSize="@dimen/textView_all_size_14"
+                    android:textStyle="bold" />
+
+                <investwell.utils.customView.CustomTextViewRegular
+                    android:id="@+id/tvGoalDis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvGoalName"
+                    android:text=""
+                    android:textSize="@dimen/textView_all_size_12" />
+
+                <ImageView
+                    android:id="@+id/iv_goaledit"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_above="@id/tvGoalDis"
+                    android:layout_marginStart="@dimen/margin_all_small"
+                    android:layout_marginLeft="@dimen/margin_all_small"
+                    android:layout_toEndOf="@id/tvGoalName"
+                    android:layout_toRightOf="@id/tvGoalName"
+                    android:contentDescription="@string/app_name"
+                    app:tint="@color/colorBlack"
+                    app:srcCompat="@drawable/edit" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:id="@+id/iv_goalDel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/recycle_bin" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            app:cardBackgroundColor="?attr/cardBgColor"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:orientation="vertical">
+
+                        <investwell.utils.customView.CustomTextViewRegular
+                            android:id="@+id/tvTargetTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/goal_summary_target_amount_heading_txt"
+                            android:textSize="@dimen/textView_all_size_14" />
+
+                        <investwell.utils.customView.CustomTextViewBold
+                            android:id="@+id/tv_targetamount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="25,000"
+                            android:textColor="?attr/primaryTextColor"
+                            android:textSize="@dimen/textView_all_size_14"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/ly_shortfal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:orientation="vertical">
+
+                        <investwell.utils.customView.CustomTextViewRegular
+                            android:id="@+id/tvShortTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Shortfall"
+                            android:textSize="@dimen/textView_all_size_14" />
+
+                        <investwell.utils.customView.CustomTextViewBold
+                            android:id="@+id/tv_shortfalamount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="?attr/primaryTextColor"
+                            android:textSize="@dimen/textView_all_size_14"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/ll_inflationreturn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingRight="5dp">
+
+                        <investwell.utils.customView.CustomTextViewRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Inflation "
+                            android:textSize="11dp" />
+
+                        <investwell.utils.customView.CustomTextViewRegular
+                            android:id="@+id/tv_inflationvalue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="?attr/primaryTextColor"
+                            android:textSize="10dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <investwell.utils.customView.CustomTextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Expected Return"
+                        android:textSize="11dp" />
+
+                    <TextView
+                        android:id="@+id/tv_expectedreturn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="?attr/primaryTextColor"
+                        android:textSize="10dp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ly_progress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <investwell.utils.CustomProgressBar
+                        android:id="@+id/seekBarGoal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginBottom="5dp"
+                        android:max="100"
+                        android:progress="0"
+                        android:progressDrawable="@android:color/transparent" />
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/ll_completed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:background="@color/colorGreen" />
+
+                            <investwell.utils.customView.CustomTextViewRegular
+                                android:id="@+id/tvComplete"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="-3dp"
+                                android:layout_marginRight="25dp"
+                                android:text="Completed"
+                                android:textSize="12sp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_Projected"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:background="@color/colorOrange" />
+
+                            <investwell.utils.customView.CustomTextViewRegular
+                                android:id="@+id/tvProjected"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="-3dp"
+                                android:layout_marginRight="25dp"
+                                android:text="Projected"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/ll_ShortFall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:background="@color/colorRed" />
+
+                            <investwell.utils.customView.CustomTextViewRegular
+                                android:id="@+id/tvShortFall"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="-3dp"
+                                android:text="Shortfall"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ly_pay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/colorGrey_200" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <investwell.utils.customView.CustomTextViewRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/cv_btnlump"
+                            android:paddingRight="10dp"
+                            android:text="@string/click_here"
+                            android:textSize="@dimen/textView_all_size_12" />
+
+                        <androidx.cardview.widget.CardView
+
+                            android:id="@+id/cv_btnlump"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_toLeftOf="@id/cv_btnsip"
+                            android:padding="10dp"
+                            app:cardBackgroundColor="@color/colorGreen"
+                            app:cardCornerRadius="5dp"
+                            app:cardElevation="2dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/transprt_border_solid_white"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingLeft="15dp"
+                                android:paddingTop="3dp"
+                                android:paddingRight="15dp"
+                                android:paddingBottom="3dp">
+
+                                <investwell.utils.customView.CustomTextViewRegular
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="One Time"
+                                    android:textColor="?attr/primaryTextColor"
+                                    android:textSize="9dp" />
+
+                                <investwell.utils.customView.CustomTextViewRegular
+                                    android:id="@+id/tvLump"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0000"
+                                    android:textColor="@color/colorGreen"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+
+                            android:id="@+id/cv_btnsip"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_margin="5dp"
+                            android:padding="10dp"
+                            app:cardBackgroundColor="@color/colorOrange"
+                            app:cardCornerRadius="5dp"
+                            app:cardElevation="2dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/transprt_border_solid_white"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingLeft="15dp"
+                                android:paddingTop="3dp"
+                                android:paddingRight="15dp"
+                                android:paddingBottom="3dp">
+
+                                <investwell.utils.customView.CustomTextViewRegular
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Monthly"
+                                    android:textColor="?attr/primaryTextColor"
+                                    android:textSize="9dp" />
+
+                                <investwell.utils.customView.CustomTextViewRegular
+                                    android:id="@+id/tvSip"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0000"
+                                    android:textColor="@color/colorOrange"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_all_very_small"
+            android:weightSum="12">
+            <CheckBox
+                android:id="@+id/cb_all"
+                android:layout_width="0dp"
+                android:checked="true"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:buttonTint="@color/colorBlack"
+                android:text="All"
+                android:textSize="@dimen/textView_all_size_12"
+                android:textColor="@color/colorBlack" />
+            <CheckBox
+                android:id="@+id/cb_mapped"
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:buttonTint="@color/colorGreen"
+                android:text="Mapped"
+                android:textSize="@dimen/textView_all_size_12"
+
+                android:textColor="@color/colorGreen" />
+
+            <CheckBox
+                android:id="@+id/cb_available"
+                android:layout_width="0dp"
+
+                android:textSize="@dimen/textView_all_size_12"
+
+                android:buttonTint="@color/colorOrange"
+                android:text="Available"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:textColor="@color/colorOrange"/>
+
+            <CheckBox
+                android:id="@+id/cb_unavilable"
+                android:layout_width="0dp"
+                android:textSize="@dimen/textView_all_size_12"
+
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:buttonTint="@color/colorGrey_400"
+                android:text="Not Available"
+                android:textColor="@color/colorGrey_500"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_goalfolio"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layoutAnimation="@anim/layout_animation_fall_down"
+        android:overScrollMode="never"
+        android:scrollbars="none" />
+</LinearLayout>

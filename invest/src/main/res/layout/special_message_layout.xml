@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite">
+
+
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/llText"
+    android:layout_margin="@dimen/textView_all_size_8"
+    android:layout_toLeftOf="@+id/llCross"
+    android:orientation="horizontal">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivIcon"
+        android:layout_margin="@dimen/margin_5dp"
+        android:src="@mipmap/info"
+        android:layout_alignParentLeft="true"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_5dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text=""
+            android:textSize="@dimen/textView_all_size_14"
+            android:id="@+id/tvMessage"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textColor="?attr/accentColor"
+            android:text="@string/txt_readmore"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:id="@+id/tvReadMore"/>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+
+
+<View
+    android:layout_width="wrap_content"
+    android:layout_height="1dp"
+    android:background="@color/colorGrey_200"
+    android:layout_below="@+id/llText"/>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_marginTop="@dimen/margin_5dp"
+    android:id="@+id/llCross">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivCross"
+        android:background="@drawable/plane_cross"
+
+        android:layout_margin="@dimen/margin_5dp"
+        android:padding="@dimen/margin_10dp"
+        />
+</LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!--ToolBar -->
+    <fragment
+        android:id="@+id/frag_toolBar"
+        android:name="investwell.client.fragment.others.ToolbarFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/yearChangeLL"
+        android:layout_below="@+id/frag_toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorGrey_100"
+        android:gravity="center"
+        android:padding="10dp" >
+
+        <ImageView
+            android:id="@+id/previous_year"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/left_arrow"
+            app:tint="?attr/accentColor"
+            android:padding="10dp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+            <investwell.utils.customView.CustomTextViewBold
+                android:id="@+id/tvYearText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:textAlignment="center"
+                android:textColor="?attr/primaryTextColor"
+                android:textSize="@dimen/textView_all_size_16"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/next_year"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/right_arrow"
+            app:tint="?attr/accentColor"
+            android:padding="10dp"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/yearChangeLL"
+            android:orientation="vertical">
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tl_sip_tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/appBackground"
+                app:tabGravity="fill"
+                style="@style/TabLayoutTheme"
+                app:tabMode="fixed" />
+
+            <investwell.utils.CustomViewPager
+                android:id="@+id/csv_sip_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+
+    </RelativeLayout>

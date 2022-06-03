@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/CardViewStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/margin_all_very_small"
+    android:layout_marginEnd="@dimen/margin_all_very_small"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_notification_banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:visibility="gone"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/app_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/bg_no_interent" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:fontFamily="@font/lato_bold"
+            android:textColor="?attr/primaryTextColor"
+            android:textSize="@dimen/textView_all_size_16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_notification_banner"
+            tools:text="Notification Title" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_all_small"
+            android:fontFamily="@font/lato"
+            tools:text="@string/txt_date"
+            android:maxLines="1"
+            app:layout_constrainedWidth="true"
+
+            android:textSize="@dimen/textView_all_size_10"
+            app:layout_constraintEnd_toEndOf="@+id/tvTitle"
+            app:layout_constraintStart_toStartOf="@+id/tvTitle"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+        <TextView
+            android:id="@+id/tvMessage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/lato"
+            android:paddingBottom="@dimen/padding_all_small"
+            android:textSize="@dimen/textView_all_size_14"
+            app:layout_constraintEnd_toEndOf="@+id/time"
+app:layout_constrainedWidth="true"
+            android:gravity="start"
+            app:layout_constraintStart_toStartOf="@+id/time"
+            app:layout_constraintTop_toBottomOf="@+id/time"
+            tools:text="@string/change_password_error_password_not_match" />
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="View More"
+            android:visibility="gone"
+
+            android:paddingBottom="@dimen/padding_all_small"
+            android:textColor="?attr/primaryTextColor"
+            android:fontFamily="@font/lato"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:textSize="@dimen/textView_all_size_14"
+            app:layout_constraintStart_toStartOf="@+id/tvMessage"
+            app:layout_constraintTop_toBottomOf="@+id/tvMessage" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--    <androidx.cardview.widget.CardView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        style="@style/CardViewStyle"-->
+    <!--        android:layout_margin="3dp">-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_margin="5dp"-->
+    <!--            android:orientation="vertical">-->
+
+    <!--            <investwell.utils.customView.CustomTextViewBold-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:id="@+id/tvTitle"-->
+    <!--                android:textSize="@dimen/textView_all_size_16"-->
+    <!--                android:textColor="?attr/primaryTextColor"-->
+    <!--                android:textStyle="bold"/>-->
+
+
+    <!--            <investwell.utils.customView.CustomTextViewRegular-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:id="@+id/tvMessage"-->
+    <!--                android:textSize="@dimen/textView_all_size_14"-->
+    <!--                android:textColor="?attr/primaryTextColor"-->
+    <!--                />-->
+
+
+    <!--            <investwell.utils.customView.CustomTextViewRegular-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:textStyle="italic"-->
+    <!--                android:text=""-->
+    <!--                android:id="@+id/time"-->
+    <!--                android:textColor="?attr/primaryTextColor"-->
+    <!--                android:textSize="@dimen/textView_all_size_14"/>-->
+
+    <!--        </LinearLayout>-->
+    <!--    </androidx.cardview.widget.CardView>-->
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_all_regular">
+
+    <ImageView
+        android:id="@+id/iv_bg_goal_cat"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/circle_background_pf_lock_screen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="#f5f5f5" />
+
+    <ImageView
+        android:id="@+id/ivIcon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        app:layout_constrainedWidth="true"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintStart_toStartOf="@+id/iv_bg_goal_cat"
+        app:layout_constraintEnd_toEndOf="@+id/iv_bg_goal_cat"
+        app:layout_constraintTop_toTopOf="@+id/iv_bg_goal_cat"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_bg_goal_cat"
+        android:contentDescription="@string/app_name"
+        android:padding="@dimen/padding_all_very_small"
+        android:scaleType="centerInside"
+        android:layout_margin="@dimen/margin_all_regular"
+        tools:src="@mipmap/ic_invest_route_amc" />
+    <investwell.utils.customView.CustomTextViewRegular
+        android:id="@+id/tvText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/iv_bg_goal_cat"
+        android:layout_gravity="center_vertical"
+        android:padding="@dimen/padding_all_very_small"
+        android:textColor="?attr/primaryTextColor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="@string/app_name"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="@dimen/textView_all_size_14"
+        android:layout_marginLeft="@dimen/margin_all_small"
+        android:layout_marginStart="@dimen/margin_all_small" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

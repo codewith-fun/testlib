@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_financial_tools_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/cv_financial_tools"
+        style="@style/CardViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_all_small"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/ll_financial_tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/primaryButtonBackground"
+                android:orientation="vertical">
+
+                <investwell.utils.customView.CustomTextViewBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="@string/dasbboard_financial_tools_title_txt"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/textView_all_size_14"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <View
+                android:id="@+id/v_divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/ll_financial_tools"
+                android:background="#f2f2f2" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_financial_tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/v_divider"
+                android:clipToPadding="false"
+                android:layoutAnimation="@anim/layout_animation_fall_down"
+                android:scrollbars="vertical" />
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/ll_financial_tools_1a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_all_small"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding_all_very_small"
+            android:layout_marginLeft="@dimen/margin_all_very_small"
+            android:layout_marginEnd="@dimen/margin_all_very_small"
+            android:layout_marginRight="@dimen/margin_all_very_small"
+            android:layout_marginBottom="@dimen/margin_all_regular"
+            android:background="@mipmap/heading_bg"
+            android:paddingEnd="@dimen/padding_all_large"
+            android:paddingRight="@dimen/padding_all_large"
+            tools:ignore="RtlSymmetry">
+
+
+            <investwell.utils.customView.CustomTextViewBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/dasbboard_financial_tools_title_txt"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/textView_all_size_14"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_financial_tools_1a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:layoutAnimation="@anim/layout_animation_fall_down"
+            android:scrollbars="vertical" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

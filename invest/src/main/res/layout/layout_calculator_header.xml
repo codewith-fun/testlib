@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cv_toolBar_parent"
+    android:layout_width="match_parent"
+    android:layout_height="?actionBarSize"
+    app:cardBackgroundColor="?attr/accentColor"
+    app:cardElevation="@dimen/card_all_elevation"
+    tools:targetApi="lollipop">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:padding="@dimen/padding_all_small"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name"
+            android:src="@mipmap/app_icon_s"
+           />
+
+
+        <LinearLayout
+            android:id="@+id/rl_middle_search_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/iv_logo"
+            android:layout_toRightOf="@+id/iv_logo"
+            android:orientation="vertical"
+            android:visibility="visible"
+            tools:ignore="RelativeOverlap">
+
+            <investwell.utils.customView.CustomTextViewBold
+                android:id="@+id/tv_header_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:textStyle="bold"
+                android:text="@string/app_name"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/textView_all_size_16" />
+        </LinearLayout>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorGrey_250" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView><!-- -->

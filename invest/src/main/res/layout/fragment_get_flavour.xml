@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <fragment
+        android:id="@+id/frag_toolBar"
+        android:name="investwell.client.fragment.others.ToolbarFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/mainLy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/flavour_calendar" />
+
+            <investwell.utils.customView.CustomTextViewRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/get_flavour_we_recommend_txt"
+                android:textSize="@dimen/textView_all_size_14" />
+
+
+            <investwell.utils.customView.CustomTextViewRegular
+                android:id="@+id/colorBlue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:textAlignment="center"
+                android:textColor="?attr/primaryTextColor"
+                android:textSize="@dimen/textView_all_size_16"
+                android:gravity="center_horizontal" />
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rgInvestment"
+                android:layout_margin="@dimen/margin_10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                        android:buttonTint="?attr/primaryButtonBackground"
+                        android:textColor="?attr/primaryTextColor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:layout_weight="1"
+                    android:text="@string/add_tranc_additional_purchase_txt"
+                    android:id="@+id/radioButton1"/>
+
+
+                <RadioButton
+                        android:buttonTint="?attr/primaryButtonBackground"
+                        android:textColor="?attr/primaryTextColor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/redmption"
+                    android:id="@+id/radioButton2"/>
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/memberLy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:visibility="gone">
+
+
+                    <investwell.utils.customView.CustomTextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/get_flavour_select_member_txt" />
+
+
+                    <Spinner
+                        android:id="@+id/member_spinner"
+                        style="@style/SpinnerStyling"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/rounded_grey_border"
+                        android:padding="10dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/folioLy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:visibility="gone">
+
+
+                    <investwell.utils.customView.CustomTextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/get_flavour_select_folio_txt" />
+
+
+                    <Spinner
+                        android:id="@+id/folio_spinner"
+                        style="@style/SpinnerStyling"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/rounded_grey_border"
+                        android:padding="10dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <investwell.utils.customView.CustomButton
+            android:id="@+id/investBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="?attr/primaryBtnDrawable"
+            android:ems="14"
+            android:text="@string/transact_now_txt"
+            android:textAllCaps="false"
+            android:textColor="?attr/primaryButtonTextColor"
+            android:textSize="@dimen/textView_all_size_16" />
+
+
+
+
+        <investwell.utils.customView.CustomTextViewRegular
+            android:id="@+id/tv_not_logged_in"
+            android:layout_width="wrap_content"
+            android:padding="@dimen/padding_all_very_small"
+            android:textColor="?attr/secondaryTextColor"
+            android:textAlignment="center"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:text="@string/get_flavour_please_login_or_signup_to_continue"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+</LinearLayout>

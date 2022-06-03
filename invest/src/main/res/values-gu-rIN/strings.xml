@@ -1,0 +1,1938 @@
+<resources>
+
+    <!--App Info -->
+	<string name="user_choice_for_login">હું નોંધાયેલ વપરાશકર્તા છું. લ Loginગિન કરો અને પોર્ટફોલિયો જુઓ.</string>
+	<string name="app_language_gujrati">ગુજરાતી</string>
+	<string name="app_language_gujrati_inverse">ગુજરાતી</string>
+    <!--End App Info-->
+
+    <!--Splash Screen-->
+    <!--End Splash Screen-->
+
+
+
+    <!--Nav Drawer-->
+
+
+    <!--Dialogs-->
+	<string name="dialog_no_mandate_header_txt">આવશ્યક Autoટોપે / મેન્ડેટ</string>
+	<string name="dialog_no_mandate_mini_header_txt">Pટોપે મેન્ડેટ બનાવો</string>
+	<string name="dialog_no_mandate_btn_cancel_txt">રદ કરો</string>
+	<string name="dialog_no_mandate_btn_proceed_txt">આગળ વધો</string>
+	<string name="dialog_title_permission_denied">પરવાનગી નામંજૂર</string>
+	<string name="dialog_permission_denied_message_for_RM">તમારી પાસે વ્યવહાર કરવાની મંજૂરી નથી.</string>
+    <!--Dialogs-->
+
+
+
+    <!--Alert Dialog-->
+	<string name="alert_dialog_header_txt">ચેતવણી</string>
+	<string name="alert_dialog_notification_header_txt">સૂચના</string>
+	<string name="alert_dialog_order_placed_sucess_txt">સફળતા</string>
+	<string name="alert_dialog_error_txt">સમસ્યા</string>
+	<string name="alert_dialog_notify_desc_txt">શું તમે સૂચના પ્રાપ્ત કરવા માંગો છો? જો હા, તો કૃપા કરીને આગલી સ્ક્રીન પર સક્રિય કરો.</string>
+	<string name="alert_dialog_confirmation_header_txt">પુષ્ટિ</string>
+	<string name="alert_dialog_btn_no_txt">ના</string>
+	<string name="alert_dialog_yes_btn_txt">હા</string>
+	<string name="alert_dialog_btn_txt">બરાબર</string>
+	<string name="alert_dialog_logout_desc_txt">શું તમે ખરેખર લ logગઆઉટ કરવા માંગો છો?</string>
+	<string name="alert_dialog_delete_scheme_txt">શું તમે ખરેખર કા toી નાખવા માંગો છો?</string>
+	<string name="alert_dialog_delete_goal_txt">શું તમે ખરેખર આ લક્ષ્યને કા deleteી નાખવા માંગો છો?</string>
+    <!--End Alert Dialog-->
+
+    <!--ToolBar Titles-->
+	<string name="toolBar_title_factsheet">ફેક્ટ શીટ</string>
+	<string name="toolBar_title_select_scheme">રોકાણ માટે યોજના પસંદ કરો</string>
+	<string name="toolBar_title_my_cart">મારી બાસ્કેટ</string>
+    <string name="toolBar_title_nfo">નવા ફંડ .ફર્સ</string>
+    <string name="toolBar_title_goal">લક્ષ્ય હું પ્રાપ્ત કરવા માંગું છું</string>
+	<string name="toolBar_title_marriage_cal">લગ્ન કેલ્ક્યુલેટર</string>
+	<string name="toolBar_title_education_cal">શિક્ષણ કેલ્ક્યુલેટર</string>
+	<string name="toolBar_title_sip_cal">એસઆઈપી કેલ્ક્યુલેટર</string>
+	<string name="toolBar_title_lumpsum_cal">લમ્પસમ કેલ્ક્યુલેટર</string>
+	<string name="toolBar_title_delay_sip_cal">ડીલે એસઆઈપીનો ખર્ચ</string>
+	<string name="toolBar_title_retirement_cal">નિવૃત્તિ કેલ્ક્યુલેટર</string>
+    <string name="toolBar_title_my_journey_so_far">મારી જર્ની અત્યાર સુધી</string>
+	<string name="toolBar_title_invest_now">હવે રોકાણ કરો</string>
+	<string name="toolBar_title_my_insurance">વીમા</string>
+	<string name="toolBar_title_transfer_holding">ટ્રાન્સફર હોલ્ડિંગ</string>
+	<string name="toolBar_title_notifications">સૂચનાઓ</string>
+	<string name="toolBar_title_recomended_schemes">ભલામણ કરેલ યોજનાઓ</string>
+	<string name="toolBar_title_goal_schemes">લક્ષ્ય આધારિત યોજનાઓ</string>
+	<string name="toolBar_title_personal_details_form">અંગત વિગતો</string>
+	<string name="toolBar_title_fatca_details_form">FATCA વિગતો</string>
+	<string name="toolBar_title_nominee_details_form">નોમિની વિગતો</string>
+	<string name="toolBar_title_bank_details_form">બેંકની વિગત</string>
+	<string name="toolBar_title_address_details_form">સરનામું વિગતો</string>
+	<string name="toolBar_title_scheme_details">યોજના વિગતો</string>
+	<string name="toolBar_title_portfolio_details">પોર્ટફોલિયો વિગતો</string>
+	<string name="toolBar_title_folio_transactions">ફોલિયો વ્યવહાર</string>
+	<string name="toolBar_title_outstanding_units">ઉત્કૃષ્ટ એકમો</string>
+	<string name="toolBar_title_swp">એસડબલ્યુપી</string>
+	<string name="toolBar_title_sip">એસ.આઈ.પી.</string>
+	<string name="toolBar_title_stp">એસ.ટી.પી.</string>
+	<string name="toolBar_title_switch">સ્વીચ</string>
+	<string name="toolBar_title_add_purchase">વધુ ખરીદો</string>
+	<string name="toolBar_title_redeem">વેચો</string>
+	<string name="toolBar_title_change_password">પાસવર્ડ બદલો</string>
+	<string name="toolBar_title_start_assesment">આકારણી પ્રારંભ કરો</string>
+	<string name="toolBar_title_setting">સેટિંગ્સ</string>
+    <!--End Toolbar Titles-->
+
+
+
+
+    <!--Main Activity Screen-->
+
+    <!--Nav Menu Strings-->
+	<string name="main_nav_title_journey">મારો એકીકૃત સારાંશ</string>
+	<string name="main_nav_title_send_mail">સંદેશો મોકલો</string>
+	<string name="main_nav_title_watch_list">રોકાણ વોચલિસ્ટ</string>
+	<string name="main_nav_title_invest">હવે રોકાણ કરો</string>
+	<string name="main_nav_title_dividend">ડિવિડન્ડ</string>
+	<string name="main_nav_title_my_insurance">મારો વીમો</string>
+	<string name="main_nav_title_tax_saving">કર બચત</string>
+	<string name="main_nav_title_my_folio">મારો ફોલિયો</string>
+	<string name="main_nav_title_sys_invest">મારી એસ.આઈ.પી.</string>
+	<string name="main_nav_title_my_sip">મારી એસ.આઈ.પી.</string>
+	<string name="main_bottom_tab_menu_dashboard">ડેશબોર્ડ</string>
+	<string name="main_bottom_tab_menu_portfolio">પોર્ટફોલિયો</string>
+	<string name="main_bottom_tab_menu_transactions">વ્યવહાર</string>
+	<string name="main_bottom_tab_menu_profile">પ્રોફાઇલ</string>
+	<string name="main_bottom_tab_menu_search">ક્લાયંટ શોધ</string>
+	<string name="main_bottom_tab_menu_more">કેટલાક વધુ</string>
+	<string name="bottomsheet_hello_txt">નમસ્તે</string>
+	<string name="main_nav_title_my_orders">મારા રોકાણના ઓર્ડર</string>
+	<string name="main_nav_title_mandate_list">Opટોપેય આદેશ સૂચિ</string>
+	<string name="main_nav_title_fatca_creation">FATCA બનાવટ</string>
+	<string name="main_nav_title_profile_detail">પ્રોફાઇલ વિગતો</string>
+	<string name="main_nav_title_my_folio_schemes">ફોલિયો વિગતો</string>
+	<string name="main_nav_title_dividend_detail">ડિવિડન્ડ ડિટેલ</string>
+	<string name="main_nav_title_my_risk_profile">જોખમ પ્રોફાઇલ</string>
+	<string name="main_nav_title_choose_your_goal">તમારું લક્ષ્ય પસંદ કરો</string>
+	<string name="main_nav_title_holding">ટ્રાન્સફર હોલ્ડિંગ</string>
+	<string name="main_nav_title_invest_profile">રોકાણ પ્રોફાઇલ્સ</string>
+    <!--Nav Menu Strings-->
+
+
+    <!--Nav Menu Strings-->
+
+
+    <!--PIN/Pattern Strings-->
+	<string name="pin_text_default_screen_lock">તમારા સ્ક્રીન લ Useકનો ઉપયોગ કરો</string>
+	<string name="pin_text_default_screen_lock_details">તમારા હાલના ફોન સ્ક્રીન લ usingકનો ઉપયોગ કરીને આ એપ્લિકેશનને સુરક્ષિત કરો</string>
+	<string name="pin_text_Create_PIN">પિન બનાવો</string>
+	<string name="pin_text_Create_PIN_Details">4-અંકનો પિન બનાવો. લ loginગિન સમયે તમારે આ પિનને યાદ રાખવાની જરૂર છે</string>
+	<string name="pin_text_SKIP">અવગણો</string>
+	<string name="pin_text_KIP_Details">હું વધારાની એપ્લિકેશન સુરક્ષા સ્ક્રીન લ lockક છોડવા માંગુ છું અને હું વપરાશકર્તાનામ અને પાસવર્ડ દ્વારા લ loginગિન કરવા માંગુ છું</string>
+	<string name="pin_text_App_Security">તમારી એપ્લિકેશન સુરક્ષિત કરો</string>
+	<string name="pin_text_Change_PIN">પિન બદલો</string>
+	<string name="pin_text_Change_PIN_Details">તમારો પિન બદલો. લ loginગિન સમયે તમારે આ પિનને યાદ રાખવાની જરૂર છે</string>
+	<string name="pin_pattern_next_btn_txt">આગળ</string>
+	<string name="pin_pattern_forgot_txt">ભૂલી ગયા છો?</string>
+	<string name="pin_pattern_header_txt">પિન અથવા ફિંગર ટચનો ઉપયોગ કરો</string>
+	<string name="pin_pattern_1_no_txt">.</string>
+	<string name="pin_pattern_2_no_txt">2</string>
+	<string name="pin_pattern_3_no_txt">3</string>
+	<string name="pin_pattern_4_no_txt">4</string>
+	<string name="pin_pattern_5_no_txt">5</string>
+	<string name="pin_pattern_6_no_txt">6</string>
+	<string name="pin_pattern_7_no_txt">7</string>
+	<string name="pin_pattern_8_no_txt">8</string>
+	<string name="pin_pattern_9_no_txt">9</string>
+	<string name="pin_pattern_0_no_txt">0</string>
+	<string name="pin_pattern_reset_btn_txt">ફરીથી સેટ કરો</string>
+    <!--End PIN/Pattern Strings-->
+
+    <!-- Help Strings-->
+	<string name="help_main_screen_title">અમારો સંપર્ક કરો</string>
+	<string name="help_contact_us_title">સંપર્ક માહિતી</string>
+	<string name="help_faq_title">પ્રશ્નો</string>
+	<string name="help_more_title">કેટલાક વધુ</string>
+	<string name="help_text_privacy_policy">ગોપનીયતા નીતિ</string>
+	<string name="help_text_terms_conditions">શરતો અને નિયમો</string>
+	<string name="help_text_Disclaimers">પ્રશંસાપત્રો</string>
+	<string name="help_next_installment_date">સહાય - આગામી હપતાની તારીખ</string>
+	<string name="help_call_txt">બોલાવો</string>
+	<string name="help_txt_23432">23432</string>
+	<string name="help_manager_title">મારા વેલ્થ મેનેજર</string>
+    <string name="help_contact_title">અમારો સંપર્ક કરો</string>
+	<string name="help_email_title_txt">ઇ-મેઇલ</string>
+	<string name="help_website_title_txt">વેબસાઇટ</string>
+	<string name="help_address_title_txt">સરનામું</string>
+    <!--Help Strings-->
+
+
+    <!--End Main Activity Screen-->
+
+
+
+    <!--Login Activity Screen-->
+	<string name="login_et_user_hint_txt">વપરાશકર્તા નામ</string>
+	<string name="login_hint_et_password_txt">પાસવર્ડ</string>
+	<string name="login_erorr_empty_username">કૃપા કરીને તમારું વપરાશકર્તા નામ પ્રદાન કરો</string>
+	<string name="login_erorr_empty_password">કૃપા કરીને તમારો પાસવર્ડ આપો</string>
+	<string name="login_erorr_valid_password">પાસવર્ડ ઓછામાં ઓછો 4 અક્ષરોનો હોવો જોઈએ</string>
+	<string name="login_dont_have_account_txt">તમારું ખાતું નથી?</string>
+	<string name="login_sign_up_txt">સાઇન અપ કરો</string>
+    <!--End of Login Activity Screen-->
+
+
+
+    <!--OTP Activity Screen-->
+    <string name="otp_success_footer_btn_txt">ઓનબોર્ડિંગ પ્રક્રિયા શરૂ કરો</string>
+	<string name="otp_success_skip_later_txt">અવગણો અને પછી કરો</string>
+    <string name="otp_verifiction_resend_btn_txt">OTP ફરીથી મોકલો</string>
+	<string name="otp_verification_sent_msg">ઉપરના નંબર ઉપર ઓટીપી મોકલાયો છે</string>
+	<string name="otp_verification_phone_error">કંઈક ખોટું છે, અમે તેને ટૂંક સમયમાં ઠીક કરીશું ...</string>
+	<string name="otp_verification_invalid_code">અમાન્ય કોડ દાખલ કર્યો ...</string>
+	<string name="otp_verification_sms_sent_desc">અમે તમને 6 અંકના ચકાસણી કોડ સાથે એક SMS મોકલ્યો છે</string>
+	<string name="otp_verification_email_desc_txt">અમે તમને 6 અંકના ચકાસણી કોડ સાથે એક ઇમેઇલ મોકલ્યો છે</string>
+	<string name="otp_verification_email_empty_error">કૃપા કરીને તમારા ઇમેઇલ પર મોકલેલો ઓટીપી દાખલ કરો</string>
+	<string name="otp_verification_email_invalid_error">ઓટીપી મેળ ખાતો નથી</string>
+
+    <!--OTP Activity Screen-->
+
+
+
+    <!--Sign Up Screen-->
+	<string name="signup_et_user_hint_txt">પૂરું નામ</string>
+	<string name="signup_hint_et_email_txt">ઇ-મેઇલ</string>
+	<string name="signup_btn_txt">નોંધણી કરો</string>
+	<string name="signup_hint_et_phone_txt">મોબાઇલ નંબર</string>
+	<string name="signup_already_have_account_txt">પહેલેથી ખાતું છે?</string>
+	<string name="sign_up_login_txt">સાઇન ઇન</string>
+	<string name="signup_error_full_name">કૃપા કરી તમારું પૂરું નામ દાખલ કરો</string>
+	<string name="signup_error_full_name_length">તમારું નામ ઓછામાં ઓછું 3 લક્ષણો લાંબું હોવું જોઈએ</string>
+	<string name="signup_error_mobile_no">કૃપા કરી તમારો ફોન નંબર દાખલ કરો.</string>
+	<string name="signup_error_mobile_no_length">તમારો ફોન નંબર ઓછામાં ઓછો 10 અંકો લાંબો હોવો જોઈએ</string>
+	<string name="signup_error_email">કૃપા કરીને તમારું ઇ-મેઇલ દાખલ કરો</string>
+	<string name="signup_error_email_valid">કૃપા કરીને માન્ય ઇમેઇલ સરનામું દાખલ કરો</string>
+    <!--End Sign Up Screen-->
+
+
+
+    <!--Dashboard Screen-->
+
+	<string name="dashboard_default_view_your_portfolio_txt">તમારો પોર્ટફોલિયો જુઓ</string>
+	<string name="dashboard_login_btn_txt">પ્રવેશ કરો</string>
+	<string name="dashboard_sign_up_btn_txt">સાઇન અપ કરો</string>
+	<string name="dashboard_goal_tv_txt">ધ્યેય</string>
+	<string name="dashboard_goal_header_txt">હું હાંસલ કરવા માંગું છું</string>
+	<string name="dashboard_goal_desc_txt">તમારા લક્ષ્યોને પ્રાપ્ત કરવા માટે રોકાણની યોજના બનાવો. તમારી જોખમ પ્રોફાઇલનું મૂલ્યાંકન કરો.</string>
+	<string name="dashboard_believe_tv_txt">વિશ્વાસ</string>
+	<string name="dashboard_believe_header_txt">અમારી કુશળતા છે</string>
+    <string name="dashboard_fund_tv_txt">ભંડોળ</string>
+	<string name="dashboard_fund_header_txt">ચૂંટે છે</string>
+    <string name="dashboard_top_perfromer_tv_txt">ચૂંટો</string>
+	<string name="dashboard_amc_tv_txt">શોધો</string>
+	<string name="dashboard_nfo_tv_txt">નવું</string>
+	<string name="dashboard_top_performer_header_txt">ટોચની યોજનાઓમાંથી</string>
+    <string name="dashboard_amc_header_txt">એએમસી દ્વારા</string>
+	<string name="dashboard_nfo_header_txt">ફંડ .ફર્સ</string>
+	<string name="dashboard_amc_desc_txt">તમે એએમસી પસંદ કરીને યોજનાઓ શોધી શકો છો અને પસંદ કરો અને રોકાણ કરી શકો છો.</string>
+    <string name="dashboard_finance_tool_lumpsum">લમ્પસમ Calc n કેલ્ક્યુલેટર</string>
+
+	<string name="dashboard_finance_tool_sip_cal">SIP \n કેલ્ક્યુલેટર</string>
+
+	<string name="dashboard_finance_tool_cost_sip">વિલંબની કિંમત S n એસઆઈપી</string>
+	<string name="dashboard_finance_tool_education_cal">શિક્ષણ Calc n કેલ્ક્યુલેટર</string>
+
+	<string name="dashboard_finance_tool_marriage_cal">લગ્ન \n કેલ્ક્યુલેટર</string>
+
+	<string name="dashboard_finance_tool_retirement_cal">નિવૃત્તિ \n કcલક્યુલેટર</string>
+
+	<string name="dasbboard_financial_tools_title_txt">નાણાકીય સાધનો</string>
+	<string name="dasbboard_invest_route_title_txt">રોકાણોનો પ્રકાર</string>
+	<string name="dashboard_home_pay_now_txt">ચુકવણીને કારણે ઓર્ડરની રાહ જોવાઇ રહી છે</string>
+	<string name="dashboard_pay_now_btn_txt">હવે પૈસા આપો</string>
+	<string name="dasbboard_profile_incomplete_message">તમારું મફત રોકાણ એકાઉન્ટ સક્રિય કરવા માટે તમે થોડા પગલાઓથી દૂર છો. કૃપા કરી તેને પૂર્ણ કરો.</string>
+
+
+
+    <!--Calculator Description-->
+	<string name="Scheme">યોજના</string>
+	<string name="Allocation">સૂચવેલ ફાળવણી</string>
+
+
+    <!--FAQ Screen-->
+	<string name="faq_Q1">શું હું મારા લ familyગિનના સભ્યોને તે જ લ inગિનમાં ઉમેરી શકું છું?</string>
+	<string name="faq_Q2">મેં એપ્લિકેશન પર orderર્ડર મૂક્યો છે શું orderર્ડર માન્ય છે?</string>
+	<string name="faq_Q3">શું આ પ્લેટફોર્મનો ઉપયોગ કરવા માટે મારે કોઈપણ ચાર્જ ચૂકવવા પડશે?</string>
+	<string name="faq_Q4">શું આપણે રોકાણકારોને કોઈપણ ન્યૂનતમ વળતરની બાંહેધરી આપીએ છીએ અથવા કોઈ સૂચક વળતર આપીએ છીએ?</string>
+	<string name="faq_Q5">હું કેવી રીતે આગળ વધવું તે સલાહકાર બદલીને મારી પાસેની હોલ્ડિંગ્સ અમને સ્થાનાંતરિત કરવા માંગુ છું?</string>
+	<string name="faq_Q6">શું મારા પૈસા અમને ટ્રાન્સફર કરવામાં આવે છે અને પછી તે એસેટ મેનેજમેન્ટ કંપનીને ચૂકવવામાં આવે છે?</string>
+	<string name="faq_Q7">તે જ દિવસ એનએવી મેળવવા માટે કટઓફ સમય શું છે?</string>
+	<string name="faq_Q8">મારા રોકાણોમાં બેંક / સંપર્ક વિગતો કેવી રીતે બદલવી?</string>
+	<string name="faq_Q9">શું હું સ્થાનિક મ્યુચ્યુઅલ ફંડ કંપનીની throughફિસ દ્વારા createdનલાઇન બનાવેલા ફિઓલોમાં રિડીમ અથવા ટ્રાંઝેક્શન કરી શકું છું?</string>
+	<string name="faq_Q10">મારા બારીકાઈથી મને ફાળવણીની ચલચિત્ર ડેબિટ મળી છે?</string>
+	<string name="faq_A1">હા</string>
+	<string name="faq_A2">તમારે પ્રોફાઇલ બનાવતી વખતે આપેલ ઇમેઇલ જવું પડશે અને બીએસઈ તરફથી પ્રાપ્ત થયેલ ઇમેઇલને "ઓર્ડર ઓથેન્ટિકેશન" વિષય સાથે તપાસો. ઇમેઇલ પર આપેલી સૂચનાઓને અનુસરો.</string>
+	<string name="faq_A3">ત્યાંથી રોકાણકારો પાસેથી કોઈ વપરાશ શુલ્ક લેવામાં આવતું નથી</string>
+	<string name="faq_A4">મ્યુચ્યુઅલ ફંડનું કોઈ રોકાણ બજારના જોખમને આધિન નથી અને પાછલા પ્રભાવને પુનરાવર્તિત કરી શકે છે અથવા નહીં પણ તેથી રોકાણકારોએ રોકાણ પહેલાં તેની જોખમ પ્રોફાઇલનું મૂલ્યાંકન કરવું જોઈએ.</string>
+	<string name="faq_A5">અમે પાછા ક callલની વ્યવસ્થા કરીશું.તમારી વિનંતી અહીં મોકલો</string>
+	<string name="faq_A6">એક્સચેન્જમાં અને ત્યારબાદ એએમસીમાં નાણાં ટ્રાન્સફર કરવામાં આવતા નથી.</string>
+	<string name="faq_A7">લિક્વિડ ફંડ ટ્રાન્ઝેક્શન માટે કટઓફ 1:30 p.m છે, અને અન્ય ટ્રાંઝેક્શન માટે તે 2:30 છે.</string>
+	<string name="faq_A8">તમારે જરૂરી કાગળો સાથે એએમસી officeફિસની મુલાકાત લેવી પડશે. અમે તેમાં તમને મદદ કરીશું.</string>
+	<string name="faq_A9">હા તમે કરી શકો છો.</string>
+	<string name="faq_A10">2lakhs નીચેના વ્યવહારો ભંડોળ પ્રાપ્ત થાય તે પહેલાં ફાળવવામાં આવે છે. તેથી રાહ જુઓ, તે 4-5 કાર્યકારી દિવસોમાં વિરુદ્ધ થશે, તેનાથી આગળ કૃપા કરીને ઇમેઇલ માર્ક કરો</string>
+    <!--End FAQ Screen-->
+
+    <!--Watch List-->
+	<string name="watch_list_return_txt">પાછા</string>
+	<string name="watch_list_header_txt">તમારા પોર્ટફોલિયોમાં દિવસ બદલાવને એનએવી તરીકે જુઓ.</string>
+	<string name="watch_list_scheme_txt">યોજના</string>
+	<string name="watch_list_nav_txt">એન.એ.વી.</string>
+    <!--End Watch List-->
+
+    <!--My SIP-->
+	<string name="my_sip_investor_name">રોકાણકારનું નામ</string>
+	<string name="my_sip_scheme_name_placeholder">યોજનાનું નામ</string>
+	<string name="my_sip_total_amount_placeholder">કુલ રકમ</string>
+	<string name="my_sip_scheme_name">યોજનાનું નામ</string>
+	<string name="my_sip_folio_plceholder">ફોલિયો નંબર</string>
+	<string name="my_sip_started_on_placeholder">થી શરૂ થયું</string>
+    <string name="my_sip_ending_on_date">પર સમાપ્ત થાય છે</string>
+	<string name="sip_invest_dialog_header">આ તમારા આગામી એસઆઈપી હપતાની નિયત તારીખ છે. રજાઓ / સપ્તાહના અંતમાં આવતા અને આગામી બિઝનેસ દિવસે ડેબિટ કરવામાં આવે છે તે નિયત તારીખ ચુસ્ત હપતા પહેલા અથવા તે પછી 2 દિવસની અંદર રકમ ડેબિટ કરવામાં આવશે</string>
+    <!--End My SIP-->
+
+
+    <!--My Folio-->
+    <!--End My Folio-->
+
+    <!--Broker DashBoard-->
+	<string name="broker_aum_value">એયુએમ</string>
+	<string name="broker_No_of_Clients">ગ્રાહકોની સંખ્યા</string>
+	<string name="broker_No_of_SIP">એસઆઈપીની સંખ્યા</string>
+	<string name="broker_SIP_per_month">દર મહિને એસ.આઈ.પી.</string>
+    <!--End Broker DashBoard-->
+
+    <!--Common-->
+	<string name="no_record_available">કોઈ રેકોર્ડ ઉપલબ્ધ નથી</string>
+	<string name="no_investment_available">કોઈ રોકાણ ડેટા ઉપલબ્ધ નથી</string>
+    <!--End Broker DashBoard-->
+
+
+    <!--Crop Image Screen-->
+    <!--End Crop Image Screen-->
+
+    <!--Change Password-->
+	<string name="change_pwd_ques_txt">શું તમે તમારો હાલનો પાસવર્ડ બદલવા માંગો છો?</string>
+	<string name="change_password_hint_cp_txt">અત્યારનો પાસવર્ડ</string>
+	<string name="change_password_hint_np_txt">નવો પાસવર્ડ</string>
+	<string name="change_pwd_do_it_later_btn_txt">રદ કરો</string>
+	<string name="change_pwd_reset_btn_txt">ફરીથી સેટ કરો</string>
+	<string name="change_password_hint_cnp_txt">નવાપાસવર્ડની પુષ્ટી કરો</string>
+    <!--End Change Password-->
+   <!--Payment Method Screen-->
+	<string name="payment_method_btn_txt">ચાલુ રાખો</string>
+	<string name="payment_method_rb_netbanking_header_txt">ડાયરેક્ટ નેટબેંકિંગ દ્વારા ચૂકવણી કરો</string>
+	<string name="payment_method_rb_netbanking_content_txt">આગલી સ્ક્રીન પર બધા પ્રતીક્ષણાત્મક ઓર્ડર્સ સીધા નેટબ andન્કિંગ દ્વારા કા deleteી નાખવા અને ચૂકવણી કરવાના વિકલ્પ સાથે પ્રદર્શિત કરવામાં આવશે.</string>
+	<string name="payment_method_rb_bse_header_txt">વન ટાઇમ મેન્ડેટ / યુપીઆઈ / આરટીજીએસ દ્વારા ચૂકવણી કરો</string>
+	<string name="payment_method_rb_content_txt">આગલી સ્ક્રીન પર તમારી પાસે ચુકવણીની વિવિધ પદ્ધતિઓ હશે જેમ કે નેટબેંકિંગ, આરટીજીએસ, એનઇએફટી અને ડેબિટ આદેશ.</string>
+    <!--Payment Method Screen-->
+
+
+       <!--Form Screens-->
+
+    <!--Personal Details Form-->
+	<string name="personal_details_referral_code_txt">રેફરલ કોડ (વૈકલ્પિક)</string>
+	<string name="personal_details_guardian_name_txt">વાલીનું નામ</string>
+	<string name="personal_details_verify_txt">ચકાસો</string>
+	<string name="personal_details_email_txt">ઇમેઇલ</string>
+	<string name="personal_details_dob_hint_txt">DDMMYYYY</string>
+	<string name="personal_details_process_mode_txt">પ્રક્રિયા મોડ</string>
+	<string name="personal_details_btn_continue_txt">ચાલુ રાખો</string>
+	<string name="personal_details_tax_status_txt">કરની સ્થિતિ</string>
+	<string name="personal_details_pan_hint_txt">પાન</string>
+    <string name="personal_details_occupation_txt">વ્યવસાય</string>
+	<string name="personal_details_dob_txt">જન્મ તારીખ</string>
+	<string name="personal_details_house_no_hint_txt">મકાન નં.</string>
+	<string name="person_details_error_name">કૃપા કરી તમારું નામ દાખલ કરો</string>
+	<string name="person_details_error_guard_name">કૃપા કરીને વાલીનું નામ દાખલ કરો</string>
+	<string name="person_details_error_pan">કૃપા કરીને તમારી પાન વિગતો દાખલ કરો</string>
+	<string name="person_details_error_guard_pan">કૃપા કરી તમારા વાલી પાનની વિગતો દાખલ કરો</string>
+	<string name="person_details_error_email">કૃપા કરીને તમારું ઇમેઇલ દાખલ કરો</string>
+	<string name="person_details_error_mobile">કૃપા કરીને તમારો મોબાઇલ દાખલ કરો</string>
+	<string name="person_details_error_mobile_invalid">કૃપા કરી કોઈ માન્ય મોબાઇલ નંબર દાખલ કરો</string>
+	<string name="person_details_error_email_invalid">કૃપા કરીને માન્ય ઇમેઇલ દાખલ કરો</string>
+	<string name="person_details_error_pan_invalid">કૃપા કરી માન્ય પાન વિગત દાખલ કરો.</string>
+	<string name="person_details_error_guard__pan_invalid">કૃપા કરી માન્ય પાન વિગત દાખલ કરો.</string>
+	<string name="personal_details_landmark_name_hint_txt">તમારું લેન્ડમાર્ક</string>
+	<string name="personal_details_city_name_hint_txt">શહેર</string>
+	<string name="personal_details_pin_name_hint_txt">પિન</string>
+	<string name="personal_details_mobile_txt">મોબાઇલ નંબર</string>
+	<string name="personal_details_street_name_hint_txt">શેરી</string>
+    <string name="personal_form_error_invalid_date">ડીડી-એમએમ-વાયવાયમાં ડીઓબી દાખલ કરો</string>
+	<string name="personal_form_error_minor_age">સગીર વય 18 વર્ષથી ઓછી હોવી જોઈએ</string>
+	<string name="personal_form_error_invalid_age">ઉંમર 18 વર્ષથી ઉપરની હોવી જોઈએ</string>
+	<string name="personal_form_error_verification_code">કૃપા કરીને તમારા રેફરલ કોડને ચકાસો</string>
+	<string name="personal_details_error_pan_card">પાન કાર્ડ નંબર દાખલ કરો</string>
+	<string name="personal_details_error_invalid_pan_card">અમાન્ય પાન કાર્ડ નંબર</string>
+	<string name="personal_details_error_guardian_pan">મહેરબાની કરીને ગૌરીયન પાન નંબર દાખલ કરો</string>
+	<string name="personal_details_error_invalid_guardian_pan">અમાન્ય ગૌરડીયન પાન કાર્ડ નંબર</string>
+	<string name="personal_details_error_empty_mobile">મહેરબાની કરીને મોબાઇલ નંબર દાખલ કરો</string>
+	<string name="personal_details_invalid_mobile">કૃપા કરી માન્ય મોબાઇલ નંબર દાખલ કરો</string>
+	<string name="personal_details_error_empty_username">કૃપા કરી વપરાશકર્તા નામ નંબર દાખલ કરો</string>
+    <string name="personal_details_success_registration_desc">લ Loginગિન ઓળખપત્ર તમારા ઇમેઇલ પર મોકલવામાં આવ્યો છે. જો તમે રોકાણ ખાતાની નોંધણી પ્રક્રિયા દરમિયાન અટકી ગયા હો, તો તમે લ loginગિન ઓળખપત્રો દ્વારા લ loginગિન દ્વારા તમારી નોંધણી ચાલુ રાખી શકો છો.</string>
+	<string name="personal_details_error_empty_address">કૃપા કરીને તમારું સરનામું દાખલ કરો</string>
+	<string name="personal_details_error_empty_street_name">કૃપા કરીને તમારા શેરીનું નામ દાખલ કરો</string>
+	<string name="personal_details_error_empty_city">કૃપા કરીને તમારું શહેર દાખલ કરો</string>
+	<string name="personal_details_error_empty_pin">કૃપા કરી તમારો પિન કોડ દાખલ કરો</string>
+	<string name="personal_details_error_invalid_pin">અમાન્ય પિન કોડ</string>
+	<string name="personal_details_error_foreign_address">કૃપા કરી તમારું વિદેશી સરનામું દાખલ કરો</string>
+	<string name="personal_details_error_country">કૃપા કરીને તમારા દેશમાં દાખલ કરો</string>
+	<string name="personal_details_error_foreign_state">કૃપા કરીને તમારી વિદેશી રાજ્ય દાખલ કરો</string>
+	<string name="personal_details_error_foreign_city">કૃપા કરીને તમારું વિદેશી શહેર દાખલ કરો</string>
+	<string name="personal_details_error_foreign_empty_pin">કૃપા કરી તમારો પિન કોડ દાખલ કરો</string>
+	<string name="personal_details_error_foreign_invalid_pin">અમાન્ય પિન કોડ</string>
+	<string name="personal_details_error_empty_ifsc">કૃપા કરી તમારું આઈએફએસસી દાખલ કરો</string>
+	<string name="personal_details_error_invalid_ifsc">અમાન્ય આઈએફએસસી કોડ</string>
+	<string name="personal_details_error_acount_no">કૃપા કરી તમારો એકાઉન્ટ નંબર દાખલ કરો</string>
+	<string name="personal_details_error_invalid_acount_no">અમાન્ય એકાઉન્ટ નંબર</string>
+    <!--End Personal Details Form-->
+
+
+    <!--Personal Investment-->
+	<string name="personal_investment_my_risk_txt">મારો જોખમ</string>
+	<string name="personal_investment_my_goal_txt">મારું લક્ષ્ય</string>
+    <!--End Personal Investment-->
+
+   <!--Additional Transactions-->
+	<string name="add_transc_balace_unit_txt">સંતુલન \n યુનિટ્સ</string>
+	<string name="add_tranc_totoal_amount_txt">કુલ</string>
+	<string name="add_tranc_statement_of_account_btn_txt">એકાઉન્ટ સ્ટેટમેન્ટ</string>
+	<string name="add_tranc_outstanding_units_details_btn_txt">ઉત્કૃષ્ટ એકમોની વિગતો</string>
+	<string name="add_tranc_additional_purchase_txt">વધુ ખરીદી</string>
+	<string name="add_tranc_sip_txt">એસ.આઈ.પી.</string>
+	<string name="add_tranc_switch_txt">સ્વિચ કરો</string>
+	<string name="add_tranc_swp_txt">એસડબલ્યુપી</string>
+	<string name="add_tranc_stp_stxt">એસ.ટી.પી.</string>
+	<string name="add_tranc_redeem_txt">વેચી દો</string>
+    <!--Additional Transactions-->
+
+      <!--Additional Switch-->
+	<string name="additional_switch_unit_balance_txt">એકમ બેલેન્સ</string>
+	<string name="additional_switch_market_value_txt">બજાર કિંમત</string>
+	<string name="additional_switch_amount_txt">રકમ</string>
+	<string name="additional_switch_primary_frequency">રકમ</string>
+	<string name="additional_switch_secondary_frequency">એકમો</string>
+	<string name="additional_switch_tertiary_frequency">બધા એકમો</string>
+	<string name="additional_switch_scheme_type_title">યોજના પ્રકાર</string>
+	<string name="additional_switch_scheme_growth_title">વૃદ્ધિ</string>
+	<string name="additional_switch_scheme_dividend_title">ડિવિડન્ડ</string>
+	<string name="additional_switch_category_title">કેટેગરી</string>
+    <!--End Additional Switch-->
+
+  <!--Additional SWP-->
+	<string name="additional_swp_first_order_today_txt">આજે ફક્ત પ્રથમ ખરીદીનો ઓર્ડર આપો</string>
+	<string name="additional_swp_hint_txt">નંબર દાખલ કરો</string>
+	<string name="additional_swp_frequency_title">એસડબ્લ્યુપી ક્રેડિટ આવર્તન</string>
+	<string name="additional_swp_primary_frequency">Monthly</string>
+	<string name="additional_swp_tertiary_frequency">Quarterly</string>
+	<string name="additional_swp_secondary_frequency">Weekly</string>
+    <!--END Additional SWP-->
+
+
+     <!--Additional SIP-->
+	<string name="additional_sip_until_cancelled_txt">ત્યાં સુધી હું તેને મારી જાતને રદ કરું છું</string>
+	<string name="additional_sip_select_mandate_txt">આદેશ / opટોપે પસંદ કરો</string>
+	<string name="additional_sip_amount_txt">રકમ દાખલ કરો</string>
+    <!--ENd Additional SIP-->
+
+
+
+    <!--Additional Purchase-->
+	<string name="additinal_purchase_send_link_on_email_txt">ઇમેઇલ પર લિંક મોકલો</string>
+	<string name="additional_purchase_frequency_title">ચુકવણી</string>
+	<string name="additional_purchase_primary_frequency">નેટ બેન્કિંગ</string>
+	<string name="additional_purchase_secondary_frequency">ડેબિટ મેન્ડેટ / Autoટો પે</string>
+	<string name="additional_purchase_tertiary_frequency">આરટીજીએસ / એનઇએફટી</string>
+	<string name="additional_purchase_bank_txt">બેંક પસંદ કરો</string>
+	<string name="additional_purchase_rtgs_hint_txt">આરટીજીએસ કોડ</string>
+	<string name="additional_purchase_micr_hint_txt">એમઆઈસીઆર નં.</string>
+	<string name="additional_purchase_instrument_hint_txt">ઇન્સ્ટ્રુમેન્ટ બેંક</string>
+	<string name="additional_purchase_instrument_branch_hint_txt">ઇન્સ્ટ્રુમેન્ટ શાખા</string>
+	<string name="additional_purchase_utr_no_hint_txt">યુટીઆર નંબર</string>
+	<string name="additional_purchase_transafer_date_hint_txt">DDMMYYYY</string>
+	<string name="additional_purchase_account_no_hint_txt">ખાતા નંબર</string>
+	<string name="additional_purchase_cheque_no_hint_txt">નંબર તપાસો</string>
+	<string name="additional_switch_frequency_title">દ્વારા સ્વિચ કરો</string>
+	<string name="additional_sip_primary_frequency">Monthly</string>
+	<string name="additional_sip_secondary_frequency">Weekly</string>
+	<string name="additional_sip_select_target_scheme_txt">યોજના પસંદ કરો</string>
+	<string name="additional_sip_hint_txt">રકમ દાખલ કરો</string>
+	<string name="additional_sip_frequency_title">આવર્તન પસંદ કરો</string>
+    <!--End Additional Purchase-->
+
+    <!--Additional STP-->
+	<string name="additional_stp_start_date_text">પ્રારંભ તારીખ</string>
+	<string name="additional_stp_dividend_txt">ડિવિડન્ડ આવર્તન</string>
+	<string name="additional_stp_first_order_txt">આજે ફક્ત પ્રથમ ખરીદીનો ઓર્ડર આપો</string>
+	<string name="additional_stp_installment_hint_txt">હપતોની સંખ્યા</string>
+	<string name="additional_stp_select_target_scheme_txt">લક્ષ્યાંક યોજના</string>
+    <!--END Additional STP-->
+
+    <!--Additional Redeem-->
+	<string name="additional_redeem_enter_amount_txt">કૃપા કરીને રકમ દાખલ કરો</string>
+	<string name="additional_redeem_select_bank_txt">બેંક પસંદ કરો</string>
+	<string name="additional_redeem_frequency_title">વેચવાનો પ્રકાર</string>
+	<string name="additional_redeem_enter_units_txt">એકમો દાખલ કરો</string>
+    <!--End Additional Redeem-->
+
+
+    <!--Nominee Details Form-->
+	<string name="nominee_details_form_name_txt">નામદારનું નામ</string>
+	<string name="nominee_details_form_relation_txt">પ્રથમ ધારક સાથે સંબંધ</string>
+	<string name="nominee_details_form_dob_txt">નોમિની ડીઓબી</string>
+	<string name="nominee_details_form_address_txt">નોમિની સરનામું</string>
+	<string name="nominnee_details_form_city_txt">નોમિની સિટી</string>
+	<string name="nominnee_name_error">મહેરબાની કરીને તમારું નામાંકિત નામ દાખલ કરો</string>
+	<string name="nominnee_rel_error">કૃપા કરીને તમારી સાથે નોમિની સંબંધ દાખલ કરો</string>
+	<string name="nominee_add_error">કૃપા કરીને નોમિની સરનામું દાખલ કરો</string>
+	<string name="nominee_city_error">કૃપા કરીને નોમિની સિટી દાખલ કરો</string>
+    <!--End Nominee Details Form-->
+
+    <!--Bank Details Form-->
+	<string name="bank_details_form_account_no_txt">ખાતા નંબર</string>
+	<string name="bank_details_form_ifsc_code_txt">આઈએફએસસી કોડ</string>
+	<string name="bank_details_form_account_type_txt">ખાતાનો પ્રકાર</string>
+    <!--Bank Details Form-->
+     <!--KYC Verification-->
+	<string name="kyc_verification_btn_later_txt">પાછળથી</string>
+	<string name="kyc_toolbar_primary_title">ચુકવણી</string>
+	<string name="kyc_toolbar_secondary_title">ઓનલાઇન કેવાયસી</string>
+	<string name="kyc_error_loading_screen_msg">એપ્લિકેશન લોડ કરવામાં નિષ્ફળ!</string>
+	<string name="kyc_verification_header_txt">અમે તમારું કેવાયસી શોધવા માટે અસમર્થ છીએ. You n તમે અત્યારે તમારી સેલ્ફ વિડિઓ કેવાયસી કરી શકો છો.</string>
+
+	<string name="kyc_verification_btn_proceed_txt">આગળ વધો</string>
+	<string name="kyc_verification_footer_desc_txt">નોંધ: લ emailગિન ઓળખપત્રો તમારા ઇમેઇલ પર મોકલવામાં આવ્યા છે. જો તમે નોંધણી પ્રક્રિયા દરમ્યાન અટવાયેલા છો, તો તમે તે જ લ loginગિન ઓળખપત્રોનો ઉપયોગ કરીને પછીથી લtimeગ ઇન કરીને તમારી નોંધણી ચાલુ રાખી શકો છો.</string>
+    <!--KYC Verification-->
+
+      <!--Fatca Form-->
+	<string name="fatca_form_address_type_txt">સરનામાંનો પ્રકાર</string>
+	<string name="fatca_from_place_of_birth_txt">જન્મ સ્થળ</string>
+	<string name="fatca_form_country_birth_txt">જન્મનો દેશ</string>
+	<string name="fatca_from_wealth_source_txt">સંપત્તિ સ્રોત</string>
+	<string name="fatca_form_politically_expposed_txt">રાજકીય દ્રષ્ટિએ ખુલ્લો મૂકાયો નથી</string>
+	<string name="fatca_form_btn_continue_txt">પૂર્ણ</string>
+	<string name="fatca_form_btn_prev_txt">અગાઉના</string>
+	<string name="fatca_instruction">માહિતી</string>
+	<string name="fatca_form_header_desc">એફએટીટીસીએ નો હેતુ અમેરિકી વ્યક્તિઓ કે જેઓ બિન-યુએસ સંસ્થાઓ દ્વારા રોકાણ કરી અને આવક મેળવી શકે છે તેના સંદર્ભમાં આંતરિક મહેસૂલ સેવા (આઇઆરએસ) માટે પારદર્શિતા વધારવાનો છે. જ્યારે પ્રાથમિક ધ્યેય યુ.એસ. વ્યક્તિઓ વિશેની માહિતી મેળવવાનું છે, ત્યારે ફATટસીએ લાગુ પડેલા દસ્તાવેજો અને અહેવાલોની આવશ્યકતાઓને પૂર્ણ ન કરતી હોય ત્યાં વેરા રોકીને રોકે છે.</string>
+
+    <!--End Of Fatca Form-->
+
+    <!--Form Screens-->
+    <!--Transaction Screen-->
+	<string name="transaction_filter_header_txt">ફિલ્ટર કરો</string>
+	<string name="transaction_filter_select_member_txt">સભ્ય પસંદ કરો</string>
+	<string name="transaction_filter_select_fund_txt">ફંડ પસંદ કરો</string>
+	<string name="transaction_filter_transaction_type_txt">વ્યવહારનો પ્રકાર</string>
+	<string name="transaction_filter_btn_apply_txt">લાગુ કરો</string>
+	<string name="transaction_filter_end_date_txt">અંતિમ તારીખ</string>
+	<string name="transaction_filter_start_date_txt">પ્રારંભ તારીખ</string>
+	<string name="transaction_filtere_radio_custom_txt">કસ્ટમ</string>
+	<string name="transaction_filtere_radio_since_inception_txt">શરૂઆતથી</string>
+	<string name="transaction_filtere_radio_current_year_txt">ચાલુ વર્ષ</string>
+	<string name="transaction_filtere_previous_month_txt">પાછલો મહિનો</string>
+	<string name="transaction_filtere_radio_current_month_txt">વર્તમાન મહિનો</string>
+	<string name="transaction_filtere_transaction_duration_txt">વ્યવહાર અવધિ</string>
+    <!--End Transaction Screen-->
+
+
+    <!--Risk Profile-->
+	<string name="risk_profile_confirmation_i_agree">હું સહમત છુ</string>
+	<string name="risk_profile_confirmation_retake">એ ફરી કરો</string>
+	<string name="risk_profile_body_header_txt">તમારા હાલના રોકાણો અમને ટ્રાન્સફર કરો</string>
+	<string name="risk_profile_body_desc_txt">તમે તમારા અગાઉના એમએફ રોકાણો અમને ટ્રાન્સફર કરીને અહીં તમારા સંપૂર્ણ પોર્ટફોલિયોને ટ્ર trackક કરી શકો છો. નિયમો અને શરતો લાગુ થઈ શકે છે.</string>
+	<string name="risk_profile_body_foooter_desc_txt">તમારી રોકાણ જોખમ પ્રોફાઇલ જાણો</string>
+	<string name="risk_profile_understand_the_riskometer_txt">જોખમ મીટર સમજો</string>
+	<string name="risk_profile_make_better_investment_choices_txt">રોકાણની સારી પસંદગી કરો</string>
+	<string name="risk_profile_continue_btn_txt">ચાલુ રાખો</string>
+	<string name="risk_profile_transfer_holding_txt">ટ્રાન્સફર હોલ્ડિંગ</string>
+    <!--Risk Profile-->
+
+    <!--Risk ASSESSMENT-->
+	<string name="risk_assesment_header_txt">તમારી જોખમ પ્રોફાઇલ જાણો</string>
+	<string name="risk_assesment_desc_txt">કેટલાક સરળ પ્રશ્નોના જવાબો આપીને તમારી જોખમ પ્રોફાઇલને સમજવામાં અમારી સહાય કરો.</string>
+	<string name="risk_assesment_invest_risk_txt">તમારી રોકાણ જોખમ પ્રોફાઇલ જાણો</string>
+	<string name="risk_assesment_riskometer_txt">જોખમ મીટર સમજો</string>
+	<string name="risk_assesment_make_better_investment_choices_txt">રોકાણની સારી પસંદગી કરો</string>
+	<string name="risk_assesment_btn_start_assessment_txt">આકારણી પ્રારંભ કરો</string>
+	<string name="risk_assesment_question_uncomplete">કૃપા કરીને બધા પ્રશ્નોના જવાબ આપો</string>
+
+
+    <!--PortfolioFragment-->
+	<string name="portfolio_client_purchase_cost_txt">ખરીદી કિંમત</string>
+	<string name="portfolio_client_gain_txt">મેળવો</string>
+	<string name="portfolio_client_market_value_txt">બજાર કિંમત</string>
+	<string name="portfolio_client_folio_txt">ફોલિયો નં.</string>
+	<string name="portfolio_client_cagr_txt">સીએજીઆર</string>
+
+
+    <!--Nse Fatca-->
+	<string name="nse_fatca_header_desc">FATCA નો હેતુ અમેરિકી વ્યક્તિઓ કે જેઓ બિન-યુએસ સંસ્થાઓ દ્વારા રોકાણ કરી અને આવક મેળવી શકે છે તેના સંદર્ભમાં આંતરિક મહેસૂલ સેવા (આઇઆરએસ) માટે પારદર્શિતા વધારવાનો છે. જ્યારે પ્રાથમિક ધ્યેય યુ.એસ. વ્યક્તિઓ વિશેની માહિતી મેળવવાનું છે, ત્યારે ફATટસીએ લાગુ પડેલા દસ્તાવેજો અને અહેવાલોની આવશ્યકતાઓને પૂર્ણ ન કરતી હોય ત્યાં વેરા રોકીને રોકે છે.</string>
+	<string name="nse_fatca_primary_header_txt">તમે માત્ર એક મિનિટ દૂર છો!</string>
+	<string name="nse_fatca_secondary_header_txt">તમારા સપના તરફ એક પગલું</string>
+	<string name="nse_fatca_dob_txt">જન્મ તારીખ</string>
+	<string name="nse_fatca_address_type_txt">સરનામાંનો પ્રકાર</string>
+	<string name="PlaceBirth">જન્મ સ્થળ</string>
+	<string name="nse_fatca_country_of_birth">જન્મનો દેશ</string>
+	<string name="nse_fatca_wealth_resource_txt">સંપત્તિ સ્રોત</string>
+	<string name="nse_fatca_occuptaion_txt">વ્યવસાય</string>
+	<string name="nse_fatca_income_slabs_txt">આવક સ્લેબ</string>
+    <!--Nse Fatca-->
+
+ <!--Transaction Screen-->
+	<string name="incomplete_profile_step_message">કૃપા કરીને તમારા બાકી પગલાઓ પૂર્ણ કરો</string>
+	<string name="incomplete_profile_first_step_txt">પ્રોફાઇલ</string>
+	<string name="incomplete_profile_first_step_desc_txt">રોકાણ પ્રોફાઇલ પૂર્ણ થઈ નથી, કૃપા કરીને તેને પૂર્ણ કરો.</string>
+	<string name="incomplete_profile_autopay_header_txt">Opટોપે</string>
+	<string name="incomplete_profile_signature_txt">સહી</string>
+	<string name="incomplete_profile_fatca_header_txt">FATCA</string>
+	<string name="incomplete_profile_signature_desc_txt">સહી અપલોડ કરો</string>
+	<string name="incomplete_profile_fatca_desc_txt">FATCA બનાવો</string>
+    <!--End Transaction Screen-->
+
+	<string name="TotalGain">કુલ લાભ</string>
+	<string name="NetInvestment">ચોખ્ખું રોકાણ</string>
+    <string name="investment_status_nse_txt">તમારું રોકાણ ખાતું બનાવવામાં આવ્યું છે. કૃપા કરીને આગળ વધવા માટે લ Loginગિન કરો.</string>
+
+	<string name="investment_status_bse_txt">તમારું રોકાણ ખાતું બનાવવામાં આવ્યું છે. કૃપા કરીને લ .ગિન કરો.</string>
+	<string name="iin_text">તમારા આઇઆઇએનને activ n નિષ્ક્રિય કરવા માટે એક્સચેંજને થોડો સમય જોઈએ છે, તેથી કૃપા કરીને \n નેક્સ્ટ 2 કાર્યકારી દિવસો માટે રાહ જુઓ.</string>
+
+    <!--Setting-->
+	<string name="settings_pin_txt">પિન</string>
+	<string name="settings_change_screen_lock_txt">સ્ક્રીન લ Changeક બદલો</string>
+	<string name="settings_change_password_txt">પાસવર્ડ બદલો</string>
+	<string name="settings_about_us_txt">અમારા વિશે</string>
+	<string name="settings_contact_txt">સંપર્ક કરો</string>
+	<string name="settigs_share_txt">શેર કરો</string>
+	<string name="settings_rate_txt">દર</string>
+	<string name="settings_privacy_policy_txt">ગોપનીયતા નીતિ</string>
+	<string name="settings_logout_txt">લૉગ આઉટ</string>
+	<string name="setting_app_version_txt">એપ્લિકેશન વેર .:</string>
+	<string name="settings_data_updated_on_txt">આના પર ડેટા અપડેટ થયો:</string>
+	<string name="settings_transaction_updated_on_txt">ટ્રાન્ઝેક્શન આના પર અપડેટ થયું:</string>
+	<string name="setting_nav_updated_on_txt">એનએવીએ આના પર અપડેટ કર્યું:</string>
+	<string name="settings_pf">સેટિંગ્સ</string>
+    <!--End Setting-->
+
+    <!--BSE Profile details-->
+	<string name="bse_profile_detail_folio_txt">ફોલિયો નં.</string>
+	<string name="bse_profile_detail_scheme_name_txt">યોજના</string>
+	<string name="bse_profile_detail_holder_name_txt">ધારક</string>
+	<string name="bse_profile_detail_joint_1_name_txt">સંયુક્ત ધારક</string>
+	<string name="bse_profile_detail_joint_2_name_txt">સંયુક્ત 2 નામ</string>
+	<string name="bse_profile_detail_nominee_txt">નામાંકિત</string>
+    <!--End BSE Profile details-->
+
+    <!--Testing-->
+	<string name="testing_view_check_nse_txt">એનએસઈ તપાસો</string>
+	<string name="testing_view_check_bse_txt">બીએસઈ તપાસો</string>
+	<string name="testing_view_check_live_txt">લાઇવ તપાસો</string>
+	<string name="testing_view_btn_check_txt">તપાસો</string>
+    <!--Testing-->
+
+    <!--Empty Cart-->
+	<string name="empty_cart_header_txt">તમારી બાસ્કેટ ખાલી છે</string>
+	<string name="empty_cart_desc_txt">ઉમેરો અને ઉમેરવા માટે યોજના પસંદ કરો</string>
+    <!--end Empty Cart-->
+
+    <!--Tax Investment-->
+	<string name="tax_investment_your_income_txt">તમારી આવક</string>
+	<string name="tax_investment_sliderstart_txt">1- 5L</string>
+	<string name="tax_investment_slider_middle_txt">5-10L</string>
+	<string name="tax_investment_slider_end_txt">ઉપર 10 એલ</string>
+	<string name="tax_investment_investment_in_elss_txt">ઇએલએસએસ માં રોકાણ</string>
+	<string name="tax_investment_tax_saving_txt">તમારી કર બચત</string>
+	<string name="tax_investment_dash_txt">-</string>
+	<string name="tax_investment_monthly_sip_txt">માસિક એસ.આઈ.પી.</string>
+	<string name="tax_investment_one_time_investment_txt">એક સમયનું રોકાણ</string>
+	<string name="tax_investment_one_time_continue_sip_txt">એસઆઈપી સાથે ચાલુ રાખો</string>
+	<string name="tax_investment_one_time_investment_txttax_investment_continue_lumpsum_txt">લમ્પસમ સાથે ચાલુ રાખો</string>
+    <!--End Tax Investment-->
+
+
+    <!--Client Search -->
+	<string name="client_search_item_pan_txt">પાન</string>
+	<string name="client_search_item_family_head_txt">કૌટુંબિક વડા</string>
+	<string name="client_search_bar_hint_txt">અહીં શોધો ...</string>
+    <!--End Client Search -->
+
+
+     <!--Change Scheme -->
+	<string name="change_scheme_type_txt">યોજના પ્રકાર</string>
+    <!--Change Scheme -->
+
+    <!--Mendate List-->
+	<string name="mendate_list_name_txt">નામ</string>
+	<string name="mendate_list_status_txt">સ્થિતિ</string>
+	<string name="mendate_list_pending_txt">બાકી</string>
+	<string name="mendate_list_1234_txt">********* 1234</string>
+	<string name="mendate_list_savings_txt">બચત</string>
+	<string name="mendate_list_mandatecode_txt">Opટોપે / મેન્ડેટ કોડ</string>
+	<string name="mendate_list_mandate_code_txt">Opટોપે / મેન્ડેટ કોડ</string>
+	<string name="mendate_list_no_mandate_found_txt">કોઈ Autટોપાય આદેશ મળ્યો નથી</string>
+	<string name="mendate_list_11_txt">11</string>
+	<string name="mendate_list_btn_lumpsum_txt">લમ્પસમ સાથે ચાલુ રાખો</string>
+	<string name="mendate_list_btn_continue_txt">એસઆઈપી સાથે ચાલુ રાખો</string>
+	<string name="mendate_list_2_txt">2</string>
+	<string name="mendate_list_25_txt">25</string>
+	<string name="mendate_list_500000_txt">500000</string>
+	<string name="mendate_list_5000_txt">5000</string>
+	<string name="mendate_list_100_txt">100</string>
+	<string name="mendate_list_0_txt">0</string>
+	<string name="mendate_list_12_00_txt">12</string>
+	<string name="mendate_list_6_00_txt">6</string>
+	<string name="mendate_list_amnt_txt">લગ્ન સમયે જરૂરી રકમ</string>
+	<string name="mendate_list_childage_txt">બાળકની ઉંમર</string>
+	<string name="mendate_list_child_marriage_txt">બાળકની ઉંમરે લગ્ન થશે (વર્ષો)</string>
+	<string name="mendate_list_amnt_required_txt">આજની કિંમત (\u20b9) મુજબ લગ્ન માટે જરૂરી રકમ</string>
+	<string name="mendate_list_annual_saving_txt">વાર્ષિક બચત (\u20b9)</string>
+	<string name="mendate_list_onetime_txt">એક વાર</string>
+	<string name="mednate_list_existing_corpus_txt">હાલનો કોર્પસ (\u20b9)</string>
+	<string name="mendate_list_expectaed_rate_txt">વળતરનો અપેક્ષિત દર (%)</string>
+	<string name="mendate_list_btn_autopay_txt">Opટોપેય આદેશ બનાવો</string>
+    <!--End Mendate List-->
+
+    <!--Lumpsum Module-->
+	<string name="lumpsum_cart_0_txt">0</string>
+	<string name="lumpsum_payment_txt">ચુકવણી</string>
+	<string name="lumpsum_bank_txt">બેંક</string>
+	<string name="lumpsum_send_email_txt">ઇમેઇલ પર લિંક મોકલો</string>
+	<string name="lumpsum_pay_now_txt">હવે પૈસા આપો</string>
+	<string name="lumpsum_transfer_date_txt">પરિવહન તારીખ</string>
+	<string name="lumpsum_ddmmyyyy_txt">DDMMYYYY</string>
+	<string name="lumpsum_mandate_txt">Opટોપેય આદેશ</string>
+	<string name="lumpsum_until_cancel_txt">રદ ન થાય ત્યાં સુધી</string>
+	<string name="lumpsum_first_pay_txt">પ્રથમ એસઆઈપી ચુકવણી પે</string>
+	<string name="lumpsum_add_scheme_txt">યોજનાઓ ઉમેરો</string>
+	<string name="lumpsum_order_now_btn_txt">ચાલુ રાખો</string>
+	<string name="lumpsum_rtgs_txt">આરટીજીએસ કોડ</string>
+	<string name="lumpsum_txt_zero">0</string>
+	<string name="lumpsum_utr_txt">યુટીઆર નં</string>
+    <!--End Lumpsum Module-->
+
+    <!--Goal Module-->
+     <!--Goal List-->
+	<string name="goal_list_education_txt">શિક્ષણ</string>
+	<string name="goal_list_target_amount_txt">લક્ષ્યાંકની રકમ</string>
+	<string name="goal_list_current_investments_txt">વર્તમાન રોકાણો</string>
+	<string name="goal_list__25_000_txt">25,000 છે</string>
+	<string name="goal_list_completed_txt">પૂર્ણ</string>
+	<string name="goal_list_projected_txt">પ્રોજેક્ટેડ</string>
+	<string name="goal_list_shortfall_txt">કમી</string>
+    <!--Goal List-->
+     <!--Goal Summary-->
+	<string name="goal_summary_details_header_txt">ધ્યેય વિગતો</string>
+	<string name="goal_summary_personal_investment_plan">વ્યક્તિગત રોકાણ યોજના</string>
+	<string name="goal_summary_details_achieve_footer_txt">આ લક્ષ્યને પ્રાપ્ત કરવા માટે તમારે રોકાણ કરવું આવશ્યક છે</string>
+	<string name="goal_summary_details_onetime_txt">એક વાર</string>
+	<string name="goal_summary_btn_txt">નવો ઉમેરો</string>
+	<string name="goal_summary_target_amount_heading_txt">લક્ષ્યાંકની રકમ</string>
+	<string name="goal_summary_details_month_txt">દર મહિને</string>
+	<string name="goal_summary_surplus">સરપ્લસ</string>
+	<string name="goal_summary_inflation_target_amnt">ફૂલેલી / લક્ષ્ય રકમ</string>
+	<string name="goal_summary_target_amnt">લક્ષ્યાંકની રકમ</string>
+	<string name="goal_summary_shortfall">કમી</string>
+	<string name="goal_summary_go_for_lumpsum_empty_txt">કોઈ ડેટા ઉપલબ્ધ નથી, કૃપા કરીને યોજના ઉમેરો</string>
+    <!--End Goal Summary-->
+
+    <!--Create Goal-->
+	<string name="create_goal_5_00_txt">5</string>
+	<string name="create_goal_next_btn_txt">લક્ષ્ય બનાવો</string>
+	<string name="create_goal_hint_inflation_txt">અપેક્ષિત ફુગાવો દાખલ કરો</string>
+	<string name="create_goal_header_txt">તમારું લક્ષ્ય નામ દાખલ કરો</string>
+	<string name="create_goal_target_amnt_txt">રૂપિયામાં લક્ષ્યની રકમ દાખલ કરો</string>
+	<string name="create_goal_update_txt">અપડેટ</string>
+    <string name="create_goal_duration_txt">તમારી માન્ય લક્ષ્યાંક તારીખ દાખલ કરો</string>
+	<string name="create_goal_error_empty_goal_name">તમારું લક્ષ્ય નામ દાખલ કરો</string>
+	<string name="create_goal_error_inavalid_goal_amount">માન્ય રકમ દાખલ કરો</string>
+	<string name="create_goal_error_goal_date">લક્ષ્યની લક્ષ્યાંક તારીખ દાખલ કરો</string>
+	<string name="create_goal_invalid_goal_date_format">ડીડી-એમએમ-વાયવાયમાં લક્ષ્યાંકની તારીખ દાખલ કરો</string>
+	<string name="create_goal_empty_future_date">ભાવિ લક્ષ્યની તારીખ દાખલ કરો</string>
+	<string name="create_goal_error_return">તમારું અપેક્ષિત વળતર દાખલ કરો</string>
+	<string name="create_goal_error_expected_rate">તમારો સાચો અપેક્ષિત દર દાખલ કરો</string>
+	<string name="create_goal_error_inflation_rate">તમારો સાચો ફુગાવો દર દાખલ કરો</string>
+	<string name="create_goal_error_invalid_infaltion_rate">ફુગાવો 30% થી વધુ હોઈ શકતો નથી</string>
+	<string name="goal_based_scheme_1_yr_title_txt">1 વર્ષ</string>
+	<string name="goal_based_scheme_3_yrs_title_txt">3 વર્ષ</string>
+	<string name="goal_based_scheme_5_yrs_title_txt">5 વર્ષ</string>
+    <!--End Create Goal-->
+
+
+    <!--End Goal Module-->
+     <!--Calculators-->
+    <!--Retirement Calculators-->
+	<string name="retirement_cal_10_00_txt">10</string>
+	<string name="retirement_cal_7_00_txt">7</string>
+	<string name="retirement_cal_11_txt">11</string>
+	<string name="retirement_cal_continue_sip_btn_txt">એસઆઈપી સાથે ચાલુ રાખો</string>
+	<string name="retirement_cal_1000_txt">1000</string>
+	<string name="retirement_cal_30_txt">30</string>
+	<string name="retirement_cal_60_txt">60</string>
+	<string name="retirement_cal_30000_txt">30000 છે</string>
+	<string name="retirement_cal_100_txt">100</string>
+	<string name="retirement_cal_6_00_txt">6</string>
+	<string name="retirement_cal_0_txt">0</string>
+	<string name="retirement_cal_12_00">12</string>
+	<string name="retirement_cal_90_txt">90</string>
+	<string name="retirement_cal_header_title_txt">નિવૃત્તિ કેલ્ક્યુલેટર</string>
+	<string name="retirement_cal_extra_required_txt">દર મહિને વધારાની બચત જરૂરી છે</string>
+	<string name="retirement_cal_current_age">વર્તમાન વય</string>
+	<string name="retirement_cal_age">નિવૃત્તિ વય</string>
+	<string name="retirement_cal_current_txt">વર્તમાન માસિક ખર્ચ (\u20b9)</string>
+	<string name="retirement_cal_expected_inflation">અપેક્ષિત ફુગાવો (%)</string>
+	<string name="retirement_cal_current_saving_per_month_txt">વર્તમાન મહિને બચત (\u20b9)</string>
+	<string name="retirement_cal_existing_corpus_txt">હાલનો કોર્પસ (\u20b9)</string>
+	<string name="retirement_cal_expected_pre_payment_txt">અપેક્ષિત પૂર્વ નિવૃત્તિ વળતર (%)</string>
+	<string name="retirement_cal_expected_post_return_txt">અપેક્ષિત પોસ્ટ રિટાયરમેન્ટ વળતર (%)</string>
+	<string name="retirement_cal_life_expectency_txt">આયુષ્ય</string>
+	<string name="retirement_cal_total_saving_txt">કુલ બચત</string>
+	<string name="retirement_cal_short_fall_amount_txt">રકમની કમી</string>
+	<string name="retirement_cal_achieve_txt">આ લક્ષ્યને પ્રાપ્ત કરવા માટે તમારે રોકાણ કરવું આવશ્યક છે</string>
+    <!--End Retirement Calculators-->
+     <!--Lumpsum Calculators-->
+	<string name="lumpsum_cal_10000">10000 છે</string>
+	<string name="lumpsum_cal_header_title">લમ્પસમ કેલ્ક્યુલેટર</string>
+	<string name="lumpsum_cal_one_time_investment_txt">એક સમયનું રોકાણ</string>
+	<string name="lumpsum_cal_invest_now_txt">હવે રોકાણ કરો</string>
+	<string name="lumpsum_cal_10000_txt">10000 છે</string>
+	<string name="lumpsum_cal_6_00_txt">6</string>
+	<string name="lumpsum_cal_inflation_adjust_txt">ફુગાવો સમાયોજિત કરો</string>
+	<string name="lumpsum_cal_invest_period_year_txt">રોકાણ અવધિ (વર્ષ)</string>
+	<string name="lumpsum_cal_expected_annual_salary">અપેક્ષિત વાર્ષિક વળતર (%)</string>
+	<string name="lumpsum_cal_10_txt">1000</string>
+	<string name="lumpsum_cal_expected_inflation_txt">અપેક્ષિત ફુગાવો દર (%)</string>
+	<string name="lumpsum_cal_txt_one_timeinvestment_txt">એક સમયનું રોકાણ (\u20b9)</string>
+	<string name="lumsum_cal_error_empty_sip_amnt">કૃપા કરીને એસઆઈપી માટે રકમ દાખલ કરો</string>
+	<string name="lumpsum_cal_error_less_amnt">ન્યૂનતમ રકમ ઓછામાં ઓછી 500 હશે</string>
+	<string name="lumpsum_cal_error_more_amnt">કૃપા કરીને રોકાણનો સમયગાળો દાખલ કરો</string>
+	<string name="lumspum_cal_error_duration">મહત્તમ રોકાણ અવધિ 50 વર્ષ હશે</string>
+	<string name="lumpsum_cal_error_ror">વળતરનો દર દાખલ કરો</string>
+	<string name="lumpsum_cal_error_max_amnt">વળતરનો મહત્તમ દર 30% રહેશે</string>
+	<string name="lumpsum_cal_error_roi">ફુગાવો દર દાખલ કરો</string>
+	<string name="lumpsum_cal_error_max_roi">ફુગાવોનો મહત્તમ દર 30% રહેશે</string>
+    <!--End Lumpsum Calculators-->
+     <!--Marriage Calculators-->
+	<string name="marriage_cal_error_child_age">બાળ ઉંમર હંમેશાં લગ્નની વય કરતા ઓછી હોય છે</string>
+	<string name="marriage_cal_error_wedding_age">લગ્નની ઉંમર હંમેશા વર્તમાન વય કરતા વધારે હોય છે</string>
+	<string name="marriage_cal_error_empty_start_wed_age">કૃપા કરીને લગ્ન પ્રારંભ યુગ દાખલ કરો</string>
+	<string name="marriage_cal_invalid_child_age">બાળપણની શરૂઆત લગ્નની શરૂઆતની ઉંમરે ઓછી હશે</string>
+	<string name="marriage_cal_error_wed_amnt">કૃપા કરીને લગ્ન માટે રકમ દાખલ કરો</string>
+	<string name="marriage_cal_error_minnimum_age">ન્યૂનતમ રકમ ઓછામાં ઓછી 1 લાખ હશે</string>
+	<string name="marriage_cal_maxx_amnt">મહત્તમ રકમ 10 કરોડ થશે</string>
+	<string name="marriage_cal_error_expected_return">કૃપા કરીને અપેક્ષિત પૂર્વ નિવૃત્તિ વળતર દાખલ કરો</string>
+	<string name="marriage_cal_error_expected_rate_return">કૃપા કરીને વળતરનો અપેક્ષિત દર દાખલ કરો</string>
+	<string name="marriage_cal_error_less_expected_ror">વળતરનો અપેક્ષિત દર 50 કરતા ઓછો હશે</string>
+	<string name="marriage_cal_some_errror">કૃપા કરીને અપેક્ષિત ફુગાવાનો દર દાખલ કરો</string>
+	<string name="marriage_cal_expected_inflation_rate">અપેક્ષિત ફુગાવાનો દર 50 કરતા ઓછો હશે</string>
+	<string name="marriage_cal_goal_txt">આ લક્ષ્યને પ્રાપ્ત કરવા માટે તમારે રોકાણ કરવું આવશ્યક છે</string>
+	<string name="marriage_cal_congrats">અભિનંદન!</string>
+	<string name="marriage_cal_desc">તમે લક્ષ્ય પૂર્ણ કર્યું છે</string>
+     <!--SIP Calculators-->
+	<string name="sip_cal_continue_with_lumpsum_txt">લમ્પસમ સાથે ચાલુ રાખો</string>
+	<string name="sip_cal_continue_with_sip_txt">એસઆઈપી સાથે ચાલુ રાખો</string>
+	<string name="sip_calculator_txt_wealth_gained">સંપત્તિ પ્રાપ્ત થઈ</string>
+	<string name="sip_calculator_txt_onthly_investment">માસિક રોકાણ (\u20b9)</string>
+	<string name="sip_calculator_total_amount_invested_txt">કુલ રકમનું રોકાણ</string>
+	<string name="sip_calculator_11_txt">11</string>
+	<string name="sip_calculator_1000_txt">1000</string>
+	<string name="sip_calcula_12_txt">12</string>
+	<string name="sip_calculator_1000_hint_txt">1000</string>
+	<string name="sip_calculator_10_00">10</string>
+	<string name="sip_calculator_annual_txt">વાર્ષિક વધારો (\u20b9)</string>
+	<string name="sip_calculator_your_multiplied_txt">તમારું રોકાણ વધ્યું</string>
+	<string name="sip_calculator_txt_times">વખત</string>
+	<string name="sip_calculator_txt_month">માસ</string>
+	<string name="sip_calculator_amount_txt">કોલેજના સમયે જરૂરી રકમ</string>
+    <!--End SIP Calculators-->
+
+    <!--Emi Calculators-->
+	<string name="emi_cal_principal_amnt">મુખ્ય રકમ</string>
+	<string name="emi_cal_interest_amnt">વ્યાજની રકમ</string>
+	<string name="emi_cal_total_amnt_pay">ચૂકવવા માટેની કુલ રકમ</string>
+	<string name="emi_cal_txt_loan_amount">લોનની રકમ (\u20b9)</string>
+	<string name="emi_cal_duration_loan_txt">લોનની અવધિ (વર્ષ)</string>
+	<string name="emi_cal_interest_loan_txt">લોન પર વ્યાજ (% વાર્ષિક)</string>
+	<string name="emi_calculator_11_txt">11</string>
+	<string name="emi_cal_10_00_txt">10</string>
+	<string name="emi_cal_11_txt">11</string>
+	<string name="emi_cal__btn_lumpsum_txt">લમ્પસમ સાથે ચાલુ રાખો</string>
+	<string name="emi_cal_sip_txt">એસઆઈપી સાથે ચાલુ રાખો</string>
+	<string name="emi_cal_500000_txt">500000</string>
+	<string name="emi_cal_error_empty_loan">કૃપા કરીને લોનની રકમ દાખલ કરો</string>
+	<string name="emi_cal_error_minnimum_loan_amount">ન્યૂનતમ રકમ ઓછામાં ઓછી 50000 હશે</string>
+	<string name="emi_cal_error_empty_loan_duration">કૃપા કરીને લોનની અવધિ દાખલ કરો</string>
+	<string name="emi_cal_error_invalid_loan_duration">કૃપા કરી માન્ય લોન અવધિ દાખલ કરો</string>
+	<string name="emi_cal_error_empty_roi">વ્યાજ દર દાખલ કરો</string>
+	<string name="emi_cal_error_max_roi">મહત્તમ વ્યાજ દર 30% રહેશે</string>
+	<string name="marriage_cal_header_txt">લગ્ન કેલ્ક્યુલેટર</string>
+    <!--End Emi Calculators-->
+
+    <!--Education Calculators-->
+	<string name="education_calculator_header_title_txt">શિક્ષણ કેલ્ક્યુલેટર</string>
+	<string name="education_calculator_2_txt">2</string>
+	<string name="education_calculator_18_txt">18</string>
+	<string name="education_calculator_txt_500000">500000</string>
+	<string name="education_calculator_txt_100">100</string>
+	<string name="education_calculator_100000_txt">100000</string>
+	<string name="education_calculator_12_00_txt">12</string>
+	<string name="education_calculator_6_00_txt">6</string>
+	<string name="education_calculator_childage_txt">બાળકની ઉંમર</string>
+	<string name="education_calculator_college_txt">તે (વર્ષો) માં કોલેજમાં જશે</string>
+	<string name="education_calculator_duration_txt">શિક્ષણનો સમયગાળો (વર્ષ)</string>
+	<string name="education_calculator_18_cost_incurred_txt">આજ મુજબ વાર્ષિક દીઠ ખર્ચ (\u20b9)</string>
+	<string name="education_calculator_invalid_age">ઉંમર કોલેજ પ્રવેશ વય કરતા ઓછી હોવી જોઈએ</string>
+	<string name="education_calculator_error_college">ક Collegeલેજની ઉંમર હંમેશા વર્તમાન ઉંમર કરતા વધારે હોય છે</string>
+	<string name="education_calculator_error_empty_child_age">કૃપા કરીને બાળકની ઉંમર દાખલ કરો</string>
+	<string name="education_cal_error_empty_college_start_age">જ્યારે ક Collegeલેજ શરૂ થશે</string>
+	<string name="education_cal_error_invalid_college_start_age">ક Collegeલેજ પ્રારંભ તારીખ</string>
+	<string name="education_cal_invalid_child_age">બાળ ઉમર હંમેશાં ક collegeલેજ પ્રારંભ વય કરતા ઓછી હોય છે</string>
+	<string name="education_cal_error_min_college_duration">ક Collegeલેજનો સમયગાળો મિનિ 1 વર્ષનો રહેશે</string>
+	<string name="education_cal_error_max_college_duration">કોલેજનો સમયગાળો મહત્તમ 10 વર્ષનો રહેશે</string>
+	<string name="education_cal_error_empty_expected_rate">તમે અપેક્ષા કરી રહ્યાં છો તે વળતરનો દર</string>
+	<string name="education_cal_expected_max_rate">અપેક્ષિત દર વળતર 30 કરતા ઓછો હશે</string>
+	<string name="education_cal_error_expected_infl_rate">કૃપા કરીને અપેક્ષિત ફુગાવાનો દર દાખલ કરો</string>
+	<string name="education_cal_error_min_infl_invalid_rate">અપેક્ષિત ફુગાવાનો દર 30 કરતા ઓછો હશે</string>
+	<string name="education_cal_some_txt">આ લક્ષ્યને પ્રાપ્ત કરવા માટે તમારે રોકાણ કરવું આવશ્યક છે</string>
+	<string name="education_cal_congratulation">અભિનંદન!</string>
+	<string name="education_cal_goal_meet">તમે તમારું લક્ષ્ય પૂર્ણ કર્યું છે</string>
+    <!--End Education Calculators-->
+
+
+    <!--SIP DELAY Calculators-->
+	<string name="delay_cal_header_txt">એસઆઈપી વિલંબ કેલ્ક્યુલેટર</string>
+	<string name="delay_cal_11_txt">11</string>
+	<string name="delay_cal_1000_txt">1000</string>
+	<string name="delay_cal_10_00_txt">10</string>
+	<string name="delay_cal_100_txt">100</string>
+	<string name="delay_cal_ddmmyyyy_txt">DDMMYYYY</string>
+	<string name="delay_cal_amnt_txt">લક્ષ્યાંકની રકમ</string>
+	<string name="delay_cal_amount_investment_txt">રોકાણ કરેલી રકમ</string>
+	<string name="delay_cal_dely_txt">આજથી વિલંબ (મહિનાઓ)</string>
+	<string name="delay_cal_expected_return_txt">અપેક્ષિત વળતર દાખલ કરો</string>
+	<string name="delay_cal_rate_inflamation_txt">% માં ફુગાવાનો દર (વાર્ષિક)</string>
+	<string name="delay_cal_rate_txt">તમે જે અપેક્ષા કરી રહ્યા છો તે% (વાર્ષિક) માં કેટલો વળતર મળશે?</string>
+	<string name="delay_cal_end_date_txt">અંતિમ તારીખ</string>
+	<string name="sip_delay_cal_minn_amnt">ન્યૂનતમ રકમ ઓછામાં ઓછી 500 હશે</string>
+	<string name="sip_delay_error_empty_yr">કૃપા કરીને રોકાણ વર્ષ દાખલ કરો</string>
+	<string name="sip_delay_error_minn_amnt">મહત્તમ રોકાણ અવધિ 50 વર્ષ હશે</string>
+	<string name="sip_delay_error_ror">વળતરનો દર દાખલ કરો</string>
+	<string name="sip_delay_error_minn_ror">વળતરનો મહત્તમ દર 30% રહેશે</string>
+	<string name="sip_delay_empty_duration">કૃપા કરીને મહિનાઓમાં વિલંબ અવધિ દાખલ કરો</string>
+	<string name="sip_delay_minn_delay">ન્યૂનતમ વિલંબ 120 મહિના થશે</string>
+	<string name="sip_delay_title_desc">જો તમે આજથી એસઆઈપી શરૂ કરો છો, તો તમારું પરિપક્વતા મૂલ્ય હશે</string>
+    <!--End SIP DELAY Calculators-->
+
+
+    <!--End Calculators-->
+
+
+    <!--New Purchase-->
+	<string name="new_purchase_send_link_on_email_txt">ઇમેઇલ પર લિંક મોકલો</string>
+	<string name="new_purchase_pay_now_btn_txt">હવે પૈસા આપો</string>
+	<string name="new_purchase_transfer_date">પરિવહન તારીખ</string>
+	<string name="new_purchase_form_check_number_txt">નંબર તપાસો</string>
+	<string name="new_purchase_form_cheque_txt">તારીખ તપાસો</string>
+	<string name="new_purcahse__form_folio_no_txt">ફોલિયો નંબર:</string>
+	<string name="new_purcahse_form_dividend_txt">ડિવિડન્ડ</string>
+	<string name="new_purcahse_form_payment_txt">ચુકવણી</string>
+	<string name="new_purcahse__form_mandate_txt">આદેશ</string>
+	<string name="new_purcahse_form_select_scheme_txt">યોજના પસંદ કરો</string>
+	<string name="new_purcahse__form_catgory_txt">કેટેગરી</string>
+	<string name="new_purcahse__form_fmp_txt">એફએમપી</string>
+	<string name="new_purcahse_form_txt_Debt">ડીટ</string>
+	<string name="new_purcahse_form_txt_Equity">ઇક્વિટી</string>
+	<string name="new_purcahse_form_txt_growth">વૃદ્ધિ</string>
+	<string name="new_purcahse__form_btn_footer_txt">હમણાં ટ્રાન્ઝેક્શન કરો</string>
+	<string name="new_purcahse_form_micr_txt">એમઆઇસીઆર નં</string>
+	<string name="new_purcahse_form_bank_txt">ઇન્સ્ટ્રુમેન્ટ બેંક</string>
+	<string name="new_purcahse_form_branch_txt">ઇન્સ્ટ્રુમેન્ટ શાખા</string>
+	<string name="new_purchase_error_empty_amnt">કૃપા કરીને રકમ દાખલ કરો</string>
+	<string name="new_purchase_error_invalid_amnt">ન્યૂનતમ રકમ ઓછામાં ઓછી 100 હશે</string>
+	<string name="new_purchase_error_pay_mode_amnt">કૃપા કરીને ચુકવણી મોડ પસંદ કરો</string>
+	<string name="new_purchase_error_bank_amnt">કૃપા કરી બેંક પસંદ કરો</string>
+	<string name="new_purchase_error_rtgs_empty">કૃપા કરીને આરટીજીએસ નંબર દાખલ કરો</string>
+	<string name="new_purchase_error_micr">મહેરબાની કરીને એમઆઇસીઆર નંબર દાખલ કરો</string>
+	<string name="new_purchase_error_bank_empty">કૃપા કરીને બેંકનું નામ દાખલ કરો</string>
+	<string name="new_purchase_error_branch_empty">કૃપા કરીને શાખા નામ દાખલ કરો</string>
+	<string name="new_purchase_error_utr_empty">કૃપા કરી યુટીઆર નંબર દાખલ કરો</string>
+	<string name="new_purchase_erroe_transfer_date">કૃપા કરીને સ્થાનાંતરણની તારીખ દાખલ કરો</string>
+	<string name="new_purchase_error_empty_acc_no">કૃપા કરી એકાઉન્ટ નંબર દાખલ કરો</string>
+	<string name="new_purchase_error_empty_cheque_no">મહેરબાની કરીને ચેક નંબર દાખલ કરો</string>
+	<string name="new_purchase_error_empty_cheque_date">કૃપા કરીને ચેક તારીખ દાખલ કરો</string>
+    <!--End New Purchase-->
+
+    <!--Folio Details-->
+	<string name="folio_detail_investor_txt">રોકાણકાર</string>
+	<string name="folio_detail_folio_txt">ફોલિયો</string>
+	<string name="folio_detail_profile_id_txt">પ્રોફાઇલ આઈડી</string>
+	<string name="folio_details_holding_txt">હોલ્ડિંગ</string>
+	<string name="folio_details_pan_txt">પાન</string>
+	<string name="folio_detail_scheme_txt">યોજના</string>
+	<string name="folio_detail_investor_tx">રોકાણકાર</string>
+	<string name="folio_detail_pan_txt">પાન</string>
+	<string name="folio_detailos_folio_txt">ફોલિયો નં.</string>
+	<string name="folio_details_holdings_txt">હોલ્ડિંગ્સ</string>
+	<string name="folio_details_balance_units_txt">સંતુલન એકમો</string>
+	<string name="folio_details_tax_status_txt">કરની સ્થિતિ</string>
+    <string name="folio_details_email_txt">ઇમેઇલ</string>
+	<string name="folio_details_date_of_birth_txt">જન્મ તારીખ</string>
+	<string name="folio_details_address_txt">સરનામું</string>
+	<string name="folio_details_bank_txt">બેંક</string>
+	<string name="folio_details_a_c_no_txt">એ / સી નં</string>
+	<string name="folio_details_account_type_txt">ખાતાનો પ્રકાર</string>
+	<string name="folio_details_ifsc_txt">આઈએફએસસી</string>
+    <!--End Folio Details-->
+
+    <!--Folio Lookup-->
+	<string name="folio_lookup_bank_details_txt">બેંકની વિગત</string>
+	<string name="folio_lookup_bank_name_txt">બેંકનું નામ</string>
+	<string name="folio_lookup_a_c_no_txt">એ / સી નં</string>
+	<string name="folio_lookup_account_type_txt">ખાતાનો પ્રકાર</string>
+	<string name="folio_lookup_ifsc_txt">આઈએફએસસી</string>
+	<string name="folio_lookup_investor_txt">રોકાણકાર</string>
+	<string name="folio_lookup_pan_txt">પાન</string>
+	<string name="folio_lookup_folio_txt">ફોલિયો નં.</string>
+	<string name="folio_lookup_holdings_txt">હોલ્ડિંગ્સ</string>
+    <!--Folio Lookup-->
+
+
+    <!--Transfer holding-->
+	<string name="transfer_holding_enter_folio_number_txt">ફોલિયો નંબર દાખલ કરો</string>
+	<string name="transfer_holding_all_units_txt">બધા એકમો</string>
+	<string name="transfer_holding_from_scheme_txt">યોજનામાંથી</string>
+	<string name="transfer_holding_folio_number_txt">ફોલિયો નંબર</string>
+	<string name="transfer_holding_to_scheme_txt">યોજના</string>
+	<string name="transfer_holding_fund_txt">ભંડોળ</string>
+	<string name="transfer_holding_btn_cancel_txt">રદ કરો</string>
+    <!--End Transfer holding-->
+
+    <!--Get Just Save-->
+	<string name="get_just_save_invest_now_btn_txt">હવે રોકાણ કરો</string>
+	<string name="get_just_save_select_folio_txt">ફોલિયો પસંદ કરો</string>
+	<string name="get_just_save_select_member_txt">સભ્ય પસંદ કરો</string>
+    <!--End Get Just Save-->
+
+
+    <!--Sip Setup-->
+	<string name="sip_setup_lumpsum_txt">લમ્પસમ સાથે ચાલુ રાખો</string>
+	<string name="sip_setup_continue_with_sip">એસઆઈપી સાથે ચાલુ રાખો</string>
+    <string name="sip_setup_11_txt">11</string>
+	<string name="sip_setup_100_txt">100</string>
+	<string name="sip_setup_0_txt">0</string>
+	<string name="sip_setup_error_amnt">ન્યૂનતમ રકમ ઓછામાં ઓછી 500 હશે</string>
+	<string name="sip_setup_invest_duration">કૃપા કરીને રોકાણનો સમયગાળો દાખલ કરો</string>
+	<string name="sip_setup_max_duration">મહત્તમ રોકાણ અવધિ 50 વર્ષ હશે</string>
+	<string name="sip_setup_min_duration">કૃપા કરીને વળતરનો માન્ય દર દાખલ કરો</string>
+	<string name="sip_setup_error_min_ror">વળતરનો મહત્તમ દર 30% રહેશે</string>
+    <!--End Sip Setup-->
+
+
+
+
+    <!--Social media-->
+	<string name="social_media_whatsapp_txt">વોટ્સેપ</string>
+	<string name="social_media_twitter_txt">Twitter</string>
+	<string name="social_media_facebook_txt">ફેસબુક</string>
+	<string name="social_media_linkedin_txt">લિંક્ડઇન</string>
+	<string name="social_media_youtube_txt">યુટ્યુબ</string>
+    <!--End_social media-->
+
+	<string name="believe_scheme_header_goal_based_txt">ઉદ્દેશ્ય આધારિત પેક</string>
+	<string name="believe_scheme_header_recommended_based_txt">વૈશિષ્ટિકૃત લક્ષ્યો આધારિત પ Packક</string>
+
+    <!--Investment Profile-->
+	<string name="investment_profile_fatca_desc">FATCA ઘોષણા</string>
+	<string name="investment_profile_upload_cheque_txt">અપલોડ ચેક</string>
+	<string name="investment_profile_upload_aof_txt">એઓએફ અપલોડ કરો</string>
+	<string name="investment_profile_profile_detail_txt">પ્રોફાઇલ વિગતો</string>
+	<string name="investment_profile_mandate_list_txt">Opટોપે / મેન્ડેટ્સની સૂચિ</string>
+	<string name="invest_profie_mandates_list_txt">Opટોપે / મેન્ડેટ્સની સૂચિ</string>
+	<string name="invest_profile_my_orders_txt">મારા રોકાણના ઓર્ડર</string>
+	<string name="invest_profile_pending_order_txt">પ્રતીક્ષામાં ઓર્ડર</string>
+	<string name="invest_profile_btn_header_txt">નવું બનાવો</string>
+    <!--Investment Profile-->
+
+
+    <!--NAV Scheme-->
+	<string name="nav_scheme_header_desc_txt">રોકાણ માટે યોજનાઓ પસંદ કરો</string>
+	<string name="nav_scheme_select_a_fund_txt">કોઈ ભંડોળ પસંદ કરો</string>
+	<string name="nav_scheme_search_by_amc_list_txt">એએમસી સૂચિ દ્વારા શોધો</string>
+	<string name="nav_scheme_scheme_name_txt">ભંડોળનું નામ</string>
+    <!--End NAV Scheme-->
+
+
+
+    <!--Flavour-->
+	<string name="set_falvour_current_scheme_txt">વર્તમાન યોજના</string>
+	<string name="set_flavour_set_scheme_txt">યોજના સેટ કરો</string>
+	<string name="set_flavour_search_txt">શોધો</string>
+	<string name="set_flavour_save_btn_txt">સાચવો</string>
+	<string name="get_flavour_select_folio_txt">ફોલિયો પસંદ કરો</string>
+	<string name="get_flavour_select_member_txt">સભ્ય પસંદ કરો</string>
+    <string name="get_flavour_we_recommend_txt">અમે સલાહ આપી</string>
+
+
+
+    <!--Allocaton charts-->
+	<string name="asset_allocation_category_header_txt">કેટેગરી</string>
+	<string name="asset_allocation_market_value_txt">બજાર કિંમત</string>
+	<string name="asset_allocation_percentage_txt">Allocation (%)</string>
+	<string name="application_applicant_txt">અરજદાર</string>
+	<string name="applicant_allocation_market_value_txt">બજાર કિંમત</string>
+	<string name="applicant_allocation_percentage_txt">Allocation (%)</string>
+	<string name="fund_allocation_fund_header_txt">યોજના</string>
+	<string name="fund_allocation_market_value_txt">બજાર કિંમત</string>
+	<string name="fund_allocation_percentage_txt">Allocation (%)</string>
+    <!--Allocaton charts-->
+
+
+
+
+    <!--Add Services-->
+
+    <!--Add Services-->
+
+
+    <!--Incomplete profile-->
+	<string name="incomplete_profile_user_abbrv_txt">એબી</string>
+	<string name="incomplete_profile_dear_investor_txt">પ્રિય રોકાણકાર</string>
+    <!--Incomplete profile-->
+
+
+    <!--Category Graph-->
+	<string name="graphs_category_heading_txt">કેટેગરી</string>
+	<string name="graph_category_market_value_txt">બજાર કિંમત</string>
+	<string name="graph_category_percentage_txt">Allocation (%)</string>
+    <!--Category Graph-->
+
+
+
+    <!--Simply Save-->
+	<string name="simply_save_header_desc_txt">સિમ્પલી સેવ એ નિપ્પન ઇન્ડિયા એમએફની સુવિધા છે જે લિક્વિડ ફંડ - ટ્રેઝરી પ્લાનમાં સરળતાથી રોકાણ કરવાની મંજૂરી આપે છે.</string>
+	<string name="save_simply_header_mini_desc">તે ત્વરિત વેચવાની સુવિધાને પણ મંજૂરી આપે છે. સુવિધા ફક્ત અમારા દ્વારા કોઈ પણ નિપ્પન ઇન્ડિયા એમએફ સ્કીમમાં હાલના ફોલિઓ ધરાવતા રોકાણકારો માટે છે.</string>
+	<string name="simply_save_select_folio_txt">ફોલિયો પસંદ કરો</string>
+	<string name="simply_save_search_scheme_txt">શોધ યોજના</string>
+
+
+    <!--Active Status-->
+	<string name="active_status_header_txt">રોકાણ પ્રોફાઇલ સ્થિતિ</string>
+	<string name="active_status_body_txt">તમારી આઇઆઇએન સક્રિય નથી</string>
+	<string name="active_status_footer_btn_txt">મુખ્ય સ્ક્રીન પર જાઓ</string>
+
+
+
+
+    <!--Just Save-->
+	<string name="just_save_header_desc_txt">સરળ રોકાણ માટે તમે તમારી પસંદની યોજના સેટ કરી શકો છો</string>
+	<string name="jsut_save_searc_hint_txt">શોધ યોજના</string>
+	<string name="just_save_footer_btn_txt">તેને સંગ્રહો</string>
+
+
+
+    <!--NFO-->
+
+	<string name="txt_investment">ન્યૂનતમ રોકાણ</string>
+    <string name="nfo_text">એનએફઓ</string>
+
+    <!--Outstanding-->
+	<string name="outstanding_folio_txt">ફોલિયો નં</string>
+	<string name="outstanding_scheme_name_txt">યોજના</string>
+	<string name="outstanding_holder_name_txt">ધારક</string>
+
+    <!--Factsheet-->
+	<string name="factsheet_short_term_returns_header_title">ટૂંકા ગાળાના વળતર</string>
+	<string name="factsheet_tv_row_header_element_one_month">1 એમ</string>
+	<string name="factsheet_tv_row_header_element_three_month">3 એમ</string>
+	<string name="factsheet_tv_row_header_element_six_month">6 એમ</string>
+	<string name="factsheet_tv_row_header_element_one_year">1 વાય</string>
+	<string name="factsheet_short_term_scheme_row_title">યોજના</string>
+	<string name="factsheet_short_term_benchmark_row_title">બેંચમાર્ક</string>
+	<string name="factsheet_long_term_returns_header_title">લાંબા ગાળાના વળતર</string>
+	<string name="factsheet_tv_long_row_header_element_two_year">2 વાય</string>
+	<string name="factsheet_tv_long_row_header_element_three_year">3 વાય</string>
+	<string name="factsheet_tv_long_row_header_element_five_year">5 વાય</string>
+	<string name="factsheet_tv_long_row_header_element_10_year">10 વાય</string>
+	<string name="factsheet_fund_size_header_title">ભંડોળનું કદ</string>
+	<string name="factsheet_fund_age_header_title">ફંડ એજ</string>
+	<string name="factsheet_fund_category_header_title">કેટેગરી</string>
+	<string name="factsheet_fund_expense_header_title">ખર્ચ ગુણોત્તર</string>
+	<string name="factsheet_exit_load_header_title">વેચાણ કરતી વખતે કપાત</string>
+	<string name="factsheet_riskometer_header_title">રિસ્કોમીટર</string>
+	<string name="factsheet_risk_profile_header_title">તમારી જોખમ પ્રોફાઇલ</string>
+	<string name="factsheet_fund_manager_header_title">ફંડ મેનેજર</string>
+	<string name="factsheet_scheme_obj_header_title">યોજનાનો ઉદ્દેશ્ય</string>
+	<string name="factsheet_holding_header_title">હોલ્ડિંગ</string>
+	<string name="factsheet_sector_analysis_header_title">ક્ષેત્ર વિશ્લેષણ</string>
+	<string name="factsheet_sector_rating_header_title">ક્ષેત્ર / રેટિંગ્સ</string>
+	<string name="factsheet_net_asset_title">ચોખ્ખી સંપત્તિ (%)</string>
+	<string name="factsheet_top_holding_header_title">ટોપ હોલ્ડિંગ</string>
+	<string name="factsheet_scheme_comparison_footer_txt">રોકાણ કરેલા in 10000 નું પ્રદર્શન બતાવી રહ્યું છે</string>
+	<string name="factsheet_vs_scheme_comp_txt">વિ</string>
+	<string name="factsheet_current_scheme_txt">આ યોજના</string>
+	<string name="factsheet_line_graph_vale1">બેંચમાર્ક</string>
+	<string name="factsheet_line_graph_vale2">યોજના</string>
+    /************************************************************************************************/
+    <!--Payment-->
+	<string name="payment_success_header_txt">અદ્ભુત, ચુકવણી સફળ હતી</string>
+	<string name="payment_success_desc_txt">આભાર</string>
+	<string name="payment_success_txt">ચુકવણી સફળ</string>
+	<string name="payment_toolbar_title">ચુકવણી</string>
+
+    <!--Account Confirmed-->
+	<string name="account_confirmed_header_txt">રોકાણ ખાતું બનાવવામાં આવ્યું છે</string>
+	<string name="account_confirmed_under_process_txt">તમારું રોકાણ ખાતું પ્રક્રિયા હેઠળ છે</string>
+    /********************************************************************************************/
+    <!--SIP Cart-->
+	<string name="sip_cart_120_txt">120</string>
+	<string name="sip_cart_date_txt">એસઆઈપી તારીખ</string>
+	<string name="sip_cart_installments_txt">હપ્તા</string>
+    /********************************************************************************************/
+    <!--My Insurance-->
+	<string name="my_insurance_sum_assured_title_txt">વીમા રકમ</string>
+	<string name="my_insurance_premium_title_txt">પ્રીમિયમ</string>
+	<string name="my_insurance_next_due_date_title_txt">આગામી નિયત તારીખ</string>
+	<string name="my_insurance_header_txt">તમારા જીવન વીમા અને સામાન્ય વીમા પ policiesલિસીની વિગતો જુઓ.</string>
+    /********************************************************************************************/
+
+    <!--Common Error Message-->
+	<string name="error_invalid_amount">ન્યૂનતમ રકમ ઓછામાં ઓછી 100 હશે</string>
+	<string name="error_empty_rtgs_no">કૃપા કરીને આરટીજીએસ નંબર દાખલ કરો</string>
+	<string name="error_empty_micr_no">મહેરબાની કરીને એમઆઇસીઆર નંબર દાખલ કરો</string>
+	<string name="error_empty_bank_name">કૃપા કરીને બેંકનું નામ દાખલ કરો</string>
+	<string name="error_empty_branch_name">કૃપા કરીને શાખા નામ દાખલ કરો</string>
+	<string name="error_empty_utr_no">કૃપા કરી યુટીઆર નંબર દાખલ કરો</string>
+	<string name="error_empty_transfer_date">કૃપા કરીને સ્થાનાંતરણની તારીખ દાખલ કરો</string>
+	<string name="error_empty_acc_no">કૃપા કરી એકાઉન્ટ નંબર દાખલ કરો</string>
+	<string name="error_empty_cheque_no">કૃપા કરીને ચેક નંબર દાખલ કરો</string>
+	<string name="error_empty_cheque_date">કૃપા કરીને ચેક તારીખ દાખલ કરો</string>
+	<string name="error_empty_pay_mode">કૃપા કરીને ચુકવણી મોડ પસંદ કરો</string>
+	<string name="error_empty_bank">કૃપા કરી બેંક પસંદ કરો</string>
+	<string name="error_try_again">થોડી સમસ્યા છે, કૃપા કરીને પછીથી પ્રયત્ન કરો.</string>
+	<string name="error_empty_amount">કૃપા કરીને રકમ દાખલ કરો</string>
+	<string name="error_empty_installment">કૃપા કરીને હપતો દાખલ કરો</string>
+	<string name="error_invalid_installment">હપ્તાની મર્યાદા ઓળંગી ગઈ</string>
+	<string name="error_max_rorxx">વળતરનો મહત્તમ દર 30% રહેશે</string>
+	<string name="error_current_age">કૃપા કરીને વર્તમાન યુગ દાખલ કરો</string>
+	<string name="error_minn_retire_age">ન્યૂનતમ ઉંમર 20 વર્ષ હશે</string>
+	<string name="error_empty_retiremnt_age">કૃપા કરીને નિવૃત્તિ વય દાખલ કરો</string>
+	<string name="error_maxx_retire_age">મહત્તમ નિવૃત્તિ વય 80 વર્ષ હશે</string>
+	<string name="error_empty_monthly_expense">કૃપા કરીને માસિક ખર્ચ દાખલ કરો</string>
+	<string name="error_minn_me">ઓછામાં ઓછું માસિક ખર્ચ ઓછામાં ઓછું 1000</string>
+	<string name="error_expected_ror">કૃપા કરીને અપેક્ષિત પૂર્વ નિવૃત્તિ વળતર દાખલ કરો</string>
+	<string name="error_max_ror">મહત્તમ પૂર્વ નિવૃત્તિ વળતર 30% હશે</string>
+	<string name="error_post_retiremnt_return">કૃપા કરીને નિવૃત્તિ પછીની આવક વળતર દાખલ કરો</string>
+	<string name="error_max_expected_post_retiremnt_ror">મહત્તમ અપેક્ષિત પોસ્ટ નિવૃત્તિ વળતર 30% હશે</string>
+	<string name="error_empty_something">કૃપા કરીને જીવનની અપેક્ષા દાખલ કરો</string>
+	<string name="error_max_life">મહત્તમ આયુષ્ય વય 100 વર્ષ હશે</string>
+    /****************************************************************************************************/
+    <!--Go For Lumpsum/SIP-->
+
+	<string name="go_for_lumpsum_error_all_amount">કૃપા કરીને બધી વસ્તુઓની રકમ દાખલ કરો</string>
+	<string name="go_for_lumpsum_error_no_items_in_cart">ટોપલીમાં કોઈ વસ્તુ નથી</string>
+	<string name="go_for_lumpsum_error_select_pay_mode">કૃપા કરીને ચુકવણી મોડ પસંદ કરો</string>
+	<string name="go_for_lumpsum_error_select_bank">કૃપા કરી બેંક પસંદ કરો</string>
+	<string name="go_for_sip_error_installment_all_items">કૃપા કરીને બધાને હપતા દાખલ કરો</string>
+	<string name="go_for_sip_error_amnt_all_items">કૃપા કરીને બધાની રકમ દાખલ કરો</string>
+	<string name="go_for_lumpsum_error_mandate">કૃપા કરીને કોઈપણ આદેશ પસંદ કરો</string>
+    /****************************************************************************************************/
+    <!--Transactions-->
+
+    /****************************************************************************************************/
+    <!--My SIP-->
+	<string name="my_sip_type_sip_detail">એસઆઈપી વિગતો</string>
+	<string name="my_sip_type_stp_detail">એસટીપી વિગતો</string>
+	<string name="my_sip_type_swp_detail">એસડબલ્યુપી વિગતો</string>
+    /****************************************************************************************************/
+    <!--Mandate Form-->
+
+	<string name="mandate_form_error_empty_amount">કૃપા કરીને રકમ દાખલ કરો</string>
+	<string name="mandate_form_error_empty_date">કૃપા કરી તારીખ દાખલ કરો</string>
+	<string name="mandate_form_error_empty_curr_date">કૃપા કરીને વર્તમાન તારીખ દાખલ કરો</string>
+	<string name="mandate_form_error_empty_applicant_name">કૃપા કરીને અરજદારનું નામ દાખલ કરો</string>
+    /****************************************************************************************************/
+    <!--String Arrays-->
+    <array name="top_scheme_spinner_array_elements">
+        <item>15 Days</item>
+        <item>30 Days</item>
+        <item>3 Months</item>
+        <item>6 Months</item>
+        <item>1 Year</item>
+        <item>2 Years</item>
+        <item>3 Years</item>
+        <item>5 Years</item>
+        <item>10 Years</item>
+        <item>Since Inception</item>
+    </array>
+
+    <string-array name="address_type">
+        <item>Residential</item>
+        <item>Residential or Business</item>
+        <item>Business</item>
+        <item>Registered Office</item>
+        <item>Unspecified</item>
+    </string-array>
+      <string-array name="colors">
+		  <item>#fd9104</item>
+		  <item>#5076B0</item>
+		  <item>#51b53f</item>
+		  <item>#ED3338</item>
+		  <item>#673AB7</item>
+    </string-array>
+    <string-array name="wealth_score">
+        <item>Salary</item>
+        <item>Business Income</item>
+        <item>Gift</item>
+        <item>Ancestral Property</item>
+        <item>Rental Income</item>
+        <item>Prize Money</item>
+        <item>Royalty</item>
+        <item>Others</item>
+    </string-array>
+    <string-array name="political_exposed">
+        <item>Politically Not Exposed Person</item>
+        <item>Politically Exposed Person</item>
+        <item>Relative of the Politically Exposed Person</item>
+    </string-array>
+    <string-array name="payment_status">
+        <item>Net Banking</item>
+        <item>Debit Mandate</item>
+    </string-array>
+    <string-array name="fund_picks_duration">
+        <item>7D</item>
+        <item>15D</item>
+        <item>30D</item>
+        <item>3M</item>
+        <item>6M</item>
+        <item>1Y</item>
+        <item>2Y</item>
+        <item>3Y</item>
+        <item>5Y</item>
+        <item>10Y</item>
+    </string-array>
+    <string-array name="goal_summary_detail_sort">
+        <item> </item>
+        <item>0</item>
+        <item>No</item>
+    </string-array>
+    <string-array name="allocation_charts_tab_txt">
+        <item>Asset</item>
+        <item>Category</item>
+        <item>Applicant</item>
+        <item>Fund</item>
+    </string-array>
+    <string-array name="fund_offers_tab">
+        <item>Open Now</item>
+        <item>Coming Soon</item>
+    </string-array>
+    <string-array name="mandate_array">
+        <item>Digital Mandate</item>
+        <item>Paper Mandate</item>
+		<item>E-NACH</item>
+    </string-array>
+	<string-array name="NSE_mandate_array">
+		<item>Paper Mandate</item>
+	</string-array>
+    <string-array name="trans_type">
+        <item>All</item>
+        <item>Systematic Investment Plan</item>
+        <item>Systematic Transfer Plan</item>
+        <item>Systematic Withdrawal Plan</item>
+        <item>Redemption</item>
+        <item>Switch In</item>
+        <item>Switch Out</item>
+        <item>Purchase</item>
+    </string-array>
+    <string-array name="my_insurance_tab">
+        <item>General Insurance</item>
+        <item>Life Insurance</item>
+    </string-array>
+    <string-array name="top_scheme_years_array">
+        <item>15D</item>
+        <item>30D</item>
+        <item>3M</item>
+        <item>6M</item>
+        <item>1Y</item>
+        <item>2Y</item>
+        <item>3Y</item>
+        <item>5Y</item>
+        <item>10Y</item>
+        <item>SI</item>
+    </string-array>
+    /****************************************************************************************************/
+	<string name="rs">\u20b9</string>
+	<string name="Rs">\u20b9</string>
+    // Static for all apps
+	<string name="overview">ઝાંખી</string>
+	<string name="holdings">હોલ્ડિંગ્સ</string>
+	<string name="no_internet">ઇન્ટરનેટ Accessક્સેસ નથી, કૃપા કરીને તમારું ઇન્ટરનેટ કનેક્શન તપાસો.</string>
+	<string name="Error">સર્વર સમસ્યા</string>
+	<string name="Server_Error">સર્વર સમસ્યા</string>
+	<string name="text_no_screen_lock">"તમે કોઈ સ્ક્રીન લ setક સેટ કર્યો નથી. કૃપા કરીને ફોન સેટિંગથી તમારા સ્ક્રીન લ setકને સેટ કરો"</string>
+	<string name="text_fail_screen_lock">"નિષ્ફળતા: વપરાશકર્તાની ઓળખ ચકાસવામાં અસમર્થ"</string>
+
+
+	<string name="user_not_login_and_try_create_goal">"કૃપા કરીને તમારું લક્ષ્ય બનાવતા પહેલા લ Loginગિન કરો અથવા સાઇન અપ કરો"</string>
+
+
+	<string name="Forget_Password">પાસવર્ડ ભૂલી ગયા છો</string>
+	<string name="Please_enter_username">કૃપા કરીને તમારું ઇ-મેઇલ દાખલ કરો વપરાશકર્તા ID | પાન</string>
+	<string name="Please_enter_valid_username">કૃપા કરીને માન્ય ઇમેઇલ સરનામું દાખલ કરો.</string>
+	<string name="doc_string">તમે little u20B91000 જેટલા ઓછાથી પ્રારંભ કરી શકો છો</string>
+
+	<string name="montade_notes">તમારે મોબાઇલ નંબરની જરૂર છે જે આધાર સાથે નોંધાયેલ છે. જો તમે હજી સુધી નોંધણી કરાવી નથી</string>
+	<string name="notes">તમે onlineનલાઇન રોકાણો માટે વન-ટાઇમ નોંધણી પૂર્ણ કરી શક્યા નથી. Investmentનલાઇન રોકાણ માટે, તમારે થોડી વિગતો પૂર્ણ કરવી પડશે. You n \n શું તમે તેને પૂર્ણ કરવા માંગો છો, હમણાં?</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+
+
+
+	<string name="txt_frgt_pwd">પાસવર્ડ ભૂલી ગયા છો?</string>
+	<string name="txt_sign_in">સાઇન ઇન</string>
+
+
+	<string name="title_pay">હવે પૈસા આપો</string>
+
+	<string name="txt_aadhar">આધાર આદેશ પ્રક્રિયા</string>
+	<string name="txt_done_mandate">મેન્ડેટ સાથે થઈ ગયું?</string>
+	<string name="calculator_disclamer"><b>Disclaimer:</b> This tool does not make any guarantees or warranties whatsoever, expressed or implied, regarding the completeness, accuracy, adequacy, fullness, reliability, functionality and/or the reliability of the information.</string>
+	<string name="text_kycdone">તમારી કેવાયસી પર પ્રક્રિયા કરવામાં આવી છે. હાલમાં ચકાસણી હેઠળ છે. તમને ટૂંક સમયમાં કેવાયસી પૂર્ણ થવાનું ઇમેઇલ મળશે.</string>
+
+	<string name="Online_KYC">ઓનલાઇન કેવાયસી</string>
+
+
+	<string name="txt_scheme_nm">યોજના નામ દાખલ કરો</string>
+	<string name="txt_Registered_user">હું રજિસ્ટર્ડ વપરાશકર્તા છું</string>
+	<string name="txt_Want_Register">હું રજીસ્ટર કરવા માંગુ છું</string>
+	<string name="txt_Recommended">ટોચના મ્યુચ્યુઅલ ફંડ્સમાં રોકાણ કરો અને તમારા પોર્ટફોલિયોને ટ્ર trackક કરો.</string>
+	<string name="txt_skip">અવગણો અને પછી કરો</string>
+	<string name="txt_explore">એપ્લિકેશનનું અન્વેષણ કરો અને પછીથી નોંધણી કરો</string>
+	<string name="txt_create_investment">નવું રોકાણ ખાતું બનાવો</string>
+	<string name="txt_no_data">કોઈ ડેટા ઉપલબ્ધ નથી!</string>
+	<string name="txt_ok">બરાબર</string>
+	<string name="txt_locate_us">અમને શોધો</string>
+	<string name="txt_date">તારીખ</string>
+	<string name="txt_permission">પરવાનગી</string>
+	<string name="txt_cancel">રદ કરો</string>
+	<string name="txt_Go_Setting">સેટિંગ જાઓ</string>
+
+	<string name="txt_one_time_register">એક સમયની નોંધણી</string>
+	<string name="txt_m_Ready">હા હું તૈયાર છું</string>
+	<string name="txt_m_not_Ready">ના હું તૈયાર નથી</string>
+	<string name="txt_AadhaarMandate">આધાર આદેશ</string>
+	<string name="txt_ForAadhaarMandate">આધાર આદેશ માટે:</string>
+	<string name="text_ok">બરાબર</string>
+	<string name="text_100">100</string>
+	<string name="text_SelectMandatefor">આના માટે આદેશ પસંદ કરો:</string>
+	<string name="txt_Proceed">આગળ વધો</string>
+	<string name="txt_Alert">ચેતવણી!</string>
+	<string name="txt_Submit">તેને સંગ્રહો</string>
+	<string name="txt_Alert_content">તમારું યુસીસી બનાવવામાં આવ્યું હોવાથી તમે પાછા જઈ શકતા નથી. કૃપા કરીને તમારી સહી અપલોડ કરો.</string>
+	<string name="txt_CheckEmailAvailability">તમારા ઇમેઇલ</string>
+	<string name="hint_plz_entr_email">કૃપા કરીને તમારી ઇમેઇલ ID દાખલ કરો</string>
+	<string name="hint_AMC">એએમસી</string>
+	<string name="hint_Category">કેટેગરી</string>
+	<string name="text_Rating">રેટિંગ</string>
+	<string name="text_reset">ફરીથી સેટ કરો</string>
+	<string name="text_TrailingReturnPeriod">ટ્રેઇલિંગ રીટર્ન પીરિયડ</string>
+	<string name="txt_Apply">લાગુ કરો</string>
+	<string name="txt_AddtoCart">બાસ્કેટમાં ઉમેરો</string>
+
+	<string name="txt_Folio">ફોલિયો નંબર</string>
+
+	<string name="txt_Hybrid">વર્ણસંકર</string>
+	<string name="txt_SchemeList">યોજના સૂચિ</string>
+
+	<string name="txt_Dividend">ડિવિડન્ડ</string>
+	<string name="txt_SchemeType">યોજના પ્રકાર</string>
+
+	<string name="txt_SchemeCategory">યોજના વર્ગ</string>
+	<string name="txt_Sample">નમૂના</string>
+	<string name="order_palced">ઓર્ડર મુકવામાં આવ્યો છે.</string>
+	<string name="txt_1Year">1 વર્ષ</string>
+	<string name="txt_3Years">3 વર્ષ</string>
+	<string name="txt_GreatYoureallset">સારું, તમે કર્યું!</string>
+	<string name="txt_HowwouldyouliketoInvest">તમે કેવી રીતે રોકાણ કરવા માંગો છો?</string>
+
+
+	<string name="txt_EditOrder">હુકમ સંપાદિત કરો</string>
+	<string name="txt_PayNow">હવે પૈસા આપો</string>
+	<string name="incomplete_profile_autopay_desc_txt">આદેશ બનાવો</string>
+
+	<string name="txt_EditFromDate">તારીખથી સંપાદિત કરો</string>
+	<string name="txt_FromTodaytoUntilCancelled">નિયમિત</string>
+	<string name="txt_DDMMYYYY">ડીડી / એમએમ / વાયવાયવાય</string>
+
+    <string name="txt_first_applicant">બેન્ક રેકોર્ડ્સમાં પ્રથમ અરજદારનું નામ</string>
+	<string name="txt_Pleaseenterfirstname">કૃપા કરીને પ્રથમ નામ દાખલ કરો</string>
+	<string name="txt_SecondRecords">બેન્ક રેકોર્ડ્સમાં બીજું અરજદારનું નામ</string>
+	<string name="txt_Pleasecondname">કૃપા કરીને બીજું નામ દાખલ કરો</string>
+	<string name="txt_IFSC">આઈએફએસસી કોડ</string>
+	<string name="txt_EnterIFSCcode">આઈએફએસસી કોડ દાખલ કરો</string>
+	<string name="txt_Bank">બેંક</string>
+	<string name="txt_Branch">શાખા</string>
+	<string name="txt_AccountType">ખાતાનો પ્રકાર</string>
+
+	<string name="txt_MandateType">Opટોપેય આદેશનો પ્રકાર</string>
+	<string name="txt_Pleaseenternomineename">કૃપા કરી નોમિની નામ દાખલ કરો</string>
+
+	<string name="txt_SIP_Orders">એસઆઈપી ઓર્ડર</string>
+	<string name="txt_View">જો તો જરા</string>
+	<string name="txt_Lumpsum_Orders">લમ્પસમ ઇન્વેસ્ટમેન્ટ ઓર્ડર</string>
+	<string name="txt_No_any_orders">રોકાણના કોઈ ઓર્ડર નથી</string>
+	<string name="no_account">કોઈ રોકાણ ખાતું નથી, lease n કૃપા કરીને બનાવો</string>
+	<string name="no_active_order">કોઈ સક્રિય Orderર્ડર નથી</string>
+	<string name="no_portfolio">તમારી પાસે કોઈ ફોલિયો નથી</string>
+	<string name="txt_Order_No">અનુક્રમ નંબર</string>
+
+	<string name="hint_sub_Category">પેટા વર્ગ</string>
+
+	<string name="text_gender">લિંગ</string>
+	<string name="text_Male">Male</string>
+	<string name="text_Female">Female</string>
+	<string name="text_HoldingNature">હોલ્ડિંગ પ્રકૃતિ</string>
+	<string name="text_Single">એકલુ</string>
+	<string name="text_Joint">સંયુક્ત</string>
+	<string name="text_PANOfSecondApplicant">બીજા અરજદારનો પાન</string>
+	<string name="text_NameOfSecondApplicant">બીજા અરજદારનું નામ</string>
+	<string name="text_Pleaseentersecondapplicant">કૃપા કરીને બીજું અરજદારનું નામ દાખલ કરો</string>
+
+
+	<string name="Country">દેશ</string>
+	<string name="City">શહેર</string>
+	<string name="nse_fatca_state_txt">રાજ્ય</string>
+	<string name="PinCode">પિન</string>
+	<string name="ForeignAddress">વિદેશી સરનામું</string>
+	<string name="Back">પાછળ</string>
+
+	<string name="BankDetails">બેંકની વિગત</string>
+
+
+	<string name="PurchaseCost">ખરીદી કિંમત</string>
+
+
+	<string name="txt_5_Years">5 વર્ષ</string>
+	<string name="txt_Enter_account_number">એકાઉન્ટ નંબર દાખલ કરો</string>
+
+
+	<string name="Searchby">દ્વારા શોધો</string>
+	<string name="Group">જૂથ</string>
+	<string name="Investor">રોકાણકાર</string>
+
+    <string name="DayChange">દિવસની પરિવર્તન</string>
+
+
+    <string name="AssetMix">એસેટ મિક્સ</string>
+    <string name="Benchmark">બેંચમાર્ક:</string>
+	<string name="RatingColon">રેટિંગ:</string>
+	<string name="NAV">એન.એ.વી.</string>
+	<string name="CAGR5Yr">સીએજીઆર 5 વર્ષ</string>
+	<string name="ExitLoad">વેચાણ કરતી વખતે કપાત</string>
+	<string name="Corpus">કોર્પસ</string>
+	<string name="ShortTermReturns">ટૂંકા ગાળાના વળતર</string>
+	<string name="txt_1Month">1 મહિનો</string>
+	<string name="txt_3Month">3 મહિના</string>
+	<string name="txt_6Month">6 મહિના</string>
+	<string name="LongTermReturns">લાંબા ગાળાના વળતર</string>
+	<string name="txt_2Years">2 વર્ષ</string>
+	<string name="txt_10Years">10 વર્ષ</string>
+	<string name="Performanceback">1 વર્ષ પહેલા 10,000 નું રોકાણ કરેલું રૂપિયાનું પ્રદર્શન</string>
+	<string name="SchemeObjective">યોજનાનો ઉદ્દેશ્ય</string>
+	<string name="CAGR2">સીએજીઆર</string>
+	<string name="AvgHolding">સરેરાશ હોલ્ડિંગ</string>
+	<string name="AbsReturn">સંપૂર્ણ વળતર</string>
+	<string name="digital_mandate_deff"><b>Digital Mandate</b> is a quick way to setup an Auto Pay method for your SIPs. A Code will be generated, which you can enter in your Bank Login for Authorization. No paper is involved. Some banks may not provide this facility.</string>
+	<string name="paper_mandate"><b>Paper Mandate</b> will be sent over email to you. Please print, sign and send it to us for processing. Takes 4–5 weeks usually.</string>
+	<string name="SendCurrentPortfolio">વર્તમાન પોર્ટફોલિયો મોકલો</string>
+	<string name="SendPortfolioSummary">પોર્ટફોલિયો સારાંશ મોકલો</string>
+	<string name="SendLoginDetail">લ Loginગિન વિગત મોકલો</string>
+	<string name="Purchase">મારી ખરીદી</string>
+	<string name="SwitchIn">આ યોજનામાં સ્વિચ કરો</string>
+	<string name="SwitchOut">આ યોજનામાંથી ફેરબદલ કરો</string>
+	<string name="Sell">વેચો</string>
+	<string name="DivAmount">ભાવિ રકમ</string>
+	<string name="CurrentValue">વર્તમાન કિંમત</string>
+
+
+    <string name="dumy">બનાવટી</string>
+	<string name="txt_1Yr">(1 વર્ષ)</string>
+	<string name="Title">શીર્ષક</string>
+	<string name="PleaseSignbox">ઉપરોક્ત બ inક્સમાં વાજબી સમાન હસ્તાક્ષર દોરવા માટે તમારી આંગળીનો ઉપયોગ કરો.</string>
+	<string name="cheque_upload_clear_txt">ચોખ્ખુ</string>
+	<string name="cheque_upload_save_txt">તેને સંગ્રહો</string>
+	<string name="Select_Folio">ફોલિયો પસંદ કરો</string>
+
+
+	<string name="Iherebycertify">હું અહીંથી પ્રમાણિત કરું છું કે પ્રદાન કરેલી માહિતી મારા શ્રેષ્ઠ જ્ perાન મુજબ યોગ્ય છે</string>
+
+
+	<string name="txt_5">5</string>
+
+
+	<string name="txt_EMICalculator">ઇએમઆઈ કેલ્ક્યુલેટર</string>
+
+
+	<string name="SIPCalculator">એસઆઈપી કેલ્ક્યુલેટર</string>
+
+
+    <string name="cancel_pf">રદ કરો</string>
+
+
+	<string name="no_fingerprints_message_pf">કોઈ ફિંગરપ્રિન્ટ્સ મળી નથી. જો તમે આ અધિકૃતતા પદ્ધતિનો ઉપયોગ કરવા માંગતા હો, તો કૃપા કરીને સેટિંગ્સમાં ફિંગરપ્રિન્ટ્સ ઉમેરો. "</string>
+	<string name="no_fingerprints_title_pf">"કોઈ ફિંગરપ્રિન્ટ મળી નથી"</string>
+	<string name="fingerprint_not_recognized_pf">ફિંગરપ્રિન્ટ માન્ય નથી. ફરીથી પ્રયત્ન કરો</string>
+
+
+	<string name="pick_image_intent_chooser_title">સ્રોત પસંદ કરો</string>
+
+	<string name="crop_image_activity_no_permissions">રદ કરી રહ્યું છે, જરૂરી પરવાનગી આપવામાં આવી નથી</string>
+
+
+	<string name="txt_goaltitle">ધ્યેય શીર્ષક</string>
+
+
+	<string name="show_only_my_sip_data">ફક્ત મારું બતાવો</string>
+
+	<string name="no_record_found">કોઈ રેકોર્ડ મળ્યો નથી</string>
+
+
+	<string name="disclaimer_disc_txt">ભૂતકાળની કામગીરી ભવિષ્યમાં વિતરિત થઈ શકે છે અથવા નહીં. મ્યુચ્યુઅલ ફંડ રોકાણો બજારના જોખમોને આધિન છે, યોજના સંબંધિત બધા દસ્તાવેજો કાળજીપૂર્વક વાંચો. રોકાણના નિર્ણય લેતા પહેલા તમારા નાણાકીય સલાહકારની સલાહ લો</string>
+
+	<string name="transact_txt">ઉપરોક્ત રોકાણ મારું છે અને હું આ વ્યવહાર કરવા માટે અધિકૃત છું. \n \n જો investment \'હોલ્ડિંગ મોડ\' \ \'ઉદાહરણ તરીકે રોકાણ માટે અને # ક્લાયંટ_એપ_નામ સાથે નોંધાયેલ રોકાણ પ્રોફાઇલમાં બંને જગ્યાએ એકસરખું કરવામાં આવશે તો ટ્રાન્ઝેક્શન કરવામાં આવશે. . \n \n ઉપરોક્ત વ્યવહાર સાથે આગળ વધતા પહેલા કૃપા કરીને એક્ઝિટ લોડ અને કરવેરાના પાસાં તપાસો. કેમ કે ઉપરોક્ત વ્યવહારથી થતા કોઈપણ એક્ઝિટ ચાર્જ અથવા કર જવાબદારી માટે રોકાણકાર સંપૂર્ણ જવાબદાર રહેશે</string>
+
+
+
+	<string name="pre_payment_btn_txt">હવે પૈસા આપો</string>
+
+	<string name="clear">ચોખ્ખુ</string>
+	<string name="notifications_paceholder_txt">કોઈ સૂચના ઉપલબ્ધ નથી</string>
+
+	<string name="work_under_development">હમણાં ઉપલબ્ધ નથી. હાલમાં વિકાસ હેઠળ છે</string>
+
+
+
+	<string name="PoliticallyExposed">રાજકીય દ્રષ્ટિએ ખુલ્લો મૂકાયો નથી</string>
+
+
+	<string name="error">સમસ્યા</string>
+
+
+	<string name="change_pwd_tooltip_txt">પાસવર્ડ ઓછામાં ઓછો 6 અક્ષરો લાંબી હોવો જોઈએ Special n અને વિશેષ અક્ષરો, સંખ્યાઓ, અક્ષરોનું સંયોજન.</string>
+
+
+	<string name="not_available">ઉપલબ્ધ નથી</string>
+
+	<string name="failure_message">ઓહ ઓહ!</string>
+	<string name="failure_sub_message">ટ્રાન્ઝેક્શન થઈ શક્યું નહીં.</string>
+
+
+    <string name="no_data_found">કોઈ ડેટા ઉપલબ્ધ નથી</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+	<string name="main_nav_title_define_your_goal">તમારા ધ્યેયને વ્યાખ્યાયિત કરો</string>
+
+    <string name="login_social_header_txt">થી પ્રવેશ</string>
+
+	<string name="payment_success_footer_btn_txt">ચાલુ રાખો</string>
+
+    <string-array name="go_for_lumspum_status">
+        <item>Net Banking</item>
+        <item>Debit Mandate</item>
+        <item>RTGS/NEFT</item>
+    </string-array>
+	<string name="tax_saving_dash_txt">-</string>
+	<string name="tax_saving_header_txt">મ્યુચ્યુઅલ ફંડમાં નાણાકીય વર્ષ મુજબની કર બચતની વિગતો જુઓ.</string>
+
+
+	<string name="questions_assess_now_btn_txt">હવે આકારણી</string>
+
+
+	<string name="empty_desc_desc_txt">ટોચના પરફોર્મિંગ ફંડ્સમાંથી કોઈ યોજના પસંદ કરો</string>
+	<string name="empty_cart_add_scheme_btn_txt">શોધ અને ઉમેરો યોજના</string>
+
+
+	<string name="dividend_dash_txt">-</string>
+	<string name="dividend_header_txt">નાણાકીય વર્ષમાં ચૂકવેલ અથવા ફરીથી રોકાણ કરેલા બધા ડિવિડન્ડ્સ જુઓ</string>
+
+
+	<string name="dash_txt">-</string>
+
+
+	<string name="folio_scheme_balance_units_txt">સંતુલન એકમો</string>
+
+
+	<string name="crop_image_txt">તમારા મુજબ પાક કરો</string>
+
+	<string name="setting_logout_desc_txt">શું તમે ખરેખર લ logગઆઉટ કરવા માંગો છો?</string>
+	<string name="dialog_btn_cancel">રદ કરો</string>
+
+
+	<string name="tv_ct_chooser">કેટેગરી</string>
+	<string name="category_chooser_equity">ઇક્વિટી</string>
+	<string name="category_chooser_debt">ડીટ</string>
+	<string name="category_chooser_fmp">એફએમપી</string>
+	<string name="tv_ct_scheme_type">યોજના પ્રકાર</string>
+	<string name="scheme_chooser_growth">વૃદ્ધિ</string>
+	<string name="scheme_chooser_dividend">ડિવિડન્ડ</string>
+
+
+	<string name="bottomsheet_scheme_header_txt">તમારી યોજના પસંદ કરો</string>
+
+	<string name="btn_apply">લાગુ કરો</string>
+
+
+	<string name="text_mutual_funds_search">પ્રકાર યોજનાનું નામ</string>
+	<string name="my_folio_fund_name_txt">ભંડોળનું નામ</string>
+
+
+	<string name="alert_dialog_notification_clear_txt">શું તમે ખરેખર બધી સૂચનાઓ સાફ કરવા માંગો છો.</string>
+	<string name="alert_empty_notification_header_txt">કોઈ સૂચના મળી નથી</string>
+	<string name="text_sip_title">એસઆઈપી બાસ્કેટ</string>
+	<string name="text_lumpsum_title">લમ્પસમ બાસ્કેટ</string>
+	<string name="btn_swipe_to_transact">ટ્રાન્ઝેક્શન માટે સ્વાઇપ કરો</string>
+
+	<string name="broker_data_not_available_txt">ઉપલબ્ધ નથી</string>
+
+	<string name="login_error_heading">લ Loginગિન પ્રમાણીકરણ</string>
+
+
+	<string name="main_activity_crop_error">પાક નિષ્ફળ ગયો</string>
+
+
+	<string name="retry_btn">ફરી પ્રયાસ કરો</string>
+	<string name="disclaimer">અસ્વીકરણ</string>
+	<string name="no_chart_data_availabe">કોઈ પિક્ટોરિયલ ડેટા ઉપલબ્ધ નથી</string>
+
+	<string name="apptype_n">N</string>
+	<string name="apptype_dn">DN</string>
+	<string name="apptype_b">B</string>
+	<string name="apptype_db">DB</string>
+	<string name="transact_now_txt">હમણાં ટ્રાન્ઝેક્શન કરો</string>
+	<string name="add_pur_transact">કૃપા કરીને ચુકવણી મોડ પસંદ કરો</string>
+	<string name="add_pur_transact_err_bank">કૃપા કરી બેંક પસંદ કરો</string>
+	<string name="add_transac_folio_no">ફોલિયો નં.</string>
+	<string name="login_type_broker">Broker</string>
+	<string name="login_type_sub_broker">SubBroker</string>
+	<string name="login_type_rm">RM</string>
+	<string name="txt__email">ઇમેઇલ આઈડી</string>
+	<string name="txt_mobile">મોબાઇલ</string>
+	<string name="txt_acc_type">ખાતાનો પ્રકાર</string>
+	<string name="lumpsum_order_status_pay_now">હવે પૈસા આપો</string>
+	<string name="lumpsum_order_status_go_back">પાછા જાવ</string>
+	<string name="lumpsum_order_status_no_order_placed">રોકાણનો ઓર્ડર આપ્યો નથી</string>
+	<string name="lumpsum_order_status_desc">ઓર્ડર સફળતાપૂર્વક મૂકવામાં આવ્યો છે. B n બીએસઈ (એક્સચેન્જ) દ્વારા તમને ઓર્ડર ઓથેન્ટિકેશન ઇમેઇલ મોકલવામાં આવ્યો છે, માયાળુ રૂપે વ્યવહારને મંજૂરી આપવા માટે તમારી પ્રમાણીકરણ આપો, નહીં તો તે આપમેળે રદ થઈ જશે.</string>
+	<string name="dialog_mandate_desc">શું તમને ખાતરી છે કે તમે આધાર આદેશ પ્રક્રિયા પૂર્ણ કરી છે?</string>
+
+	<string name="error_no_order_found">કોઈ રોકાણનો ઓર્ડર મળ્યો નથી</string>
+
+
+	<string name="portfolio_family_group_txt">ગ્રુપ</string>
+	<string name="pre_payment_error_empty_amount">કૃપા કરીને રકમ દાખલ કરો</string>
+	<string name="pre_payment_error_empty_cart">ટોપલીમાં કોઈ વસ્તુ નથી</string>
+	<string name="profile_phone_active">ફોન લ (ક (સક્રિય)</string>
+	<string name="profile_pin_active">પિન (સક્રિય)</string>
+	<string name="profile_none">કંઈ નહીં</string>
+	<string name="set_falvour_error_select_scheme">યોજના પસંદ કરો</string>
+	<string name="set_falvour_error_select_scheme_saved">યોજના પહેલાથી ગોઠવેલ છે.</string>
+
+	<string name="transfer_holding_note_txt">નૉૅધ</string>
+
+
+	<string name="sip_error_max_dur">મહત્તમ રોકાણ અવધિ 50 વર્ષ હશે</string>
+
+    <string name="dialog_title_message">સંદેશ</string>
+	<string name="main_nav_title_tax_saving_details">કર બચત વિગત</string>
+	<string name="change_password_error_empty_currrent_password">કૃપા કરીને વર્તમાન પાસવર્ડ દાખલ કરો</string>
+	<string name="change_password_error_empty_new_pwd">કૃપા કરીને નવો પાસવર્ડ દાખલ કરો</string>
+	<string name="change_password_error_empty_confrim_new_password">કૃપા કરીને પુષ્ટિ પાસવર્ડ દાખલ કરો</string>
+	<string name="change_password_error_password_not_match">પુષ્ટિ કરો અને નવો પાસવર્ડ મેળ ખાતો નથી</string>
+	<string name="toolbar_title_language_support">ભાષા પસંદ કરો</string>
+	<string name="settings_change_app_lang_txt">ભાષા બદલો</string>
+	<string name="contact_us_view_details">દિશા નિર્દેશો જુઓ</string>
+	<string name="continue_txt">ચાલુ રાખો</string>
+    <string name="dashboard_flavour_of_month_txt">શ્રેષ્ઠ</string>
+	<string name="dashboard_flavour_of_month_header_txt">મહિનાનો</string>
+	<string name="dashboard_just_save_tv_txt">માત્ર</string>
+	<string name="dashboard_just_save_header_txt">તેને સંગ્રહો</string>
+    <string name="dashboard_simply_save_tv_txt">ખાલી</string>
+	<string name="dashboard_simply_save_header_txt">તેને સંગ્રહો</string>
+    <string name="main_nav_title_simply_save">ફક્ત સાચવો</string>
+	<string name="main_nav_title_just_save">જસ્ટ સેવ</string>
+	<string name="main_nav_title_flavour_month">મહિનાનો શ્રેષ્ઠ</string>
+	<string name="toolbar_title_flavour_of_the_month">મહિનાનો શ્રેષ્ઠ</string>
+	<string name="dashboard_service_request_txt">સેવા</string>
+	<string name="dashboard_service_req_header_txt">વિનંતી</string>
+	<string name="toolBar_title_service_request">સેવા વિનંતી</string>
+	<string name="help_enquiry">તપાસ</string>
+	<string name="help_main_enquiry">તપાસ</string>
+	<string name="Mutual_Fund_Lab_content1">તમારા બધા મ્યુચ્યુઅલ ફંડ રોકાણો એક જગ્યાએ સરળતાથી એકત્રિત અને ટ્ર trackક કરો.</string>
+	<string name="Mutual_Fund_Lab_content2">અમે તેને બેકએન્ડથી તમારા પોર્ટફોલિયોમાં અપલોડ કરીશું.</string>
+    <string name="existing_investment_description">ટ્રેકિંગ શરૂ કરવા માટે તમારી નવીનતમ સીએએમએસ / કેર્વી કન્સોલિડેટેડ એકાઉન્ટ સ્ટેટમેન્ટ પીડીએફ અપલોડ કરો. અમે આને તમારા પોર્ટફોલિયોમાં બેકએન્ડથી અપલોડ કરીશું</string>
+
+	<string name="service_request_call_me">મને બોલાવો</string>
+	<string name="enquiry_form_name">નામ</string>
+	<string name="enquiry_form_contact">સંપર્ક વિગતો</string>
+	<string name="enquiry_form_desc">વર્ણન</string>
+	<string name="error_enquiry_enmpty_name">કૃપા કરી નામ પ્રદાન કરો</string>
+	<string name="error_enquiry_empty_phone">કૃપા કરી સંપર્ક નંબર પ્રદાન કરો</string>
+	<string name="error_enqiry_empty_message">વર્ણન દાખલ કરો</string>
+	<string name="service_request_collect_cheque">ચેક એકત્રિત કરો</string>
+	<string name="service_request_send_me_portfolio_report">મને પોર્ટફોલિયો મોકલો. N અહેવાલ</string>
+	<string name="service_request_collect_document">દસ્તાવેજ એકત્રિત કરો</string>
+	<string name="service_request_report_an_issue">ઇશ્યૂની જાણ કરો</string>
+	<string name="service_request_changes_in_portfolio">પોર્ટફોલિયોમાં ફેરફાર</string>
+	<string name="service_request_meet_me">મને મળવા</string>
+	<string name="service_request_others">અન્ય</string>
+	<string name="error_empty_login">આ માટે, કૃપા કરીને લ loginગિન કરો</string>
+	<string name="error_not_available">હમણાં માટે ઉપલબ્ધ નથી</string>
+	<string name="dashboard_flavour_month_desc_txt">અમારા દ્વારા ભલામણ કરવામાં આવેલી મહિનાની યોજના.</string>
+	<string name="txt_on_screen">સ્ક્રીન સહી પર</string>
+	<string name="txt_upload">સહી અપલોડ કરો</string>
+	<string name="txt_upload_cheque">અપલોડ ચેક</string>
+	<string name="txt_cheque_heading">તમારા રોકાણ ખાતાને સક્રિય કરવા માટે કૃપા કરીને તમારા બેંક એકાઉન્ટના રદ કરેલા ચેક પર્ણની એક નકલ પ્રદાન કરો.</string>
+	<string name="txt_cheque_upload">હું અહીંથી પ્રમાણિત કરું છું કે પ્રદાન કરેલી માહિતી મારા શ્રેષ્ઠ જ્ perાન મુજબ યોગ્ય છે.</string>
+	<string name="txt_pre_doc_line1">પરંતુ હજી કેટલાક પગલાઓ બાકી છે</string>
+	<string name="dashboard_track_txt">ઓલ્ડ ટ્રેક</string>
+	<string name="dashboard_track_old_invest_header_txt">રોકાણો</string>
+    <string name="get_flavour_please_login_or_signup_to_continue">કૃપા કરીને ચાલુ રાખવા માટે લ Loginગિન કરો અથવા સાઇનઅપ કરો ..</string>
+	<string name="signup_signup_with_txt">સાથે સાઇન અપ કરો</string>
+	<string name="app_version">વી 4</string>
+	<string name="setting_app_store_version_txt">એપ્લિકેશન સ્ટોર સંસ્કરણ</string>
+	<string name="factsheet_transact_btn_txt">વ્યવહાર</string>
+
+
+	<!--Upload CAS string-->
+	<string name="txt_cas_pre_btn">Upload / Forward CAS</string>
+	<string name="txt_provide_cas">Provide your CAS</string>
+	<string name="txt_consolidated">Consolidated Account Statement (CAS) consolidates your mutual fund investments across all AMCS.</string>
+	<string name="txt_generate_cas">1. Generate your CAS via Karvy or CAMS</string>
+	<string name="txt_karvy">KARVY</string>
+    <string name="txt_cams">CAMS</string>
+    <string name="txt_receive_cas">2. Receive your CAS via email</string>
+	<string name="txt_karvy_receive">Karvy / CAMS will send the CAS to your email address.</string>
+	<string name="txt_forward_cas">3. Forward / Upload CAS to us</string>
+	<string name="txt_upload_cas1">Upload the CAS file received or forward it to</string>
+	<string name="txt_upload_cas2">also, provide the password set while generating CAS.</string>
+	<string name="txt_note">Note: Upload only detailed CAS generated from Karvy / CAMS CAS from NSDL and CDSL is not supported.</string>
+	<string name="track_old_invest_txt">Track old Investments</string>
+	<string name="txt_chose_cas">Choose CAS Sharing Method</string>
+	<string name="txt_forward">1. Forward</string>
+	<string name="txt_forward_cas_email">If you have CAS on email then simply forward to us.</string>
+	<string name="txt_cas_upload">2. Upload</string>
+	<string name="txt_forward_cas_directly">If you have CAS on your phone then upload directly.</string>
+	<string name="upload_statement">Upload CAS</string>
+	<string name="txt_password">Password of your CAS</string>
+	<string name="upload_my_CAS_txt">Upload My CAS</string>
+    <string name="dashboard_current_gain_title_text">Current Gain</string>
+	<string name="dashbaord_all_time_gain">Gain since inception (XIRR)</string>
+    <string name="allocated_folio_txt">Allocate Folio (%)</string>
+    <string name="allot_txt">Allot</string>
+    <string name="allocated_folio_detail_txt">Folio Allocation Details</string>
+    <string name="unallocated_txt">Unallocated</string>
+    <string name="iwill_text">I will</string>
+    <string name="chose_myself_txt">Choose Myself</string>
+    <string name="continue_with_txt">Continue with</string>
+    <string name="recomandation_txt">Recommendations</string>
+    <string name="dashboard_type_two_track_your_portfolio_txt">Track Your Portfolio</string>
+    <string name="dashboard_type_two_my_assets_btn">My Assets</string>
+    <string name="dashboard_type_two_my_assets_txt">My Assets</string>
+    <string name="dashboard_type_two_enquiry_btn_text">Enquiry</string>
+	<string name="dashboard_type_two_login_btn_text">Login</string>
+    <string name="dashboard_type_two_investment_in_equity_market_header_txt">Investment in Equity Market</string>
+	<string name="dashboard_type_two_invest_route_header_txt">Investment Routes</string>
+	<string name="dashboard_type_two_other_services_header_txt">Other Services</string>
+    <string name="toolBar_title_my_assets">My Assets</string>
+    <string name="dashboard_model_port_tv_txt">Model Portfolio</string>
+	<string name="dashboard_model_port_desc_txt">Track your trading portfolio</string>
+	<string name="dashboard_trading_online_tv_txt">Online Trading</string>
+	<string name="dashboard_trading_online_l_desc_txt">Invest Through this app for share market</string>
+    <string name="toolbar_title_rder_status_txt">Order Status</string>
+    <string name="toolBar_title_share_and_bond"><![CDATA[Share & Bond Portfolio]]></string>
+    <string name="toolBar_title_fixed_deposit">Fixed Deposit</string>
+    <string name="toolBar_title_life_insurance">Life Insurance</string>
+    <string name="share_bond__portfolio_tv_initial_value_txt">Initial Value</string>
+	<string name="share_bond__portfolio_tv_market_value_txt">Market Value</string>
+	<string name="share_bond__portfolio_tv_cagr_value_txt">CAGR</string>
+	<string name="share_bond__portfolio_tv_gain_value_txt">Gain</string>
+	<string name="share_bond__portfolio_tv_abs_rtr_value_txt">Absolute Return</string>
+	<string name="share_bond__portfolio_tv_purchase_cost_value_txt">Purchase Cost</string>
+	<string name="share_bond__portfolio_tv_balance_unit_value_txt">Balance Unit</string>
+	<string name="fixed_amount_placeholder">Amount</string>
+	<string name="fixed_deposit_years_of_compunding">Years of Compounding</string>
+    <string name="share_bond__portfolio_tv_amnt_value_txt">Amout</string>
+	<string name="share_bond__portfolio_tv_period_value_txt">Period</string>
+    <string name="important_txt">Important</string>
+    <string name="txt_readmore">Read More</string>
+    <string name="know_more_txt">KNOW MORE</string>
+    <string name="validation_txt">Don\'t show again</string>
+	<string name="XIRR_return_txt">XIRR return (%) since inception</string>
+	<string name="profile_id_txt">Profile ID</string>
+	<string name="change_sip_txt">Change in SIP</string>
+    <string name="change_client_txt">Change in Client</string>
+	<string name="change_txt">( change from previous FY )</string>
+    <string name="main_nav_title_kyc">Video KYC</string>
+    <string name="toolBar_title_invest_existing_scheme">Invest in Existing Schemes</string>
+    <string name="toolbar_title_quick_read">Quick Read</string>
+    <string name="let_s_get_started">Let\'s Get Started</string>
+    <string name="help_service_title">Service</string>
+    <string name="main_bottom_tab_menu_invest_now">Invest</string>
+    <string name="conditionNoUcc"><![CDATA[Note: Mobile No. & Email given earlier will remain unchanged. If you want to change these details then kindly logout and sign up as new user.]]></string>
+	<string name="conditionUcc">Note: While creating additional profiles the mobile no. and emailid given earlier will remain unchanged. If you want to change these details then kindly logout and sign up as new user.</string>
+    <string name="main_nav_title_goal">My Goal</string>
+    <string name="txt_achieve">To achieve this Goal you must Invest</string>
+	<string name="txt_Onetime">One Time</string>
+    <string name="redmption">Redemption</string>
+    <string name="systemetic_investment_txt">Systematic Transactions</string>
+    <string name="date">Date</string>
+    <string name="pan_name_txt">Name as per PAN</string>
+    <string name="proceed_kyc_txt">Proceed for KYC</string>
+    <string name="message_txt">Message</string>
+    <string name="no_investment_profile">No investment Profile</string>
+    <string name="no_investment_txt">If you have Investment Profile, Please Login. If not, Please Sign up.</string>
+    <string name="kyc_verification_top_desc_txt">Please note: After doing Video KYC process on next screen. Authority takes times to verify the details submitted. Please check KYC Status again after 1-2 days.</string>
+    <string name="lastDay_txt">Transaction of Last</string>
+    <string name="order_txt">Orders</string>
+    <string name="iin_verify_txt">Have you done email authentication?</string>
+    <string name="dashboard_type_two_my_portfolio_btn">My Portfolio</string>
+    <string name="status_txt">Status</string>
+    <string name="ft_number_txt">FT A/C No.</string>
+	<string name="transfer_holding_enter_ft_number_txt">Enter FT A/C Number</string>
+    <string name="sort_name_by">Sort Name By :</string>
+    <string name="portfolio_filter">Sort Portfolio</string>
+    <string name="z_to_a">Z-to-A</string>
+    <string name="investment_amount">Investment Amount</string>
+    <string name="high_to_low">High to Low</string>
+    <string name="low_to_high">Low to High</string>
+    <string name="btn_asc_label">A-to-Z</string>
+	<string name="valid_txt">"Valid till : "</string>
+    <string name="transact_txt_1">Kindly check the exit load and taxation aspects before proceeding with the above transaction. As investor will be solely responsible for any exit charges or tax liability arising out of above transaction</string>
+    <string name="error_connection_timeout">Please try again later</string>
+    <string name="verify_mobile">Verify Mobile</string>
+    <string name="verify">Verify</string>
+	<string name="change_mobile_number">Change Mobile Number</string>
+    <string name="tv_otp_done_header"><![CDATA[Mobile & Email are verified \n successfully!]]></string>
+    <string name="mobile_verified_header">Mobile Number has been \nverified!</string>
+	<string name="verify_email">Verify Email</string>
+	<string name="now_proceed_for_email_verification">Now Proceed for Email verification</string>
+    <string name="set_a_goal">Set a Purpose</string>
+    <string name="current_investments">Current Investments</string>
+	<string name="sip">SIP</string>
+	<string name="lumpsum">Lumpsum</string>
+    <string name="invested_amount">Invested Amount</string>
+    <string name="disc_desc"><![CDATA[Past Performance may or may not be delivered in future. Mutual fund investments are subject to market risks, read all scheme related documents carefully. Past performance is not indicative of future performance. > Return <1 year are absolute and 1 Year are Compounded Annualized. >The data shown above is based on the information available with us and is only for your reference. Any discrepancy may please be reported to us. > All Investments in Mutual Funds carry risk of loss of Principle & Income. No returns are guaranteed, any projections are indicative and subject to market fluctuations. >Pleas read the offer document carefully before investing.]]></string>
+    <string name="trans_disclaimer">Disclaimer : Mutual fund investments are subject to market risks, read all scheme related documents carefully. Past performance is not indicative of future performance</string>
+    <string name="folio">Folio.</string>
+    <string name="dividend">Dividend :</string>
+    <string name="absolute_return">Absolute Return :</string>
+    <string name="launch_date">Launch Date:</string>
+    <string name="toolBar_title_emi_Cal">EMI Calculator</string>
+    <string name="open_in_browser">Open in browser</string>
+
+
+</resources>

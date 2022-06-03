@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cv_risk"
+    style="@style/CardViewStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="gone"
+    android:layout_margin="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_all_very_small"
+        android:orientation="vertical">
+
+        <investwell.utils.customView.CustomTextViewRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/padding_all_regular"
+            android:paddingLeft="@dimen/padding_all_regular"
+            android:paddingTop="@dimen/padding_all_small"
+            android:paddingEnd="@dimen/padding_all_regular"
+            android:paddingRight="@dimen/padding_all_regular"
+            android:paddingBottom="@dimen/padding_all_small"
+            android:text="@string/factsheet_riskometer_header_title"
+            android:textColor="?attr/secondaryTextColor"
+            android:textSize="@dimen/textView_all_size_14" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_height="0dp">
+            <ImageView
+                android:id="@+id/iv_riskometer_graph"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                android:padding="@dimen/padding_all_very_small"
+
+                android:contentDescription="@string/app_name" />
+            <investwell.utils.customView.CustomTextViewRegular
+                android:id="@+id/tv_riskometer_graph_instruction"
+                android:layout_width="wrap_content"
+                android:padding="@dimen/padding_all_very_small"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textSize="@dimen/textView_all_size_14"
+                android:textColor="?attr/primaryTextColor"
+                android:layout_margin="@dimen/margin_all_very_small"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_yrp_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorGrey_250" />
+
+            <investwell.utils.customView.CustomTextViewRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_all_very_small"
+
+                android:text="@string/factsheet_risk_profile_header_title"
+                android:textColor="?attr/primaryTextColor"
+
+                android:textSize="@dimen/textView_all_size_10"
+                />
+
+            <investwell.utils.customView.CustomTextViewRegular
+                android:id="@+id/tv_risk_profile_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/factsheet_fund_size_header_title"
+                android:layout_marginStart="@dimen/margin_all_very_small"
+
+                android:textColor="?attr/primaryTextColor"
+                android:textSize="@dimen/textView_all_size_14"
+                android:textStyle="bold"
+                android:layout_marginLeft="@dimen/margin_all_very_small" />
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+
+

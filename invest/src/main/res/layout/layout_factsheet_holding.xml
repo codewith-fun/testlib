@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/CardViewStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+        <investwell.utils.customView.CustomTextViewRegular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/tableRowHeaderColor"
+            android:paddingStart="@dimen/padding_all_regular"
+            android:paddingLeft="@dimen/padding_all_regular"
+            android:paddingTop="@dimen/padding_all_small"
+            android:paddingEnd="@dimen/padding_all_regular"
+
+            android:paddingRight="@dimen/padding_all_regular"
+            android:paddingBottom="@dimen/padding_all_small"
+            android:text="Asset Allocation"
+            android:textColor="?attr/secondaryTextColor"
+            android:textSize="@dimen/textView_all_size_14" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_all_small"
+            android:orientation="vertical">
+
+            <investwell.utils.customView.CustomTextViewBold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_all_small"
+                android:gravity="center"
+                android:padding="@dimen/padding_all_very_small"
+                android:text="@string/AssetMix"
+                android:textColor="#000"
+                android:visibility="gone" />
+
+            <investwell.utils.customView.CustomTextViewRegular
+                android:id="@+id/tv_no_cart_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/no_chart_data_availabe"
+                android:visibility="gone" />
+
+            <investwell.utils.piechart.others.AnimatedPieView
+                android:id="@+id/animatedPieView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal" />
+
+            <org.apmem.tools.layouts.FlowLayout
+                android:id="@+id/ll_legends"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center" />
+
+            <investwell.utils.customView.CustomTextViewRegular
+                android:id="@+id/tv_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="@dimen/textView_all_size_14"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/tableRowHeaderColor"
+
+            android:orientation="vertical">
+
+            <investwell.utils.customView.CustomTextViewBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_all_small"
+                android:text="@string/factsheet_sector_analysis_header_title"
+                android:textColor="?attr/secondaryTextColor"
+                android:textSize="@dimen/textView_all_size_14"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <investwell.utils.customView.CustomTextViewRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:padding="@dimen/padding_all_small"
+                android:text="@string/factsheet_sector_rating_header_title"
+                android:textColor="?attr/secondaryTextColor"
+                android:textSize="@dimen/textView_all_size_14" />
+
+            <investwell.utils.customView.CustomTextViewRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/padding_all_small"
+                android:text="@string/factsheet_net_asset_title"
+                android:textColor="?attr/secondaryTextColor"
+                android:textSize="@dimen/textView_all_size_14"
+                tools:ignore="RelativeOverlap" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorGrey_200" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_sector_analysis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutAnimation="@anim/layout_animation_fall_down" />
+
+        <investwell.utils.customView.CustomTextViewBold
+            android:id="@+id/btn_show_more_sector"
+            android:layout_width="@dimen/btn_width_footer"
+            android:layout_height="@dimen/btn_height_footer"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:padding="@dimen/padding_all_very_small"
+            android:textAllCaps="false"
+            android:textColor="?attr/secondaryTextColor"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/tableRowHeaderColor"
+
+            android:orientation="vertical">
+
+            <investwell.utils.customView.CustomTextViewBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_all_small"
+                android:text="@string/factsheet_top_holding_header_title"
+                android:textColor="?attr/secondaryTextColor"
+                android:textSize="@dimen/textView_all_size_14"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <investwell.utils.customView.CustomTextViewRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:padding="@dimen/padding_all_small"
+                android:text="@string/factsheet_holding_header_title"
+                android:textColor="?attr/secondaryTextColor"
+                android:textSize="@dimen/textView_all_size_14" />
+
+            <investwell.utils.customView.CustomTextViewRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/padding_all_small"
+                android:text="@string/factsheet_net_asset_title"
+                android:textColor="?attr/secondaryTextColor"
+                android:textSize="@dimen/textView_all_size_14"
+                tools:ignore="RelativeOverlap" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorGrey_200" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_holding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutAnimation="@anim/layout_animation_fall_down" />
+
+        <investwell.utils.customView.CustomTextViewBold
+            android:id="@+id/btn_show_more_top_holding"
+            android:layout_width="@dimen/btn_width_footer"
+            android:layout_height="@dimen/btn_height_footer"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:padding="@dimen/padding_all_very_small"
+            android:textAllCaps="false"
+            android:textColor="?attr/secondaryTextColor"
+            android:textStyle="bold"
+            android:visibility="gone" />
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="colorTertiary">#2A488B</color>
+    <color name="colorShimmerBackground">#aaa</color>
+    <color name="textColorSecondary">#3c3c3c</color>
+
+
+    <!--Light Theme Colors-->
+    <color name="colorPrimary">#3262A5</color>
+    <color name="colorPrimaryDark">#2A488B</color>
+    <color name="colorAccent">#2A488B</color>
+    <color name="lightColorHeaderTitle">#7B0000</color>
+    <color name="lightColorToolBar">#FFFFFF</color>
+    <color name="lightColorToolBarIcon">#2A488B</color>
+    <color name="lightColorToolBarText">#2A488B</color>
+    <color name="lightPrimaryBtnBg">#3262A5</color>
+    <color name="lightSecondaryBtnBg">#FFFFFF</color>
+    <color name="lightTertiaryBtnBg">#00000000</color>
+    <color name="lightPrimaryBtnTextColor">#FFFFFF</color>
+    <color name="lightSecondaryBtnTextColor">#3262A5</color>
+    <color name="lightTertiaryBtnTextColor">#FFFFFF</color>
+    <color name="lightWindowBackground">#FFFFFF</color>
+    <color name="lightPrimaryTextColor">#262d33</color>
+    <color name="lightSecondaryTextColor">#3c3c3c</color>
+    <color name="lightTertiaryColor">#b4c87c</color>
+    <color name="lightColorTableRowHeader">#F5F5F5</color>
+    <color name="lightColorCardBackground">#FFFFFF</color>
+    <color name="lightTabBackgroundColor">#FFFFFF</color>
+    <color name="lightBottomSheetColor">#FFFFFF</color>
+    <color name="mtrl_textinput_default_box_stroke_color" tools:override="true">@color/colorAccent</color>
+    <color name="lightDialogBackground">#FFFFFF</color>
+    <!--End Light Theme Colors-->
+
+
+    <!--Dark Theme Colors-->
+    <color name="darkColorPrimary">#000000</color>
+    <color name="darkColorPrimaryDark">#000000</color>
+    <color name="darkColorAccent">#FFFFFF</color>
+    <color name="darkColorHeaderTitle">#7B0000</color>
+    <color name="darkColorToolBar">#000000</color>
+    <color name="darkColorToolBarIcon">#FFFFFF</color>
+    <color name="darkColorToolBarText">#FFFFFF</color>
+    <color name="darkPrimaryBtnBg">#7B0000</color>
+    <color name="darkSecondaryBtnBg">#212121</color>
+    <color name="darkTertiaryBtnBg">#00000000</color>
+    <color name="darkPrimaryBtnTextColor">#FFFFFF</color>
+    <color name="darkSecondaryBtnTextColor">#FFFFFF</color>
+    <color name="darkTertiaryBtnTextColor">#FFFFFF</color>
+    <color name="darkWindowBackground">#000000</color>
+    <color name="darkPrimaryTextColor">#FFFFFF</color>
+    <!--<color name="mtrl_textinput_default_box_stroke_color" tools:override="true">@color/darkColorAccent</color>-->
+
+    <color name="darkSecondaryTextColor">#FFFFFF</color>
+    <color name="darkTertiaryColor">#FFFFFF</color>
+    <color name="darkColorTableRowHeader">#151515</color>
+    <color name="darkColorCardBackground">#212121</color>
+    <color name="darkTabBackgroundColor">#212121</color>
+    <color name="darkBottomSheetColor">#0F0F0F</color>
+    <color name="darkDialogBackground">#212121</color>
+    <!--End Dark Theme Colors-->
+    <!-- dots inactive colors -->
+
+    <!-- dots active colors -->
+
+    <!---Card Background color for Type 1D-->
+    <color name="colorCardBackgroundTypeD">#333333</color>
+    <!---End Card Background color for Type 1D-->
+
+
+    <!-- App Toolbar elements colors-->
+    <!-- End App Toolbar elements colors-->
+
+
+    <!--Risk meter Theme Colors-->
+    <color name="colorBelowAvgRisk">#bbd104</color>
+    <color name="colorAboveAvgRisk">#eb8f3c</color>
+    <color name="colorAvgRisk">#f8bd17</color>
+    <color name="colorLowRisk">#83c605</color>
+    <color name="colorHighRisk">#d44c4c</color>
+    <!--End Risk meter Theme Colors-->
+
+
+    <!---App Buttons Theme Colors-->
+
+    <!--Primary CustomButton-->
+    <color name="btnPrimaryBackgroundColor">#3262A5</color>
+    <color name="btnDisableColor">#FF98B190</color>
+    <color name="btnPrimaryTextColor">#FFFFFF</color>
+
+    <!--Secondary CustomButton-->
+    <color name="btnSecondaryTextColor">#3262A5</color>
+
+    <!--Tertiary CustomButton-->
+
+    <!---End App Buttons Theme Colors-->
+
+
+    <!--Color Grey Shade-->
+    <color name="colorGrey_500">#aeaaab</color>
+    <color name="colorGrey_400">#a8a8a8</color>
+    <color name="colorGrey_100">#FAFAFA</color>
+    <color name="colorGrey_250">#eaeaea</color>
+    <color name="colorGrey_200">#ddd</color>
+    <color name="colorGrey_300">#aaa</color>
+    <color name="colorGrey_600">#616064</color>
+    <!--End Color Grey Shade-->
+
+
+    <!--Other Colors used in app-->
+    <color name="colorYellow">#fd9104</color>
+    <color name="colorRed">#ED3338</color>
+    <color name="colorPurple">#4a3b90</color>
+    <color name="colorGreen">#51b53f</color>
+    <color name="colorOrange">#FFA800</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorTransparent">#00000000</color>
+    <color name="colorBlue">#5076B0</color>
+    <color name="colorBlack">#000000</color>
+
+    <!--My Assets section colors-->
+    <color name="colorEquityShare">#c37b28</color>
+    <color name="colorMutualFund">#41a616</color>
+    <color name="colorLifeInsurance">#125da9</color>
+    <color name="colorGeneralInsurance">#fa4242</color>
+    <color name="colorFixedDeposit">#ee8208</color>
+
+
+
+    <!--Color for Value Fluctuation-->
+    <color name="colorPositiveValues">#0a8b46</color>
+    <color name="colorNegativeValues">#de373a</color>
+
+
+</resources>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:visibility="gone"
+        android:background="?attr/accentColor">
+
+        <ImageView
+            android:id="@+id/ivLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="left"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:src="@mipmap/ic_arrow_back" />
+
+        <investwell.utils.customView.CustomTextViewBold
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/ivLeft"
+            android:gravity="center"
+            android:text="@string/Select_Folio"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/textView_all_size_18"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <fragment
+        android:id="@+id/frag_toolBar"
+        android:name="investwell.client.fragment.others.ToolbarFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/create_acnt_btn"
+        android:layout_below="@+id/relToolBar"
+        android:orientation="vertical">
+
+        <investwell.utils.customView.CustomTextViewRegular
+             android:id="@+id/tvNothing"
+            android:textColor="?primaryTextColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:gravity="center"
+            android:text="@string/no_portfolio"
+            android:textSize="@dimen/textView_all_size_18"
+            android:visibility="gone"
+            android:layout_margin="10dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp" />
+
+    </LinearLayout>
+
+    <investwell.utils.customView.CustomButton
+        android:id="@+id/create_acnt_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:visibility="gone"
+        android:background="?attr/primaryBtnDrawable"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:text="@string/txt_create_investment"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/textView_all_size_18" />
+
+</RelativeLayout>

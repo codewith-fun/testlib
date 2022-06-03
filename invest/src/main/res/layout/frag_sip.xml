@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+        <!--
+                -->
+
+        <fragment
+            android:id="@+id/frag_toolBar"
+            android:name="investwell.client.fragment.others.ToolbarFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <investwell.utils.customView.CustomTextViewBold
+                    android:id="@+id/tvImageTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:layout_toRightOf="@+id/ivLeft"
+                    android:background="?attr/primaryButtonBackground"
+                    android:gravity="center"
+                    android:text="@string/SIPCalculator"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/textView_all_size_18"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:id="@+id/linerResult"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:background="?attr/accentColor" />
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:padding="7dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+
+                                <investwell.utils.customView.CustomTextViewRegular
+                                    android:id="@+id/textView1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:text="@string/sip_calculator_amount_txt"
+                                    android:textAlignment="center"
+                                    android:textSize="@dimen/textView_all_size_14" />
+
+                                <investwell.utils.customView.CustomTextViewBold
+                                    android:id="@+id/textView2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/textView1"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_gravity="center"
+                                    android:layout_marginBottom="5dp"
+                                    android:gravity="center"
+                                    android:text="@string/sip_calculator_txt_month"
+                                    android:textAlignment="center"
+                                    android:textColor="?attr/primaryTextColor"
+                                    android:textSize="@dimen/textView_all_size_18"
+                                    android:textStyle="bold" />
+
+                            </RelativeLayout>
+
+
+                            <LinearLayout
+                                android:id="@+id/linerResultPart"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <investwell.utils.customView.CustomTextViewRegular
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_gravity="center"
+                                        android:text="@string/sip_calculator_total_amount_invested_txt"
+                                        android:textAlignment="center"
+                                        android:textColor="?attr/primaryTextColor"
+                                        android:textSize="@dimen/textView_all_size_14" />
+
+                                    <investwell.utils.customView.CustomTextViewBold
+                                        android:id="@+id/tvResult"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="8dp"
+                                        android:gravity="center"
+                                        android:text="@string/sip_calculator_11_txt"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/colorGreen"
+                                        android:textSize="@dimen/textView_all_size_18"
+                                        android:textStyle="bold"
+
+                                        />
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="1dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="3dp"
+                                    android:background="@color/colorBlack" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <investwell.utils.customView.CustomTextViewRegular
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_gravity="center"
+                                        android:text="@string/sip_calculator_txt_wealth_gained"
+                                        android:textAlignment="center"
+                                        android:textColor="?attr/primaryTextColor"
+                                        android:textSize="@dimen/textView_all_size_14" />
+
+                                    <investwell.utils.customView.CustomTextViewRegular
+                                        android:id="@+id/tvResult2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/textView3"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="8dp"
+                                        android:gravity="center"
+                                        android:text="@string/sip_calculator_11_txt"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/colorOrange"
+                                        android:textSize="@dimen/textView_all_size_18"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <investwell.utils.customView.CustomTextViewRegular
+                                android:id="@+id/textView5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:text="@string/sip_calculator_your_multiplied_txt"
+                                android:textAlignment="center"
+                                android:textSize="@dimen/textView_all_size_14" />
+
+                            <investwell.utils.customView.CustomTextViewRegular
+                                android:id="@+id/textView6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="8dp"
+                                android:gravity="center"
+                                android:text="@string/sip_calculator_txt_times"
+                                android:textAlignment="center"
+                                android:textColor="?attr/primaryTextColor"
+                                android:textSize="@dimen/textView_all_size_18"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:id="@+id/button_layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:visibility="gone">
+
+                                <investwell.utils.customView.CustomButton
+                                    android:id="@+id/lumpsum_btn"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_weight="1"
+                                    android:background="?attr/secondaryBtnDrawable"
+                                    android:text="@string/sip_cal_continue_with_lumpsum_txt"
+                                    android:textAllCaps="false"
+                                    android:textColor="?attr/accentColor"
+                                    android:textSize="@dimen/textView_all_size_14" />
+
+                                <investwell.utils.customView.CustomButton
+                                    android:id="@+id/sip_btn"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/broder_rounded_orange"
+                                    android:text="@string/sip_cal_continue_with_sip_txt"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/colorYellow"
+                                    android:textSize="@dimen/textView_all_size_14" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:paddingBottom="20dp">
+
+
+                    <LinearLayout
+                        android:id="@+id/ly_cal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="vertical">
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_toLeftOf="@+id/dialer1"
+                                android:orientation="vertical">
+
+                                <investwell.utils.customView.CustomTextViewRegular
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:gravity="start|center_vertical"
+                                    android:text="@string/sip_calculator_txt_onthly_investment"
+                                    android:textColor="?attr/primaryTextColor"
+                                    android:textSize="@dimen/textView_all_size_16" />
+
+                                <EditText
+                                    android:id="@+id/edit1"
+                                    android:layout_width="120dp"
+                                    android:layout_height="30dp"
+                                    android:layout_marginTop="5dp"
+                                    android:background="@drawable/edittext_square"
+                                    android:hint="@string/sip_calculator_1000_txt"
+                                    android:inputType="number"
+                                    android:maxLength="12"
+                                    android:maxLines="1"
+                                    android:paddingLeft="5dp"
+                                    android:text="@string/sip_calculator_1000_txt"
+                                    android:textSize="@dimen/textView_all_size_18"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+
+                            <investwell.common.calculator.utils.RoundKnobButton
+                                android:id="@+id/dialer1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true" />
+
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.7dp"
+                            android:background="@android:color/darker_gray" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_toLeftOf="@+id/dialer2"
+                                android:orientation="vertical">
+
+                                <investwell.utils.customView.CustomTextViewRegular
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:gravity="start|center_vertical"
+                                    android:text="@string/lumpsum_cal_invest_period_year_txt"
+                                    android:textColor="?attr/primaryTextColor"
+                                    android:textSize="@dimen/textView_all_size_16" />
+
+                                <EditText
+                                    android:id="@+id/edit2"
+                                    android:layout_width="120dp"
+                                    android:layout_height="30dp"
+                                    android:layout_marginTop="5dp"
+                                    android:background="@drawable/edittext_square"
+                                    android:hint="@string/lumpsum_cal_10_txt"
+                                    android:inputType="number"
+                                    android:maxLength="2"
+                                    android:maxLines="1"
+                                    android:paddingLeft="5dp"
+                                    android:text="@string/lumpsum_cal_10_txt"
+                                    android:textSize="@dimen/textView_all_size_18"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+
+                            <investwell.common.calculator.utils.RoundKnobButton
+                                android:id="@+id/dialer2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true" />
+
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.7dp"
+                            android:background="@android:color/darker_gray" />
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_toLeftOf="@+id/dialer3"
+                                android:orientation="vertical">
+
+                                <investwell.utils.customView.CustomTextViewRegular
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:gravity="start|center_vertical"
+                                    android:text="@string/lumpsum_cal_expected_annual_salary"
+                                    android:textColor="?attr/primaryTextColor"
+                                    android:textSize="@dimen/textView_all_size_16" />
+
+                                <EditText
+                                    android:id="@+id/edit3"
+                                    android:layout_width="120dp"
+                                    android:layout_height="30dp"
+                                    android:layout_marginTop="5dp"
+                                    android:background="@drawable/edittext_square"
+                                    android:inputType="numberDecimal"
+                                    android:maxLength="4"
+                                    android:maxLines="1"
+                                    android:paddingLeft="5dp"
+                                    android:text="@string/sip_calcula_12_txt"
+                                    android:textSize="@dimen/textView_all_size_18"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+
+                            <investwell.common.calculator.utils.RoundKnobButton
+                                android:id="@+id/dialer3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true" />
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/ly_cal"
+                        android:layout_alignParentBottom="true"
+                        android:orientation="vertical">
+
+                        <investwell.utils.customView.CustomTextViewRegular
+                            android:id="@+id/textView3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/ly_cal"
+
+
+                            android:layout_margin="10dp"
+                            android:text="@string/goal_summary_details_achieve_footer_txt"
+                            android:textAlignment="center"
+                            android:textColor="?attr/primaryTextColor"
+                            android:textSize="@dimen/textView_all_size_18" />
+
+                        <investwell.utils.customView.CustomTextViewRegular
+                            android:id="@+id/textsipnote"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/ly_cal"
+                            android:layout_margin="10dp"
+                            android:text="@string/Sip_Calc_Note"
+                            android:textAlignment="center"
+                            android:textColor="?attr/primaryTextColor"
+                            android:textSize="@dimen/textView_all_size_16" />
+
+
+
+                        <investwell.utils.customView.CustomTextViewRegular
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textView3"
+                            android:layout_margin="10dp"
+                            android:text="@string/calculator_disclamer"
+                            android:textColor="?attr/primaryTextColor"
+                            android:textSize="@dimen/textView_all_size_14" />
+
+                        <include layout="@layout/footer_layout" />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+

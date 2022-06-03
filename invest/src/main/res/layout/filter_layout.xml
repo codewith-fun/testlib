@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="?attr/dialogBackground"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:padding="5dp">
+
+        <investwell.utils.customView.CustomTextViewRegular
+            style="@style/filter_title_text"
+            android:textColor="@color/colorWhite"
+            android:text="@string/hint_AMC" />
+
+        <Spinner
+            android:id="@+id/amc_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="?attr/primaryTextColor"
+
+            android:layout_weight="1" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#f2f2f2" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <investwell.utils.customView.CustomTextViewRegular
+            style="@style/filter_title_text"
+            android:textColor="?attr/primaryTextColor"
+            android:text="@string/hint_Category" />
+
+        <Spinner
+            android:id="@+id/categ_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="?attr/primaryTextColor"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f2f2f2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ly_subcat"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <investwell.utils.customView.CustomTextViewRegular
+                style="@style/filter_title_text"
+                android:textColor="?attr/primaryTextColor"
+                android:text="@string/hint_sub_Category" />
+
+            <Spinner
+                android:id="@+id/sub_categ_spinner"
+                android:layout_width="match_parent"
+                android:textColor="?attr/primaryTextColor"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#f2f2f2" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <investwell.utils.customView.CustomTextViewRegular
+            style="@style/filter_title_text"
+            android:textColor="?attr/primaryTextColor"
+            android:text="@string/text_Rating" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:gravity="center|end"
+            android:padding="5dp">
+
+            <androidx.appcompat.widget.AppCompatRatingBar
+                style="@style/customRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:isIndicator="false"
+                android:numStars="5"
+                android:progressTint="#fa990e"
+                android:rating="0"
+                android:stepSize="1.0" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f2f2f2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:padding="5dp">
+
+        <investwell.utils.customView.CustomTextViewRegular
+            style="@style/filter_title_text"
+            android:textColor="?attr/primaryTextColor"
+            android:text="@string/text_TrailingReturnPeriod" />
+
+        <Spinner
+            android:id="@+id/top_investment_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="?attr/primaryTextColor"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f2f2f2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+
+        <investwell.utils.customView.CustomButton
+            android:id="@+id/filter_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="?attr/secondaryBtnDrawable"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="@string/text_reset"
+            android:textAllCaps="false"
+            android:textColor="?attr/secondaryButtonTextColor" />
+
+
+        <investwell.utils.customView.CustomButton
+            android:id="@+id/filter_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="?attr/primaryBtnDrawable"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="@string/txt_Apply"
+            android:textAllCaps="false"
+            android:textColor="?attr/primaryButtonTextColor" />
+
+    </LinearLayout>
+
+</LinearLayout>

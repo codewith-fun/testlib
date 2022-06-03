@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <investwell.utils.customView.CustomTextViewBold
+        android:id="@+id/customTextViewBold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center|top"
+        android:text="@string/account_confirmed_header_txt"
+        android:textColor="?attr/primaryTextColor"
+        android:textSize="@dimen/textView_all_size_18"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@mipmap/confirmed_image"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/customTextViewBold" />
+
+    <investwell.utils.customView.CustomTextViewBold
+        android:id="@+id/TvIIN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center|top"
+        android:text="@string/account_confirmed_under_process_txt"
+        android:textColor="?attr/primaryTextColor"
+        android:textSize="@dimen/textView_all_size_18"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+
+    <investwell.utils.customView.CustomTextViewRegular
+        android:id="@+id/TvConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center"
+        tools:text="@string/account_confirmed_under_process_txt"
+        android:textAlignment="center"
+        android:textColor="#8a8989"
+        android:textSize="@dimen/textView_all_size_16"
+        app:layout_constraintEnd_toEndOf="@+id/TvIIN"
+        app:layout_constraintStart_toStartOf="@+id/TvIIN"
+        app:layout_constraintTop_toBottomOf="@+id/TvIIN" />
+
+    <investwell.utils.customView.CustomTextViewRegular
+        android:id="@+id/customTextViewRegular3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/primaryButtonBackground"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="@string/continue_txt"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/textView_all_size_18"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <shortcut
+        android:enabled="true"
+        android:icon="@mipmap/ic_bottombar_portfolio_inactive"
+        android:shortcutDisabledMessage="@string/app_name"
+        android:shortcutId="portfolio"
+        android:shortcutLongLabel="@string/main_bottom_tab_menu_portfolio"
+        android:shortcutShortLabel="@string/main_bottom_tab_menu_portfolio"
+        tools:targetApi="n_mr1">
+
+        <!--  i have declared main activity also to maintain back stack -->
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="investwell.client.activity.MainActivity"
+            android:targetPackage="com.iw.acceleratordemo" />
+    </shortcut>
+    <!--<shortcut
+        android:enabled="true"
+        android:icon="@mipmap/ic_invest_route_invest"
+        android:shortcutDisabledMessage="@string/app_name"
+        android:shortcutId="searchSchemes"
+        android:shortcutLongLabel="@string/toolBar_title_invest_now"
+        android:shortcutShortLabel="@string/toolBar_title_invest_now"
+        tools:targetApi="n_mr1">
+        <intent
+            android:action="com.iw.acceleratordemo.QUICKSEARCH"
+            android:targetClass="investwell.client.activity.MainActivity"
+            android:targetPackage="com.iw.acceleratordemo" />
+    </shortcut>-->
+
+    <shortcut
+        android:enabled="true"
+        android:icon="@mipmap/ic_setting_share"
+        android:shortcutDisabledMessage="@string/app_name"
+        android:shortcutId="share"
+        android:shortcutLongLabel="@string/settigs_share_txt"
+        android:shortcutShortLabel="@string/settigs_share_txt"
+        tools:targetApi="n_mr1">
+        <intent
+            android:action="com.iw.acceleratordemo.QUICKSHARING"
+            android:targetClass="investwell.client.activity.MainActivity"
+            android:targetPackage="com.iw.acceleratordemo" />
+    </shortcut>
+
+
+</shortcuts>

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/CardViewStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_gravity="top"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/margin_all_very_small"
+                    android:layout_marginLeft="@dimen/margin_all_very_small"
+                    android:layout_marginEnd="@dimen/margin_all_very_small"
+                    android:layout_marginRight="@dimen/margin_all_very_small"
+                    android:layout_weight="9"
+                    android:padding="@dimen/padding_all_very_small"
+                    tools:ignore="UselessParent">
+
+                    <investwell.utils.customView.CustomTextViewBold
+                        android:id="@+id/tv_current_scheme_header"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginStart="@dimen/margin_all_very_small"
+                        android:layout_marginLeft="@dimen/margin_all_very_small"
+                        android:layout_marginTop="@dimen/margin_all_large"
+                        android:text="@string/factsheet_current_scheme_txt"
+                        android:textColor="@color/colorRed"
+                        android:textSize="@dimen/textView_all_size_12"
+                        android:textStyle="bold"
+                        tools:ignore="RelativeOverlap" />
+
+                    <investwell.utils.customView.CustomTextViewBold
+                        android:id="@+id/tv_current_scheme_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_current_scheme_header"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_margin="@dimen/margin_all_very_small"
+                        android:ellipsize="end"
+
+                        android:maxLines="1"
+                        android:textColor="?attr/primaryTextColor"
+                        android:textSize="@dimen/textView_all_size_12"
+                        android:textStyle="bold" />
+
+                    <investwell.utils.customView.CustomTextViewBold
+                        android:id="@+id/tv_vs_value"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/margin_all_regular"
+                        android:layout_marginLeft="@dimen/margin_all_regular"
+                        android:layout_marginEnd="@dimen/margin_all_regular"
+                        android:layout_marginRight="@dimen/margin_all_regular"
+                        android:layout_toEndOf="@+id/tv_current_scheme_header"
+                        android:layout_toRightOf="@+id/tv_current_scheme_header"
+                        android:background="@drawable/bg_vs"
+                        android:gravity="center"
+                        android:text="@string/factsheet_vs_scheme_comp_txt"
+                        android:textAllCaps="true"
+                        android:textColor="?attr/secondaryTextColor"
+                        android:textStyle="bold" />
+
+                    <investwell.utils.customView.CustomTextViewBold
+                        android:id="@+id/tv_comp_scheme_header"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_all_very_small"
+                        android:layout_marginLeft="@dimen/margin_all_very_small"
+                        android:layout_marginTop="@dimen/margin_all_large"
+                        android:layout_toEndOf="@+id/tv_vs_value"
+                        android:layout_toRightOf="@+id/tv_vs_value"
+                        android:text="@string/app_name"
+                        android:textColor="?attr/primaryTextColor"
+                        android:textSize="@dimen/textView_all_size_12"
+                        android:textStyle="bold"
+                        tools:ignore="RelativeOverlap" />
+
+                    <investwell.utils.customView.CustomTextViewBold
+                        android:id="@+id/tv_comp_scheme_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_comp_scheme_header"
+                        android:layout_margin="@dimen/margin_all_very_small"
+                        android:layout_toEndOf="@+id/tv_vs_value"
+                        android:layout_toRightOf="@+id/tv_vs_value"
+                        android:ellipsize="end"
+                        android:maxLength="15"
+                        android:maxLines="1"
+                        android:textColor="?attr/primaryTextColor"
+                        android:textSize="@dimen/textView_all_size_12"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/margin_10dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/iv_cart"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/app_name"
+                        android:src="@mipmap/ic_factsheet_add_cart"
+                        android:visibility="gone" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="?attr/cardBgColor"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorGrey_250" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/lc_scheme_comparison"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="@dimen/margin_all_very_small"
+                android:layout_marginBottom="@dimen/margin_all_very_small"
+                android:visibility="invisible" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorGrey_250" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_scheme_comparison_data_elements"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/margin_all_regular"
+                    android:layout_marginLeft="@dimen/margin_all_small"
+                    android:layout_marginEnd="@dimen/margin_all_small"
+                    android:layout_marginRight="@dimen/margin_all_small"
+                    android:padding="@dimen/padding_all_very_small" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/appBackground"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorGrey_250" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <investwell.utils.customView.CustomTextViewRegular
+                        android:id="@+id/tv_scheme_comparison_footer_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/margin_all_very_small"
+                        android:layout_marginLeft="@dimen/margin_all_very_small"
+                        android:paddingTop="@dimen/padding_all_small"
+                        android:textColor="?attr/secondaryTextColor"
+                        android:paddingBottom="@dimen/padding_all_small"
+                        android:text="@string/factsheet_scheme_comparison_footer_txt"
+                        android:textSize="@dimen/textView_all_size_12" />
+
+                    <investwell.utils.customView.CustomTextViewBold
+                        android:id="@+id/tv_scheme_footer_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="2dp"
+                        android:textColor="?attr/primaryTextColor"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginEnd="@dimen/margin_all_very_small"
+                        android:layout_marginRight="@dimen/margin_all_very_small"
+                        android:layout_toRightOf="@+id/tv_scheme_comparison_footer_content"
+                        android:textSize="@dimen/textView_all_size_12" />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

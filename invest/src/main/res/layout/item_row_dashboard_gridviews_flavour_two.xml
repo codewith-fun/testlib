@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_invest"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="@drawable/grid_border"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_home_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name"
+            android:src="@mipmap/xirr_bg"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_home_element"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginTop="@dimen/margin_all_regular"
+            android:contentDescription="@string/app_name"
+            android:visibility="gone"
+            android:src="@mipmap/app_icon_s" />
+
+        <investwell.utils.customView.CustomTextViewRegular
+            android:id="@+id/tv_home_element_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="@dimen/margin_all_regular"
+            android:gravity="center_horizontal"
+            android:maxLines="2"
+            android:padding="@dimen/padding_all_very_small"
+            android:text="@string/app_name"
+            android:textAlignment="center"
+            android:textColor="?attr/secondaryTextColor"
+            android:textSize="@dimen/textView_all_size_14" />
+    </FrameLayout>
+
+</LinearLayout>
+

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/ll_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/dialogBackground"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_all_small"
+        android:focusable="true">
+
+        <ImageView
+            android:id="@+id/iv_menu_icons"
+            android:layout_width="@dimen/dashboard_menu_img_all_size"
+            android:layout_gravity="center_horizontal"
+
+            android:layout_height="@dimen/dashboard_menu_img_all_size"
+            android:contentDescription="@string/app_name" />
+
+        <investwell.utils.customView.CustomTextViewBold
+            android:id="@+id/tv_dashboard_menu_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="?attr/secondaryTextColor"
+            android:textSize="@dimen/textView_all_size_12" />
+    </LinearLayout>
+</LinearLayout>
+

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>
+        <item name="colorControlActivated">?attr/accentColor</item>
+    </style>
+
+    <!--Light Application Theme-->
+    <style name="Theme.App.LightAppTheme" parent="AppTheme">
+        <item name="primaryColor">@color/colorPrimary</item>
+        <item name="statusBarBackground">@color/colorPrimaryDark</item>
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@color/colorPrimaryDark
+        </item>
+        <item name="primaryDarkColor">@color/colorPrimaryDark</item>
+        <item name="accentColor">@color/colorAccent</item>
+        <item name="actionBarColor">@color/lightColorToolBar</item>
+        <item name="actionBarIconColor">@color/lightColorToolBarIcon</item>
+        <item name="actionBarTextColor">@color/lightColorToolBarText</item>
+        <item name="headerTitleColor">@color/lightColorHeaderTitle</item>
+        <item name="appBackground">@color/lightWindowBackground</item>
+        <item name="android:windowBackground">@color/lightWindowBackground</item>
+        <item name="primaryTextColor">@color/lightPrimaryTextColor</item>
+        <item name="secondaryTextColor">@color/lightSecondaryTextColor</item>
+        <item name="tertiaryTextColor">@color/lightTertiaryColor</item>
+        <item name="primaryButtonBackground">@color/lightPrimaryBtnBg</item>
+        <item name="secondaryButtonBackground">@color/lightSecondaryBtnBg</item>
+        <item name="tertiaryButtonBackground">@color/lightTertiaryBtnBg</item>
+        <item name="primaryButtonTextColor">@color/lightPrimaryBtnTextColor</item>
+        <item name="secondaryButtonTextColor">@color/lightSecondaryBtnTextColor</item>
+        <item name="tertiaryButtonTextColor">@color/lightTertiaryBtnTextColor</item>
+        <item name="cardBgColor">@color/lightColorCardBackground</item>
+        <item name="primaryBtnDrawable">@drawable/btn_bg_primary</item>
+        <item name="secondaryBtnDrawable">@drawable/btn_bg_secondary</item>
+        <item name="tertiaryBtnDrawable">@drawable/btn_bg_tertiary</item>
+        <item name="tableRowHeaderColor">@color/lightColorTableRowHeader</item>
+        <item name="tabBackgroundColor">@color/lightTabBackgroundColor</item>
+        <item name="bottomSheetBackground">@color/lightBottomSheetColor</item>
+        <item name="dialogBackground">@color/lightDialogBackground</item>
+        <item name="roundGray">@drawable/rounded_gray</item>
+    </style>
+
+    <!--Dark Application Theme-->
+    <style name="Theme.App.DarkAppTheme" parent="AppTheme">
+        <item name="primaryColor">@color/darkColorPrimary</item>
+        <item name="primaryDarkColor">@color/darkColorPrimaryDark</item>
+        <item name="accentColor">@color/darkColorAccent</item>
+        <item name="statusBarBackground">@color/darkColorPrimaryDark</item>
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@color/darkColorPrimaryDark
+        </item>
+        <item name="actionBarColor">@color/darkColorToolBar</item>
+        <item name="actionBarIconColor">@color/darkColorToolBarIcon</item>
+        <item name="primaryBtnDrawable">@drawable/btn_primary_dark</item>
+        <item name="secondaryBtnDrawable">@drawable/btn_secondary_dark</item>
+        <item name="tertiaryBtnDrawable">@drawable/btn_tertiary_dark</item>
+        <item name="actionBarTextColor">@color/darkColorToolBarText</item>
+        <item name="headerTitleColor">@color/darkColorHeaderTitle</item>
+        <item name="appBackground">@color/darkWindowBackground</item>
+        <item name="primaryTextColor">@color/darkPrimaryTextColor</item>
+        <item name="secondaryTextColor">@color/darkSecondaryTextColor</item>
+        <item name="tertiaryTextColor">@color/darkTertiaryColor</item>
+        <item name="android:windowBackground">@color/darkWindowBackground</item>
+        <item name="primaryButtonBackground">@color/darkPrimaryBtnBg</item>
+        <item name="secondaryButtonBackground">@color/darkSecondaryBtnBg</item>
+        <item name="tertiaryButtonBackground">@color/darkTertiaryBtnBg</item>
+        <item name="primaryButtonTextColor">@color/darkPrimaryBtnTextColor</item>
+        <item name="secondaryButtonTextColor">@color/darkSecondaryBtnTextColor</item>
+        <item name="tertiaryButtonTextColor">@color/darkTertiaryBtnTextColor</item>
+        <item name="cardBgColor">@color/darkColorCardBackground</item>
+        <item name="tableRowHeaderColor">@color/darkColorTableRowHeader</item>
+        <item name="tabBackgroundColor">@color/darkTabBackgroundColor</item>
+        <item name="bottomSheetBackground">@color/darkBottomSheetColor</item>
+        <item name="dialogBackground">@color/darkDialogBackground</item>
+        <item name="roundGray">@drawable/rounded_gray_dark</item>
+    </style>
+    <style name="SplashTheme" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/splash_foreground</item>
+        <item name="statusBarBackground">@color/colorPrimaryDark</item>
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@color/colorPrimaryDark</item>
+    </style>
+    <!-- This style is for the splash screen -->
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <!--Error Theme-->
+    <style name="ErrorText" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:textColor">@color/colorRed</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!--Hint Theme-->
+    <style name="HintText" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:textColor">@color/colorGrey_500</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!--App Cursor Theme-->
+    <style name="cursorTheme" parent="ThemeOverlay.MaterialComponents.TextInputEditText.OutlinedBox">
+        <item name="colorControlActivated">?attr/accentColor</item>
+    </style>
+
+    <!--Material TextInputLayout Theme-->
+    <style name="TextInputLayoutTheme" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/edit_text_box_border</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="hintTextAppearance">@style/HintText</item>
+        <item name="hintTextColor">?attr/accentColor</item>
+        <item name="errorTextAppearance">@style/ErrorText</item>
+        <item name="android:theme">@style/cursorTheme</item>
+        <item name="android:textColorHint">@color/colorGrey_500</item>
+    </style>
+
+    <!--Material TextInputEdiText Theme-->
+    <style name="TextInputEditTextTheme" parent="ThemeOverlay.MaterialComponents.TextInputEditText.OutlinedBox.Dense">
+        <item name="android:textColor">?attr/primaryTextColor</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TabTextAppear" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">12sp</item>
+        <item name="textAllCaps">false</item>
+    </style>
+    <!--Tab Layout Theme-->
+    <style name="TabLayoutTheme" parent="TextAppearance.Design.Tab">
+        <item name="android:textColor">?attr/primaryTextColor</item>
+
+        <item name="tabBackground">?attr/tabBackgroundColor</item>
+        <item name="tabIndicatorColor">?attr/primaryButtonBackground</item>
+        <item name="tabIndicatorHeight">2dp</item>
+        <item name="tabTextAppearance">@style/TabTextAppear</item>
+        <item name="tabTextColor">@color/colorGrey_600</item>
+        <item name="fontFamily">@font/lato_bold</item>
+        <item name="android:textSize">@dimen/textView_all_size_12</item>
+        <item name="tabSelectedTextColor">?attr/primaryTextColor</item>
+    </style>
+    <!--CardView styling Overall App-->
+    <style name="CardViewStyle" parent="android:Widget.TextView">
+        <item name="cardBackgroundColor">?attr/cardBgColor</item>
+        <item name="cardCornerRadius">12dp</item>
+        <item name="cardElevation">2dp</item>
+    </style>
+    <!--Tab Layout Theme-->
+    <style name="TabLayoutThemeSecondary" parent="TextAppearance.Design.Tab">
+        <item name="android:textColor">?attr/primaryTextColor</item>
+        <item name="tabIndicatorColor">?attr/primaryButtonBackground</item>
+        <item name="tabIndicatorHeight">2dp</item>
+        <item name="tabTextAppearance">@style/TabTextAppear</item>
+        <item name="tabTextColor">@color/colorGrey_600</item>
+        <item name="tabSelectedTextColor">?attr/primaryTextColor</item>
+    </style>
+</resources>

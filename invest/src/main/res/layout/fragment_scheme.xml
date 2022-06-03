@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:shimmer="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="investwell.client.fragment.goalbased.Fragment.FragScheme">
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer_scheme_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible"
+        shimmer:duration="800"
+        tools:ignore="MissingConstraints">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <include layout="@layout/placeholder_item_line_thin" />
+
+            <include layout="@layout/placeholder_item_line_thin" />
+
+            <include layout="@layout/placeholder_item_line_thin" />
+
+            <include layout="@layout/placeholder_item_line_thin" />
+
+            <include layout="@layout/placeholder_item_line_thin" />
+
+            <include layout="@layout/placeholder_item_line_thin" />
+
+            <include layout="@layout/placeholder_item_line_thin" />
+
+            <include layout="@layout/placeholder_item_line_thin" />
+
+            <include layout="@layout/placeholder_item_line_thin" />
+
+
+        </LinearLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/scheme_recycle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never" />
+
+    <investwell.utils.customView.CustomTextViewRegular
+          android:id="@+id/tvNothing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableTop="@mipmap/ic_no_data"
+        android:gravity="center"
+        android:text="@string/no_data_found"
+                    android:textColor="?attr/primaryTextColor"
+        android:textIsSelectable="true"
+        android:layout_marginTop="100dp"
+        android:visibility="gone"
+        android:textSize="@dimen/textView_all_size_14" />
+
+
+
+</LinearLayout>

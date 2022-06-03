@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/cl_user_type_container"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/frag_toolBar"
+        android:name="investwell.client.fragment.others.ToolbarFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="FragmentTagUsage" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_all_regular"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frag_toolBar">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="?attr/primaryButtonBackground"
+            android:checked="true"
+            android:paddingStart="30dp"
+            android:paddingLeft="30dp"
+            android:text="@string/txt_Registered_user"
+            android:textColor="?attr/primaryTextColor"
+            android:textSize="@dimen/textView_all_size_18"
+            tools:ignore="RtlSymmetry"
+            tools:targetApi="lollipop" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="62dp"
+            android:layout_marginLeft="62dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/user_choice_for_login"
+            android:textColor="?attr/primaryTextColor"
+            android:textSize="@dimen/textView_all_size_14" />
+
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30sp"
+            android:buttonTint="?attr/primaryButtonBackground"
+            android:checked="false"
+            android:paddingStart="30dp"
+            android:paddingLeft="30dp"
+            android:text="@string/txt_Want_Register"
+            android:textColor="?attr/primaryTextColor"
+            android:textSize="@dimen/textView_all_size_18"
+            tools:ignore="RtlSymmetry"
+            tools:targetApi="lollipop" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="62dp"
+            android:layout_marginLeft="62dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/radio_2_desc"
+            android:text="@string/txt_Recommended"
+            android:textColor="?attr/primaryTextColor"
+            android:textSize="@dimen/textView_all_size_14" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30sp"
+            android:buttonTint="?attr/primaryButtonBackground"
+            android:checked="false"
+            android:paddingLeft="30dp"
+            android:text="@string/txt_skip"
+            android:textColor="?attr/primaryTextColor"
+            android:textSize="@dimen/textView_all_size_18"
+            tools:targetApi="lollipop"
+            android:paddingStart="30dp"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="62dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/txt_explore"
+            android:textColor="?attr/primaryTextColor"
+            android:id="@+id/radio_3_desc"
+            android:textSize="@dimen/textView_all_size_14"
+            android:layout_marginStart="62dp" />
+    </RadioGroup>
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avi_continue"
+        style="@style/AVLoadingIndicatorView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="50dp"
+        android:visibility="gone"
+        app:indicatorColor="@color/colorWhite"
+        app:indicatorName="BallPulseSyncIndicator"
+        app:layout_constraintBottom_toBottomOf="@+id/btnContinue"
+        app:layout_constraintEnd_toEndOf="@+id/btnContinue"
+        app:layout_constraintStart_toStartOf="@+id/btnContinue"
+        app:layout_constraintTop_toTopOf="@+id/btnContinue" />
+    <investwell.utils.customView.CustomButton
+        android:id="@+id/btnContinue"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height_medium"
+        android:layout_margin="@dimen/margin_all_regular"
+        android:background="?attr/primaryBtnDrawable"
+        android:text="@string/personal_details_btn_continue_txt"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/textView_all_size_18"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

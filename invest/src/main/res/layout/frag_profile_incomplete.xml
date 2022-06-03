@@ -1,0 +1,663 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <fragment
+        android:id="@+id/frag_toolBar"
+        android:layout_width="match_parent"
+        android:name="investwell.client.fragment.others.ToolbarFragment"
+        android:layout_height="wrap_content"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        style="@style/CardViewStyle"
+        app:cardCornerRadius="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp">
+
+            <RelativeLayout
+                android:id="@+id/ly_profile"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/circle"
+                android:backgroundTint="@color/colorTertiary"
+                android:scaleType="fitXY">
+
+
+                <investwell.utils.customView.CustomTextViewRegular
+                    android:id="@+id/et_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:maxLength="2"
+                    android:text="@string/incomplete_profile_user_abbrv_txt"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/textView_all_size_18" />
+
+                <ImageView
+                    android:id="@+id/profile_icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/tranparent" />
+
+
+
+            </RelativeLayout>
+
+
+            <investwell.utils.customView.CustomTextViewRegular
+                android:id="@+id/card_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@id/ly_profile"
+                android:layout_toLeftOf="@+id/profile_detail"
+                android:textColor="?attr/primaryTextColor"
+                android:text="@string/incomplete_profile_dear_investor_txt"
+                android:textSize="@dimen/textView_all_size_16" />
+
+            <ImageView
+                android:id="@+id/profile_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_profile_detail" />
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <investwell.utils.customView.CustomTextViewRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/incomplete_profile_step_message"
+            android:textColor="?attr/primaryTextColor"
+            android:textSize="@dimen/textView_all_size_14" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1.8"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/pan_small"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.14"
+                    android:src="@mipmap/red_cross"/>
+
+                <View
+                    android:id="@+id/hlprofile"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.14"
+                    android:background="@color/colorGrey_400" />
+
+                <ImageView
+                    android:id="@+id/profile_small"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.14"
+                    android:src="@mipmap/red_cross"/>
+
+                <View
+                    android:id="@+id/hlfatca"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.14"
+                    android:background="@color/colorGrey_400" />
+
+
+                <ImageView
+                    android:id="@+id/fatca_small"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.14"
+                    android:src="@mipmap/red_cross"/>
+
+                <View
+                    android:id="@+id/hlsign"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.14"
+                    android:background="@color/colorGrey_400" />
+
+                <ImageView
+                    android:id="@+id/signature_small"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.14"
+                    android:src="@mipmap/red_cross"/>
+
+                <View
+                    android:id="@+id/hlcheque"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.14"
+                    android:background="@color/colorGrey_400" />
+
+
+                <ImageView
+                    android:id="@+id/cheque_small"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.14"
+                    android:src="@mipmap/red_cross"/>
+
+                <View
+                    android:id="@+id/hlnamdate"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.14"
+                    android:background="@color/colorGrey_400" />
+
+                <ImageView
+                    android:id="@+id/mandate_small"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.14"
+                    android:src="@mipmap/red_cross"/>
+
+                <View
+                    android:id="@+id/hlBank"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.14"
+                    android:background="@color/colorGrey_400" />
+
+                <ImageView
+                    android:id="@+id/ivBank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.14"
+                    android:src="@mipmap/red_cross"/>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cvPANKyc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    style="@style/CardViewStyle"
+                    app:cardCornerRadius="5dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/iv6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:background="@mipmap/pan_kyc" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/iv6"
+                            android:layout_centerVertical="true">
+
+                            <investwell.utils.customView.CustomTextViewRegular
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="PAN KYC Check"
+                                android:textColor="?attr/primaryTextColor"
+                                android:textSize="@dimen/textView_all_size_14" />
+
+
+
+                        </LinearLayout>
+
+                        <ImageView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:id="@+id/panKYCArrow"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/right_arrow" />
+
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cvProfile"
+                    style="@style/CardViewStyle"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="5dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/iv1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:background="@mipmap/profile_second" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toLeftOf="@+id/ivArrow1"
+                            android:layout_toRightOf="@+id/iv1"
+                            android:layout_centerVertical="true">
+
+                            <investwell.utils.customView.CustomTextViewRegular
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/incomplete_profile_first_step_txt"
+                                android:textColor="?attr/primaryTextColor"
+                                android:textSize="@dimen/textView_all_size_14" />
+
+                            <investwell.utils.customView.CustomTextViewRegular
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/incomplete_profile_first_step_desc_txt"
+                                android:textColor="?attr/primaryTextColor"
+
+                                android:textSize="@dimen/textView_all_size_10" />
+
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/ivArrow1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/right_arrow" />
+
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cvFatca"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    style="@style/CardViewStyle"
+
+                    app:cardCornerRadius="5dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/iv4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:background="@mipmap/fatca" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/iv4"
+                            android:layout_centerVertical="true">
+
+                            <investwell.utils.customView.CustomTextViewRegular
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/incomplete_profile_fatca_header_txt"
+                                android:textColor="?attr/primaryTextColor"
+                                android:textSize="@dimen/textView_all_size_14" />
+
+                            <investwell.utils.customView.CustomTextViewRegular
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/incomplete_profile_fatca_desc_txt"
+                                android:textColor="?attr/primaryTextColor"
+                                android:textSize="@dimen/textView_all_size_10" />
+
+
+                        </LinearLayout>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ivFatcaArrow"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/right_arrow" />
+
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cvSignature"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    style="@style/CardViewStyle"
+
+                    app:cardCornerRadius="5dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/iv3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:background="@mipmap/signature_icon" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/iv3"
+                            android:layout_centerVertical="true">
+
+                            <investwell.utils.customView.CustomTextViewRegular
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Submit Docs"
+                                android:textColor="?attr/primaryTextColor"
+                                android:textSize="@dimen/textView_all_size_14" />
+
+                            <investwell.utils.customView.CustomTextViewRegular
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/incomplete_profile_signature_desc_txt"
+                                android:textColor="?attr/primaryTextColor"
+
+                                android:textSize="@dimen/textView_all_size_10" />
+
+
+                        </LinearLayout>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/signature_arrow"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/right_arrow" />
+
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cvCheque"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    style="@style/CardViewStyle"
+
+                    app:cardCornerRadius="5dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/iv5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:background="@mipmap/upload_cheque" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/iv5"
+                            android:layout_centerVertical="true">
+
+                            <investwell.utils.customView.CustomTextViewRegular
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/txt_upload_cheque"
+                                android:textColor="?attr/primaryTextColor"
+                                android:textSize="@dimen/textView_all_size_14" />
+
+
+
+                        </LinearLayout>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:id="@+id/cheque_arrow"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/right_arrow" />
+
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cvMandate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    style="@style/CardViewStyle"
+
+                    android:layout_weight="1"
+                    app:cardCornerRadius="5dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/iv2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:background="@mipmap/autoplay_icon" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/iv2"
+                            android:layout_centerVertical="true">
+
+                            <investwell.utils.customView.CustomTextViewRegular
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/incomplete_profile_autopay_header_txt"
+                                android:textColor="?attr/primaryTextColor"
+                                android:textSize="@dimen/textView_all_size_14" />
+
+                            <investwell.utils.customView.CustomTextViewRegular
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/incomplete_profile_autopay_desc_txt"
+                                android:textColor="?attr/primaryTextColor"
+
+                                android:textSize="@dimen/textView_all_size_10" />
+
+
+                        </LinearLayout>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/right_arrow" />
+
+
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cvBank"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    style="@style/CardViewStyle"
+
+                    android:layout_weight="1"
+                    app:cardCornerRadius="5dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/ivBank2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:background="@mipmap/ic_bank" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/ivBank2"
+                            android:layout_centerVertical="true">
+
+                            <investwell.utils.customView.CustomTextViewRegular
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/folio_details_bank_txt"
+                                android:textColor="?attr/primaryTextColor"
+                                android:textSize="@dimen/textView_all_size_14" />
+
+
+
+                        </LinearLayout>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/right_arrow" />
+
+
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

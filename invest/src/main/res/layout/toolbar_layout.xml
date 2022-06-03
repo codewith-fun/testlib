@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar_main"
+    android:layout_width="match_parent"
+    android:layout_height="?actionBarSize"
+    android:background="?attr/actionBarColor"
+    app:layout_scrollFlags="scroll|enterAlways"
+    app:contentInsetStart="0dp"
+    app:contentInsetEnd="0dp"
+    app:titleTextColor="@color/colorBlack">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:paddingEnd="@dimen/padding_all_small"
+        android:paddingStart="@dimen/padding_all_small"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/ll_middle_view_logo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/ll_right_tb_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/iv_app_logo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/margin_all_small"
+                android:scaleType="fitStart"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:src="@mipmap/logo_login" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:layout_marginRight="@dimen/margin_5dp"
+            android:id="@+id/ll_right_tb_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginEnd="@dimen/margin_5dp">
+
+            <!--notification-->
+            <FrameLayout
+                android:id="@+id/fl_notifications"
+                style="?attr/actionButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:contentDescription="@string/app_name"
+                android:focusable="true"
+                android:padding="@dimen/padding_all_very_small">
+
+                <ImageView
+                    android:id="@+id/iv_notification"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/app_name"
+                    app:srcCompat="@mipmap/ic_app_notification"
+                    app:tint="?attr/actionBarIconColor" />
+
+                <investwell.utils.customView.CustomTextViewBold
+                    android:id="@+id/tv_notification_badge"
+                    android:layout_width="@dimen/dashboard_cart_badge_size"
+                    android:layout_height="@dimen/dashboard_cart_badge_size"
+                    android:layout_gravity="right|end|top"
+                    android:layout_marginEnd="-5dp"
+                    android:layout_marginRight="-5dp"
+
+                    android:background="@drawable/badge_background"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:text="@string/lumpsum_txt_zero"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/textView_all_size_14"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
+            </FrameLayout>
+
+            <!--cart-->
+            <FrameLayout
+                android:id="@+id/fl_cart"
+                style="?attr/actionButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:clipToPadding="false"
+
+                android:focusable="true"
+                android:visibility="visible">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/app_name"
+                    android:src="@mipmap/ic_action_cart_black"
+                    app:tint="?attr/actionBarIconColor" />
+
+                <investwell.utils.customView.CustomTextViewBold
+                    android:id="@+id/tv_cart_badge"
+                    android:layout_width="@dimen/dashboard_cart_badge_size"
+                    android:layout_height="@dimen/dashboard_cart_badge_size"
+                    android:layout_gravity="right|end|top"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="-5dp"
+                    android:layout_marginRight="-5dp"
+                    android:background="@drawable/badge_background"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="@string/lumpsum_txt_zero"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/textView_all_size_14"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
+            </FrameLayout>
+
+            <!--contact-->
+            <ImageView
+                android:id="@+id/ivContactUs"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:contentDescription="@string/app_name"
+                android:padding="@dimen/padding_all_very_small"
+                android:layout_marginLeft="@dimen/margin_all_small"
+                android:layout_gravity="center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:src="@mipmap/ic_dashboard_contact"
+                app:tint="?attr/actionBarIconColor"
+                android:layout_marginStart="@dimen/margin_all_small" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.appcompat.widget.Toolbar>

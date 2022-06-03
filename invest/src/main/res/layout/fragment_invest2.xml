@@ -1,0 +1,93 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:shimmer="http://schemas.android.com/apk/res-auto"
+    tools:context="investwell.client.flavourTypeThree.InvestFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <TextView
+            android:id="@+id/tvLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/no_record_available"
+            android:textColor="?attr/primaryTextColor"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:visibility="gone"
+
+            />
+
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmer_view_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            shimmer:duration="800"
+            tools:ignore="MissingConstraints"
+            android:visibility="gone"
+            >
+
+
+            <LinearLayout
+                android:id="@+id/fullScreenShedow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+
+                <include layout="@layout/placeholder_item_line_thin" />
+
+                <include layout="@layout/placeholder_item_line_thin" />
+
+                <include layout="@layout/placeholder_item_line_thin" />
+
+                <include layout="@layout/placeholder_item_line_thin" />
+                <include layout="@layout/placeholder_item_line_thin" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/singleShedow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+                <include
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/placeholder_item_line_thin"
+                    android:layout_alignParentTop="true"/>
+
+
+            </RelativeLayout>
+
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_above="@+id/shimmer_view_container"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_invest_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutAnimation="@anim/layout_animation_fall_down" />
+    </RelativeLayout>
+
+</FrameLayout>

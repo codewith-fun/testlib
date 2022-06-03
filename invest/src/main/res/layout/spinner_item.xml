@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<investwell.utils.customView.CustomTextViewRegular xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:textSize="@dimen/textView_all_size_14"
+    android:gravity="top"
+    android:singleLine="true"
+    android:textColor="?attr/primaryTextColor"
+    android:background="?attr/appBackground"/>

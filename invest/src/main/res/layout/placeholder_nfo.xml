@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_all_very_small"
+    app:cardBackgroundColor="?attr/cardBgColor"
+    app:cardCornerRadius="@dimen/card_corner_all_radius_small"
+    app:cardElevation="@dimen/card_all_elevation">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <View
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="@dimen/margin_all_very_small"
+            android:background="@color/colorShimmerBackground" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:orientation="horizontal">
+
+                <View
+
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toRightOf="@id/thumbnail"
+                    android:background="@color/colorShimmerBackground" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:orientation="horizontal">
+
+                <View
+
+                    android:layout_width="50dp"
+                    android:layout_height="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toRightOf="@id/thumbnail"
+                    android:background="@color/colorShimmerBackground" />
+
+                <View
+
+                    android:layout_width="50dp"
+                    android:layout_height="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toRightOf="@id/thumbnail"
+                    android:background="@color/colorShimmerBackground" />
+
+                <View
+
+                    android:layout_width="50dp"
+                    android:layout_height="10dp"
+                    android:layout_marginStart="@dimen/margin_all_small"
+                    android:layout_marginLeft="@dimen/margin_all_small"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toRightOf="@id/thumbnail"
+                    android:background="@color/colorShimmerBackground" />
+
+                <View
+
+                    android:layout_width="50dp"
+                    android:layout_height="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toRightOf="@id/thumbnail"
+                    android:background="@color/colorShimmerBackground" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:orientation="horizontal">
+
+                <View
+
+                    android:layout_width="50dp"
+                    android:layout_height="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toRightOf="@id/thumbnail"
+                    android:background="@color/colorShimmerBackground" />
+
+
+                <View
+
+                    android:layout_width="50dp"
+                    android:layout_height="10dp"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toRightOf="@id/thumbnail"
+                    android:background="@color/colorShimmerBackground" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+    <investwell.utils.customView.CustomTextViewBold
+        android:id="@+id/years"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/margin_all_small"
+        android:layout_marginRight="@dimen/margin_all_small"
+        android:padding="@dimen/padding_all_very_small"
+        android:background="?attr/dialogBackground"
+        android:textAlignment="center"
+        android:textColor="?attr/primaryTextColor"
+        android:textSize="@dimen/textView_all_size_14"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+</RelativeLayout>

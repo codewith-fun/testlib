@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:shimmer="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <fragment
+                android:id="@+id/frag_toolBar"
+                android:name="investwell.client.fragment.others.ToolbarFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/shimmer_view_container"
+                shimmer:duration="800"
+                tools:ignore="MissingConstraints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/placeholder_additional_transactions" />
+
+
+                </LinearLayout>
+
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+            <ScrollView
+                android:id="@+id/sv_stp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!--Header Layout transaction-->
+                    <include layout="@layout/layout_header_additional_transac" />
+
+                    <!--Chooser fragment scheme type-->
+                    <com.facebook.shimmer.ShimmerFrameLayout
+                        android:id="@+id/shimmer_scheme_container"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="gone"
+                        shimmer:duration="800"
+                        tools:ignore="MissingConstraints">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/margin_all_small"
+                                android:orientation="horizontal">
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+
+                                    android:background="@color/colorShimmerBackground" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:layout_marginStart="@dimen/margin_all_very_small"
+                                    android:layout_marginLeft="@dimen/margin_all_very_small"
+
+                                    android:background="@color/colorShimmerBackground" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:layout_marginStart="@dimen/margin_all_very_small"
+                                    android:layout_marginLeft="@dimen/margin_all_very_small"
+
+                                    android:layout_weight="1"
+                                    android:background="@color/colorShimmerBackground" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:layout_marginStart="@dimen/margin_all_very_small"
+                                    android:layout_marginLeft="@dimen/margin_all_very_small"
+
+                                    android:layout_weight="1"
+                                    android:background="@color/colorShimmerBackground" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </com.facebook.shimmer.ShimmerFrameLayout>
+                    <LinearLayout
+                        android:id="@+id/ll_scheme_container"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:visibility="gone"
+                        android:layout_height="wrap_content">
+                        <!-- Select Scheme Type  Fragment-->
+                        <fragment
+                            android:id="@+id/frag_chooser_scheme_type"
+                            android:name="investwell.client.fragment.others.ChooserSchemeTypeFragment"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_all_small"
+                            android:layout_marginLeft="@dimen/margin_all_small"
+                            android:layout_marginTop="@dimen/margin_all_small"
+                            android:layout_marginEnd="@dimen/margin_all_small"
+                            android:layout_marginRight="@dimen/margin_all_small"
+                            android:layout_marginBottom="@dimen/margin_all_small" /></LinearLayout>
+
+                    <!-- Select Target Scheme  layout_gridview_type_two_a-->
+                    <!-- Select DividendFragment Frequency Fragment-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_all_small"
+                        android:layout_marginLeft="@dimen/margin_all_small"
+                        android:layout_marginTop="@dimen/margin_all_very_small"
+                        android:layout_marginEnd="@dimen/margin_all_small"
+                        android:layout_marginRight="@dimen/margin_all_small"
+                        android:orientation="vertical">
+
+                        <investwell.utils.customView.CustomTextViewRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_all_small"
+                            android:layout_marginLeft="@dimen/margin_all_small"
+                            android:layout_marginEnd="@dimen/margin_all_small"
+                            android:layout_marginRight="@dimen/margin_all_small"
+                            android:text="@string/additional_stp_select_target_scheme_txt"
+                            android:textColor="?attr/primaryTextColor"
+                            android:textSize="@dimen/textView_all_size_14" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin_all_small"
+                            android:background="@drawable/spinner_bg"
+                            android:orientation="vertical"
+
+                            android:padding="@dimen/padding_all_very_small">
+
+                            <Spinner
+                                android:id="@+id/spinner_scheme"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/margin_all_very_small"
+                                android:padding="@dimen/padding_all_very_small" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <fragment
+                        android:id="@+id/chooser_fragment"
+                        android:name="investwell.client.fragment.others.ChooserFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_all_small"
+                        android:layout_marginLeft="@dimen/margin_all_small"
+                        android:layout_marginEnd="@dimen/margin_all_small"
+                        android:layout_marginRight="@dimen/margin_all_small" />
+
+                    <!-- Layout transaction Amount-->
+                    <investwell.utils.customView.CustomTextInputLayout
+                        android:id="@+id/til_amount"
+                        style="@style/TextInputLayoutTheme"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_all_regular"
+                        android:layout_marginLeft="@dimen/margin_all_regular"
+                        android:layout_marginTop="@dimen/margin_all_regular"
+                        android:layout_marginEnd="@dimen/margin_all_regular"
+                        android:layout_marginRight="@dimen/margin_all_regular">
+
+                        <investwell.utils.customView.CustomTextInputEditText
+                            style="@style/TextInputEditTextTheme"
+                            android:id="@+id/et_amnt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/additional_swp_hint_txt"
+                            android:imeOptions="actionDone"
+                            android:inputType="number"
+                            android:textSize="@dimen/textView_all_size_14" />
+
+                    </investwell.utils.customView.CustomTextInputLayout>
+
+                    <investwell.utils.customView.CustomTextInputLayout
+                        android:id="@+id/til_installment"
+                        style="@style/TextInputLayoutTheme"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_all_regular"
+                        android:layout_marginLeft="@dimen/margin_all_regular"
+                        android:layout_marginTop="@dimen/margin_all_regular"
+                        android:layout_marginEnd="@dimen/margin_all_regular"
+                        android:layout_marginRight="@dimen/margin_all_regular">
+
+                        <investwell.utils.customView.CustomTextInputEditText
+                            style="@style/TextInputEditTextTheme"
+                            android:id="@+id/et_installment"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/additional_stp_installment_hint_txt"
+                            android:imeOptions="actionDone"
+                            android:inputType="number"
+
+                            android:textSize="@dimen/textView_all_size_14" />
+                    </investwell.utils.customView.CustomTextInputLayout>
+
+
+                    <!-- Select start date-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_all_small"
+                        android:layout_marginLeft="@dimen/margin_all_small"
+                        android:layout_marginTop="@dimen/margin_all_very_small"
+                        android:layout_marginEnd="@dimen/margin_all_small"
+                        android:layout_marginRight="@dimen/margin_all_small"
+                        android:orientation="vertical">
+
+                        <include layout="@layout/start_date_layout"/>
+
+
+
+                        <CheckBox
+                                android:buttonTint="?attr/primaryButtonBackground"
+                                android:textColor="?attr/primaryTextColor"
+                            android:id="@+id/cb_first_order"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_all_small"
+                            android:layout_marginLeft="@dimen/margin_all_small"
+                            android:layout_marginEnd="@dimen/margin_all_small"
+                            android:layout_marginRight="@dimen/margin_all_small"
+                            android:checked="true"
+                            android:text="@string/additional_stp_first_order_txt"
+                            android:textSize="@dimen/textView_all_size_14"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                    <include layout="@layout/footer_add_transac_disclaimer"
+                        android:layout_gravity="bottom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </ScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom">
+
+            <include layout="@layout/layout_footer_additonal_transactions" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

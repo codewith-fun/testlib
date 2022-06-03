@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <investwell.utils.customView.CustomTextViewRegular
+        android:id="@+id/category"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_amount_unselected"
+        android:padding="@dimen/padding_all_small"
+        android:maxLines="2"
+        android:fadingEdge="horizontal"
+        android:textColor="?attr/primaryTextColor"
+        android:textSize="@dimen/textView_all_size_12"
+        android:scrollHorizontally="true"
+        app:layout_constraintEnd_toStartOf="@+id/tv_market_value"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/app_name" />
+
+    <investwell.utils.customView.CustomTextViewRegular
+        android:id="@+id/tv_market_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_amount_unselected"
+        android:ellipsize="end"
+        android:gravity="end"
+        android:padding="@dimen/padding_all_small"
+        android:textColor="?attr/primaryTextColor"
+        android:textSize="@dimen/textView_all_size_12"
+        app:layout_constraintBottom_toBottomOf="@+id/category"
+        app:layout_constraintEnd_toStartOf="@+id/percent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toEndOf="@+id/category"
+        tools:text="@string/app_name" />
+
+    <investwell.utils.customView.CustomTextViewRegular
+        android:id="@+id/percent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@drawable/bg_amount_unselected"
+        android:ellipsize="end"
+        android:gravity="end"
+        android:padding="@dimen/padding_all_small"
+        android:textColor="?attr/primaryTextColor"
+        android:textSize="@dimen/textView_all_size_12"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_market_value"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_market_value"
+        tools:text="@string/app_name" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

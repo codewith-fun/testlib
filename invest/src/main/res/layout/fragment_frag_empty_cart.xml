@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <fragment
+        android:id="@+id/frag_toolBar"
+        android:name="investwell.client.fragment.others.ToolbarFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/frag_toolBar"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_empty_cart_placeholder" />
+
+
+        <investwell.utils.customView.CustomTextViewRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/empty_cart_header_txt"
+            android:textColor="#333333"
+            android:textSize="@dimen/textView_all_size_18" />
+
+
+        <investwell.utils.customView.CustomTextViewRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/empty_desc_desc_txt"
+            android:textAlignment="center"
+            android:textColor="#727272"
+            android:textSize="@dimen/textView_all_size_16" />
+
+        <investwell.utils.customView.CustomButton
+            android:id="@+id/scheme_btn"
+            android:layout_width="@dimen/btn_width_footer"
+            android:layout_height="@dimen/btn_height_footer"
+            android:layout_marginTop="10dp"
+            android:background="?attr/secondaryBtnDrawable"
+            android:padding="10dp"
+            android:text="@string/empty_cart_add_scheme_btn_txt"
+            android:textAllCaps="false"
+            android:textColor="?attr/secondaryButtonTextColor" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

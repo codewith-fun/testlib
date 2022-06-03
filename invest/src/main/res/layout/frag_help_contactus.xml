@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- TODO: Update blank fragment layout_gridview_type_two_a -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--My Wealth Manager-->
+            <LinearLayout
+                android:id="@+id/ll_wealth_manager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <investwell.utils.customView.CustomTextViewBold
+                    android:id="@+id/tvWealthMangerHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginBottom="-2dp"
+                    android:text="@string/help_call_txt"
+                    android:textColor="?attr/secondaryTextColor"
+                    android:textSize="@dimen/textView_all_size_14"
+                    android:textStyle="bold"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="7dp" />
+
+                <androidx.cardview.widget.CardView
+                    style="@style/CardViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp">
+
+                        <RelativeLayout
+                            android:id="@+id/relProfile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:adjustViewBounds="true"
+                                android:contentDescription="@string/app_name" />
+
+                            <ImageView
+                                android:id="@+id/ivIcon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:adjustViewBounds="true"
+                                android:src="@mipmap/help_call"
+                                android:visibility="gone"
+                                android:contentDescription="@string/app_name"/>
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/relProfile"
+                            android:orientation="vertical"
+                            android:layout_marginStart="10dp"
+                            android:layout_toEndOf="@+id/relProfile">
+
+                            <investwell.utils.customView.CustomTextViewRegular
+                                android:id="@+id/tvWealthManagerTitleHeading"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/help_call_txt"
+                                android:textColor="?attr/primaryTextColor"
+                                android:textSize="@dimen/textView_all_size_14" />
+
+                            <investwell.utils.customView.CustomTextViewRegular
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/colorGrey_600"
+                                android:textSize="@dimen/textView_all_size_14"
+                                android:visibility="gone" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal"
+                                android:visibility="visible">
+
+                                <ImageView
+                                    android:id="@+id/iv_call_wealth_manager"
+                                    android:layout_width="30dp"
+                                    android:layout_height="wrap_content"
+                                    android:adjustViewBounds="true"
+                                    android:contentDescription="@string/app_name"
+                                    android:src="@mipmap/help_call"
+                                    android:visibility="gone" />
+
+                                <investwell.utils.customView.CustomTextViewRegular
+                                    android:id="@+id/tvWealthCall"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:padding="@dimen/padding_all_very_small"
+                                    android:textColor="@color/colorGrey_600"
+                                    android:textSize="@dimen/textView_all_size_14"
+                                    android:visibility="gone" />
+
+                                <ImageView
+                                    android:id="@+id/iv_mail_wealth_manager_desc"
+                                    android:layout_width="30dp"
+                                    android:layout_height="wrap_content"
+                                    android:adjustViewBounds="true"
+                                    android:contentDescription="@string/app_name"
+                                    android:src="@mipmap/help_email"
+                                    android:visibility="gone" />
+
+                                <investwell.utils.customView.CustomTextViewRegular
+                                    android:id="@+id/tvWealthEmail"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_gravity="center_vertical"
+                                    android:padding="@dimen/padding_all_very_small"
+                                    android:textColor="@color/colorGrey_600"
+                                    android:textSize="@dimen/textView_all_size_14"
+                                    android:visibility="gone" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <!--My Call-->
+            <LinearLayout
+                android:id="@+id/ll_call_manager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <investwell.utils.customView.CustomTextViewBold
+                    android:id="@+id/tvCallManagerHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginBottom="-2dp"
+                    android:text="@string/help_call_txt"
+                    android:textColor="?attr/secondaryTextColor"
+                    android:textSize="@dimen/textView_all_size_14"
+                    android:textStyle="bold"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="7dp" />
+
+                <androidx.cardview.widget.CardView
+                    style="@style/CardViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp">
+
+                        <RelativeLayout
+                            android:id="@+id/relProfileContact"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:adjustViewBounds="true"
+                                android:contentDescription="@string/app_name" />
+
+                            <ImageView
+                                android:id="@+id/ivIconCall"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:contentDescription="@string/app_name"
+                                android:adjustViewBounds="true"
+                                android:src="@mipmap/help_call" />
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/relProfileContact"
+                            android:orientation="vertical"
+                            android:layout_marginStart="10dp"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@+id/relProfileContact">
+
+                            <investwell.utils.customView.CustomTextViewRegular
+                                android:id="@+id/tvCallTitleHeading"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/help_call_txt"
+                                android:textColor="?attr/primaryTextColor"
+                                android:textSize="@dimen/textView_all_size_12" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <investwell.utils.customView.CustomTextViewRegular
+                                    android:id="@+id/tvCallManagerDesc"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:textColor="@color/colorGrey_600"
+                                    android:textSize="@dimen/textView_all_size_12" />
+
+                                <investwell.utils.customView.CustomTextViewRegular
+                                    android:id="@+id/tvCallMobile"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_toEndOf="@+id/tvCallManagerDesc"
+                                    android:layout_toRightOf="@+id/tvCallManagerDesc"
+                                    android:textColor="@color/colorGrey_600"
+                                    android:textSize="@dimen/textView_all_size_12" />
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+            <!--My Email-->
+            <LinearLayout
+                android:id="@+id/ll_email_manager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <androidx.cardview.widget.CardView
+                    style="@style/CardViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp">
+
+                        <RelativeLayout
+                            android:id="@+id/relProfileEMail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:adjustViewBounds="true"
+                                android:contentDescription="@string/app_name" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:adjustViewBounds="true"
+                                android:contentDescription="@string/app_name"
+                                android:src="@mipmap/help_email" />
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/relProfileEMail"
+                            android:orientation="vertical"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="10dp"
+                            android:layout_toEndOf="@+id/relProfileEMail">
+
+                            <investwell.utils.customView.CustomTextViewRegular
+                                android:id="@+id/tvEmailTitleHeading"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/help_call_txt"
+                                android:textColor="?attr/primaryTextColor"
+                                android:textSize="@dimen/textView_all_size_12" />
+
+                            <investwell.utils.customView.CustomTextViewRegular
+                                android:id="@+id/tvEmailManagerDesc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/help_txt_23432"
+                                android:textColor="@color/colorGrey_600"
+                                android:textSize="@dimen/textView_all_size_12"
+                                />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+            <!--My Website-->
+            <LinearLayout
+                android:id="@+id/ll_website_manager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <androidx.cardview.widget.CardView
+                    style="@style/CardViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp">
+
+                        <RelativeLayout
+                            android:id="@+id/relProfileWebsite"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:adjustViewBounds="true"
+
+                                android:contentDescription="@string/app_name" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:contentDescription="@string/app_name"
+                                android:adjustViewBounds="true"
+                                android:src="@mipmap/help_website" />
+
+                        </RelativeLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/relProfileWebsite"
+                            android:orientation="vertical"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="10dp"
+                            android:layout_toEndOf="@+id/relProfileWebsite">
+
+                            <investwell.utils.customView.CustomTextViewRegular
+                                android:id="@+id/tvWebsiteTitleHeading"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/help_call_txt"
+                                android:textColor="?attr/primaryTextColor"
+                                android:textSize="@dimen/textView_all_size_12" />
+
+                            <investwell.utils.customView.CustomTextViewRegular
+                                android:id="@+id/tvWebManagerDesc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/help_txt_23432"
+                                android:textColor="@color/colorGrey_600"
+                                android:textSize="@dimen/textView_all_size_12"
+/>
+
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+            <!--My Address-->
+            <LinearLayout
+                android:id="@+id/ll_address_manager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <androidx.cardview.widget.CardView
+                    style="@style/CardViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp">
+
+                        <RelativeLayout
+                            android:id="@+id/relProfileAddress"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:adjustViewBounds="true"
+                                android:contentDescription="@string/app_name" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:adjustViewBounds="true"
+                                android:contentDescription="@string/app_name"
+                                android:src="@mipmap/help_address" />
+
+                        </RelativeLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/relProfileAddress"
+                            android:orientation="vertical"
+                            android:layout_marginStart="10dp"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@+id/relProfileAddress">
+
+                            <investwell.utils.customView.CustomTextViewRegular
+                                android:id="@+id/tvAddressTitleHeading"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/help_call_txt"
+                                android:textColor="?attr/primaryTextColor"
+                                android:textSize="@dimen/textView_all_size_12" />
+
+                            <investwell.utils.customView.CustomTextViewRegular
+                                android:id="@+id/tvAddressManagerDesc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/help_txt_23432"
+                                android:textColor="@color/colorGrey_600"
+                                android:textSize="@dimen/textView_all_size_12"
+                              />
+
+                            <investwell.utils.customView.CustomTextViewRegular
+                                android:id="@+id/tv_address_link"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/margin_all_small"
+                                android:background="@drawable/broder_rounded_orange"
+                                android:paddingStart="@dimen/padding_all_small"
+                                android:paddingTop="@dimen/padding_all_very_small"
+                                android:paddingEnd="@dimen/padding_all_small"
+                                android:paddingBottom="@dimen/padding_all_very_small"
+                                android:text="@string/contact_us_view_details"
+                                android:textAllCaps="false"
+                                android:textColor="?attr/secondaryTextColor"
+                                android:textSize="@dimen/textView_all_size_10"
+                                android:visibility="gone" />
+
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+            <!--Broker Details-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/contactus_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layoutAnimation="@anim/layout_animation_fall_down"
+                    android:layout_marginRight="5dp">
+
+                </androidx.recyclerview.widget.RecyclerView>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

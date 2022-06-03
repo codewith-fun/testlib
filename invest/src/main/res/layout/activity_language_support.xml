@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="investwell.client.activity.LanguageSupportActivity">
+
+    <fragment
+        android:id="@+id/frag_toolBar"
+        android:name="investwell.client.fragment.others.ToolbarFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/margin_all_small"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_language_support"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:padding="@dimen/padding_all_regular"
+        android:background="@color/colorWhite"
+        android:layout_height="wrap_content">
+        <investwell.utils.customView.CustomButton
+            android:id="@+id/btn_lang_continue"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_height_medium"
+            android:layout_gravity="center_horizontal|bottom"
+
+            android:background="?attr/primaryBtnDrawable"
+            android:text="@string/personal_details_btn_continue_txt"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/textView_all_size_18"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

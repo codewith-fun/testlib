@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <investwell.utils.customView.CustomTextViewRegular
+        android:id="@+id/tv_error_message"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorRed"
+        android:fontFamily="sans-serif-condensed"
+        android:padding="@dimen/padding_all_very_small"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/textView_all_size_14"
+        android:gravity="center_horizontal"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Error Message" />
+
+    <ImageView
+        android:id="@+id/iv_error_image"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:padding="@dimen/padding_all_small"
+        app:layout_constraintDimensionRatio="1:1"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/tv_error_message"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/bg_no_interent"
+        android:contentDescription="@string/app_name" />
+</androidx.constraintlayout.widget.ConstraintLayout>

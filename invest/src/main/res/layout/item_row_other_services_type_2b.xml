@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    android:id="@+id/ll_other_services_container"
+    android:layout_margin="@dimen/margin_all_small"
+    android:background="?attr/secondaryBtnDrawable"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_other_services"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:contentDescription="@string/app_name"
+        android:src="@mipmap/app_icon_s" />
+
+    <investwell.utils.customView.CustomTextViewRegular
+        android:id="@+id/tv_other_service_types"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="@dimen/margin_all_small"
+        android:gravity="center_horizontal"
+        android:maxLines="2"
+        android:padding="@dimen/padding_all_very_small"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textColor="?attr/secondaryTextColor"
+        android:textSize="@dimen/textView_all_size_14" />
+</LinearLayout>

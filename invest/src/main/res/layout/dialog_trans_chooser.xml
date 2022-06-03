@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/CardViewStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_all_very_small">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/padding_all_very_small">
+
+
+        <ImageView
+            android:id="@+id/iv_lumpsum"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:adjustViewBounds="true"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/padding_all_large"
+            android:src="@drawable/dialog_lumpsum"
+            app:layout_constraintEnd_toStartOf="@+id/iv_sip"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_header_question" />
+
+        <ImageView
+            android:id="@+id/iv_sip"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:adjustViewBounds="true"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/padding_all_large"
+            android:src="@drawable/dialog_sip"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/iv_lumpsum"
+            app:layout_constraintTop_toBottomOf="@+id/tv_header_question" />
+
+        <investwell.utils.customView.CustomTextViewRegular
+            android:id="@+id/tv_header_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_all_small"
+            android:textColor="?attr/primaryTextColor"
+            android:textSize="@dimen/textView_all_size_14"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="How would Your like to invest ?" />
+
+        <investwell.utils.customView.CustomTextViewRegular
+            android:id="@+id/tv_lumpsum"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_all_small"
+            android:gravity="center"
+            android:textColor="?attr/primaryTextColor"
+            app:layout_constraintEnd_toEndOf="@+id/iv_lumpsum"
+            app:layout_constraintStart_toStartOf="@+id/iv_lumpsum"
+            app:layout_constraintTop_toBottomOf="@+id/iv_lumpsum"
+            tools:text="Lumpsum" />
+
+        <investwell.utils.customView.CustomTextViewRegular
+            android:id="@+id/tv_sip"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_all_small"
+            android:gravity="center"
+            android:text="SIP"
+            android:textColor="?attr/primaryTextColor"
+            app:layout_constraintEnd_toEndOf="@+id/iv_sip"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/iv_sip"
+            app:layout_constraintTop_toBottomOf="@+id/iv_sip" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

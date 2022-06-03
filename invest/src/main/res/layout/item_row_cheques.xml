@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:padding="@dimen/padding_all_very_small"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_check"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="@dimen/padding_all_very_small"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/app_name"
+        android:padding="@dimen/padding_all_very_small"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/check_gray" />
+
+    <investwell.utils.customView.CustomTextViewRegular
+        android:id="@+id/tv_bank_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_all_small"
+        android:textSize="@dimen/textView_all_size_14"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintEnd_toStartOf="@+id/iv_upload_cheque"
+        app:layout_constraintStart_toEndOf="@+id/iv_check"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <investwell.utils.customView.CustomTextViewRegular
+        android:id="@+id/tv_acc_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textView_all_size_12"
+        app:layout_constraintStart_toStartOf="@+id/tv_bank_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_bank_name" />
+
+    <investwell.utils.customView.CustomTextViewRegular
+        android:id="@+id/tv_ifsc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textView_all_size_12"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_acc_no"
+        app:layout_constraintStart_toEndOf="@+id/tv_acc_no" />
+
+    <investwell.utils.customView.CustomTextViewRegular
+        android:id="@+id/tv_branch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textView_all_size_12"
+        app:layout_constraintStart_toStartOf="@+id/tv_acc_no"
+        app:layout_constraintTop_toBottomOf="@+id/tv_acc_no" />
+
+    <ImageView
+        android:id="@+id/iv_upload_cheque"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="8dp"
+        android:layout_margin="@dimen/padding_all_very_small"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/app_name"
+        android:padding="@dimen/padding_all_very_small"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/upload" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

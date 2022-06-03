@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <investwell.utils.customView.CustomTextViewRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_all_small"
+            android:text="@string/txt_no_data" />
+
+        <investwell.utils.customView.CustomButton
+            android:id="@+id/okay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/primaryBtnDrawable"
+            android:text="@string/txt_ok"
+            android:textAllCaps="false"
+            android:textColor="?attr/primaryButtonTextColor" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,116 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    style="@style/CardViewStyle"
+    android:layout_margin="@dimen/margin_all_very_small"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/linerMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="?attr/primaryButtonBackground">
+
+
+            <investwell.utils.customView.CustomTextViewBold
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/textView_all_size_16"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="20dp">
+
+
+            <investwell.utils.customView.CustomTextViewRegular
+                android:id="@+id/tvMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:textColor="?attr/primaryTextColor"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/textView_all_size_14" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:weightSum="10"
+            android:paddingBottom="@dimen/padding_all_very_small"
+            android:gravity="center">
+
+
+            <investwell.utils.customView.CustomButton
+                android:id="@+id/btCalcel"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/btn_height_footer"
+                android:layout_marginRight="7dp"
+                android:background="?attr/secondaryBtnDrawable"
+                android:text="@string/dialog_btn_cancel"
+                android:textAllCaps="false"
+                android:layout_weight="5"
+                android:textColor="?attr/secondaryButtonTextColor"
+                android:textSize="@dimen/textView_all_size_14"
+                android:visibility="gone" />
+
+
+            <investwell.utils.customView.CustomButton
+                android:id="@+id/btDone"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/btn_height_footer"
+                android:layout_marginStart="7dp"
+                android:layout_marginLeft="7dp"
+                android:background="?attr/primaryBtnDrawable"
+                android:text="@string/alert_dialog_btn_txt"
+                android:textAllCaps="false"
+                android:layout_weight="5"
+                android:textColor="?attr/primaryButtonTextColor"
+                android:textSize="@dimen/textView_all_size_14"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <investwell.utils.customView.CustomTextViewBold
+            android:id="@+id/tvOk"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="?attr/primaryBtnDrawable"
+            android:gravity="center"
+            android:text="@string/txt_ok"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/textView_all_size_18"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

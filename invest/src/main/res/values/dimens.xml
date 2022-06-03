@@ -1,0 +1,86 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="pen_size">3dp</dimen>
+    <dimen name="button_lock_screen_fp_size">65dp</dimen>
+    <dimen name="code_fp_margin15">15dp</dimen>
+    <dimen name="code_fp_margin20">20dp</dimen>
+
+    <!--App Text Sizes-->
+    <dimen name="textView_all_size_8">8sp</dimen>
+    <dimen name="textView_all_size_10">10sp</dimen>
+    <dimen name="textView_all_size_11">11sp</dimen>
+    <dimen name="textView_all_size_12">12sp</dimen>
+    <dimen name="textView_all_size_13">13sp</dimen>
+    <dimen name="textView_all_size_14">14sp</dimen>
+    <dimen name="textView_all_size_16">16sp</dimen>
+    <dimen name="textView_all_size_18">18sp</dimen>
+    <dimen name="textView_all_size_20">20sp</dimen>
+
+    <dimen name="textView_all_size_24">24sp</dimen>
+
+    <dimen name="textView_all_size_30">26sp</dimen>
+    <!--End App Text Sizes-->
+
+
+    <!--App Common Toolbar Declarations-->
+    <dimen name="toolbar_icon_all_size">24dp</dimen>
+    <!--App Common Toolbar Declarations-->
+
+    <!--App Common Margins Declarations-->
+    <dimen name="margin_5dp">5dp</dimen>
+    <dimen name="margin_7dp">5dp</dimen>
+    <dimen name="margin_all_small">8dp</dimen>
+    <dimen name="margin_10dp">10dp</dimen>
+    <dimen name="margin_all_regular">16dp</dimen>
+    <dimen name="margin_all_very_small">4dp</dimen>
+    <dimen name="margin_all_large">24dp</dimen>
+    <dimen name="margin_all_medium">12dp</dimen>
+    <!--End App Common Margins Declarations-->
+
+
+    <!--App Common Padding Declarations-->
+    <dimen name="padding_all_regular">16dp</dimen>
+    <dimen name="padding_all_small">8dp</dimen>
+    <dimen name="padding_all_very_small">4dp</dimen>
+    <dimen name="padding_2dp">2dp</dimen>
+    <dimen name="padding_all_large">24dp</dimen>
+    <!--End App Common Padding Declarations-->
+
+
+    <!-- App Common Buttons Size Declarations-->
+    <dimen name="btn_width_medium">160dp</dimen>
+    <dimen name="btn_height_medium">50dp</dimen>
+    <dimen name="btn_height_small2">45dp</dimen>
+    <dimen name="btn_height_small">30dp</dimen>
+    <dimen name="btn_height_small35">35dp</dimen>
+    <dimen name="btn_width_footer">120dp</dimen>
+    <dimen name="btn_height_footer">40dp</dimen>
+    <dimen name="btn_mini_width">90dp</dimen>
+    <dimen name="btn_mini_height">30dp</dimen>
+    <!--App Common  Buttons Size Declarations-->
+
+    <!--App Common CardView Declarations-->
+    <dimen name="card_all_elevation">4dp</dimen>
+    <dimen name="card_corner_all_radius_small">4dp</dimen>
+    <!--End App Common CardView Declarations-->
+
+
+    <!-- App Screen Specific Declarations-->
+
+    <!--Login-->
+    <dimen name="login_middle_content_top_margin_30">16dp</dimen>
+
+    <!--Dashboard-->
+    <dimen name="dashboard_ll_height">40dp</dimen>
+    <dimen name="dashboard_margin_top">120dp</dimen>
+    <dimen name="dashboard_margin_tv_top">100dp</dimen>
+    <dimen name="dashboard_menu_img_all_size">30dp</dimen>
+    <dimen name="dashboard_cart_badge_size">20dp</dimen>
+    <dimen name="change_pwd_img_size">200dp</dimen>
+    <dimen name="personal_detail_form_stepper_height">30dp</dimen>
+
+
+    <!-- End App Screen Specific Declarations-->
+
+
+</resources>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="5dp"
+    android:layout_gravity="center_horizontal"
+    android:paddingBottom="5dp">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_social_media"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layoutAnimation="@anim/layout_animation_fall_down"
+        android:layout_height="wrap_content" />
+
+    <investwell.utils.customView.CustomTextViewRegular
+        android:id="@+id/tvWhatsApp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:visibility="gone"
+        android:layout_weight="1"
+        android:drawableTop="@mipmap/help_whatsapp"
+        android:gravity="center"
+        android:text="@string/social_media_whatsapp_txt"
+        android:textColor="?attr/primaryTextColor"
+        android:textSize="@dimen/textView_all_size_10" />
+
+
+    <investwell.utils.customView.CustomTextViewRegular
+        android:id="@+id/tvWitter"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        android:drawableTop="@mipmap/help_tiwtter"
+        android:gravity="center"
+        android:text="@string/social_media_twitter_txt"
+        android:visibility="gone"
+        android:textColor="?attr/primaryTextColor"
+        android:textSize="@dimen/textView_all_size_10" />
+
+
+    <investwell.utils.customView.CustomTextViewRegular
+        android:id="@+id/tvFacebook"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        android:drawableTop="@mipmap/help_facebook"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="@string/social_media_facebook_txt"
+        android:textColor="?attr/primaryTextColor"
+        android:textSize="@dimen/textView_all_size_10" />
+
+    <investwell.utils.customView.CustomTextViewRegular
+        android:id="@+id/linkedin"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        android:drawableTop="@mipmap/help_linkedin"
+        android:gravity="center"
+        android:text="@string/social_media_linkedin_txt"
+        android:visibility="gone"
+        android:textColor="?attr/primaryTextColor"
+        android:textSize="@dimen/textView_all_size_10" />
+
+    <investwell.utils.customView.CustomTextViewRegular
+        android:id="@+id/tvYoutube"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        android:drawableTop="@mipmap/help_youtube"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="@string/social_media_youtube_txt"
+        android:textColor="?attr/primaryTextColor"
+        android:textSize="@dimen/textView_all_size_10" />
+
+</LinearLayout>

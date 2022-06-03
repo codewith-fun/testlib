@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cv_my_assets_container"
+    style="@style/CardViewStyle"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_margin="@dimen/margin_all_small"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+      >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toLeftOf="@+id/llImage"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true">
+
+            <investwell.utils.customView.CustomTextViewBold
+                android:id="@+id/tv_my_asset_return_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_all_small"
+                android:text="@string/app_name"
+                android:textColor="?attr/primaryTextColor"
+                android:textSize="@dimen/textView_all_size_24"
+                android:textStyle="bold" />
+
+            <investwell.utils.customView.CustomTextViewBold
+                android:id="@+id/tv_my_asset_return_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_all_small"
+                android:layout_marginLeft="@dimen/margin_all_small"
+                android:text="@string/app_name"
+                android:textColor="?attr/secondaryTextColor"
+                android:textSize="@dimen/textView_all_size_14"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/iv_my_asset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:adjustViewBounds="true"
+              />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            tools:ignore="UselessLeaf" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

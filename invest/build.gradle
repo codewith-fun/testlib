@@ -1,0 +1,138 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+    id 'kotlin-android-extensions'
+}
+//apply plugin: 'com.google.firebase.crashlytics'
+
+android {
+    compileSdk 30
+
+    defaultConfig {
+//        applicationId "com.iw.acceleratordemo"
+        minSdk 17
+        targetSdk 30
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        vectorDrawables.useSupportLibrary = true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles 'consumer-rules.pro'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true   // Obfuscate and minify codes
+//            shrinkResources true // Remove unused resources
+            useProguard true     // Remove unused codes
+            debuggable false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+
+            /*minifyEnabled true
+            shrinkResources true
+            useProguard true
+            debuggable true*/
+
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+//    buildFeatures {
+//        viewBinding true
+//    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+        disable 'NonConstantResourceId'
+    }
+    packagingOptions {
+        exclude 'META-INF/proguard/androidx-annotations.pro'
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //Android X
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation "androidx.exifinterface:exifinterface:1.3.2"
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    //Constraint Layout
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    //Material Components
+    implementation 'com.google.android.material:material:1.4.0'
+    //Volley REST Client
+    implementation 'com.android.volley:volley:1.2.0'
+    //picasso Image Loading
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    //Charts
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.0.3'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.0.3'
+    //MultiDex Support
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'org.apmem.tools:layouts:1.10@aar'
+    //Language Conversion
+    implementation "com.github.YarikSOffice:lingver:1.2.1"
+    //Swipe Button
+    implementation 'com.ebanx:swipe-button:0.7.0'
+    //PDF converter
+    implementation 'com.itextpdf:itextg:5.5.10'
+    // Dexter runtime permissions
+    implementation 'com.karumi:dexter:6.0.0'
+    //Shimmer Layout
+    implementation 'com.facebook.shimmer:shimmer:0.1.0@aar'
+    // Recommended: Add the Firebase SDK for Google Analytics.
+    implementation 'com.google.firebase:firebase-analytics:18.0.2'
+    // Add the Firebase CrashLytics SDK.
+//    implementation 'com.google.firebase:firebase-crashlytics:17.4.1'
+    //Facebook
+    implementation 'com.facebook.android:facebook-android-sdk:5.15.3'
+    //Google Play Services
+    implementation 'com.google.android.gms:play-services-auth:19.0.0'
+    implementation 'com.google.android.gms:play-services-gcm:17.0.0'
+    implementation 'com.google.android.play:core:1.10.0'
+    //Location
+    implementation 'com.google.android.gms:play-services-location:18.0.0'
+    //Firebase Integration
+    implementation 'com.google.firebase:firebase-core:18.0.2'
+    //Fb
+    implementation 'com.facebook.android:facebook-marketing:4.39.0'
+    //Firebase cloud messaging
+    implementation 'com.google.firebase:firebase-messaging:21.0.1'
+    //Firebase Auth
+    implementation 'com.google.firebase:firebase-auth:20.0.3'
+    implementation 'com.google.android.gms:play-services-identity:17.0.0'
+    implementation 'com.google.android.gms:play-services-auth-api-phone:17.5.0'
+    // Java language implementation Pref manager
+    implementation "androidx.preference:preference-ktx:1.1.1"
+    //Kotlin extension
+    implementation "androidx.core:core-ktx:1.3.2"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'com.wang.avi:library:2.1.3'
+    //Gif
+    implementation "pl.droidsonroids.gif:android-gif-drawable:1.2.23"
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.0.0'
+
+    implementation 'com.github.joielechong:countrycodepicker:2.4.2'
+
+    //implementation files('libs/YouTubeAndroidPlayerApi.jar')
+    // implementation 'com.pierfrancescosoffritti.androidyoutubeplayer:core:10.0.1'
+    // implementation 'com.pierfrancescosoffritti.androidyoutubeplayer:core:11.0.1'
+
+}
+
+//apply plugin: 'com.google.gms.google-services'
+repositories {
+    mavenCentral()
+}

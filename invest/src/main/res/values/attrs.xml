@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="primaryColor" format="reference" />
+    <attr name="primaryDarkColor" format="reference" />
+    <attr name="accentColor" format="reference" />
+    <attr name="actionBarColor" format="reference" />
+    <attr name="actionBarIconColor" format="reference" />
+    <attr name="actionBarTextColor" format="reference" />
+    <attr name="headerTitleColor" format="reference" />
+    <attr name="appBackground" format="reference" />
+    <attr name="primaryTextColor" format="reference" />
+    <attr name="secondaryTextColor" format="reference" />
+    <attr name="tertiaryTextColor" format="reference" />
+    <attr name="primaryBtnDrawable" format="reference" />
+    <attr name="secondaryBtnDrawable" format="reference" />
+    <attr name="tertiaryBtnDrawable" format="reference" />
+    <attr name="primaryButtonBackground" format="reference" />
+    <attr name="secondaryButtonBackground" format="reference" />
+    <attr name="tertiaryButtonBackground" format="reference" />
+    <attr name="primaryButtonTextColor" format="reference" />
+    <attr name="secondaryButtonTextColor" format="reference" />
+    <attr name="tertiaryButtonTextColor" format="reference" />
+    <attr name="roundGray" format="reference"/>
+    <attr name="cardBgColor" format="reference" />
+    <attr name="tableRowHeaderColor" format="reference" />
+    <attr name="tabBackgroundColor" format="reference" />
+    <attr name="bottomSheetBackground" format="reference" />
+    <attr name="dialogBackground" format="reference" />
+    <declare-styleable name="signature">
+        <attr name="enableSignature" format="boolean" />
+        <attr name="penSize" format="dimension" />
+        <attr name="penColor" format="color" />
+        <attr name="backgroundColor" format="color" />
+    </declare-styleable>
+    <declare-styleable name="MaskedEditText">
+        <attr name="mask" format="string" />
+        <attr name="allowed_chars" format="string" />
+        <attr name="denied_chars" format="string" />
+        <attr name="char_representation" format="string" />
+        <attr name="keep_hint" format="boolean" />
+    </declare-styleable>
+    <attr name="pf_key_button" format="reference|integer" />
+    <attr name="pf_lock_screen" format="reference|integer" />
+    <attr name="pf_fingerprint_button" faaormat="reference|integer" />
+    <attr name="pf_delete_button" format="reference|integer" />
+    <attr name="pf_code_view" format="reference|integer" />
+    <declare-styleable name="CircleIndicator">
+        <attr name="ci_width" format="dimension" />
+        <attr name="ci_height" format="dimension" />
+        <attr name="ci_margin" format="dimension" />
+        <attr name="ci_animator" format="reference" />
+        <attr name="ci_animator_reverse" format="reference" />
+        <attr name="ci_drawable" format="reference" />
+        <attr name="ci_drawable_unselected" format="reference" />
+
+        <attr name="ci_orientation" format="enum">
+            <!-- Defines an horizontal widget. -->
+            <enum name="horizontal" value="0" />
+            <!-- Defines a vertical widget. -->
+            <enum name="vertical" value="1" />
+        </attr>
+
+        <attr name="ci_gravity">
+            x
+            <flag name="top" value="0x30" />
+            <flag name="bottom" value="0x50" />
+            <flag name="left" value="0x03" />
+            <flag name="right" value="0x05" />
+            <flag name="center_vertical" value="0x10" />
+            <flag name="fill_vertical" value="0x70" />
+            <flag name="center_horizontal" value="0x01" />
+            <flag name="fill_horizontal" value="0x07" />
+            <flag name="center" value="0x11" />
+            <flag name="fill" value="0x77" />
+            <flag name="clip_vertical" value="0x80" />
+            <flag name="clip_horizontal" value="0x08" />
+            <flag name="start" value="0x00800003" />
+            <flag name="end" value="0x00800005" />
+        </attr>
+
+
+    </declare-styleable>
+    <declare-styleable name="MaterialLockView">
+        <attr name="LOCK_COLOR" format="color" />
+        <attr name="WRONG_COLOR" format="color" />
+        <attr name="CORRECT_COLOR" format="color" />
+    </declare-styleable>
+    <declare-styleable name="CropImageView">
+        <attr name="cropGuidelines">
+            <enum name="off" value="0" />
+            <enum name="onTouch" value="1" />
+            <enum name="on" value="2" />
+        </attr>
+        <attr name="cropScaleType">
+            <enum name="fitCenter" value="0" />
+            <enum name="center" value="1" />
+            <enum name="centerCrop" value="2" />
+            <enum name="centerInside" value="3" />
+        </attr>
+        <attr name="cropShape">
+            <enum name="rectangle" value="0" />
+            <enum name="oval" value="1" />
+        </attr>
+        <attr name="cropAutoZoomEnabled" format="boolean" />
+        <attr name="cropMaxZoom" format="integer" />
+        <attr name="cropMultiTouchEnabled" format="boolean" />
+        <attr name="cropFixAspectRatio" format="boolean" />
+        <attr name="cropAspectRatioX" format="integer" />
+        <attr name="cropAspectRatioY" format="integer" />
+        <attr name="cropInitialCropWindowPaddingRatio" format="float" />
+        <attr name="cropBorderLineThickness" format="dimension" />
+        <attr name="cropBorderLineColor" format="color" />
+        <attr name="cropBorderCornerThickness" format="dimension" />
+        <attr name="cropBorderCornerOffset" format="dimension" />
+        <attr name="cropBorderCornerLength" format="dimension" />
+        <attr name="cropBorderCornerColor" format="color" />
+        <attr name="cropGuidelinesThickness" format="dimension" />
+        <attr name="cropGuidelinesColor" format="color" />
+        <attr name="cropBackgroundColor" format="color" />
+        <attr name="cropSnapRadius" format="dimension" />
+        <attr name="cropTouchRadius" format="dimension" />
+        <attr name="cropSaveBitmapToInstanceState" format="boolean" />
+        <attr name="cropShowCropOverlay" format="boolean" />
+        <attr name="cropShowProgressBar" format="boolean" />
+        <attr name="cropMinCropWindowWidth" format="dimension" />
+        <attr name="cropMinCropWindowHeight" format="dimension" />
+        <attr name="cropMinCropResultWidthPX" format="float" />
+        <attr name="cropMinCropResultHeightPX" format="float" />
+        <attr name="cropMaxCropResultWidthPX" format="float" />
+        <attr name="cropMaxCropResultHeightPX" format="float" />
+        <attr name="cropFlipHorizontally" format="boolean" />
+        <attr name="cropFlipVertically" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="PinEntryView">
+        <attr name="numDigits" format="integer" />
+        <attr name="digitWidth" format="dimension" />
+        <attr name="digitHeight" format="dimension" />
+        <attr name="digitSpacing" format="dimension" />
+        <attr name="digitBackground" format="reference|color" />
+        <attr name="digitTextSize" format="dimension" />
+        <attr name="digitTextColor" format="color" />
+        <attr name="digitElevation" format="dimension" />
+        <attr name="mask" />
+        <attr name="pinAccentColor" format="color" />
+        <attr name="accentWidth" format="dimension" />
+        <attr name="accentType" format="enum">
+            <enum name="none" value="0" />
+            <enum name="all" value="1" />
+            <enum name="character" value="2" />
+        </attr>
+        <!-- Input type -->
+        <attr name="pinInputType" format="enum">
+            <enum name="text" value="1" />
+            <enum name="number" value="2" />
+        </attr>
+        <!-- Only draw accent when View has focus -->
+        <attr name="accentRequiresFocus" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="SearchAnimationToolbar">
+        <attr name="title" format="string" />
+        <attr name="titleTextColor" format="color" />
+        <attr name="subtitle" format="string" />
+        <attr name="subtitleTextColor" format="color" />
+        <attr name="searchHint" format="string" />
+        <attr name="searchBackgroundColor" format="color" />
+
+    </declare-styleable>
+</resources>

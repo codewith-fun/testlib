@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="?actionBarSize"
+    android:layout_alignParentBottom="true"
+    app:cardBackgroundColor="?attr/cardBgColor"
+    app:cardElevation="4dp"
+>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+        <!--Home-->
+        <LinearLayout
+            android:id="@+id/ll_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:background="?selectableItemBackground"
+            android:focusable="true"
+            android:clickable="true"
+            tools:ignore="UseCompoundDrawables">
+            <View
+                android:id="@+id/divider_home"
+                android:layout_width="match_parent"
+                android:background="?attr/accentColor"
+                android:visibility="gone"
+                android:layout_height="2dp"/>
+            <ImageView
+                android:id="@+id/iv_home"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/app_name"
+                android:padding="@dimen/padding_all_very_small"
+                android:src="@mipmap/ic_bottombar_home_inactive"
+                app:tint="@color/colorGrey_400"
+                 />
+
+            <investwell.utils.customView.CustomTextViewRegular
+                android:id="@+id/tv_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/margin_all_very_small"
+                android:text="@string/main_bottom_tab_menu_dashboard"
+                android:textAlignment="center"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="@color/colorGrey_400"
+                android:textSize="@dimen/textView_all_size_14" />
+
+        </LinearLayout>
+
+        <!--Search-->
+        <LinearLayout
+            android:id="@+id/ll_search"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?selectableItemBackground"
+            android:focusable="true"
+            android:clickable="true"
+            android:visibility="gone"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables">
+            <View
+                android:id="@+id/divider_search"
+                android:layout_width="match_parent"
+                android:background="?attr/accentColor"
+                android:visibility="gone"
+                android:layout_height="2dp"/>
+            <ImageView
+                android:id="@+id/iv_search"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/app_name"
+                android:padding="@dimen/padding_all_very_small"
+                app:srcCompat="@drawable/search"
+                app:tint="@color/colorGrey_400"
+                />
+
+            <investwell.utils.customView.CustomTextViewRegular
+                android:id="@+id/tv_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/margin_all_very_small"
+                android:text="@string/main_bottom_tab_menu_search"
+                android:textAlignment="center"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="@color/colorGrey_400"
+                android:textSize="@dimen/textView_all_size_14" />
+
+        </LinearLayout>
+
+        <!--Profile-->
+        <LinearLayout
+            android:id="@+id/ll_profile"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="?selectableItemBackground"
+            android:focusable="true"
+            android:visibility="gone"
+            android:clickable="true"
+            tools:ignore="UseCompoundDrawables">
+            <View
+                android:id="@+id/divider_profile"
+                android:layout_width="match_parent"
+                android:background="?attr/accentColor"
+                android:visibility="gone"
+                android:layout_height="2dp"/>
+            <ImageView
+                android:id="@+id/iv_profile"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/app_name"
+                android:padding="@dimen/padding_all_very_small"
+                android:src="@drawable/investnow"
+                app:tint="@color/colorGrey_400"
+                />
+
+            <investwell.utils.customView.CustomTextViewRegular
+                android:id="@+id/tv_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/margin_all_very_small"
+                android:text="@string/main_bottom_tab_menu_profile"
+                android:textAlignment="center"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="@color/colorGrey_400"
+                android:textSize="@dimen/textView_all_size_14" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

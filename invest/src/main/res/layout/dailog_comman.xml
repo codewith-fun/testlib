@@ -1,0 +1,99 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_all_very_small"
+    style="@style/CardViewStyle">
+    <LinearLayout
+        android:id="@+id/linerMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="?attr/primaryButtonBackground"
+            android:gravity="center">
+
+
+            <investwell.utils.customView.CustomTextViewBold
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/txt_permission"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/textView_all_size_16"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+
+            <investwell.utils.customView.CustomTextViewRegular
+                android:id="@+id/tvMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="?attr/primaryTextColor"
+                android:gravity="start"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="@dimen/textView_all_size_18" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="@dimen/margin_all_regular"
+            android:layout_marginTop="@dimen/margin_all_regular"
+            android:layout_marginRight="@dimen/margin_all_regular"
+            android:layout_marginLeft="@dimen/margin_all_regular"
+            android:orientation="horizontal">
+
+            <investwell.utils.customView.CustomButton
+                android:id="@+id/tvCancel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:background="?attr/secondaryBtnDrawable"
+                android:gravity="center"
+                android:text="@string/txt_cancel"
+
+                android:textColor="?attr/secondaryButtonTextColor"
+                android:textSize="@dimen/textView_all_size_14"
+                android:layout_weight="1"
+                />
+
+            <investwell.utils.customView.CustomButton
+                android:id="@+id/tvOk"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:background="?attr/primaryBtnDrawable"
+                android:textColor="?attr/primaryButtonTextColor"
+                android:gravity="center"
+                android:text="@string/txt_Go_Setting"
+                android:textSize="@dimen/textView_all_size_14"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/margin_all_small"
+                android:layout_marginStart="@dimen/margin_all_small" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

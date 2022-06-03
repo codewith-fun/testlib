@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rrmain"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/ivDelete"
+                android:padding="@dimen/margin_5dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:orientation="horizontal">
+                <investwell.utils.customView.CustomTextViewBold
+                    android:id="@+id/tvPercent"
+                    android:layout_width="60dp"
+                    android:layout_gravity="right"
+                    android:layout_height="wrap_content"
+                    android:text="@string/allocated_folio_detail_txt"
+                    android:textColor="?attr/primaryTextColor"
+                    android:textSize="@dimen/textView_all_size_16"
+                    android:textStyle="bold" />
+
+
+                <investwell.utils.customView.CustomTextViewRegular
+                    android:id="@+id/tvSchemeName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/allocated_folio_detail_txt"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="@dimen/margin_5dp"
+                    android:textSize="@dimen/textView_all_size_14" />
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ivDelete"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/recycle_bin"
+                android:layout_alignParentRight="true"/>
+
+
+
+
+
+
+        </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGrey_200"
+        android:layout_below="@+id/rrmain"/>
+
+</RelativeLayout>

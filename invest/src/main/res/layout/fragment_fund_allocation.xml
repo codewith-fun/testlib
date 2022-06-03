@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="investwell.client.fragment.others.FundAllocation">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.github.mikephil.charting.charts.HorizontalBarChart
+                android:id="@+id/fund_chart"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="@dimen/margin_all_regular"
+                />
+
+            <ImageView
+                android:id="@+id/fund_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/back_arrow"
+                android:padding="10dp"
+                android:visibility="invisible"
+                android:textAllCaps="false" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="2dp"
+                app:cardCornerRadius="2dp"
+                app:cardBackgroundColor="?attr/cardBgColor"
+                android:layout_margin="@dimen/margin_all_small"
+                android:layout_below="@+id/fund_chart"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/primaryButtonBackground"
+android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <investwell.utils.customView.CustomTextViewBold
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+
+                            android:layout_height="wrap_content"
+                            android:layout_margin="3dp"
+                            android:id="@+id/name"
+                            android:textSize="@dimen/textView_all_size_14"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorWhite"
+                            android:text="@string/fund_allocation_fund_header_txt" />
+                        <investwell.utils.customView.CustomTextViewBold
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorWhite"
+                            android:layout_margin="3dp"
+                            android:textSize="@dimen/textView_all_size_14"
+                            android:textStyle="bold"
+                            android:gravity="end"
+                            android:text="@string/fund_allocation_market_value_txt" />
+                        <investwell.utils.customView.CustomTextViewBold
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorWhite"
+                            android:layout_margin="3dp"
+                            android:textSize="@dimen/textView_all_size_14"
+
+                            android:gravity="end"
+                            android:textStyle="bold"
+                            android:text="@string/fund_allocation_percentage_txt"
+                            android:layout_alignParentRight="true"/>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorGrey_250"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/fund_recycle">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+                </LinearLayout>
+
+
+
+
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</FrameLayout>

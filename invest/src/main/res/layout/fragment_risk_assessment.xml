@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="investwell.client.fragment.goalbased.Fragment.StartAssessmentFrag">
+
+
+    <fragment
+        android:id="@+id/frag_toolBar"
+        android:name="investwell.client.fragment.others.ToolbarFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/frag_toolBar">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/know_risk_profile" />
+
+        <investwell.utils.customView.CustomTextViewRegular
+            android:id="@+id/heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/icon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/risk_assesment_header_txt"
+            android:textColor="#000"
+            android:textSize="@dimen/textView_all_size_16" />
+
+        <investwell.utils.customView.CustomTextViewRegular
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/heading"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:text="@string/risk_assesment_desc_txt"
+            android:textAlignment="center"
+            android:textSize="@dimen/textView_all_size_14" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/description"
+           style="@style/CardViewStyle"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp"
+             >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/risk_profile"/>
+
+                    <investwell.utils.customView.CustomTextViewRegular
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/risk_assesment_invest_risk_txt"
+                        android:textColor="?attr/primaryTextColor"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:textSize="@dimen/textView_all_size_14"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/risko_meter"/>
+
+                    <investwell.utils.customView.CustomTextViewRegular
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/risk_assesment_riskometer_txt"
+                        android:textColor="?attr/primaryTextColor"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:textSize="@dimen/textView_all_size_14"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/better_investment_choice"/>
+
+                    <investwell.utils.customView.CustomTextViewRegular
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/risk_assesment_make_better_investment_choices_txt"
+                        android:textColor="?attr/primaryTextColor"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:textSize="@dimen/textView_all_size_14"/>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+    <investwell.utils.customView.CustomButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/submit"
+        android:layout_alignParentBottom="true"
+        android:background="?attr/primaryBtnDrawable"
+        android:text="@string/risk_assesment_btn_start_assessment_txt"
+        android:textAllCaps="false"
+        android:layout_margin="@dimen/margin_all_small"
+        android:textColor="?attr/primaryButtonTextColor"
+        android:textSize="@dimen/textView_all_size_16"/>
+</RelativeLayout>

@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_parent_sip"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_margin="@dimen/margin_all_very_small">
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/cv_sip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_all_very_small"
+
+        app:cardBackgroundColor="?attr/cardBgColor"
+        android:padding="@dimen/padding_all_small"
+        app:cardCornerRadius="@dimen/card_corner_all_radius_small"
+        app:cardElevation="@dimen/card_all_elevation">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+
+            <investwell.utils.customView.CustomTextViewBold
+                android:id="@+id/tv_investor_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="@dimen/margin_all_small"
+                android:layout_marginTop="@dimen/margin_all_very_small"
+                android:layout_marginEnd="@dimen/margin_all_small"
+
+                android:maxLines="3"
+                android:paddingTop="@dimen/padding_all_very_small"
+                android:paddingBottom="@dimen/padding_all_very_small"
+                android:text="@string/my_sip_investor_name"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/textView_all_size_14"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+
+            <investwell.utils.customView.CustomTextViewBold
+                android:id="@+id/tv_scheme_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_investor_value"
+                android:layout_marginStart="@dimen/margin_all_small"
+                android:layout_marginTop="@dimen/margin_all_very_small"
+                android:layout_marginEnd="@dimen/margin_all_small"
+                android:layout_marginBottom="@dimen/margin_all_very_small"
+                android:text="@string/my_sip_scheme_name_placeholder"
+                android:textColor="?attr/primaryTextColor"
+                android:textSize="@dimen/textView_all_size_14"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/ll_total_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_investor_value"
+                android:layout_marginEnd="@dimen/margin_all_small"
+                android:orientation="horizontal"
+
+                android:visibility="gone">
+
+                <investwell.utils.customView.CustomTextViewBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_all_small"
+                    android:layout_marginTop="@dimen/margin_all_very_small"
+                    android:layout_marginEnd="@dimen/margin_all_small"
+                    android:layout_marginBottom="@dimen/margin_all_very_small"
+                    android:text="@string/my_sip_total_amount_placeholder"
+                    android:textColor="?attr/primaryTextColor"
+                    android:textSize="@dimen/textView_all_size_14"
+                    android:textStyle="bold" />
+
+                <investwell.utils.customView.CustomTextViewBold
+                    android:id="@+id/tv_amount_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_all_small"
+                    android:layout_marginEnd="@dimen/margin_all_small"
+                    android:layout_marginBottom="@dimen/margin_all_very_small"
+                    android:text="@string/my_sip_scheme_name"
+                    android:textColor="?attr/secondaryTextColor"
+                    android:textSize="@dimen/textView_all_size_14"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_row_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_scheme_value"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="15">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:orientation="vertical">
+
+                    <investwell.utils.customView.CustomTextViewRegular
+                        android:id="@+id/tv_folio_placeholder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_all_small"
+                        android:layout_marginTop="@dimen/margin_all_very_small"
+                        android:layout_marginEnd="@dimen/margin_all_small"
+                        android:layout_marginBottom="@dimen/margin_all_very_small"
+                        android:text="@string/my_sip_folio_plceholder"
+                        android:textColor="?attr/secondaryTextColor"
+                        android:textSize="@dimen/textView_all_size_14" />
+
+                    <investwell.utils.customView.CustomTextViewBold
+                        android:id="@+id/tv_folio_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_all_small"
+
+                        android:layout_marginEnd="@dimen/margin_all_small"
+                        android:layout_marginBottom="@dimen/margin_all_very_small"
+                        android:textColor="?attr/primaryTextColor"
+                        android:textSize="@dimen/textView_all_size_14"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_middle_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:orientation="vertical">
+
+                    <investwell.utils.customView.CustomTextViewRegular
+                        android:id="@+id/tv_installment_placeholder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_all_small"
+                        android:layout_marginTop="@dimen/margin_all_very_small"
+android:gravity="center"
+                        android:layout_marginBottom="@dimen/margin_all_very_small"
+                        android:text="@string/my_sip_started_on_placeholder"
+                        android:textColor="?attr/secondaryTextColor"
+                        android:textSize="@dimen/textView_all_size_14" />
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toEndOf="@+id/tv_installment_placeholder"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/info"
+                        android:visibility="invisible" />
+
+                    <investwell.utils.customView.CustomTextViewBold
+                        android:id="@+id/tv_installment_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_installment_placeholder"
+                        android:layout_marginStart="@dimen/margin_all_small"
+android:gravity="center"
+                        android:layout_marginEnd="@dimen/margin_all_small"
+                        android:layout_marginBottom="@dimen/margin_all_very_small"
+                        android:textColor="?attr/secondaryTextColor"
+                        android:textSize="@dimen/textView_all_size_14"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:orientation="vertical">
+
+                    <investwell.utils.customView.CustomTextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_all_small"
+                        android:layout_marginTop="@dimen/margin_all_very_small"
+                        android:layout_marginEnd="@dimen/margin_all_small"
+                        android:layout_marginBottom="@dimen/margin_all_very_small"
+                        android:layout_gravity="end"
+                        android:text="@string/fixed_amount_placeholder"
+                        android:textColor="?attr/secondaryTextColor"
+                        android:textSize="@dimen/textView_all_size_14" />
+
+                    <investwell.utils.customView.CustomTextViewBold
+                        android:id="@+id/tv_sip_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_all_small"
+android:layout_gravity="end"
+
+                        android:layout_marginEnd="@dimen/margin_all_small"
+                        android:layout_marginBottom="@dimen/margin_all_very_small"
+                        android:textColor="@color/colorGreen"
+                        android:textSize="@dimen/textView_all_size_14"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <View
+                android:id="@+id/dividend_two"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/ll_row_two"
+                android:layout_marginStart="@dimen/margin_all_small"
+                android:layout_marginLeft="@dimen/margin_all_small"
+                android:layout_marginEnd="@dimen/margin_all_small"
+                android:layout_marginRight="@dimen/margin_all_small"
+                android:background="@color/colorGrey_250"
+                android:visibility="gone" />
+
+            <investwell.utils.customView.CustomTextViewRegular
+                android:id="@+id/tv_endDate_placeholder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dividend_two"
+                android:layout_marginStart="@dimen/margin_all_small"
+                android:layout_marginTop="@dimen/margin_all_very_small"
+                android:layout_marginEnd="@dimen/margin_all_small"
+                android:layout_toStartOf="@+id/tv_endDate_value"
+                android:text="@string/my_sip_ending_on_date"
+                android:textColor="?attr/secondaryTextColor"
+                android:textSize="@dimen/textView_all_size_14"
+                android:textStyle="italic"
+                android:visibility="gone" />
+
+            <investwell.utils.customView.CustomTextViewRegular
+                android:id="@+id/tv_endDate_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dividend_two"
+                android:layout_alignParentEnd="true"
+
+                android:layout_marginTop="@dimen/margin_all_very_small"
+                android:layout_marginEnd="@dimen/margin_all_small"
+                android:layout_marginBottom="@dimen/margin_all_small"
+                android:text="@string/app_name"
+                android:textColor="?attr/secondaryTextColor"
+                android:textSize="@dimen/textView_all_size_14"
+                android:textStyle="italic|bold"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_gravity="bottom"
+            android:background="#6E85C2"
+            android:visibility="gone" />
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
+

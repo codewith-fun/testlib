@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="?attr/accentColor">
+
+        <ImageView
+            android:id="@+id/ivLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="left"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:src="@mipmap/ic_arrow_back" />
+
+        <ImageView
+            android:id="@+id/ivRotate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="left"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/tvCrop"
+            android:gravity="center"
+            android:src="@mipmap/crop_image_menu_rotate_left" />
+
+        <investwell.utils.customView.CustomTextViewBold
+            android:id="@+id/tvCrop"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/crop_image_txt"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/textView_all_size_18"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <investwell.utils.crop.CropImageView
+        android:id="@+id/cropImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

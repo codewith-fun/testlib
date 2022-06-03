@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+
+
+
+        <LinearLayout
+            android:id="@+id/top_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <investwell.utils.customView.CustomTextViewRegular
+                            android:id="@+id/applicant_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="7dp"
+                            android:layout_weight="1"
+
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorPurple"
+                            android:textSize="@dimen/textView_all_size_14"
+                            android:textStyle="bold" />
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_toLeftOf="@+id/ll_add_purchase"
+                                android:orientation="vertical">
+
+                                <investwell.utils.customView.CustomTextViewRegular
+                                    style="@style/FormTextViewStyling"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.8"
+                                    android:gravity="right"
+                                    android:text="@string/portfolio_client_market_value_txt"
+                                    android:textColor="#aea6a6"
+                                    android:textSize="@dimen/textView_all_size_14" />
+
+                                <investwell.utils.customView.CustomTextViewBold
+                                    android:id="@+id/tv_market_value"
+                                    style="@style/FormTextViewStyling"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|left"
+                                    android:gravity="right"
+
+                                    android:textColor="?attr/primaryTextColor"
+                                    android:textSize="@dimen/textView_all_size_18"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_add_purchase"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:orientation="vertical"
+                                android:visibility="invisible">
+
+                                <investwell.utils.customView.CustomTextViewRegular
+                                    style="@style/FormTextViewStyling"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.8"
+                                    android:gravity="right"
+                                    android:text="@string/portfolio_client_folio_txt"
+                                    android:textColor="#aea6a6"
+                                    android:textSize="@dimen/textView_all_size_14" />
+
+                                <investwell.utils.customView.CustomTextViewRegular
+                                    android:id="@+id/folio"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="bottom"
+                                    android:layout_marginRight="20dp"
+                                    android:textColor="?attr/primaryTextColor"
+                                    android:textSize="@dimen/textView_all_size_14"
+                                    android:textStyle="italic" />
+
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_weight="1"
+                        android:background="#f2f2f2" />
+
+                    <ImageView
+                        android:id="@+id/next_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/forward_arrow" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-5dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:orientation="vertical">
+
+                        <investwell.utils.customView.CustomTextViewRegular
+                            style="@style/FormTextViewStyling"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_weight="1.8"
+                            android:maxLines="1"
+                            android:text="@string/portfolio_client_purchase_cost_txt"
+                            android:textColor="#aea6a6"
+                            android:textSize="@dimen/textView_all_size_14" />
+
+                        <investwell.utils.customView.CustomTextViewBold
+                            android:id="@+id/purchase_cost"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:layout_weight="1.2"
+android:textColor="?attr/primaryTextColor"
+                            android:textSize="@dimen/textView_all_size_14"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:orientation="vertical">
+
+                        <investwell.utils.customView.CustomTextViewRegular
+                            style="@style/FormTextViewStyling"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_weight="1.8"
+                            android:text="@string/portfolio_client_gain_txt"
+                            android:textColor="#aea6a6"
+                            android:textSize="@dimen/textView_all_size_14" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <investwell.utils.customView.CustomTextViewBold
+                                android:id="@+id/gain"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textColor="?attr/primaryTextColor"
+                                android:textSize="@dimen/textView_all_size_14"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/gain_arrow"
+                                android:layout_width="15dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <investwell.utils.customView.CustomTextViewRegular
+                            style="@style/FormTextViewStyling"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.8"
+                            android:text="@string/portfolio_client_cagr_txt"
+                            android:textColor="#aea6a6"
+                            android:textSize="@dimen/textView_all_size_14" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <investwell.utils.customView.CustomTextViewBold
+                                android:id="@+id/cagr"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="?attr/primaryTextColor"
+                                android:textSize="@dimen/textView_all_size_14"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/cagr_arrow"
+                                android:layout_width="15dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center|left"
+                                android:contentDescription="@string/app_name" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@drawable/dashed_line"
+
+                ></View>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+</LinearLayout>

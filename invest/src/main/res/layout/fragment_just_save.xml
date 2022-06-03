@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <fragment
+        android:id="@+id/frag_toolBar"
+        android:layout_width="match_parent"
+        android:name="investwell.client.fragment.others.ToolbarFragment"
+        android:layout_height="wrap_content"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:src="@mipmap/just_save" />
+
+
+            <investwell.utils.customView.CustomTextViewRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="@string/just_save_header_desc_txt"
+                android:textAlignment="center"
+                android:textColor="?attr/primaryTextColor"
+                android:textSize="@dimen/textView_all_size_14" />
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                style="@style/CardViewStyle">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/autoComplete"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_grey_border"
+                        android:drawableRight="@drawable/search"
+                        android:drawableTint="@color/colorBlack"
+                        android:hint="@string/jsut_save_searc_hint_txt"
+                        android:padding="7dp" />
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <investwell.utils.customView.CustomButton
+                android:id="@+id/savebtn"
+                android:layout_width="@dimen/btn_width_footer"
+                android:layout_height="@dimen/btn_height_footer"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="?attr/primaryBtnDrawable"
+                android:ems="12"
+                android:text="@string/just_save_footer_btn_txt"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="18dp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

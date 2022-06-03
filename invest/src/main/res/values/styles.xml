@@ -1,0 +1,183 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+
+
+    <style name="AppBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+    </style>
+
+    <style name="AppModalStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/bottomsheet_bg</item>
+    </style>
+    <style name="full_screen_dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:windowBackground">@null</item>
+    </style>
+    <style name="DialogTheme">
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/shake_anim</item>
+    </style>
+
+    <style name="FormTextViewStyling">
+        <item name="android:textColor">@color/colorTertiary</item>
+        <item name="android:textSize">12sp</item>
+
+    </style>
+
+
+    <!--CardView styling Overall App-->
+
+
+    <style name="textview2">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+    <style name="SpinnerStyling">
+        <item name="android:textColor">#000</item>
+        <item name="android:textSize">12sp</item>
+
+    </style>
+
+    <style name="spinner_text_style">
+        <item name="android:textColor">#000</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:background">@null</item>
+    </style>
+
+
+    <style name="textview_style">
+        <item name="android:textSize">@dimen/textView_all_size_14</item>
+        <item name="android:textColor">#000</item>
+
+    </style>
+
+    <style name="heading_textview_style">
+        <item name="android:textSize">@dimen/textView_all_size_14</item>
+        <item name="android:textColor">#7f7f7f</item>
+
+    </style>
+
+    <style name="radio_style">
+        <item name="android:textSize">@dimen/textView_all_size_14</item>
+        <item name="android:textColor">#000</item>
+    </style>
+
+
+    <style name="heading_textview">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">@dimen/textView_all_size_18</item>
+    </style>
+
+
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@color/colorPrimary</item>
+    </style>
+
+
+    <style name="customRatingBar" parent="Widget.AppCompat.RatingBar.Small">
+        <item name="android:numStars">5</item>
+        <item name="android:colorControlActivated" tools:ignore="NewApi">#fa990e</item>
+        <item name="android:colorControlNormal" tools:ignore="NewApi">#fa990e</item>
+    </style>
+
+
+    <style name="filter_title_text">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Medium</item>
+        <item name="android:textColor">#000</item>
+    </style>
+
+
+    <style name="MyTheme" parent="android:Theme.Holo.Dialog">
+        <item name="android:alertDialogStyle">@style/CustomAlertDialogStyle</item>
+        <item name="android:windowBackground">@color/colorTransparent</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="CustomAlertDialogStyle">
+        <item name="android:bottomBright">@color/colorTransparent</item>
+        <item name="android:bottomDark">@color/colorTransparent</item>
+        <item name="android:bottomMedium">@color/colorTransparent</item>
+        <item name="android:centerBright">@color/colorTransparent</item>
+        <item name="android:centerDark">@color/colorTransparent</item>
+        <item name="android:centerMedium">@color/colorTransparent</item>
+        <item name="android:fullBright">@color/colorTransparent</item>
+        <item name="android:fullDark">@color/colorTransparent</item>
+        <item name="android:topBright">@color/colorTransparent</item>
+        <item name="android:topDark">@color/colorTransparent</item>
+    </style>
+
+    <style name="colortheme" parent="TextAppearance.AppCompat">
+
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="colorControlNormal">@color/colorPrimary</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+    </style>
+
+
+    <style name="fundpicks_period_value">
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="fundpicks_period">
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Small</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+
+    <style name="PFLockScreenButtonStyle" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:background">@drawable/touch_selector_pf</item>
+    </style>
+
+    <style name="PFLockScreenDeleteButtonStyle">
+        <item name="android:src">@mipmap/delete_lockscreen_pf</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+
+    <style name="PFCheckBox">
+        <item name="android:checkboxStyle">@style/PFLockScreenCodeStyle</item>
+        <item name="checkboxStyle">@style/PFLockScreenCodeStyle</item>
+    </style>
+
+    <style name="PFLockScreenCodeStyle">
+        <item name="android:button">@drawable/code_selector_pf</item>
+    </style>
+
+    <style name="CustomTextAppearanceTab" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">14sp</item>
+
+    </style>
+
+</resources>

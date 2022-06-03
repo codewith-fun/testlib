@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorWhite"
+    android:id="@+id/ll_language_support"
+    android:layout_height="60dp">
+    <View
+        android:id="@+id/v_border"
+        android:layout_width="5dp"
+        android:background="@drawable/bordered_lang_bg"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:visibility="gone"
+        android:contentDescription="@string/app_name" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_all_small"
+        tools:ignore="UselessParent">
+
+        <investwell.utils.customView.CustomTextViewBold
+            android:id="@+id/tv_language"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_all_very_small"
+            android:text="@string/app_name"
+            android:textSize="@dimen/textView_all_size_16"
+            android:textColor="?attr/primaryTextColor"
+            android:textStyle="bold" />
+
+        <investwell.utils.customView.CustomTextViewRegular
+            android:id="@+id/tv_alternate_language"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_language"
+            android:layout_toEndOf="@+id/tv_language"
+            android:visibility="gone"
+            android:layout_toRightOf="@+id/tv_language"
+            android:textColor="@color/colorGrey_400"
+            android:padding="@dimen/padding_all_very_small"
+            android:text="@string/app_name" />
+        <ImageView
+            android:id="@+id/iv_checked_lang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_language_checked"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:contentDescription="@string/app_name"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+</LinearLayout>

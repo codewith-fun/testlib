@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="5dp">
+
+    <investwell.utils.customView.CustomTextViewBold
+        android:id="@+id/colorBlue"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:textColor="@color/colorPurple"
+        android:textSize="@dimen/textView_all_size_12"
+        android:textStyle="bold" />
+
+
+    <investwell.utils.customView.CustomTextViewBold
+        android:id="@+id/amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/colorPurple"
+        android:textSize="@dimen/textView_all_size_12"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/year_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/colorBlue"
+        android:layout_marginLeft="10dp"
+        android:layout_marginVertical="@dimen/margin_5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <investwell.utils.customView.CustomTextViewRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/goal_based_scheme_1_yr_title_txt"
+                android:textSize="@dimen/textView_all_size_12" />
+
+            <investwell.utils.customView.CustomTextViewRegular
+                android:id="@+id/first_year_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textColor="?attr/primaryTextColor"
+                android:textSize="@dimen/textView_all_size_14" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <investwell.utils.customView.CustomTextViewRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/goal_based_scheme_3_yrs_title_txt"
+                android:textSize="@dimen/textView_all_size_12" />
+
+            <investwell.utils.customView.CustomTextViewRegular
+                android:id="@+id/third_year_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textColor="?attr/primaryTextColor"
+                android:textSize="@dimen/textView_all_size_14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <investwell.utils.customView.CustomTextViewRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/goal_based_scheme_5_yrs_title_txt"
+                android:textSize="@dimen/textView_all_size_12" />
+
+            <investwell.utils.customView.CustomTextViewRegular
+                android:id="@+id/fifth_year_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textColor="?attr/primaryTextColor"
+                android:textSize="@dimen/textView_all_size_14" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/year_layout"
+        android:layout_marginTop="10dp"
+        android:background="#f2f2f2" />
+
+</RelativeLayout>

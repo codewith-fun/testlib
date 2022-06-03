@@ -1,0 +1,2074 @@
+<resources>
+    <!--App Info -->
+    <string name="app_name" translatable="false">Investwell</string>
+    <string name="user_choice_for_login">I\'m registered user. Login &amp; view Portfolio. </string>
+    <string name="facebook_app_id" translatable="false">634311953985647</string>
+    <string name="app_language_english" translatable="false">English</string>
+    <string name="app_language_bengali" translatable="false">Bengali</string>
+    <string name="app_language_gujrati" translatable="false">Gujarati</string>
+    <string name="app_language_hindi" translatable="false">Hindi</string>
+    <string name="app_language_kannada" translatable="false">Kannada</string>
+    <string name="app_language_marathi" translatable="false">Marathi</string>
+    <string name="app_language_tamil" translatable="false">Tamil</string>
+    <string name="app_language_telgu" translatable="false">Telugu</string>
+    <string name="app_language_english_inverse" translatable="false">English</string>
+    <string name="app_language_gujrati_inverse" translatable="false">ગુજરાતી</string>
+    <string name="app_language_bengali_inverse" translatable="false">বাংলা</string>
+    <string name="app_language_hindi_inverse" translatable="false">हिंदी</string>
+    <string name="app_language_kannada_inverse" translatable="false">ಕನ್ನಡ</string>
+    <string name="app_language_marathi_inverse" translatable="false">मराठी</string>
+    <string name="app_language_tamil_inverse" translatable="false">தமிழ்</string>
+    <string name="app_language_telgu_inverse" translatable="false">తెలుగు</string>
+    <!--End App Info-->
+    <string name="order_auth_message" translatable="false">Order Authentication Required. if already done. Please \'Refresh\' or \'Delete\' to process further</string>
+
+    <!--Splash Screen-->
+    <!--End Splash Screen-->
+
+
+    <!--Nav Drawer-->
+
+
+    <!--Dialogs-->
+    <string name="dialog_no_mandate_header_txt">Required AutoPay</string>
+    <string name="dialog_no_mandate_mini_header_txt">Create an AutoPay Mandate</string>
+    <string name="dialog_no_mandate_btn_cancel_txt">Cancel</string>
+    <string name="dialog_no_mandate_btn_proceed_txt">Proceed</string>
+    <string name="dialog_title_permission_denied">Permission Denied</string>
+    <string name="dialog_permission_denied_message_for_RM">You don\'t have permission to transact. </string>
+    <!--Dialogs-->
+
+
+    <!--Alert Dialog-->
+    <string name="alert_dialog_header_txt">Alert</string>
+    <string name="alert_dialog_notification_header_txt">Notification</string>
+    <string name="alert_dialog_order_placed_sucess_txt">Success</string>
+    <string name="alert_dialog_error_txt">Error</string>
+    <string name="alert_dialog_notify_desc_txt">Do you want to receive notification? If Yes, Please enable on next screen.</string>
+    <string name="alert_dialog_confirmation_header_txt">Confirmation</string>
+    <string name="alert_dialog_btn_no_txt">No</string>
+    <string name="alert_dialog_yes_btn_txt">Yes</string>
+    <string name="alert_dialog_later_txt" translatable="false">Later</string>
+    <string name="alert_dialog_continue_txt" translatable="false">Continue</string>
+    <string name="alert_dialog_btn_txt">OK</string>
+    <string name="alert_dialog_pin_reset" translatable="false">Do you really want to reset?</string>
+    <string name="alert_dialog_logout_desc_txt">You will have to enter your security lock when you relaunch the app</string>
+    <string name="alert_dialog_delete_scheme_txt">Do you really want to delete?</string>
+    <string name="alert_dialog_delete_goal_txt">Do you really want to delete this Goal ?</string>
+    <string name="alert_dialog_no_risk_profile_txt" translatable="false">Risk Profile is required before making Goal, Please Process. </string>
+    <string name="alert_dialog_no_risk_profile_txt2" translatable="false">Before investment, you are required to complete your Risk Profile. Please Process. </string>
+    <!--End Alert Dialog-->
+
+    <!--ToolBar Titles-->
+    <string name="toolBar_title_factsheet">Factsheet</string>
+    <string name="toolBar_title_select_scheme">Select Scheme to Invest</string>
+    <string name="toolBar_title_my_cart">My Cart</string>
+    <string name="toolBar_title_nfo">New Fund Offers</string>
+    <string name="toolBar_title_goal">Goal i want to achieve</string>
+    <string name="toolBar_title_marriage_cal">Marriage Calculator</string>
+    <string name="toolBar_title_education_cal">Education Calculator</string>
+    <string name="toolBar_title_sip_cal">SIP Calculator</string>
+    <string name="toolBar_title_lumpsum_cal">Lumpsum Calculator</string>
+    <string name="toolBar_title_delay_sip_cal">Cost Of Delay SIP</string>
+    <string name="toolBar_title_retirement_cal">Retirement Calculator</string>
+    <string name="toolBar_title_my_journey_so_far">My Journey so far</string>
+    <string name="toolBar_title_invest_now">Invest Now</string>
+    <string name="toolBar_title_my_insurance">Insurance</string>
+    <string name="toolBar_title_transfer_holding">Transfer Holding</string>
+    <string name="toolBar_title_notifications">Notifications</string>
+    <string name="toolBar_title_recomended_schemes">Recommended Schemes</string>
+    <string name="toolBar_title_goal_schemes">Goal Based Schemes</string>
+    <string name="toolBar_title_personal_details_form">Personal Details</string>
+    <string name="toolBar_title_fatca_details_form">FATCA Details</string>
+    <string name="toolBar_title_nominee_details_form">Nominee Details</string>
+    <string name="toolBar_title_bank_details_form">Bank Details</string>
+    <string name="toolBar_title_address_details_form">Address Details</string>
+    <string name="toolBar_title_scheme_details">Scheme Details</string>
+    <string name="toolBar_title_portfolio_details">Portfolio Details</string>
+    <string name="toolBar_title_folio_transactions">Folio Transactions</string>
+    <string name="toolBar_title_outstanding_units">Outstanding Units</string>
+    <string name="toolBar_title_swp">SWP</string>
+    <string name="toolBar_title_sip">SIP</string>
+    <string name="toolBar_title_stp">STP</string>
+    <string name="toolBar_title_switch">SWITCH</string>
+    <string name="toolBar_title_add_purchase">Additional Purchase</string>
+    <string name="toolBar_title_redeem">Redeem</string>
+    <string name="toolBar_title_change_password">Change Password</string>
+    <string name="toolBar_title_start_assesment">Start Assessment</string>
+    <string name="toolBar_title_risk_profile_start" translatable="false">Risk Profile</string>
+    <string name="toolBar_title_assesment_result" translatable="false">Assessment Result</string>
+    <string name="toolBar_title_setting">Settings</string>
+    <!--End Toolbar Titles-->
+
+
+    <!--Main Activity Screen-->
+
+    <!--Nav Menu Strings-->
+    <string name="main_nav_title_journey">My Journey So Far</string>
+    <string name="main_nav_title_send_mail">Send Mail</string>
+    <string name="main_nav_title_watch_list">Watch List</string>
+    <string name="main_nav_title_invest">Invest Now</string>
+    <string name="main_nav_title_dividend">Dividend</string>
+    <string name="main_nav_title_my_insurance">My Insurance</string>
+    <string name="main_nav_title_tax_saving">Tax Saving</string>
+    <string name="main_nav_title_my_folio">My Folio</string>
+    <string name="main_nav_title_sys_invest">My SIP</string>
+    <string name="main_nav_title_my_sip">My SIP</string>
+    <string name="main_title_sip_cease" translatable="false">SIP CEASE</string>
+    <string name="main_bottom_tab_menu_dashboard">Dashboard</string>
+    <string name="main_bottom_tab_menu_portfolio">Portfolio</string>
+    <string name="main_bottom_tab_menu_transactions">Transactions</string>
+    <string name="main_bottom_tab_menu_profile">Profile</string>
+    <string name="main_bottom_tab_menu_search">Client Search</string>
+    <string name="main_bottom_tab_menu_more">More</string>
+    <string name="bottomsheet_hello_txt">Hello</string>
+    <string name="main_nav_title_my_orders">My Orders</string>
+    <string name="main_nav_title_mandate_list">Autopay Mandate List</string>
+    <string name="main_nav_title_fatca_creation">FATCA Creation</string>
+    <string name="main_nav_title_profile_detail">Profile Detail</string>
+    <string name="main_nav_title_my_folio_schemes">Folio Details</string>
+    <string name="main_nav_title_dividend_detail">Dividend Detail</string>
+    <string name="main_nav_title_my_risk_profile">Risk Profile</string>
+    <string name="main_nav_title_choose_your_goal">Choose your Financial Purpose</string>
+    <string name="main_nav_title_holding">Transfer Holding</string>
+    <string name="main_nav_title_invest_profile">Investment Profiles</string>
+    <!--Nav Menu Strings-->
+
+
+    <!--Nav Menu Strings-->
+
+
+    <!--PIN/Pattern Strings-->
+    <string name="pin_text_default_screen_lock">Use your screen lock</string>
+    <string name="pin_text_default_screen_lock_details">Protect this app by using your existing phone screen lock</string>
+    <string name="pin_text_Create_PIN">Create PIN</string>
+    <string name="pin_text_Create_PIN_Details">Create a 4-digit PIN.You\'ll need to  remember this pin at the time of login</string>
+    <string name="pin_text_SKIP">Skip</string>
+    <string name="pin_text_KIP_Details">I would like to skip extra app security screen lock and i wish to login by username and password </string>
+    <string name="pin_text_App_Security">Secure your App</string>
+    <string name="pin_text_Change_PIN">Change PIN</string>
+    <string name="pin_text_Change_PIN_Details">Change your PIN. You\'ll need to be remember this pin at the time of login</string>
+    <string name="pin_pattern_next_btn_txt">Next</string>
+    <string name="pin_pattern_forgot_txt">Forgot?</string>
+    <string name="pin_pattern_header_txt">Use PIN or Finger Touch</string>
+    <string name="pin_pattern_1_no_txt">1</string>
+    <string name="pin_pattern_2_no_txt">2</string>
+    <string name="pin_pattern_3_no_txt">3</string>
+    <string name="pin_pattern_4_no_txt">4</string>
+    <string name="pin_pattern_5_no_txt">5</string>
+    <string name="pin_pattern_6_no_txt">6</string>
+    <string name="pin_pattern_7_no_txt">7</string>
+    <string name="pin_pattern_8_no_txt">8</string>
+    <string name="pin_pattern_9_no_txt">9</string>
+    <string name="pin_pattern_0_no_txt">0</string>
+    <string name="pin_pattern_reset_btn_txt">Reset</string>
+    <!--End PIN/Pattern Strings-->
+
+    <!-- Help Strings-->
+    <string name="help_main_screen_title">Contact us</string>
+    <string name="help_contact_us_title">Contact Information</string>
+    <string name="help_faq_title">FAQs</string>
+    <string name="help_more_title">More</string>
+    <string name="help_text_privacy_policy">Privacy Policy</string>
+    <string name="help_text_terms_conditions">Terms &amp; Conditions</string>
+    <string name="help_text_Disclaimers">Testimonials</string>
+    <string name="help_next_installment_date">Help - Next Installment Date</string>
+    <string name="help_call_txt">Call</string>
+    <string name="help_txt_23432">23432</string>
+    <string name="help_manager_title">My Wealth Manager</string>
+    <string name="help_contact_title">Contact Us</string>
+    <string name="help_email_title_txt">E-mail</string>
+    <string name="help_website_title_txt">Website</string>
+    <string name="help_address_title_txt">Address</string>
+    <!--Help Strings-->
+
+
+    <!--End Main Activity Screen-->
+
+
+    <!--Login Activity Screen-->
+    <string name="login_et_user_hint_txt">User ID</string>
+    <string name="login_hint_et_password_txt">Password</string>
+    <string name="login_erorr_empty_username">Please provide your User ID</string>
+    <string name="login_erorr_empty_password">Please provide your password</string>
+    <string name="login_erorr_valid_password">Password must be atleast 4 characters long</string>
+    <string name="login_dont_have_account_txt">Don\'t have an account?</string>
+    <string name="login_sign_up_txt">Sign up</string>
+    <!--End of Login Activity Screen-->
+
+
+    <!--OTP Activity Screen-->
+    <string name="otp_success_footer_btn_txt">Initiate Onboarding Process</string>
+    <string name="otp_success_skip_later_txt"><![CDATA[Skip & Do it Later]]></string>
+    <string name="otp_verifiction_resend_btn_txt">Resend OTP</string>
+    <string name="otp_verification_sent_msg">OTP has been sent on above number</string>
+    <string name="otp_verification_phone_error">Something is wrong, we will fix it soon…</string>
+    <string name="otp_verification_invalid_code">Invalid code entered…</string>
+    <string name="otp_verification_sms_sent_desc">We\'ve sent you an SMS with a 6 digit verification code \non</string>
+    <string name="otp_verification_email_desc_txt">We\'ve sent you an Email with 6 digit verification code \non</string>
+    <string name="otp_verification_email_empty_error">Please enter OTP that sent on your email</string>
+    <string name="otp_verification_email_invalid_error">Invalid code</string>
+
+    <!--OTP Activity Screen-->
+
+
+    <!--Sign Up Screen-->
+    <string name="signup_et_user_hint_txt">Full name</string>
+    <string name="signup_hint_et_email_txt">E-mail</string>
+    <string name="signup_btn_txt">Register</string>
+    <string name="signup_hint_et_phone_txt">Mobile no.</string>
+    <string name="signup_already_have_account_txt">Already have an account?</string>
+    <string name="sign_up_login_txt">Sign In</string>
+    <string name="signup_error_full_name">Please enter your full name</string>
+    <string name="signup_error_full_name_length">Your name should be atleast 3 charactes long</string>
+    <string name="signup_error_mobile_no">Please enter your phone no.</string>
+    <string name="signup_error_mobile_no_length">Your phone no should be atleast 10 digit long</string>
+    <string name="signup_error_email">Please enter your e-mail</string>
+    <string name="signup_error_email_valid">Please enter valid email address</string>
+    <!--End Sign Up Screen-->
+
+
+    <!--Dashboard Screen-->
+
+    <string name="dashboard_default_view_your_portfolio_txt">View Your Portfolio</string>
+    <string name="login_default_view_your_portfolio_txt" translatable="false">Let\'s Get Started</string>
+    <string name="dashboard_login_btn_txt">Login</string>
+    <string name="dashboard_sign_up_btn_txt">Sign up</string>
+    <string name="dashboard_goal_tv_txt">Goal</string>
+    <string name="dashboard_goal_header_txt">I want to achieve</string>
+    <string name="dashboard_goal_desc_txt"><![CDATA[Plan investment to achieve your goals. Asses your Risk Profile.]]></string>
+    <string name="dashboard_believe_tv_txt">Believe</string>
+    <string name="dashboard_believe_header_txt">in our expertise</string>
+    <string name="dashboard_fund_tv_txt">Fund</string>
+    <string name="dashboard_fund_header_txt">Picks</string>
+    <string name="dashboard_top_perfromer_tv_txt">Pick</string>
+    <string name="dashboard_amc_tv_txt">Search</string>
+    <string name="dashboard_nfo_tv_txt">New</string>
+    <string name="dashboard_top_performer_header_txt">from Top Performers</string>
+    <string name="dashboard_amc_header_txt">by AMC</string>
+    <string name="dashboard_nfo_header_txt">Fund Offers</string>
+    <string name="dashboard_amc_desc_txt"><![CDATA[You can search schemes by selecting AMC and choose & invest.]]></string>
+    <string name="dashboard_finance_tool_lumpsum">Lumpsum\nCalculator</string>
+    <string name="dashboard_finance_tool_sip_cal">SIP\nCalculator</string>
+    <string name="dashboard_finance_tool_cost_sip">Cost of Delay\nSIP</string>
+    <string name="dashboard_finance_tool_education_cal">Education\nCalculator</string>
+    <string name="dashboard_finance_tool_marriage_cal">Marriage\nCalculator</string>
+    <string name="dashboard_finance_tool_retirement_cal">Retirement\nCalculator</string>
+    <string name="dasbboard_financial_tools_title_txt">Financial Tools</string>
+    <string name="dasbboard_invest_route_title_txt">Investment Route</string>
+    <string name="dashboard_home_pay_now_txt">Orders are pending due to payment</string>
+    <string name="dashboard_pay_now_btn_txt">Pay Now</string>
+    <string name="dasbboard_profile_incomplete_message">You are few steps away to activate your free investment account. Please complete it.</string>
+    <!--End Dashboard Screen-->
+
+
+    <!--Calculator Description-->
+    <string name="Scheme">Scheme</string>
+    <string name="Allocation">Suggested Allocation</string>
+
+
+    <!--FAQ Screen-->
+    <string name="faq_Q1">Can I add my family members in the same login?</string>
+    <string name="faq_Q2">I have placed an order on the app, is the order approved?</string>
+    <string name="faq_Q3">Do I need to pay any charges for using this platform?</string>
+    <string name="faq_Q4">Does your Organization guarantee any minimum return to the investor or give any indicative returns?</string>
+    <string name="faq_Q5">How do I transfer my existing mutual fund holdings to</string>
+    <string name="faq_Q6">Is my money transferred to you and then paid to the asset management company?</string>
+    <string name="faq_Q7">What is the cut-off time to get same day NAV?</string>
+    <string name="faq_Q8">How do I change my bank/contact details for my investments?</string>
+    <string name="faq_Q9">Can I redeem or transact in the folios created online through local mutual fund company\'s office?</string>
+    <string name="faq_Q10">I have been allotted units although the debit from my account was dishonoured?</string>
+    <string name="faq_A1">Yes</string>
+    <string name="faq_A2">You must go to your email given at the time of profile creation and check the email received from BSE/NSE with subject \"Order Authentication\". Follow the instructions given on the email.</string>
+    <string name="faq_A3">There are no usage charges taken from the investor for using this application.</string>
+    <string name="faq_A4">No, mutual fund investments are subject to market risk. Past performance does not guarantee future returns. Investors must assess their risk profile and consult a professional before investing.</string>
+    <string name="faq_A5">We will arrange a call back. Please send your request at</string>
+    <string name="faq_A6">No, your money is transferred to the Exchange (BSE/NSE) and then onwards to AMC (Asset Management Company). At no point is your money transferred to</string>
+    <string name="faq_A7">Normally, for liquid fund transactions cut-off is 1:30 p.m. and for other transactions it is 2:30 p.m.</string>
+    <string name="faq_A8">We can assist in updating your information. Please contact your Relationship Manager.</string>
+    <string name="faq_A9">Yes you can.</string>
+    <string name="faq_A10">Transactions below Rs. 2 lakhs get allotted before the funds are received. The transaction will be reversed in 5–7 workings days.</string>
+    <!--End FAQ Screen-->
+
+    <!--Watch List-->
+    <string name="watch_list_return_txt">Return</string>
+    <string name="watch_list_header_txt">View day change in NAV rate of your portfolio.</string>
+    <string name="watch_list_scheme_txt">Scheme</string>
+    <string name="watch_list_nav_txt">NAV</string>
+    <!--End Watch List-->
+
+    <!--My SIP-->
+    <string name="my_sip_investor_name">Investor Name</string>
+    <string name="my_sip_scheme_name_placeholder">Scheme Name</string>
+    <string name="my_sip_total_amount_placeholder">Total Amount :</string>
+    <string name="my_sip_scheme_name">Scheme Name</string>
+    <string name="my_sip_folio_plceholder">Folio</string>
+    <string name="my_sip_started_on_placeholder">Started on</string>
+    <string name="my_sip_ending_on_date">Ending on</string>
+    <string name="sip_invest_dialog_header">This is the due date of your next sip installment. Amount will be debited within 2 days before or after the due date sip installments that fall on holidays/weekends and are debited on the next business day</string>
+    <!--End My SIP-->
+
+
+    <!--My Folio-->
+    <!--End My Folio-->
+
+    <!--Broker DashBoard-->
+    <string name="broker_aum_value">AUM</string>
+    <string name="broker_No_of_Clients">No. of Clients</string>
+    <string name="broker_No_of_SIP">No of SIP</string>
+    <string name="broker_SIP_per_month">SIP per month</string>
+    <!--End Broker DashBoard-->
+
+    <!--Common-->
+    <string name="no_record_available">No record available</string>
+    <string name="no_investment_available">No investment available</string>
+    <!--End Broker DashBoard-->
+
+
+    <!--Crop Image Screen-->
+    <!--End Crop Image Screen-->
+
+    /******************************************************************************************************************************/
+    <!--Change Password-->
+    <string name="change_pwd_ques_txt">Do you want to change your\n current password ?</string>
+    <string name="change_password_hint_cp_txt">Current Password</string>
+    <string name="change_password_hint_np_txt">New Password</string>
+    <string name="change_pwd_do_it_later_btn_txt">Cancel</string>
+    <string name="change_pwd_reset_btn_txt">Reset</string>
+    <string name="change_password_hint_cnp_txt">Confirm New Password</string>
+    <!--End Change Password-->
+
+    /******************************************************************************************************************************/
+    <!--Payment Method Screen-->
+    <string name="payment_method_btn_txt">Continue</string>
+    <string name="payment_method_rb_netbanking_header_txt">Pay via Direct Netbanking</string>
+    <string name="payment_method_rb_netbanking_content_txt">On next screen all pending orders will be displayed with option to delete and pay through direct netbanking.</string>
+    <string name="payment_method_rb_bse_header_txt">Pay via One Time Mandate / UPI / RTGS</string>
+    <string name="payment_method_rb_content_txt"><![CDATA[On next screen you will have various payment methods like Netbanking, RTGS, NEFT & Debit Mandate.]]></string>
+    <!--Payment Method Screen-->
+
+
+    /******************************************************************************************************************************/
+    <!--Form Screens-->
+
+    <!--Personal Details Form-->
+    <string name="personal_details_referral_code_txt">Referral Code (optional)</string>
+    <string name="personal_details_guardian_name_txt">Guardian Name</string>
+    <string name="personal_details_verify_txt">Verify</string>
+    <string name="personal_details_email_txt">Email</string>
+    <string name="personal_details_dob_hint_txt">DDMMYYYY</string>
+    <string name="personal_details_process_mode_txt">Process Mode</string>
+    <string name="personal_details_btn_continue_txt">Continue</string>
+    <string name="personal_details_tax_status_txt">Tax Status</string>
+    <string name="personal_details_pan_hint_txt">PAN</string>
+    <string name="personal_details_occupation_txt">Occupation</string>
+    <string name="personal_details_dob_txt">Date of Birth</string>
+    <string name="personal_details_house_no_hint_txt">House No.</string>
+    <string name="person_details_error_name">Please enter your name</string>
+    <string name="person_details_error_guard_name">Please enter guardian name</string>
+    <string name="person_details_error_pan">Please enter your PAN details</string>
+    <string name="person_details_error_guard_pan">Please enter your guardian PAN details</string>
+    <string name="person_details_error_email">Please enter your email</string>
+    <string name="person_details_error_mobile">Please enter your mobile</string>
+    <string name="person_details_error_mobile_invalid">Please enter a valid mobile number</string>
+    <string name="person_details_error_email_invalid">Please enter a valid email</string>
+    <string name="person_details_error_pan_invalid">Please enter a valid PAN detail.</string>
+    <string name="person_details_error_guard__pan_invalid">Please enter a valid PAN detail.</string>
+    <string name="personal_details_landmark_name_hint_txt">Your Landmark</string>
+    <string name="personal_details_city_name_hint_txt">City</string>
+    <string name="personal_details_pin_name_hint_txt">Pin</string>
+    <string name="personal_details_mobile_txt">Mobile No.</string>
+    <string name="personal_details_street_name_hint_txt">Street</string>
+    <string name="personal_form_error_invalid_date">Enter DOB in DD-MM-YYYY</string>
+    <string name="personal_form_error_minor_age">Minor age should be below 18 years</string>
+    <string name="personal_form_error_invalid_age">Age should be above 18 years</string>
+    <string name="personal_form_error_verification_code">Kindly Verify Your Referral Code</string>
+    <string name="personal_details_error_pan_card">Please enter PAN card number</string>
+    <string name="personal_details_error_invalid_pan_card">Invalid PAN card number</string>
+    <string name="personal_details_error_guardian_pan">Please enter gaurdian PAN number</string>
+    <string name="personal_details_error_invalid_guardian_pan">Invalid gaurdian PAN card number</string>
+    <string name="personal_details_error_empty_mobile">Please enter mobile number</string>
+    <string name="personal_details_invalid_mobile">Please enter valid mobile number</string>
+    <string name="personal_details_error_empty_username">Please enter username number</string>
+    <string name="personal_details_success_registration_desc">Login credential has been sent on your email. In case you stuck during investment account enrollment process, you can continue your enrollment by login through login credentials.</string>
+    <string name="personal_details_error_empty_address">Please enter your address</string>
+    <string name="personal_details_error_empty_street_name">Please enter your street name</string>
+    <string name="personal_details_error_empty_city">Please enter your City</string>
+    <string name="personal_details_error_empty_pin">Please enter your PIN code</string>
+    <string name="personal_details_error_invalid_pin">Invalid PIN code</string>
+    <string name="personal_details_error_foreign_address">Please enter your foreign address</string>
+    <string name="personal_details_error_country">Please enter your country</string>
+    <string name="personal_details_error_foreign_state">Please enter your foreign state</string>
+    <string name="personal_details_error_foreign_city">Please enter your foreign City</string>
+    <string name="personal_details_error_foreign_empty_pin">Please enter your PIN code</string>
+    <string name="personal_details_error_foreign_invalid_pin">Invalid PIN code</string>
+    <string name="personal_details_error_empty_ifsc">Please enter your IFSC</string>
+    <string name="personal_details_error_invalid_ifsc">Invalid IFSC code</string>
+    <string name="personal_details_error_acount_no">Please enter your account number</string>
+    <string name="personal_details_error_invalid_acount_no">Invalid account number</string>
+    <!--End Personal Details Form-->
+
+
+    <!--Personal Investment-->
+    <string name="personal_investment_my_risk_txt">My Risk</string>
+    <string name="personal_investment_my_goal_txt">My Goal</string>
+    <!--End Personal Investment-->
+
+    /******************************************************************************************************************************/
+
+    <!--Additional Transactions-->
+    <string name="add_transc_balace_unit_txt">Balance Units</string>
+    <string name="add_tranc_totoal_amount_txt">Total</string>
+    <string name="add_tranc_statement_of_account_btn_txt">Statement of Account</string>
+    <string name="add_tranc_outstanding_units_details_btn_txt">Outstanding Units Details</string>
+    <string name="add_tranc_additional_purchase_txt">Additional Purchase</string>
+    <string name="add_tranc_sip_txt">SIP</string>
+    <string name="add_tranc_switch_txt">Switch</string>
+    <string name="add_tranc_swp_txt">SWP</string>
+    <string name="add_tranc_stp_stxt">STP</string>
+    <string name="add_tranc_redeem_txt">Redeem</string>
+    <!--Additional Transactions-->
+
+
+    <!--Additional Switch-->
+    <string name="additional_switch_unit_balance_txt">Unit Balance</string>
+    <string name="additional_switch_market_value_txt">Current Value</string>
+    <string name="additional_switch_amount_txt">Amount </string>
+    <string name="additional_switch_primary_frequency">Amount</string>
+    <string name="additional_switch_secondary_frequency">Units</string>
+    <string name="additional_switch_tertiary_frequency">All Units</string>
+    <string name="additional_switch_scheme_type_title">Scheme Type</string>
+    <string name="additional_switch_scheme_growth_title">Growth</string>
+    <string name="additional_switch_scheme_dividend_title">Dividend</string>
+    <string name="additional_switch_category_title">Category</string>
+    <!--End Additional Switch-->
+
+
+    <!--Additional SWP-->
+    <string name="additional_swp_first_order_today_txt">First Order Today</string>
+    <string name="additional_swp_hint_txt">Enter Value</string>
+    <string name="additional_swp_frequency_title">SWP Credit Frequency</string>
+    <string name="additional_swp_primary_frequency">Monthly</string>
+    <string name="additional_swp_tertiary_frequency">Quarterly</string>
+    <string name="additional_swp_secondary_frequency">Weekly</string>
+    <!--END Additional SWP-->
+
+
+    <!--Additional SIP-->
+    <string name="additional_sip_until_cancelled_txt">Until Cancelled</string>
+    <string name="additional_sip_select_mandate_txt">Select Mandate</string>
+    <string name="additional_sip_amount_txt">Enter Amount</string>
+    <!--ENd Additional SIP-->
+    /******************************************************************************************************************************/
+
+
+    <!--Additional Purchase-->
+    <string name="additinal_purchase_send_link_on_email_txt">Send link on email</string>
+    <string name="additional_purchase_frequency_title">Payment</string>
+    <string name="additional_purchase_primary_frequency">Net Banking</string>
+    <string name="additional_purchase_secondary_frequency">Debit Mandate</string>
+    <string name="additional_purchase_tertiary_frequency">RTGS/NEFT</string>
+    <string name="additional_purchase_bank_txt">Select Bank</string>
+    <string name="additional_purchase_rtgs_hint_txt">RTGS Code</string>
+    <string name="additional_purchase_micr_hint_txt">MICR No.</string>
+    <string name="additional_purchase_instrument_hint_txt">Instrument Bank</string>
+    <string name="additional_purchase_instrument_branch_hint_txt">Instrument Branch</string>
+    <string name="additional_purchase_utr_no_hint_txt">UTR No.</string>
+    <string name="additional_purchase_transafer_date_hint_txt">DDMMYYYY</string>
+    <string name="additional_purchase_account_no_hint_txt">Account No.</string>
+    <string name="additional_purchase_cheque_no_hint_txt">Cheque No.</string>
+    <string name="additional_switch_frequency_title">Switch By</string>
+    <string name="additional_sip_primary_frequency">Monthly</string>
+    <string name="additional_sip_secondary_frequency">Weekly</string>
+    <string name="additional_sip_select_target_scheme_txt">Select Scheme</string>
+    <string name="additional_sip_hint_txt">Enter Amount</string>
+    <string name="additional_sip_frequency_title">Select Frequency</string>
+    <!--End Additional Purchase-->
+
+    <!--Additional STP-->
+    <string name="additional_stp_start_date_text">Start Date</string>
+    <string name="additional_stp_dividend_txt">Frequency</string>
+    <string name="additional_stp_first_order_txt">First Order Today</string>
+    <string name="additional_stp_installment_hint_txt">No. of Installments</string>
+    <string name="additional_stp_select_target_scheme_txt">Target Scheme</string>
+    <!--END Additional STP-->
+
+    <!--Additional Redeem-->
+    <string name="additional_redeem_enter_amount_txt">Please Enter Amount</string>
+    <string name="additional_redeem_select_bank_txt">Select Bank</string>
+    <string name="additional_redeem_frequency_title">Redemption Type</string>
+    <string name="additional_redeem_enter_units_txt">Enter Units</string>
+    <!--End Additional Redeem-->
+
+
+    <!--Nominee Details Form-->
+    <string name="nominee_details_form_name_txt">Name of Nominee</string>
+    <string name="nominee_details_form_relation_txt">Relation with First Holder</string>
+    <string name="nominee_details_form_dob_txt">Nominee DOB</string>
+    <string name="nominee_details_form_address_txt">Nominee Address</string>
+    <string name="nominnee_details_form_city_txt">Nominee City</string>
+    <string name="nominnee_name_error">Please enter your nominee name</string>
+    <string name="nominnee_rel_error">Please enter nominee relation with you</string>
+    <string name="nominee_add_error">Please enter nominee Address</string>
+    <string name="nominee_city_error">Please enter nominee City</string>
+
+    <string name="nominee_minor_gurdian_name" translatable="false">Guardian Name of Nominee</string>
+    <string name="nominee_minor_gurdian_name_error" translatable="false">Please enter Guardian Name</string>
+    <string name="nominee_is_minor" translatable="false">is Minor?</string>
+    <!--End Nominee Details Form-->
+
+    /******************************************************************************************************************************/
+    <!--Bank Details Form-->
+    <string name="bank_details_form_account_no_txt">Account Number</string>
+    <string name="bank_details_form_ifsc_code_txt">IFSC Code</string>
+    <string name="bank_details_form_account_type_txt">Account Type</string>
+    <!--Bank Details Form-->
+    /******************************************************************************************************************************/
+    <!--KYC Verification-->
+    <string name="kyc_verification_btn_later_txt">Later</string>
+    <string name="kyc_toolbar_primary_title">Payment</string>
+    <string name="kyc_toolbar_secondary_title">Online KYC</string>
+    <string name="kyc_error_loading_screen_msg">Failed loading app!</string>
+    <string name="kyc_verification_header_txt">We are unable to find your KYC.\nYou can do your Self Video KYC right now.</string>
+
+    <string name="kyc_verification_btn_proceed_txt">Proceed</string>
+    <string name="kyc_verification_footer_desc_txt">Note: Login credentials have been sent on your email. In case you are stuck during enrollment process, you can continue your enrollment by logging in anytime later using the same login credentials.</string>
+    <!--KYC Verification-->
+
+    /******************************************************************************************************************************/
+    <!--Fatca Form-->
+    <string name="fatca_form_address_type_txt">Address Type</string>
+    <string name="fatca_from_place_of_birth_txt">Place of Birth</string>
+    <string name="fatca_form_country_birth_txt">Country of Birth</string>
+    <string name="fatca_from_wealth_source_txt">Wealth Source</string>
+    <string name="fatca_form_politically_expposed_txt">Politically Not Exposed</string>
+    <string name="fatca_form_btn_continue_txt">Complete</string>
+    <string name="fatca_form_btn_prev_txt">Previous</string>
+    <string name="fatca_instruction">Information</string>
+    <string name="fatca_form_header_desc">FATCA is intended to increase transparency for the Internal Revenue Service (IRS) with respect to US persons who may be investing and earning income through non-US institutions. While the primary goal is to gain information about US persons, FATCA imposes tax withholding where the applicable documentation and reporting requirements are not met.</string>
+
+    <!--End Of Fatca Form-->
+
+    <!--Form Screens-->
+    /*************************************************************************************************************************/
+    <!--Transaction Screen-->
+    <string name="transaction_filter_header_txt">Filter</string>
+    <string name="transaction_filter_select_member_txt">Select Member</string>
+    <string name="transaction_filter_select_fund_txt">Select Fund</string>
+    <string name="transaction_filter_transaction_type_txt">Transaction Type</string>
+    <string name="transaction_filter_btn_apply_txt">Apply</string>
+    <string name="transaction_filter_end_date_txt">End Date</string>
+    <string name="transaction_filter_start_date_txt">Start Date</string>
+    <string name="transaction_filtere_radio_custom_txt">Custom</string>
+    <string name="transaction_filtere_radio_since_inception_txt">Since Inception</string>
+    <string name="transaction_filtere_radio_current_year_txt">Current Year</string>
+    <string name="transaction_filtere_previous_month_txt">Previous Month</string>
+    <string name="transaction_filtere_radio_current_month_txt">Current Month</string>
+    <string name="transaction_filtere_transaction_duration_txt">Transaction Duration</string>
+    <!--End Transaction Screen-->
+
+    /******************************************************************************************************************************/
+
+    <!--Risk Profile-->
+    <string name="risk_profile_confirmation_i_agree">I Agree</string>
+    <string name="risk_profile_confirmation_retake">Retake</string>
+   okk
+    <string name="risk_profile_body_header_txt">Transfer your existing investments to us</string>
+    <string name="risk_profile_body_desc_txt"><![CDATA[You can monitor your complete portfolio here by transferring your previous MF investments to us. T&C may apply.]]></string>
+    <string name="risk_profile_body_foooter_desc_txt">Know Your Investment Risk Profile</string>
+    <string name="risk_profile_understand_the_riskometer_txt">Understand the Riskometer</string>
+    <string name="risk_profile_make_better_investment_choices_txt">Make Better Investment Choices</string>
+    <string name="risk_profile_continue_btn_txt">Continue</string>
+    <string name="risk_profile_transfer_holding_txt">Transfer Holding</string>
+    <string name="risk_profile_create_goal_txt" translatable="false">Create Goal</string>
+    <string name="risk_profile_continue_for_sip_lumpsum_txt" translatable="false">Continue</string>
+    <!--Risk Profile-->
+    /******************************************************************************************************************************/
+
+    <!--Risk ASSESSMENT-->
+    <string name="risk_assesment_header_txt">Know Your Risk Profile</string>
+    <string name="risk_assesment_desc_txt">Help us understand your risk profile by answering few simple questions.</string>
+    <string name="risk_assesment_invest_risk_txt">Know Your Investment Risk Profile</string>
+    <string name="risk_assesment_riskometer_txt">Understand the Riskometer</string>
+    <string name="risk_assesment_make_better_investment_choices_txt">Make Better Investment Choices</string>
+    <string name="risk_assesment_btn_start_assessment_txt">Start Assessment</string>
+    <string name="risk_assesment_question_uncomplete">Please answer all questions</string>
+
+    /******************************************************************************************************************************/
+
+    <!--PortfolioFragment-->
+    <string name="portfolio_client_purchase_cost_txt">Investment</string>
+    <string name="portfolio_client_gain_txt">Gain</string>
+    <string name="portfolio_client_market_value_txt">Current Value</string>
+    <string name="portfolio_client_folio_txt">Folio</string>
+    <string name="portfolio_client_cagr_txt">CAGR</string>
+
+
+    /******************************************************************************************************************************/
+    <!--Nse Fatca-->
+    <string name="nse_fatca_header_desc">FATCA is intended to increase transparency for the Internal Revenue Service (IRS) with respect to US persons who may be investing and earning income through non-US institutions. While the primary goal is to gain information about US persons, FATCA imposes tax withholding where the applicable documentation and reporting requirements are not met.</string>
+    <string name="nse_fatca_primary_header_txt">You\'re just a minute away!</string>
+    <string name="nse_fatca_secondary_header_txt">A Step towards Your dreams</string>
+    <string name="nse_fatca_dob_txt">Date of Birth</string>
+    <string name="nse_fatca_address_type_txt">Address Type</string>
+    <string name="PlaceBirth">Place of Birth</string>
+    <string name="nse_fatca_country_of_birth">Country of Birth</string>
+    <string name="nse_fatca_wealth_resource_txt">Wealth Source</string>
+    <string name="nse_fatca_occuptaion_txt">Occupation</string>
+    <string name="nse_fatca_income_slabs_txt">Income Slabs</string>
+    <!--Nse Fatca-->
+
+    <string name="rate_our_app" translatable="false">Rate our App</string>
+    <string name="rate_it_now" translatable="false">Rate It Now</string>
+    <string name="reminder_me_later" translatable="false">Reminder Me Later</string>
+    <string name="no_thanks" translatable="false">No, Thanks</string>
+    <string name="review_message" translatable="false">If you love our app, Please take a moment to rate it on Play Store.\u0020</string>
+    /*************************************************************************************************************************/
+    <!--Transaction Screen-->
+    <string name="incomplete_profile_step_message">Investment Profile Status</string>
+    <string name="incomplete_profile_first_step_txt">Profile</string>
+    <string name="incomplete_profile_first_step_desc_txt">Investment profile.</string>
+    <string name="incomplete_profile_autopay_header_txt">Autopay</string>
+    <string name="incomplete_profile_signature_txt">Signature</string>
+    <string name="incomplete_profile_fatca_header_txt">FATCA</string>
+    <string name="incomplete_profile_signature_desc_txt">Upload Signature &amp; Cheque</string>
+    <string name="incomplete_profile_fatca_desc_txt">Create FATCA</string>
+    <!--End Transaction Screen-->
+
+    <string name="TotalGain">Gain since Inception</string>
+    <string name="NetInvestment">Net Investment</string>
+    <string name="investment_status_nse_txt">Your Investment Account has been created. Pleae Login to proceed further.</string>
+
+
+    <string name="investment_status_bse_txt">Required information has been received.</string>
+    <string name="iin_text">Exchange need some time to\nactivate your IIN, so please wait for\nnext 2 working days.</string>
+
+    /******************************************************************************************************************************/
+
+    <!--Setting-->
+    <string name="settings_pin_txt">Pin</string>
+    <string name="settings_change_screen_lock_txt">Change Screen Lock</string>
+    <string name="settings_change_password_txt">Change Password</string>
+    <string name="settings_about_us_txt">About us</string>
+    <string name="settings_contact_txt">Contact</string>
+    <string name="settigs_share_txt">Share</string>
+    <string name="settings_rate_txt">Rate</string>
+    <string name="settings_privacy_policy_txt">Privacy Policy</string>
+    <string name="settings_logout_txt">Logout</string>
+    <string name="setting_app_version_txt">App Version:  </string>
+    <string name="settings_data_updated_on_txt">Data updated on:   </string>
+    <string name="settings_transaction_updated_on_txt">Transaction updated on:  </string>
+    <string name="setting_nav_updated_on_txt">NAV updated on:  </string>
+    <string name="settings_pf">Settings</string>
+
+    <!--End Setting-->
+
+    /******************************************************************************************************************************/
+
+    <!--BSE Profile details-->
+    <string name="bse_profile_detail_folio_txt">Folio</string>
+    <string name="bse_profile_detail_scheme_name_txt">Scheme</string>
+    <string name="bse_profile_detail_holder_name_txt">Holder</string>
+    <string name="bse_profile_detail_joint_1_name_txt">Joint Holder(s)</string>
+    <string name="bse_profile_detail_joint_2_name_txt">Joint 2 Name</string>
+    <string name="bse_profile_detail_nominee_txt">Nominee</string>
+    <!--End BSE Profile details-->
+
+    <!--Testing-->
+    <string name="testing_view_check_nse_txt">Check NSE</string>
+    <string name="testing_view_check_bse_txt">Check BSE</string>
+    <string name="testing_view_check_live_txt">Check Live</string>
+    <string name="testing_view_btn_check_txt">Check</string>
+    <!--Testing-->
+
+    <!--Empty Cart-->
+    <string name="empty_cart_header_txt">Your cart is empty</string>
+    <string name="empty_cart_desc_txt">Search &amp; Select a scheme to add</string>
+    <!--end Empty Cart-->
+
+    <!--Tax Investment-->
+    <string name="tax_investment_your_income_txt">Your Income</string>
+    <string name="tax_investment_sliderstart_txt">1– 5L</string>
+    <string name="tax_investment_slider_middle_txt">5–10L</string>
+    <string name="tax_investment_slider_end_txt">Above 10L</string>
+    <string name="tax_investment_investment_in_elss_txt">Investment in ELSS</string>
+    <string name="tax_investment_tax_saving_txt">Your TAX Savings</string>
+    <string name="tax_investment_dash_txt">-</string>
+    <string name="tax_investment_monthly_sip_txt">Monthly SIP</string>
+    <string name="tax_investment_one_time_investment_txt">One Time Investment</string>
+    <string name="tax_investment_one_time_continue_sip_txt">Continue with SIP</string>
+    <string name="tax_investment_one_time_investment_txttax_investment_continue_lumpsum_txt">Continue with Lumpsum</string>
+    <!--End Tax Investment-->
+
+
+    <!--Client Search -->
+    <string name="client_search_item_pan_txt">PAN</string>
+    <string name="client_search_item_family_head_txt">Family Head</string>
+    <string name="client_search_bar_hint_txt">Search Here…</string>
+    <!--End Client Search -->
+
+
+    <!--Change Scheme -->
+    <string name="change_scheme_type_txt">Scheme Type</string>
+    <!--Change Scheme -->
+
+
+    <!--Mendate List-->
+    <string name="mendate_list_name_txt">name</string>
+    <string name="mendate_list_status_txt">status</string>
+    <string name="mendate_list_pending_txt">pending</string>
+    <string name="mendate_list_1234_txt">*********1234</string>
+    <string name="mendate_list_savings_txt">Savings</string>
+    <string name="mendate_list_mandatecode_txt">Mandate Code</string>
+    <string name="mendate_list_mandate_code_txt">Mandate Code</string>
+    <string name="mendate_list_no_mandate_found_txt">No Autopay mandate found</string>
+    <string name="mendate_list_11_txt">11</string>
+    <string name="mendate_list_btn_lumpsum_txt">Continue with Lumpsum</string>
+    <string name="mendate_list_btn_continue_txt">Continue with SIP</string>
+    <string name="mendate_list_2_txt">2</string>
+    <string name="mendate_list_25_txt">25</string>
+    <string name="mendate_list_500000_txt">500000</string>
+    <string name="mendate_list_5000_txt">5000</string>
+    <string name="mendate_list_100_txt">100</string>
+    <string name="mendate_list_0_txt">0</string>
+    <string name="mendate_list_12_00_txt">12.00</string>
+    <string name="mendate_list_6_00_txt">6.00</string>
+    <string name="mendate_list_amnt_txt">Amount Required at the time of Marriage</string>
+    <string name="mendate_list_childage_txt">Child\'s age </string>
+    <string name="mendate_list_child_marriage_txt">Child will get married at the age (Years) </string>
+    <string name="mendate_list_amnt_required_txt">Amount Required for wedding as on today\'s cost(\u20B9)</string>
+    <string name="mendate_list_annual_saving_txt">Annual Savings(\u20B9)</string>
+    <string name="mendate_list_onetime_txt">One time</string>
+    <string name="mednate_list_existing_corpus_txt">Existing Corpus(\u20B9)</string>
+    <string name="mendate_list_expectaed_rate_txt">Expected rate of return(%)</string>
+    <string name="mendate_list_btn_autopay_txt">Create Autopay Mandate</string>
+    <!--End Mendate List-->
+
+
+    <!--Lumpsum Module-->
+    <string name="lumpsum_cart_0_txt">0</string>
+    <string name="lumpsum_payment_txt">Payment</string>
+    <string name="lumpsum_bank_txt">Bank</string>
+    <string name="lumpsum_send_email_txt">Send link on email</string>
+    <string name="lumpsum_pay_now_txt">Pay Now</string>
+    <string name="lumpsum_transfer_date_txt">Transfer Date</string>
+    <string name="lumpsum_ddmmyyyy_txt">DDMMYYYY</string>
+    <string name="lumpsum_mandate_txt">Mandate</string>
+    <string name="lumpsum_until_cancel_txt">Until Cancel</string>
+    <string name="lumpsum_first_pay_txt">Pay 1st SIP Payment</string>
+    <string name="lumpsum_add_scheme_txt">Add Scheme</string>
+    <string name="lumpsum_order_now_btn_txt">Order Now</string>
+    <string name="lumpsum_rtgs_txt">RTGS Code</string>
+    <string name="lumpsum_txt_zero">0</string>
+    <string name="lumpsum_utr_txt">UTR No</string>
+    <!--End Lumpsum Module-->
+
+
+    <!--Goal Module-->
+
+    <!--Goal List-->
+    <string name="goal_list_education_txt">Education</string>
+    <string name="goal_list_target_amount_txt">Target Amount</string>
+    <string name="goal_list_current_investments_txt">Current Investments</string>
+    <string name="goal_list__25_000_txt">25,000</string>
+    <string name="goal_list_completed_txt">Completed</string>
+    <string name="goal_list_projected_txt">Projected</string>
+    <string name="goal_list_shortfall_txt">Shortfall</string>
+    <!--Goal List-->
+
+    <!--Goal Summary-->
+    <string name="goal_summary_details_header_txt">Goal Details</string>
+    <string name="goal_summary_personal_investment_plan">Personal Investment Plan</string>
+    <string name="goal_summary_details_achieve_footer_txt">To achieve this Goal you must Invest</string>
+    <string name="goal_summary_details_onetime_txt">One time</string>
+    <string name="goal_summary_btn_txt">Add New</string>
+    <string name="goal_summary_target_amount_heading_txt">Target Amount</string>
+    <string name="goal_summary_details_month_txt">Monthly</string>
+    <string name="goal_summary_surplus">Surplus</string>
+    <string name="goal_summary_inflation_target_amnt">Inflated/Target Amount</string>
+    <string name="goal_summary_target_amnt">Target Amount</string>
+    <string name="goal_summary_shortfall">Shortfall</string>
+    <string name="goal_summary_go_for_lumpsum_empty_txt">No data available, Please add scheme</string>
+    <!--End Goal Summary-->
+
+    <!--Create Goal-->
+    <string name="create_goal_5_00_txt">5.00</string>
+    <string name="create_goal_next_btn_txt">Create Goal</string>
+    <string name="create_goal_hint_inflation_txt">Enter Expected Inflation</string>
+    <string name="create_goal_header_txt">Enter Your Goal Name</string>
+    <string name="create_goal_target_amnt_txt">Enter Goal Amount in Rupees</string>
+    <string name="create_goal_update_txt">Update</string>
+    <string name="create_goal_duration_txt">Enter Your Valid Target Date</string>
+    <string name="create_goal_error_empty_goal_name">Enter Your Goal Name</string>
+    <string name="create_goal_error_inavalid_goal_amount">Enter Valid Amount</string>
+    <string name="create_goal_error_goal_date">Enter Goal\'s Target Date</string>
+    <string name="create_goal_invalid_goal_date_format">Enter Target Date in DD-MM-YYYY</string>
+    <string name="create_goal_empty_future_date">Enter Future Target Date</string>
+    <string name="create_goal_error_return">Enter Your Expected Return</string>
+    <string name="create_goal_error_expected_rate">Enter Your Correct Expected Rate</string>
+    <string name="create_goal_error_inflation_rate">Enter Your Correct Inflation Rate</string>
+    <string name="create_goal_error_invalid_infaltion_rate">Inflation cannot be more than 30%</string>
+    <string name="goal_based_scheme_1_yr_title_txt">1 Yr</string>
+    <string name="goal_based_scheme_3_yrs_title_txt">3 Yrs</string>
+    <string name="goal_based_scheme_5_yrs_title_txt">5 Yrs</string>
+    <!--End Create Goal-->
+
+
+    <!--End Goal Module-->
+
+    <!--Calculators-->
+    <!--Retirement Calculators-->
+    <string name="retirement_cal_10_00_txt">10.00</string>
+    <string name="retirement_cal_7_00_txt">7.00</string>
+    <string name="retirement_cal_11_txt">11</string>
+    <string name="retirement_cal_continue_sip_btn_txt">Continue with SIP</string>
+    <string name="retirement_cal_1000_txt">1000</string>
+    <string name="retirement_cal_30_txt">30</string>
+    <string name="retirement_cal_60_txt">60</string>
+    <string name="retirement_cal_30000_txt">30000</string>
+    <string name="retirement_cal_100_txt">100</string>
+    <string name="retirement_cal_6_00_txt">6.00</string>
+    <string name="retirement_cal_0_txt">0</string>
+    <string name="retirement_cal_12_00">12.00</string>
+    <string name="retirement_cal_90_txt">90</string>
+    <string name="retirement_cal_header_title_txt">Retirement Calculator</string>
+    <string name="retirement_cal_extra_required_txt">Extra saving per month required</string>
+    <string name="retirement_cal_current_age">Current Age</string>
+    <string name="retirement_cal_age">Retirement Age</string>
+    <string name="retirement_cal_current_txt">Current Monthly Expenses(\u20B9)</string>
+    <string name="retirement_cal_expected_inflation">Expected Inflation(%)</string>
+    <string name="retirement_cal_current_saving_per_month_txt">Current Savings Per Month(\u20B9)</string>
+    <string name="retirement_cal_existing_corpus_txt">Existing Corpus(\u20B9)</string>
+    <string name="retirement_cal_expected_pre_payment_txt">Expected Pre-Retirement Return(%)</string>
+    <string name="retirement_cal_expected_post_return_txt">Expected Post-Retirement Return(%)</string>
+    <string name="retirement_cal_life_expectency_txt">Life Expectancy</string>
+    <string name="retirement_cal_total_saving_txt">Total Savings</string>
+    <string name="retirement_cal_short_fall_amount_txt">Shortfall in amount</string>
+    <string name="retirement_cal_achieve_txt">To achieve this Goal you must Invest</string>
+    <!--End Retirement Calculators-->
+
+    <!--Lumpsum Calculators-->
+    <string name="lumpsum_cal_10000">10000</string>
+    <string name="lumpsum_cal_header_title">Lumpsum Calculator</string>
+    <string name="lumpsum_cal_one_time_investment_txt">One Time Investment</string>
+    <string name="lumpsum_cal_invest_now_txt">Invest Now</string>
+    <string name="lumpsum_cal_10000_txt">10000</string>
+    <string name="lumpsum_cal_6_00_txt">6.00</string>
+    <string name="lumpsum_cal_inflation_adjust_txt">Inflation Adjust</string>
+    <string name="lumpsum_cal_invest_period_year_txt">Investment Period(Year)</string>
+    <string name="lumpsum_cal_expected_annual_salary">Expected Annual Returns (%)</string>
+    <string name="lumpsum_cal_10_txt">1000</string>
+    <string name="lumpsum_cal_expected_inflation_txt">Expected Inflation rate(%)</string>
+    <string name="lumpsum_cal_txt_one_timeinvestment_txt">One Time Investment (\u20B9)</string>
+    <string name="lumsum_cal_error_empty_sip_amnt">Please enter amount</string>
+    <string name="lumpsum_cal_error_less_amnt">Minimum amount will be at least 500</string>
+    <string name="lumpsum_cal_error_more_amnt">Please enter investment duration</string>
+    <string name="lumspum_cal_error_duration">Maximum investment duration will be 50 years</string>
+    <string name="lumpsum_cal_error_ror">Please enter rate of return</string>
+    <string name="lumpsum_cal_error_max_amnt">Maximum rate of return will be 30 %</string>
+    <string name="lumpsum_cal_error_roi">Please enter rate of Inflation</string>
+    <string name="lumpsum_cal_error_max_roi">Maximum rate of Inflation will be 30 %</string>
+    <!--End Lumpsum Calculators-->
+
+    <!--Marriage Calculators-->
+    <string name="marriage_cal_error_child_age">Child age always less than Wedding age</string>
+    <string name="marriage_cal_error_wedding_age">Wedding age always greater than Current Age</string>
+    <string name="marriage_cal_error_empty_start_wed_age">Please enter marriage start age</string>
+    <string name="marriage_cal_invalid_child_age">Child age will be less than marriage start age</string>
+    <string name="marriage_cal_error_wed_amnt">Please enter amount for marriage</string>
+    <string name="marriage_cal_error_minnimum_age">Minimum amount will be at least 1 Lakh</string>
+    <string name="marriage_cal_maxx_amnt">Maximum amount will be 10 Cr</string>
+    <string name="marriage_cal_error_expected_return">Please enter expected pre retirement return</string>
+    <string name="marriage_cal_error_expected_rate_return">Please enter expected rate of return</string>
+    <string name="marriage_cal_error_less_expected_ror">Expected rate of return will be less than 50</string>
+    <string name="marriage_cal_some_errror">Please enter expected inflation rate</string>
+    <string name="marriage_cal_expected_inflation_rate">Expected inflation rate will be less than 50</string>
+    <string name="marriage_cal_goal_txt">To achieve this Goal you must Invest</string>
+    <string name="marriage_cal_congrats">Congratulations!</string>
+    <string name="marriage_cal_desc">You have completed you goal</string>
+
+    <!--SIP Calculators-->
+    <string name="sip_cal_continue_with_lumpsum_txt">Continue with Lumpsum</string>
+    <string name="sip_cal_continue_with_sip_txt">Continue with SIP</string>
+    <string name="sip_calculator_txt_wealth_gained">Wealth Gained</string>
+    <string name="sip_calculator_txt_onthly_investment">Monthly Investment (\u20B9)</string>
+    <string name="sip_calculator_total_amount_invested_txt">Total Amount Invested</string>
+    <string name="sip_calculator_11_txt">11</string>
+    <string name="sip_calculator_1000_txt">1000</string>
+    <string name="sip_calcula_12_txt">12</string>
+    <string name="sip_calculator_1000_hint_txt">1000</string>
+    <string name="sip_calculator_10_00">10.00</string>
+    <string name="sip_calculator_annual_txt">Annual Increment(\u20B9)</string>
+    <string name="sip_calculator_your_multiplied_txt">Your investment has multiplied by</string>
+    <string name="sip_calculator_txt_times">times</string>
+    <string name="sip_calculator_txt_month">Month</string>
+    <string name="sip_calculator_amount_txt">Amount Required at the time of College</string>
+    <!--End SIP Calculators-->
+
+    <!--Emi Calculators-->
+    <string name="emi_cal_principal_amnt">Principal Amount</string>
+    <string name="emi_cal_interest_amnt">Interest Amount</string>
+    <string name="emi_cal_total_amnt_pay">Total amount to pay</string>
+    <string name="emi_cal_txt_loan_amount">Loan Amount(\u20B9)</string>
+    <string name="emi_cal_duration_loan_txt">Duration of Loan(Years)</string>
+    <string name="emi_cal_interest_loan_txt">Interest on Loan(% Yearly)</string>
+    <string name="emi_calculator_11_txt">11</string>
+    <string name="emi_cal_10_00_txt">10.00</string>
+    <string name="emi_cal_11_txt">11</string>
+    <string name="emi_cal__btn_lumpsum_txt">Continue with Lumpsum</string>
+    <string name="emi_cal_sip_txt">Continue with SIP</string>
+    <string name="emi_cal_500000_txt">500000</string>
+    <string name="emi_cal_error_empty_loan">Please enter loan amount</string>
+    <string name="emi_cal_error_minnimum_loan_amount">Minimum amount will be at least 50000</string>
+    <string name="emi_cal_error_empty_loan_duration">Please enter loan duration</string>
+    <string name="emi_cal_error_invalid_loan_duration">Please enter valid loan duration</string>
+    <string name="emi_cal_error_empty_roi">Please enter rate of interest</string>
+    <string name="emi_cal_error_max_roi">Maximum rate of Interest will be 30 %</string>
+    <string name="marriage_cal_header_txt">Marriage Calculator</string>
+    <!--End Emi Calculators-->
+
+    <!--Education Calculators-->
+    <string name="education_calculator_header_title_txt">Education Calculator</string>
+    <string name="education_calculator_2_txt">2</string>
+    <string name="education_calculator_18_txt">18</string>
+    <string name="education_calculator_txt_500000">500000</string>
+    <string name="education_calculator_txt_100">100</string>
+    <string name="education_calculator_100000_txt">100000</string>
+    <string name="education_calculator_12_00_txt">12.00</string>
+    <string name="education_calculator_6_00_txt">6.00</string>
+    <string name="education_calculator_childage_txt">Child\'s age </string>
+    <string name="education_calculator_college_txt">She/He will go to college at (Years)</string>
+    <string name="education_calculator_duration_txt">Duration of education (years)</string>
+    <string name="education_calculator_18_cost_incurred_txt">Cost incurred P.A. as on today(\u20B9)</string>
+    <string name="education_calculator_invalid_age">Age should be less than college entry age</string>
+    <string name="education_calculator_error_college">College age always greater than Current Age</string>
+    <string name="education_calculator_error_empty_child_age">Please enter child age</string>
+    <string name="education_cal_error_empty_college_start_age">Please enter college start age</string>
+    <string name="education_cal_error_invalid_college_start_age">Please enter valid college start age</string>
+    <string name="education_cal_invalid_child_age">Child age always less than college start age</string>
+    <string name="education_cal_error_min_college_duration">College duration will be min 1 yearse</string>
+    <string name="education_cal_error_max_college_duration">College duration will max be 10 years</string>
+    <string name="education_cal_error_empty_expected_rate">Please enter expected rate of return</string>
+    <string name="education_cal_expected_max_rate">Expected rate of return will be less than 30</string>
+    <string name="education_cal_error_expected_infl_rate">Please enter expected inflation rate</string>
+    <string name="education_cal_error_min_infl_invalid_rate">Expected inflation rate will be less than 30</string>
+    <string name="education_cal_some_txt">To achieve this Goal you must Invest</string>
+    <string name="education_cal_congratulation">Congratulations!</string>
+    <string name="education_cal_goal_meet">You have completed your goal</string>
+    <!--End Education Calculators-->
+
+
+    <!--SIP DELAY Calculators-->
+    <string name="delay_cal_header_txt">SIP Delay Calculator</string>
+    <string name="delay_cal_11_txt">11</string>
+    <string name="delay_cal_1000_txt">1000</string>
+    <string name="delay_cal_10_00_txt">10.00</string>
+    <string name="delay_cal_100_txt">100</string>
+    <string name="delay_cal_ddmmyyyy_txt">DDMMYYYY</string>
+    <string name="delay_cal_amnt_txt">Target Amount</string>
+    <string name="delay_cal_amount_investment_txt">Amount Invested</string>
+    <string name="delay_cal_dely_txt">Delay from Today(Months)</string>
+    <string name="delay_cal_expected_return_txt">Enter Expected Return</string>
+    <string name="delay_cal_rate_inflamation_txt">Inflation rate in %(per annum)</string>
+    <string name="delay_cal_rate_txt">Expected rate of return in %(per annum)</string>
+    <string name="delay_cal_end_date_txt">End date</string>
+    <string name="sip_delay_cal_minn_amnt">Minimum amount will be at least 500</string>
+    <string name="sip_delay_error_empty_yr">Please enter invest year</string>
+    <string name="sip_delay_error_minn_amnt">Maximum investment duration will be 50 years</string>
+    <string name="sip_delay_error_ror">Please enter rate of return</string>
+    <string name="sip_delay_error_minn_ror">Maximum rate of return will be 30 %</string>
+    <string name="sip_delay_empty_duration">Please enter delay duration in months</string>
+    <string name="sip_delay_minn_delay">Minimum delay will be 120 months</string>
+    <string name="sip_delay_title_desc">If you start SIP from today then your Maturity value would be</string>
+    <!--End SIP DELAY Calculators-->
+
+
+    <!--End Calculators-->
+
+
+    <!--New Purchase-->
+    <string name="new_purchase_send_link_on_email_txt">Send link on email</string>
+    <string name="new_purchase_pay_now_btn_txt">Pay Now</string>
+    <string name="new_purchase_transfer_date">Transfer Date</string>
+    <string name="new_purchase_form_check_number_txt">Cheque Number</string>
+    <string name="new_purchase_form_cheque_txt">Cheque Date</string>
+    <string name="new_purcahse__form_folio_no_txt">Folio no:</string>
+    <string name="new_purcahse_form_dividend_txt">Dividend</string>
+    <string name="new_purcahse_form_payment_txt">Payment</string>
+    <string name="new_purcahse__form_mandate_txt">Mandate</string>
+    <string name="new_purcahse_form_select_scheme_txt">Select Scheme</string>
+    <string name="new_purcahse__form_catgory_txt">Category</string>
+    <string name="new_purcahse__form_fmp_txt">FMP</string>
+    <string name="new_purcahse_form_txt_Debt">Debt</string>
+    <string name="new_purcahse_form_txt_Equity">Equity</string>
+    <string name="new_purcahse_form_txt_growth">Growth</string>
+    <string name="new_purcahse__form_btn_footer_txt">Transact Now</string>
+    <string name="new_purcahse_form_micr_txt">MICR No</string>
+    <string name="new_purcahse_form_bank_txt">Instrument Bank</string>
+    <string name="new_purcahse_form_branch_txt">Instrument Branch</string>
+    <string name="new_purchase_error_empty_amnt">Please enter amount</string>
+    <string name="new_purchase_error_invalid_amnt">Minimum amount will be at least 100</string>
+    <string name="new_purchase_error_pay_mode_amnt">Please select payment mode</string>
+    <string name="new_purchase_error_bank_amnt">Please select Bank</string>
+    <string name="new_purchase_error_rtgs_empty">Please enter RTGS Number</string>
+    <string name="new_purchase_error_micr">Please enter MICR Number</string>
+    <string name="new_purchase_error_bank_empty">Please enter Bank name</string>
+    <string name="new_purchase_error_branch_empty">Please enter Branch name</string>
+    <string name="new_purchase_error_utr_empty">Please enter UTR number</string>
+    <string name="new_purchase_erroe_transfer_date">Please enter transfer date</string>
+    <string name="new_purchase_error_empty_acc_no">Please enter Account Number</string>
+    <string name="new_purchase_error_empty_cheque_no">Please enter cheque no.</string>
+    <string name="new_purchase_error_empty_cheque_date">Please enter cheque date</string>
+    <!--End New Purchase-->
+
+    <!--Folio Details-->
+    <string name="folio_detail_investor_txt">Investor</string>
+    <string name="folio_detail_folio_txt">Folio</string>
+    <string name="folio_detail_profile_id_txt">Profile ID</string>
+    <string name="folio_details_holding_txt">Holding</string>
+    <string name="folio_details_pan_txt">PAN</string>
+    <string name="folio_detail_scheme_txt">Scheme</string>
+    <string name="folio_detail_investor_tx">Investor</string>
+    <string name="folio_detail_pan_txt">PAN</string>
+    <string name="folio_detailos_folio_txt">Folio</string>
+    <string name="folio_details_holdings_txt">Holdings</string>
+    <string name="folio_details_balance_units_txt">Balance Units</string>
+    <string name="folio_details_tax_status_txt">Tax Status</string>
+    <string name="folio_details_email_txt">Email</string>
+    <string name="folio_details_date_of_birth_txt">Date of Birth</string>
+    <string name="folio_details_address_txt">Address</string>
+    <string name="folio_details_bank_txt">Bank</string>
+    <string name="folio_details_a_c_no_txt">A/C No</string>
+    <string name="folio_details_account_type_txt">Account Type</string>
+    <string name="folio_details_ifsc_txt">IFSC</string>
+    <!--End Folio Details-->
+
+    <!--Folio Lookup-->
+    <string name="folio_lookup_bank_details_txt">Bank Details</string>
+    <string name="folio_lookup_bank_name_txt">Bank Name</string>
+    <string name="folio_lookup_a_c_no_txt">A/C No</string>
+    <string name="folio_lookup_account_type_txt">Account Type</string>
+    <string name="folio_lookup_ifsc_txt">IFSC</string>
+    <string name="folio_lookup_investor_txt">Investor</string>
+    <string name="folio_lookup_pan_txt">PAN</string>
+    <string name="folio_lookup_folio_txt">Folio</string>
+    <string name="folio_lookup_holdings_txt">Holdings</string>
+    <!--Folio Lookup-->
+
+
+    <!--Transfer holding-->
+    <string name="transfer_holding_enter_folio_number_txt">Enter Folio Number</string>
+    <string name="transfer_holding_all_units_txt">All units</string>
+    <string name="transfer_holding_from_scheme_txt">From Scheme</string>
+    <string name="transfer_holding_folio_number_txt">Folio Number</string>
+    <string name="transfer_holding_to_scheme_txt">To Scheme</string>
+    <string name="transfer_holding_fund_txt">Fund</string>
+    <string name="transfer_holding_btn_cancel_txt">Cancel</string>
+    <!--End Transfer holding-->
+
+    <!--Get Just Save-->
+    <string name="get_just_save_invest_now_btn_txt">Invest Now</string>
+    <string name="get_just_save_select_folio_txt">Select Folio</string>
+    <string name="get_just_save_select_member_txt">Select Member</string>
+    <!--End Get Just Save-->
+
+
+    <!--Sip Setup-->
+    <string name="sip_setup_lumpsum_txt">Continue with Lumpsum</string>
+    <string name="sip_setup_continue_with_sip">Continue with SIP</string>
+    <string name="sip_setup_11_txt">11</string>
+    <string name="sip_setup_100_txt">100</string>
+    <string name="sip_setup_0_txt">0</string>
+    <string name="sip_setup_error_amnt">Minimum amount will be at least 500</string>
+    <string name="sip_setup_invest_duration">Please enter investment duration</string>
+    <string name="sip_setup_max_duration">Maximum investment duration will be 50 years</string>
+    <string name="sip_setup_min_duration">Please enter valid rate of returns</string>
+    <string name="sip_setup_error_min_ror">Maximum rate of return will be 30 %</string>
+    <!--End Sip Setup-->
+
+
+    <!--Social media-->
+    <string name="social_media_whatsapp_txt">WhatsApp</string>
+    <string name="social_media_twitter_txt">Twitter</string>
+    <string name="social_media_facebook_txt">Facebook</string>
+    <string name="social_media_linkedin_txt">LinkedIn</string>
+    <string name="social_media_youtube_txt">Youtube</string>
+    <!--End_social media-->
+
+    <string name="believe_scheme_header_goal_based_txt">Objective Based Baskets</string>
+    <string name="believe_scheme_header_recommended_based_txt">Featured Goals Based Baskets</string>
+
+    <!--Investment Profile-->
+    <string name="investment_profile_fatca_desc">FATCA Declaration</string>
+    <string name="investment_profile_upload_cheque_txt">Upload Cheque</string>
+    <string name="investment_profile_upload_aof_txt">Upload AOF</string>
+    <string name="investment_profile_profile_detail_txt">Profile Detail</string>
+    <string name="investment_profile_mandate_list_txt">Mandate List</string>
+    <string name="invest_profie_mandates_list_txt">Mandates List</string>
+    <string name="invest_profile_my_orders_txt">My Orders</string>
+    <string name="invest_profile_pending_order_txt">Pending Orders</string>
+    <string name="invest_profile_btn_header_txt">Create New</string>
+    <string name="investment_profile_pre_doc_txt" translatable="false">Profile Confirmation</string>
+    <!--Investment Profile-->
+
+
+    <!--NAV Scheme-->
+    <string name="nav_scheme_header_desc_txt">Select schemes to invest</string>
+    <string name="nav_scheme_select_a_fund_txt">Select a fund</string>
+    <string name="nav_scheme_search_by_amc_list_txt">Search by AMC List</string>
+    <string name="nav_scheme_scheme_name_txt">Fund Name</string>
+    <!--End NAV Scheme-->
+
+
+    <!--Flavour-->
+    <string name="set_falvour_current_scheme_txt">Current Scheme</string>
+    <string name="set_flavour_set_scheme_txt">Set Scheme</string>
+    <string name="set_flavour_search_txt">Search</string>
+    <string name="set_flavour_save_btn_txt">Save</string>
+    <string name="get_flavour_select_folio_txt">Select Folio</string>
+    <string name="get_flavour_select_member_txt">Select Member</string>
+    <string name="get_flavour_we_recommend_txt">We recommend</string>
+
+
+    <!--Allocaton charts-->
+    <string name="asset_allocation_category_header_txt">Category</string>
+    <string name="asset_allocation_market_value_txt">Current Value</string>
+    <string name="asset_allocation_percentage_txt">Allocation (%)</string>
+    <string name="application_applicant_txt">Applicant</string>
+    <string name="applicant_allocation_market_value_txt">Current Value</string>
+    <string name="applicant_allocation_percentage_txt">Allocation (%)</string>
+    <string name="fund_allocation_fund_header_txt">Fund</string>
+    <string name="fund_allocation_market_value_txt">Current Value</string>
+    <string name="fund_allocation_percentage_txt">Allocation (%)</string>
+    <!--Allocaton charts-->
+
+
+    <!--Add Services-->
+
+    <!--Add Services-->
+
+
+    <!--Incomplete profile-->
+    <string name="incomplete_profile_user_abbrv_txt">AB</string>
+    <string name="incomplete_profile_dear_investor_txt">Dear Investor</string>
+    <!--Incomplete profile-->
+
+
+    <!--Category Graph-->
+    <string name="graphs_category_heading_txt">Category</string>
+    <string name="graph_category_market_value_txt">Current Value</string>
+    <string name="graph_category_percentage_txt">Allocation (%)</string>
+    <!--Category Graph-->
+
+
+    <!--Simply Save-->
+    <string name="simply_save_header_desc_txt">Simply Save is a facility from Nippon India MF allowing to invest in Liquid Fund - Treasury Plan easily.</string>
+    <string name="save_simply_header_mini_desc">It also allows instant redemption facility. The facility is for Investor with existing Folio in any Nippon India MF scheme only through us.</string>
+    <string name="simply_save_select_folio_txt">Select Folio</string>
+    <string name="simply_save_search_scheme_txt">Search Scheme</string>
+
+
+    <!--Active Status-->
+    <string name="active_status_header_txt">Investment Profile Status</string>
+    <string name="active_status_body_txt">Your IIN is not Active</string>
+    <string name="active_status_footer_btn_txt">Go to Home</string>
+
+
+    <!--Just Save-->
+    <string name="just_save_header_desc_txt">You can set your favourite scheme for quick investment</string>
+    <string name="jsut_save_searc_hint_txt">Search Scheme</string>
+    <string name="just_save_footer_btn_txt">Save</string>
+
+
+    <!--NFO-->
+
+    <string name="txt_investment">Min. Investment</string>
+    <string name="nfo_text">NFO</string>
+
+    <!--Outstanding-->
+    <string name="outstanding_folio_txt">Folio</string>
+    <string name="outstanding_scheme_name_txt">Scheme</string>
+    <string name="outstanding_holder_name_txt">Holder</string>
+
+    <!--Factsheet-->
+    <string name="factsheet_short_term_returns_header_title">Short Term Returns</string>
+    <string name="factsheet_tv_row_header_element_one_month">1M</string>
+    <string name="factsheet_tv_row_header_element_three_month">3M</string>
+    <string name="factsheet_tv_row_header_element_six_month">6M</string>
+    <string name="factsheet_tv_row_header_element_one_year">1Y</string>
+    <string name="factsheet_short_term_scheme_row_title">Scheme</string>
+    <string name="factsheet_short_term_benchmark_row_title">Benchmark</string>
+    <string name="factsheet_long_term_returns_header_title">Long Term Returns</string>
+    <string name="factsheet_tv_long_row_header_element_two_year">2Y</string>
+    <string name="factsheet_tv_long_row_header_element_three_year">3Y</string>
+    <string name="factsheet_tv_long_row_header_element_five_year">5Y</string>
+    <string name="factsheet_tv_long_row_header_element_10_year">10Y</string>
+    <string name="factsheet_fund_size_header_title">Fund Size</string>
+    <string name="factsheet_fund_age_header_title">Fund Age</string>
+    <string name="factsheet_fund_category_header_title">Category</string>
+    <string name="factsheet_fund_expense_header_title">Expense Ratio</string>
+    <string name="factsheet_exit_load_header_title">Exit Load</string>
+    <string name="factsheet_riskometer_header_title">Riskometer</string>
+    <string name="factsheet_risk_profile_header_title">Your Risk Profile</string>
+    <string name="factsheet_fund_manager_header_title">Fund Manager</string>
+    <string name="factsheet_scheme_obj_header_title">Scheme Objective</string>
+    <string name="factsheet_holding_header_title">Holding</string>
+    <string name="factsheet_sector_analysis_header_title">Sector Analysis</string>
+    <string name="factsheet_sector_rating_header_title">Sector/Ratings</string>
+    <string name="factsheet_net_asset_title">Net Asset(%)</string>
+    <string name="factsheet_top_holding_header_title">Top Holdings</string>
+    <string name="factsheet_scheme_comparison_footer_txt">Showing performance of ₹ 10000 invested on </string>
+    <string name="factsheet_vs_scheme_comp_txt">VS</string>
+    <string name="factsheet_current_scheme_txt">This Plan</string>
+    <string name="factsheet_line_graph_vale1">Benchmark</string>
+    <string name="factsheet_line_graph_vale2">Scheme</string>
+    /************************************************************************************************/
+    <!--Payment-->
+    <string name="payment_success_header_txt">Awesome, Payment was successful</string>
+    <string name="payment_success_desc_txt">Thank you</string>
+    <string name="payment_success_txt">Payment Successful</string>
+    <string name="payment_toolbar_title">Payment</string>
+
+    <!--Account Confirmed-->
+    <string name="account_confirmed_header_txt">Investment Account</string>
+    <string name="account_confirmed_under_process_txt">Your Investment Account is under process</string>
+    /********************************************************************************************/
+    <!--SIP Cart-->
+    <string name="sip_cart_120_txt">120</string>
+    <string name="sip_cart_date_txt">SIP Date</string>
+    <string name="sip_cart_installments_txt">Installments</string>
+    /********************************************************************************************/
+    <!--My Insurance-->
+    <string name="my_insurance_sum_assured_title_txt">Sum Assured</string>
+    <string name="my_insurance_premium_title_txt">Premium</string>
+    <string name="my_insurance_next_due_date_title_txt">Next Due Date</string>
+    <string name="my_insurance_header_txt">View details of your life insurance and general insurance policies.</string>
+    /********************************************************************************************/
+
+    <!--Common Error Message-->
+    <string name="error_invalid_amount">Minimum amount will be at least 100</string>
+    <string name="error_empty_rtgs_no">Please enter RTGS Number</string>
+    <string name="error_empty_micr_no">Please enter MICR Number</string>
+    <string name="error_empty_bank_name">Please enter Bank name</string>
+    <string name="error_empty_branch_name">Please enter Branch name</string>
+    <string name="error_empty_utr_no">Please enter UTR number</string>
+    <string name="error_empty_transfer_date">Please enter transfer date</string>
+    <string name="error_empty_acc_no">Please enter Account Number</string>
+    <string name="error_empty_cheque_no">Please enter Cheque Number</string>
+    <string name="error_empty_cheque_date">Please enter cheque date</string>
+    <string name="error_empty_pay_mode">Please select payment mode</string>
+    <string name="error_empty_bank">Please select Bank</string>
+    <string name="error_try_again">There are some problem, please try later.</string>
+    <string name="error_empty_amount">Please enter amount</string>
+    <string name="error_empty_installment">Please enter installment</string>
+    <string name="error_invalid_installment">Installment limit exceeds</string>
+    <string name="error_max_rorxx">Maximum rate of return will be 30 %</string>
+    <string name="error_current_age">Please enter Current Age</string>
+    <string name="error_minn_retire_age">Minimum age will be 20 years</string>
+    <string name="error_empty_retiremnt_age">Please enter Retirement age</string>
+    <string name="error_maxx_retire_age">Maximum retirement age will be 80 years</string>
+    <string name="error_empty_monthly_expense">Please enter monthly expense</string>
+    <string name="error_minn_me">Minimum monthly expense at least 1000</string>
+    <string name="error_expected_ror">Please enter expected pre retirement return</string>
+    <string name="error_max_ror">Maximum pre retirement return will be 30 %</string>
+    <string name="error_post_retiremnt_return">Please enter expected post retirement return</string>
+    <string name="error_max_expected_post_retiremnt_ror">Maximum expected post retirement return will be 30 %</string>
+    <string name="error_empty_something">Please enter Life Expectancy</string>
+    <string name="error_max_life">Maximum life expectancy age will be 100 years</string>
+    /****************************************************************************************************/
+    <!--Go For Lumpsum/SIP-->
+
+    <string name="go_for_lumpsum_error_all_amount">Please enter amount in all funds</string>
+    <string name="go_for_lumpsum_error_no_items_in_cart">No item in cart</string>
+    <string name="go_for_lumpsum_error_select_pay_mode">Please select payment mode</string>
+    <string name="go_for_lumpsum_error_select_bank">Please select Bank</string>
+    <string name="go_for_sip_error_installment_all_items">Please enter Installment to all items</string>
+    <string name="go_for_sip_error_amnt_all_items">Please enter amount in all funds</string>
+    <string name="go_for_lumpsum_error_mandate">Please select any mandate</string>
+    /****************************************************************************************************/
+    <!--Transactions-->
+
+    /****************************************************************************************************/
+    <!--My SIP-->
+    <string name="my_sip_type_sip_detail">SIP Details</string>
+    <string name="my_sip_type_stp_detail">STP Details</string>
+    <string name="my_sip_type_swp_detail">SWP Details</string>
+    /****************************************************************************************************/
+    <!--Mandate Form-->
+
+    <string name="mandate_form_error_empty_amount">Please enter amount</string>
+    <string name="mandate_form_error_empty_date">Please enter date</string>
+    <string name="mandate_form_error_empty_curr_date">Please enter current date</string>
+    <string name="mandate_form_error_empty_applicant_name">Please enter applicant name</string>
+    /****************************************************************************************************/
+    <!--String Arrays-->
+    <array name="top_scheme_spinner_array_elements">
+        <item>15 Days</item>
+        <item>30 Days</item>
+        <item>3 Months</item>
+        <item>6 Months</item>
+        <item>1 Year</item>
+        <item>2 Years</item>
+        <item>3 Years</item>
+        <item>5 Years</item>
+        <item>10 Years</item>
+        <item>Since Inception</item>
+    </array>
+
+    <string-array name="address_type">
+        <item>Residential</item>
+        <item>Residential or Business</item>
+        <item>Business</item>
+        <item>Registered Office</item>
+        <item>Unspecified</item>
+    </string-array>
+
+    <string-array name="colors">
+        <item>#fd9104</item>
+        <item>#5076B0</item>
+        <item>#51b53f</item>
+        <item>#ED3338</item>
+        <item>#673AB7</item>
+    </string-array>
+    <string-array name="wealth_score">
+        <item>Salary</item>
+        <item>Business Income</item>
+        <item>Gift</item>
+        <item>Ancestral Property</item>
+        <item>Rental Income</item>
+        <item>Prize Money</item>
+        <item>Royalty</item>
+        <item>Others</item>
+    </string-array>
+    <string-array name="political_exposed">
+        <item>Politically Not Exposed Person</item>
+        <item>Politically Exposed Person</item>
+        <item>Relative of the Politically Exposed Person</item>
+    </string-array>
+    <string-array name="payment_status">
+        <item>Net Banking</item>
+        <item>Debit Mandate</item>
+    </string-array>
+    <string-array name="fund_picks_duration">
+        <item>7D</item>
+        <item>15D</item>
+        <item>30D</item>
+        <item>3M</item>
+        <item>6M</item>
+        <item>1Y</item>
+        <item>2Y</item>
+        <item>3Y</item>
+        <item>5Y</item>
+        <item>10Y</item>
+    </string-array>
+    <string-array name="goal_summary_detail_sort">
+        <item> </item>
+        <item>0</item>
+        <item>No</item>
+    </string-array>
+    <string-array name="allocation_charts_tab_txt">
+        <item>Asset</item>
+        <item>Category</item>
+        <item>Applicant</item>
+        <item>Fund</item>
+    </string-array>
+    <string-array name="fund_offers_tab">
+        <item>Open Now</item>
+        <item>Coming Soon</item>
+    </string-array>
+    <string-array name="mandate_array">
+        <item>Digital Mandate</item>
+        <item>Paper Mandate</item>
+        <item>E-NACH</item>
+    </string-array>
+    <string-array name="NSE_mandate_array">
+        <item>eMandate - NetBanking</item>
+        <item>eMandate - Debit Card</item>
+        <item>Paper Mandate</item>
+    </string-array>
+    <string-array name="trans_type">
+        <item>All</item>
+        <item>Systematic Investment Plan</item>
+        <item>Systematic Transfer Plan</item>
+        <item>Systematic Withdrawal Plan</item>
+        <item>Redemption</item>
+        <item>Switch In</item>
+        <item>Switch Out</item>
+        <item>Purchase</item>
+    </string-array>
+    <string-array name="my_insurance_tab">
+        <item>General Insurance</item>
+        <item>Life Insurance</item>
+    </string-array>
+    <string-array name="top_scheme_years_array">
+        <item>15D</item>
+        <item>30D</item>
+        <item>3M</item>
+        <item>6M</item>
+        <item>1Y</item>
+        <item>2Y</item>
+        <item>3Y</item>
+        <item>5Y</item>
+        <item>10Y</item>
+        <item>SI</item>
+    </string-array>
+    /****************************************************************************************************/
+    <string name="rs">\u20b9</string>
+    <string name="Rs">\u20B9</string>
+    // Static for all apps
+    <string name="overview">Overview</string>
+    <string name="holdings">Holdings</string>
+    <string name="no_internet">No internet Access, please check your internet connection.</string>
+    <string name="Error">Alert</string>
+    <string name="Server_Error">Server Response</string>
+    <string name="text_no_screen_lock">"You have not set any screen lock. Please set your screen lock from phone setting"</string>
+    <string name="text_fail_screen_lock">"Failure: Unable to verify user's identity"</string>
+
+
+    <string name="user_not_login_and_try_create_goal">Login Required.</string>
+
+
+    <string name="Forget_Password">Forgot Password</string>
+    <string name="Please_enter_username">Please enter your User ID / PAN</string>
+    <string name="Please_enter_valid_username">Please enter a valid email address.</string>
+    <string name="doc_string">You can start with as little as \u20B91000</string>
+
+    <string name="montade_notes">You need Mobile No.  which is registered with Aadhaar. If you have not registered yet then <b>you cannot do Aadhaar Mandate right now. Kindly choose another Mandate Type.\n\nIf you have registered Mobile No. with Aadhaar then you will get OTP on registered mobile number after entering Aadhaar No. on next screen.</b> </string>
+    <string name="notes">You haven\'t completed one-time registration for online investment. For online investment, you are required to complete a few details.\n\nDo you want to complete it, Right Now?</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+
+
+    <string name="txt_frgt_pwd">Forgot Password?</string>
+    <string name="txt_sign_in">Sign In</string>
+
+
+    <string name="title_pay">Pay Now</string>
+
+    <string name="txt_aadhar">Aadhaar Mandate Process</string>
+    <string name="txt_done_mandate">Done with Mandate?</string>
+    <string name="calculator_disclamer"><b>Disclaimer:</b> This tool does not make any guarantees or warranties whatsoever, expressed or implied, regarding the completeness, accuracy, adequacy, fullness, reliability, functionality and/or the reliability of the information.</string>
+    <string name="text_kycdone">Your KYC has been processed. Currently under verification. You will get KYC completion email soon.</string>
+
+    <string name="Online_KYC">Online KYC</string>
+
+    <string name="Sip_Calc_Note" translatable="false"><b>Note:</b> Calculation is based on Monthly Compounding.</string>
+
+
+    <string name="txt_scheme_nm">Enter Scheme Name</string>
+    <string name="txt_Registered_user">I\'m Registered User</string>
+    <string name="txt_Want_Register">I want to Register</string>
+    <string name="txt_Recommended">Invest in Mutual Fund Schemes and track your portfolio.</string>
+    <string name="txt_skip">Skip &amp; Register Later</string>
+    <string name="txt_explore">Explore the app and register later</string>
+    <string name="txt_create_investment">Create New Investment Account</string>
+    <string name="txt_no_data">No data available!</string>
+    <string name="txt_ok">OK</string>
+    <string name="txt_locate_us">Locate Us</string>
+    <string name="txt_date">Date</string>
+    <string name="txt_permission">Permission</string>
+    <string name="txt_cancel">Cancel</string>
+    <string name="txt_Go_Setting">Go Setting</string>
+
+    <string name="txt_one_time_register">One-Time Registration</string>
+    <string name="txt_m_Ready">Yes I\'m Ready</string>
+    <string name="txt_m_not_Ready">No I\'m not Ready</string>
+    <string name="txt_AadhaarMandate">Aadhaar Mandate</string>
+    <string name="txt_ForAadhaarMandate">For Aadhaar mandate:</string>
+    <string name="text_ok">OK</string>
+    <string name="text_100">100</string>
+    <string name="text_SelectMandatefor">Select Mandate for: </string>
+    <string name="txt_Proceed">Proceed</string>
+    <string name="txt_Alert">Alert!</string>
+    <string name="txt_Submit">Submit</string>
+    <string name="txt_Alert_content">You cannot go back as Your UCC has been created. Please Upload Your Signature.</string>
+    <string name="txt_CheckEmailAvailability">Your Email</string>
+    <string name="hint_plz_entr_email">Please enter your Email ID</string>
+    <string name="hint_AMC">AMC</string>
+    <string name="hint_Category">Category</string>
+    <string name="text_Rating">Rating</string>
+    <string name="text_reset">Reset</string>
+    <string name="text_TrailingReturnPeriod">Trailing Return Period</string>
+    <string name="txt_Apply">Apply</string>
+    <string name="txt_AddtoCart">Add to Cart</string>
+
+    <string name="txt_Folio">Folio</string>
+
+    <string name="txt_Hybrid">Hybrid</string>
+    <string name="txt_SchemeList">Scheme List</string>
+
+    <string name="txt_Dividend">Gain Since Inception</string>
+    <string name="txt_SchemeType">Scheme Type</string>
+
+    <string name="txt_SchemeCategory">Scheme Category</string>
+    <string name="txt_Sample">Sample</string>
+    <string name="order_palced">Order has been placed. <b>You may receive email from exchange, please check.</b></string>
+    <string name="txt_1Year">1 Year</string>
+    <string name="txt_3Years">3 Years</string>
+    <string name="txt_GreatYoureallset">Great, You\'re all set!</string>
+    <string name="txt_HowwouldyouliketoInvest">How would you like to Invest?</string>
+
+
+    <string name="txt_EditOrder">Edit Order </string>
+    <string name="txt_PayNow">Pay Now</string>
+    <string name="incomplete_profile_autopay_desc_txt">Create Mandate</string>
+
+    <string name="txt_EditFromDate">Edit From Date</string>
+    <string name="txt_FromTodaytoUntilCancelled">Perpetual</string>
+    <string name="txt_DDMMYYYY">DD/MM/YYYY</string>
+
+    <string name="txt_first_applicant">First Applicant Name as in Bank Records</string>
+    <string name="txt_Pleaseenterfirstname">Please enter first name</string>
+    <string name="txt_SecondRecords">Second Applicant Name as in Bank Records</string>
+    <string name="txt_Pleasecondname">Please enter second name</string>
+    <string name="txt_IFSC">IFSC Code</string>
+    <string name="txt_EnterIFSCcode">Enter IFSC code</string>
+    <string name="txt_Bank">Bank</string>
+    <string name="txt_Branch">Branch</string>
+    <string name="txt_AccountType">Account Type</string>
+
+    <string name="txt_MandateType">Mandate Type</string>
+    <string name="txt_Pleaseenternomineename">Please enter nominee name</string>
+
+    <string name="txt_SIP_Orders">SIP Orders</string>
+    <string name="txt_View">View</string>
+    <string name="txt_Lumpsum_Orders">Lumpsum Orders</string>
+    <string name="txt_No_any_orders">No any orders</string>
+    <string name="no_account">No investment Account, \nPlease create</string>
+    <string name="no_active_order">No Active Order</string>
+    <string name="no_portfolio">You do not have any folio</string>
+    <string name="txt_Order_No">Order No</string>
+
+    <string name="hint_sub_Category">Sub Category</string>
+
+    <string name="text_gender">Gender</string>
+    <string name="text_Male">Male</string>
+    <string name="text_Female">Female</string>
+    <string name="text_HoldingNature">Holding Nature</string>
+    <string name="text_Single">Single</string>
+    <string name="text_Joint">Joint</string>
+    <string name="text_PANOfSecondApplicant">PAN of second applicant</string>
+    <string name="text_NameOfSecondApplicant">Name of second applicant</string>
+    <string name="text_Pleaseentersecondapplicant">Please enter second applicant name</string>
+
+
+    <string name="Country">Country</string>
+    <string name="City">City</string>
+    <string name="nse_fatca_state_txt">State</string>
+    <string name="PinCode">Pin</string>
+    <string name="ForeignAddress">Foreign Address</string>
+    <string name="Back">Back</string>
+
+    <string name="BankDetails">Bank Details</string>
+
+
+    <string name="PurchaseCost">Investment</string>
+
+
+    <string name="txt_5_Years">5 Years</string>
+    <string name="txt_Enter_account_number">Enter account number</string>
+
+
+    <string name="Searchby">Search by </string>
+    <string name="Group">Group</string>
+    <string name="Investor">Investor</string>
+
+    <string name="DayChange">Day\'s Change</string>
+
+
+    <string name="AssetMix">Asset Mix</string>
+    <string name="Benchmark">Benchmark: </string>
+    <string name="RatingColon">Rating: </string>
+    <string name="NAV">NAV</string>
+    <string name="CAGR5Yr">CAGR 5 Yr</string>
+    <string name="ExitLoad">Exit Load</string>
+    <string name="Corpus">Corpus</string>
+    <string name="ShortTermReturns">Short Term Returns</string>
+    <string name="txt_1Month">1 Month</string>
+    <string name="txt_3Month">3 Months</string>
+    <string name="txt_6Month">6 Months</string>
+    <string name="LongTermReturns">Long Term Returns</string>
+    <string name="txt_2Years">2 Years</string>
+    <string name="txt_10Years">10 Years</string>
+    <string name="Performanceback">Performance of Rs. 10,000 invested 1 Year back</string>
+    <string name="SchemeObjective">Scheme Objective</string>
+    <string name="CAGR2">CAGR</string>
+    <string name="AvgHolding">Avg. Holding Days</string>
+    <string name="AbsReturn">Abs. Return</string>
+    <string name="digital_mandate_deff"><b>Digital Mandate</b> is a quick way to setup an Auto Pay method for your SIPs. A Code will be generated, which you can enter in your Bank Login for Authorization. No paper is involved. Some banks may not provide this facility.</string>
+    <string name="paper_mandate"><b>Paper Mandate</b> will be sent over email to you. Please print, sign and send it to us for processing. Takes 4–5 weeks usually.</string>
+    <string name="SendCurrentPortfolio">Send Current Portfolio</string>
+    <string name="SendPortfolioSummary">Send Portfolio Summary</string>
+    <string name="CapitalGainCurrentFY" translatable="false">Capital Gain Current FY</string>
+    <string name="CapitalGainPreviousFY" translatable="false">Capital Gain Previous FY</string>
+
+
+
+    <string name="SendLoginDetail">Send Login Detail</string>
+    <string name="Purchase">My Purchase</string>
+    <string name="SwitchIn">Switch In</string>
+    <string name="SwitchOut">Switch Out</string>
+    <string name="Sell">Sell</string>
+    <string name="DivAmount">Dividend Payout</string>
+    <string name="CurrentValue">Current Value</string>
+
+
+    <string name="dumy">dummy</string>
+    <string name="txt_1Yr">(1 Yr)</string>
+    <string name="Title">Title</string>
+    <string name="PleaseSignbox">Use your finger to draw a reasonable likeness of your signature in the above box.</string>
+    <string name="cheque_upload_clear_txt">Clear</string>
+    <string name="Reupload" translatable="false">Reupload</string>
+    <string name="cheque_upload_save_txt">Save</string>
+    <string name="Select_Folio">Select Folio</string>
+
+
+    <string name="Iherebycertify">I hereby certify that the information provided is correct to the best of my knowledge</string>
+
+
+    <string name="txt_5">5</string>
+
+
+    <string name="txt_EMICalculator">EMI Calculator</string>
+
+
+    <string name="SIPCalculator">SIP Calculator</string>
+
+
+    <string name="cancel_pf">Cancel</string>
+
+
+    <string name="no_fingerprints_message_pf">No fingerprints found. Please add fingerprints in the settings if you want to use this authorization method."</string>
+    <string name="no_fingerprints_title_pf">"No fingerprint found"</string>
+    <string name="fingerprint_not_recognized_pf">Fingerprint not recognized. Try again</string>
+
+
+    <string name="pick_image_intent_chooser_title">Select source</string>
+
+    <string name="crop_image_activity_no_permissions">Cancelling, required permissions are not granted</string>
+
+
+    <string name="txt_goaltitle">Goal Title</string>
+
+
+    <string name="show_only_my_sip_data">Show only mine</string>
+
+    <string name="no_record_found">No Record Found</string>
+
+
+    <string name="disclaimer_disc_txt">Past performance may or may not be delivered in future. Mutual Fund investments are subject to market risks, read all scheme related documents carefully. Consult your financial advisor before taking decisions of investment</string>
+
+    <string name="transact_txt">
+The above investment belongs to me and i am authorised to do this transaction.\n\n
+        Transaction will be executed if the \'mode of holding\' is same in both the places for example investment and in the investment profile registered with </string>
+
+
+    <!--Kindly check the exit load and taxation aspects before proceeding with the above transaction. As investor will be solely responsible for any exit charges or tax liability arising out of above transaction</string>-->
+
+
+    <string name="pre_payment_btn_txt">Pay Now</string>
+
+    <string name="clear">Clear</string>
+    <string name="notifications_paceholder_txt">No notification available</string>
+
+    <string name="work_under_development">Work Under Development</string>
+
+
+    <string name="PoliticallyExposed">Politically Not Exposed</string>
+
+
+    <string name="error">Error</string>
+
+
+    <string name="change_pwd_tooltip_txt">Password should be a minimum of 6 characters long \n and combination of Special characters,numbers, letters.</string>
+
+
+    <string name="not_available">Not Available</string>
+
+    <string name="failure_message">UH OH!</string>
+    <string name="failure_sub_message">The transaction couldn\'t made.</string>
+
+
+    <string name="no_data_found">No Data Available</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="main_nav_title_define_your_goal">Define Your Goal</string>
+
+    <string name="login_social_header_txt">Login with</string>
+
+    <string name="payment_success_footer_btn_txt">Continue</string>
+
+    <string-array name="go_for_lumspum_status">
+        <item>Net Banking</item>
+        <item>Debit Mandate</item>
+        <item>RTGS/NEFT</item>
+    </string-array>
+    <string name="tax_saving_dash_txt">-</string>
+    <string name="tax_saving_header_txt">View details of financial year wise tax savings in mutual fund.</string>
+
+
+    <string name="questions_assess_now_btn_txt">Assess Now</string>
+
+
+    <string name="empty_desc_desc_txt">Select a scheme from top performing funds</string>
+    <string name="empty_cart_add_scheme_btn_txt">Add Scheme</string>
+
+
+    <string name="dividend_dash_txt">-</string>
+    <string name="dividend_header_txt">View all dividends paid or reinvested in the Financial Year</string>
+
+
+    <string name="dash_txt">-</string>
+
+
+    <string name="folio_scheme_balance_units_txt">Balance Units</string>
+
+
+    <string name="crop_image_txt">Crop</string>
+
+    <string name="setting_logout_desc_txt">Do you really want to logout?</string>
+    <string name="dialog_btn_cancel">Cancel</string>
+
+
+    <string name="tv_ct_chooser">Category</string>
+    <string name="category_chooser_equity">Equity</string>
+    <string name="category_chooser_debt">Debt</string>
+    <string name="category_chooser_fmp">FMP</string>
+    <string name="tv_ct_scheme_type">Scheme type</string>
+    <string name="scheme_chooser_growth">Growth</string>
+    <string name="scheme_chooser_dividend">Dividend</string>
+
+
+    <string name="bottomsheet_scheme_header_txt">Select Your Scheme</string>
+
+    <string name="btn_apply">Apply</string>
+
+
+    <string name="text_mutual_funds_search">Type Scheme Name</string>
+    <string name="my_folio_fund_name_txt">Fund Name</string>
+
+
+    <string name="alert_dialog_notification_clear_txt">Do you really want to clear all notifications.</string>
+    <string name="alert_empty_notification_header_txt">No Notification Found</string>
+    <string name="text_sip_title">SIP Order Summary</string>
+    <string name="text_lumpsum_title">Lumpsum Order Summary</string>
+    <string name="btn_swipe_to_transact">Swipe to Transact</string>
+
+    <string name="broker_data_not_available_txt">Not available</string>
+
+    <string name="login_error_heading">Login Authentication</string>
+
+
+    <string name="main_activity_crop_error">Cropping failed</string>
+
+
+    <string name="retry_btn">Retry</string>
+    <string name="disclaimer">Disclaimer :</string>
+    <string name="no_chart_data_availabe">No Pictorial Data Available</string>
+
+    <string name="apptype_n">N</string>
+    <string name="apptype_dn">DN</string>
+    <string name="apptype_b">B</string>
+    <string name="apptype_db">DB</string>
+    <string name="transact_now_txt">Transact Now</string>
+    <string name="add_pur_transact">Please select payment mode</string>
+    <string name="add_pur_transact_err_bank">Please select Bank</string>
+    <string name="add_transac_folio_no">Folio No. </string>
+    <string name="login_type_broker">Broker</string>
+    <string name="login_type_sub_broker">SubBroker</string>
+    <string name="login_type_rm">RM</string>
+    <string name="txt__email">Email Id</string>
+    <string name="txt_mobile">Mobile</string>
+    <string name="txt_acc_type">Account Type</string>
+    <string name="lumpsum_order_status_pay_now">Pay Now</string>
+    <string name="lumpsum_order_status_go_back">Go Back</string>
+    <string name="lumpsum_order_status_no_order_placed">Order not placed</string>
+    <string name="lumpsum_order_status_desc">Order is successfully placed.An order authentication email has been sent to you by BSE (exchange), kindly give your authentication to approve the transaction, else it will automatically get cancelled.</string>
+    <string name="dialog_mandate_desc">Are you sure you have completed Aadhaar Mandate Process?</string>
+
+    <string name="error_no_order_found">No Order Found</string>
+
+
+    <string name="portfolio_family_group_txt">GROUP</string>
+    <string name="pre_payment_error_empty_amount">Please enter amount</string>
+    <string name="pre_payment_error_empty_cart">No item in cart</string>
+    <string name="profile_phone_active">Phone Lock (Active)</string>
+    <string name="profile_pin_active">PIN (Active)</string>
+    <string name="profile_none">None</string>
+    <string name="set_falvour_error_select_scheme">Select a Scheme</string>
+    <string name="set_falvour_error_select_scheme_saved">Scheme is already configured.</string>
+
+    <string name="transfer_holding_note_txt">Note</string>
+
+
+    <string name="sip_error_max_dur">Maximum investment duration will be 50 years</string>
+
+    <string name="dialog_title_message">Message</string>
+    <string name="main_nav_title_tax_saving_details">Tax Saving Detail</string>
+    <string name="change_password_error_empty_currrent_password">Please Enter Current Password</string>
+    <string name="change_password_error_empty_new_pwd">Please Enter New Password</string>
+    <string name="change_password_error_empty_confrim_new_password">Please Enter Confirm  Password</string>
+    <string name="change_password_error_password_not_match"><![CDATA[Confirm & New Password Does Not Match]]></string>
+    <string name="toolbar_title_language_support">Choose Language</string>
+    <string name="settings_change_app_lang_txt">Change Language</string>
+    <string name="settings_change_client_photo" translatable="false">Change</string>
+
+
+    <string name="txt_on_screen">On Screen Signature</string>
+    <string name="txt_upload">Upload Signature</string>
+    <string name="txt_upload_cheque">Upload Cheque</string>
+    <string name="txt_cheque_heading">Please provide a copy of cancelled cheque leaf of your bank account in order to activate your investment account.</string>
+    <string name="txt_cheque_upload">I hereby certify that information provided is correct to best of my knowledge.</string>
+    <string name="txt_pre_doc_line1">We\'re almost done</string>
+    <string name="contact_us_view_details">View Directions</string>
+    <string name="continue_txt">Continue</string>
+
+
+    <string name="dashboard_flavour_of_month_txt">Flavour</string>
+    <string name="dashboard_flavour_of_month_header_txt">of the month</string>
+    <string name="dashboard_flavour_month_desc_txt">Scheme of the month recommended by us.</string>
+    <string name="dashboard_just_save_tv_txt">Just</string>
+    <string name="dashboard_just_save_header_txt">Save</string>
+    <string name="dashboard_simply_save_tv_txt">Simply</string>
+    <string name="dashboard_simply_save_header_txt">Save</string>
+    <string name="main_nav_title_simply_save">Simply Save</string>
+    <string name="main_nav_title_just_save">Just Save</string>
+    <string name="main_nav_title_flavour_month">Flavour of the month</string>
+    <string name="toolbar_title_flavour_of_the_month">Flavour of the Month</string>
+    <string name="dashboard_service_request_txt">Service</string>
+    <string name="dashboard_service_req_header_txt">Request</string>
+    <string name="toolBar_title_service_request">Service Request</string>
+    <string name="help_enquiry">Enquiry</string>
+    <string name="help_main_enquiry">Enquiry</string>
+    <string name="Mutual_Fund_Lab_content1">Easily import and track all your mutual fund investments in one place.</string>
+    <string name="Mutual_Fund_Lab_content2">We will import this with your portfolio from backend.</string>
+    <string name="existing_investment_description">Upload your latest CAMS/KARVY Consolidated Account Statement PDF to start tracking. We will import this in your Portfolio from backend</string>
+    <string name="enquiry_form_name">Name</string>
+    <string name="enquiry_form_contact">Contact Details</string>
+    <string name="enquiry_form_desc">Description</string>
+    <string name="error_enquiry_enmpty_name">Please Enter Name</string>
+    <string name="error_enquiry_empty_phone">Please Enter Contact number</string>
+    <string name="error_enqiry_empty_message">Enter Description</string>
+    <string name="service_request_collect_cheque">Collect Cheque</string>
+    <string name="service_request_send_me_portfolio_report">Send Me Portfolio\n Report</string>
+    <string name="service_request_collect_document">Collect Document</string>
+    <string name="service_request_report_an_issue">Report an Issue</string>
+    <string name="service_request_changes_in_portfolio">Changes in portfolio</string>
+    <string name="service_request_call_me">Call Me</string>
+    <string name="service_request_meet_me">Meet me</string>
+    <string name="service_request_others">Others</string>
+    <string name="error_empty_login">Please Login to Request Services</string>
+    <string name="error_not_available">Not Available for Now</string>
+    <string name="dashboard_track_txt">Track Old</string>
+    <string name="dashboard_track_old_invest_header_txt">Investments</string>
+    <string name="get_flavour_please_login_or_signup_to_continue">Please Login Or SignUp to continue..</string>
+    <string name="signup_signup_with_txt">Signup With</string>
+    <string name="app_version">v4</string>
+    <string name="setting_app_store_version_txt">Google Play Store Version :</string>
+    <string name="factsheet_transact_btn_txt">Transact</string>
+
+
+    <string-array name="service_request_list">
+        <item>Portfolio Review</item>
+        <item>Statement Request</item>
+        <item>Document Pick Up</item>
+        <item>Set Up a Meeting</item>
+        <item>Others</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="TokenKey" translatable="false">IWAppsAndroid</string>
+
+    <string name="btn_view_your_portfolio" translatable="false">View Your Portfolio</string>
+    <string name="btn_let_s_get_started" translatable="false">Let\'s Get Started</string>
+
+    <!--Upload CAS string-->
+    <string name="txt_cas_pre_btn">Upload / Forward CAS</string>
+    <string name="txt_provide_cas">Provide your CAS</string>
+    <string name="txt_consolidated">Consolidated Account Statement (CAS) consolidates your mutual fund investments across all AMCS.</string>
+    <string name="txt_generate_cas">1. Generate your CAS via Karvy or CAMS</string>
+    <string name="txt_karvy">KARVY</string>
+    <string name="txt_cams">CAMS</string>
+    <string name="txt_receive_cas">2. Receive your CAS via email</string>
+    <string name="txt_karvy_receive">Karvy / CAMS will send the CAS to your email address.</string>
+    <string name="txt_forward_cas">3. Forward / Upload CAS to us</string>
+    <string name="txt_upload_cas1">Upload the CAS file received or forward it to</string>
+    <string name="txt_upload_cas2">also provide the password set while generating CAS.</string>
+    <string name="txt_note">Note: Upload only detailed CAS generated from Karvy / CAMS CAS from NSDL and CDSL is not supported.</string>
+    <string name="track_old_invest_txt">Track old Investments</string>
+    <string name="txt_chose_cas">Choose CAS Sharing Method</string>
+    <string name="txt_forward">1. Forward</string>
+    <string name="txt_forward_cas_email">If you have CAS on email then simply forward to us.</string>
+    <string name="txt_cas_upload">2. Upload</string>
+    <string name="txt_forward_cas_directly">If you have CAS on your phone then upload directly.</string>
+    <string name="upload_statement">Upload CAS</string>
+    <string name="txt_password">Password of your CAS</string>
+    <string name="upload_my_CAS_txt">Upload My CAS</string>
+    <string name="dashboard_current_gain_title_text">Current Gain (CAGR)</string>
+    <string name="dashbaord_all_time_gain">Gain since inception (XIRR)</string>
+    <string name="allocated_folio_txt">Allocate Folio (%)</string>
+    <string name="allot_txt">Allot</string>
+    <string name="allocated_folio_detail_txt">Folio Allocation Details</string>
+    <string name="unallocated_txt">Unallocated</string>
+
+    <string name="iwill_text">I will</string>
+    <string name="chose_myself_txt">Choose Myself</string>
+    <string name="continue_with_txt">Continue with</string>
+    <string name="recomandation_txt">Recommendations</string>
+    <string name="dashboard_type_two_track_your_portfolio_txt">Track Your Portfolio</string>
+    <string name="dashboard_type_two_my_assets_btn">My Assets</string>
+    <string name="dashboard_type_two_my_assets_txt">My Assets</string>
+    <string name="dashboard_type_two_enquiry_btn_text">Enquiry</string>
+    <string name="dashboard_type_two_login_btn_text">Login</string>
+    <string name="dashboard_type_two_investment_in_equity_market_header_txt">Investment in Equity Market</string>
+    <string name="dashboard_type_two_invest_route_header_txt">Investment Routes</string>
+    <string name="dashboard_type_two_other_services_header_txt">Other Services</string>
+    <string name="toolBar_title_my_assets">My Assets</string>
+    <string name="dashboard_model_port_tv_txt">Model Portfolio</string>
+    <string name="dashboard_model_port_desc_txt">Track your trading portfolio</string>
+    <string name="dashboard_trading_online_tv_txt">Online Trading</string>
+    <string name="dashboard_trading_online_l_desc_txt">Invest Through this app for share market</string>
+    <string name="toolbar_title_rder_status_txt">Order Status</string>
+    <string name="Pre_Payment_Method_toolbar_title" translatable="false">Payment Method</string>
+    <string name="toolBar_title_share_and_bond"><![CDATA[Share & Bond Portfolio]]></string>
+    <string name="toolBar_title_fixed_deposit">Fixed Deposit</string>
+    <string name="toolBar_title_life_insurance">Life Insurance</string>
+    <string name="toolBar_title_general_insurance" translatable="false">General Insurance</string>
+    <string name="share_bond__portfolio_tv_initial_value_txt">Initial Value</string>
+    <string name="share_bond__portfolio_tv_market_value_txt">Market Value</string>
+    <string name="share_bond__portfolio_tv_cagr_value_txt">CAGR</string>
+    <string name="share_bond__portfolio_tv_gain_value_txt">Gain</string>
+    <string name="share_bond__portfolio_tv_abs_rtr_value_txt">Absolute Return</string>
+    <string name="share_bond__portfolio_tv_purchase_cost_value_txt">Purchase Cost</string>
+    <string name="share_bond__portfolio_tv_balance_unit_value_txt">Balance Unit</string>
+    <string name="fixed_amount_placeholder">Amount</string>
+    <string name="fixed_deposit_years_of_compunding">Years of Compounding</string>
+    <string name="share_bond__portfolio_tv_start_date_value_txt" translatable="false">Start Date</string>
+    <string name="share_bond__portfolio_tv_amnt_value_txt">Amout</string>
+    <string name="share_bond__portfolio_tv_period_value_txt">Period</string>
+    <string name="important_txt">Important</string>
+    <string name="txt_readmore">Read More</string>
+    <string name="know_more_txt">KNOW MORE</string>
+    <string name="validation_txt">Don\'t show again</string>
+    <string name="XIRR_return_txt">XIRR return (%) since inception</string>
+    <string name="profile_id_txt">Profile ID</string>
+    <string name="change_sip_txt">Change in SIP</string>
+    <string name="change_client_txt">Change in Client</string>
+    <string name="change_txt">( change from previous FY )</string>
+    <string name="main_nav_title_kyc">Video KYC</string>
+    <string name="toolBar_title_invest_existing_scheme">Invest in Existing Schemes</string>
+    <string name="toolbar_title_quick_read">Quick Read</string>
+    <string name="let_s_get_started">Let\'s Get Started</string>
+    <string name="help_service_title">Service</string>
+    <string name="conditionNoUcc"><![CDATA[Note: Mobile No. & Email given earlier will remain unchanged. If you want to change these details then kindly logout and sign up as new user.]]></string>
+    <string name="conditionUcc">Note: While creating additional profiles the mobile no. and emailid given earlier will remain unchanged. If you want to change these details then kindly logout and sign up as new user.</string>
+    <string name="main_bottom_tab_menu_invest_now">Invest</string>
+    <string name="main_nav_title_goal">My Goal</string>
+    <string name="txt_achieve">To achieve this Goal you must Invest</string>
+    <string name="txt_Onetime">One Time</string>
+    <string name="redmption">Redemption</string>
+    <string name="systemetic_investment_txt">Systematic Transactions</string>
+    <string name="date">Date</string>
+    <string name="pan_name_txt">Name as per PAN</string>
+    <string name="proceed_kyc_txt">Proceed for KYC</string>
+    <string name="message_txt">Message</string>
+    <string name="no_investment_profile">No investment Profile</string>
+    <string name="no_investment_txt">If you have Investment Profile, Please Login. If not, Please Sign up.</string>
+    <string name="kyc_verification_top_desc_txt">Please note: After doing Video KYC process on next screen. Authority takes times to verify the details submitted. Please check KYC Status again after 1–2 days.</string>
+    <string name="transaction_status_txt" translatable="false">Transaction Status</string>
+    <string name="lastDay_txt">Transaction of Last</string>
+    <string name="order_type" translatable="false">Order Type</string>
+    <string name="order_txt">Orders</string>
+    <string name="iin_verify_txt">Have you done email authentication?</string>
+    <string name="dashboard_type_two_my_portfolio_btn">My Portfolio</string>
+    <string name="status_txt">Status</string>
+
+    <string name="current_txt" translatable="false">Current Value</string>
+    <string name="click_here" translatable="false">Click here to\nStart Investing</string>
+
+    <string name="settings_close_acc_txt" translatable="false">Clear data of your profile on this device</string>
+    <string name="close_acc_desc_txt" translatable="false">Your account will be cleared from this device</string>
+
+    <string name="ft_number_txt">FT A/C No.</string>
+    <string name="transfer_holding_enter_ft_number_txt">Enter FT A/C Number</string>
+    <string name="sort_name_by">Sort Name By :</string>
+    <string name="portfolio_filter">Sort Portfolio</string>
+    <string name="z_to_a">Z-to-A</string>
+
+    <string name="high_to_low">High to Low</string>
+    <string name="low_to_high">Low to High</string>
+    <string name="investment_amount" translatable="false">Investment Amount</string>
+    <string name="btn_asc_label">A-to-Z</string>
+    <string name="valid_txt">"Valid till : "</string>
+    <string name="transact_txt_1">Kindly check the exit load and taxation aspects before proceeding with the above transaction. As investor will be solely responsible for any exit charges or tax liability arising out of above transaction</string>
+    <string name="error_connection_timeout">Please try again later</string>
+    <string name="welcome_to_sipbazar" translatable="false">Welcome to SIPBajaar</string>
+    <string name="verify_mobile">Verify Mobile</string>
+    <string name="verify">Verify</string>
+    <string name="change_mobile_number">Change Mobile Number</string>
+    <string name="tv_otp_done_header"><![CDATA[Mobile & Email are verified \n successfully!]]></string>
+    <string name="mobile_verified_header">Mobile Number has been \nverified!</string>
+    <string name="verify_email">Verify Email</string>
+    <string name="now_proceed_for_email_verification">Now Proceed for Email verification</string>
+    <string name="set_a_goal">Set a Purpose</string>
+    <string name="current_investments">Current Investments</string>
+    <string name="sip">SIP</string>
+    <string name="lumpsum">Lumpsum</string>
+    <string name="monthly_investment" translatable="false">Monthly Investment</string>
+    <string name="one_time_investment" translatable="false">One Time Investment</string>
+    <string name="toolBar_title_invest_confirm" translatable="false">Investment Confirmation</string>
+    <string name="risk_profile_confirmation_Access_Again" translatable="false">Access Again</string>
+    <string name="invested_amount">Invested Amount</string>
+    <string name="disc_desc"><![CDATA[Past Performance may or may not be delivered in future. Mutual fund investments are subject to market risks, read all scheme related documents carefully. Past performance is not indicative of future performance. > Return <1 year are absolute and 1 Year are Compounded Annualized. >The data shown above is based on the information available with us and is only for your reference. Any discrepancy may please be reported to us. > All Investments in Mutual Funds carry risk of loss of Principle & Income. No returns are guaranteed, any projections are indicative and subject to market fluctuations. >Pleas read the offer document carefully before investing.]]></string>
+<string name="disc_content_top_scheme" translatable="false">
+    Past Performance may or may not be delivered in future. Mutual fund investments are subject to market risks, read all scheme related documents carefully. Past performance is not indicative of future performance.\n\n
+</string>
+    <string name="top_scheme_desc_list" translatable="false">
+        <li>Return &lt; 1 year are absolute and 1 Year are Compounded Annualized.</li>\n\n
+        <li>The data shown above is based on the information available with us and  is only for your reference. Any discrepancy may please be reported to us.</li>\n\n
+        <li>All Investments in Mutual Funds carry risk of loss of Principle &amp; Income. No returns are guaranteed, any projections are indicative and subject to market fluctuations</li>\n\n
+        <li>Please read the offer document carefully before investing.</li>
+    </string>
+    <string name="trans_disclaimer">By continuing, You agree to have read the Scheme Information Document and T&amp;C.\n\nDisclaimer : Mutual Fund Investments are subject to Market Risks, Please read all scheme related documents carefully. Past performance is not indicative of future performance.</string>
+    <string name="folio">Folio.</string>
+    <string name="dividend">Dividend :</string>
+    <string name="absolute_return">Absolute Return :</string>
+    <string name="launch_date">Launch Date:</string>
+    <string name="toolBar_title_emi_Cal">EMI Calculator</string>
+
+
+
+    <string name="year" translatable="false">Year</string>
+    <string name="month" translatable="false">Month</string>
+    <string name="text_date" translatable="false">Day</string>
+    <string name="open_in_browser">Open in browser</string>
+    <string name="month_and_year" translatable="false">Month &amp; Year</string>
+
+    <string name="swp_month_and_year" translatable="false">SWP Start Month &amp; Year</string>
+    <string name="swp_day" translatable="false">SWP Start Day</string>
+    <string name="sip_month_and_year" translatable="false">SIP Start Month &amp; Year</string>
+    <string name="sip_day" translatable="false">SIP Start Day</string>
+    <string name="stp_month_and_year" translatable="false">STP Start Month &amp; Year</string>
+    <string name="stp_day" translatable="false">STP Start Day</string>
+    <string name="sip_date_will_be_7_days_ahead" translatable="false">SIP date will be at least 7 days ahead from today</string>
+    <string name="stp_date_will_be_7_days_ahead" translatable="false">STP date will be at least 7 days ahead from today</string>
+    <string name="swp_date_will_be_7_days_ahead" translatable="false">SWP date will be at least 7 days ahead from today</string>
+    
+    <string name="add_bank_text" translatable="false">Add Bank</string>
+    <string name="select_bank_text" translatable="false">Select Bank</string>
+    <string name="no_bank_list" translatable="false">You do not have any Bank</string>
+    <string name="text_address1" translatable="false">Address1</string>
+    <string name="text_address2" translatable="false">Address2</string>
+    <string name="text_address3" translatable="false">Address3</string>
+    <string name="add_your_signature" translatable="false">Add Your Signature</string>
+    <string name="bank_details_not_found" translatable="false">Bank Details Not Found</string>
+    <string name="submit_documents" translatable="false">Submit Documents</string>
+    <string name="cheque" translatable="false">Cheque</string>
+    <string name="documents" translatable="false">Documents</string>
+    <string name="add_bank_cheque" translatable="false">Add Bank Cheque</string>
+</resources>
+

@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/dialogBackground">
+
+
+    <investwell.utils.customView.CustomTextViewRegular
+        android:id="@+id/tv_filter_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_all_regular"
+        android:layout_marginLeft="@dimen/margin_all_regular"
+        android:layout_marginTop="8dp"
+        android:buttonTint="?attr/primaryButtonBackground"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/sort_name_by"
+        android:textColor="?attr/primaryTextColor"
+        android:textSize="@dimen/textView_all_size_14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_cat_raise"
+        tools:targetApi="lollipop" />
+
+    <investwell.utils.customView.CustomTextViewBold
+        android:id="@+id/textView10"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:paddingStart="16dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="16dp"
+        android:paddingRight="16dp"
+        android:text="@string/portfolio_filter"
+        android:textColor="?attr/primaryTextColor"
+        android:textSize="@dimen/textView_all_size_16"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <investwell.utils.customView.CustomButton
+        android:id="@+id/btn_asc_name"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="@dimen/margin_all_very_small"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="?attr/secondaryBtnDrawable"
+        android:gravity="center"
+        android:padding="@dimen/padding_all_very_small"
+        android:text="@string/btn_asc_label"
+        android:textAllCaps="false"
+        android:textColor="?attr/secondaryButtonTextColor"
+        android:textSize="@dimen/textView_all_size_14"
+        app:layout_constraintEnd_toStartOf="@+id/btn_desc_name"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_filter_name" />
+
+    <investwell.utils.customView.CustomButton
+        android:id="@+id/btn_desc_name"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="?attr/secondaryBtnDrawable"
+        android:gravity="center"
+        android:padding="@dimen/padding_all_very_small"
+        android:text="@string/z_to_a"
+        android:textAllCaps="false"
+        android:textColor="?attr/secondaryButtonTextColor"
+        android:textSize="@dimen/textView_all_size_14"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_asc_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_asc_name" />
+
+    <investwell.utils.customView.CustomTextViewRegular
+        android:id="@+id/tv_filter_current_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_all_regular"
+        android:layout_marginLeft="@dimen/margin_all_regular"
+        android:layout_marginTop="8dp"
+        android:buttonTint="?attr/primaryButtonBackground"
+
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/CurrentValue"
+        android:textColor="?attr/primaryTextColor"
+        android:textSize="@dimen/textView_all_size_14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_asc_name"
+        tools:targetApi="lollipop" />
+
+    <investwell.utils.customView.CustomButton
+        android:id="@+id/btn_cv_filter_growth"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+
+        android:layout_marginTop="@dimen/margin_all_very_small"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="?attr/secondaryBtnDrawable"
+        android:gravity="center"
+        android:padding="@dimen/padding_all_very_small"
+        android:text="@string/high_to_low"
+        android:textAllCaps="false"
+        android:textColor="?attr/secondaryButtonTextColor"
+        android:textSize="@dimen/textView_all_size_14"
+        app:layout_constraintEnd_toStartOf="@+id/btn_cv_filter_declined"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_filter_current_value"
+        tools:layout_editor_absoluteY="164dp" />
+
+    <investwell.utils.customView.CustomButton
+        android:id="@+id/btn_cv_filter_declined"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="?attr/secondaryBtnDrawable"
+        android:gravity="center"
+        android:padding="@dimen/padding_all_very_small"
+        android:text="@string/low_to_high"
+        android:textAllCaps="false"
+        android:textColor="?attr/secondaryButtonTextColor"
+        android:textSize="@dimen/textView_all_size_14"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_cv_filter_growth"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_cv_filter_growth" />
+
+    <investwell.utils.customView.CustomTextViewRegular
+        android:id="@+id/tv_label_filter_invest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_all_regular"
+        android:layout_marginLeft="@dimen/margin_all_regular"
+        android:layout_marginTop="8dp"
+        android:buttonTint="?attr/primaryButtonBackground"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/investment_amount"
+
+        android:textColor="?attr/primaryTextColor"
+        android:textSize="@dimen/textView_all_size_14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_cv_filter_growth"
+        tools:targetApi="lollipop" />
+
+    <investwell.utils.customView.CustomButton
+        android:id="@+id/btn_invest_raise"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="@dimen/margin_all_very_small"
+        android:layout_marginEnd="16dp"
+
+        android:layout_marginRight="16dp"
+        android:background="?attr/secondaryBtnDrawable"
+        android:gravity="center"
+        android:padding="@dimen/padding_all_very_small"
+        android:text="@string/high_to_low"
+        android:textAllCaps="false"
+        android:textColor="?attr/secondaryButtonTextColor"
+        android:textSize="@dimen/textView_all_size_14"
+        app:layout_constraintEnd_toStartOf="@+id/btn_invest_fall"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_label_filter_invest"
+        tools:layout_editor_absoluteY="253dp" />
+
+    <investwell.utils.customView.CustomButton
+        android:id="@+id/btn_invest_fall"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="?attr/secondaryBtnDrawable"
+        android:gravity="center"
+        android:padding="@dimen/padding_all_very_small"
+        android:text="@string/low_to_high"
+        android:textAllCaps="false"
+        android:textColor="?attr/secondaryButtonTextColor"
+        android:textSize="@dimen/textView_all_size_14"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_invest_raise"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_invest_raise" />
+
+    <investwell.utils.customView.CustomTextViewRegular
+        android:id="@+id/tv_filter_gain_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_all_regular"
+        android:layout_marginLeft="@dimen/margin_all_regular"
+        android:layout_marginTop="8dp"
+        android:buttonTint="?attr/primaryButtonBackground"
+        android:fontFamily="sans-serif-condensed"
+
+        android:text="@string/portfolio_client_gain_txt"
+        android:textColor="?attr/primaryTextColor"
+        android:textSize="@dimen/textView_all_size_14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_invest_raise"
+        tools:targetApi="lollipop" />
+
+    <investwell.utils.customView.CustomButton
+        android:id="@+id/btn_gain_raise"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="@dimen/margin_all_very_small"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="?attr/secondaryBtnDrawable"
+        android:gravity="center"
+        android:padding="@dimen/padding_all_very_small"
+        android:text="@string/high_to_low"
+
+        android:textAllCaps="false"
+        android:textColor="?attr/secondaryButtonTextColor"
+        android:textSize="@dimen/textView_all_size_14"
+        app:layout_constraintEnd_toStartOf="@+id/btn_gain_fall"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_filter_gain_label" />
+
+    <investwell.utils.customView.CustomButton
+        android:id="@+id/btn_gain_fall"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="?attr/secondaryBtnDrawable"
+        android:gravity="center"
+        android:padding="@dimen/padding_all_very_small"
+        android:text="@string/low_to_high"
+        android:textAllCaps="false"
+        android:textColor="?attr/secondaryButtonTextColor"
+        android:textSize="@dimen/textView_all_size_14"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_gain_raise"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_gain_raise" />
+
+    <investwell.utils.customView.CustomTextViewRegular
+        android:id="@+id/tv_filter_cagr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_all_regular"
+        android:layout_marginLeft="@dimen/margin_all_regular"
+        android:layout_marginTop="8dp"
+        android:buttonTint="?attr/primaryButtonBackground"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/portfolio_client_cagr_txt"
+        android:textColor="?attr/primaryTextColor"
+        android:textSize="@dimen/textView_all_size_14"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_gain_raise"
+        tools:targetApi="lollipop" />
+
+    <investwell.utils.customView.CustomButton
+        android:id="@+id/btn_cagr_raise"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="@dimen/margin_all_very_small"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="?attr/secondaryBtnDrawable"
+        android:gravity="center"
+        android:padding="@dimen/padding_all_very_small"
+        android:text="@string/high_to_low"
+        android:textAllCaps="false"
+
+        android:textColor="?attr/secondaryButtonTextColor"
+        android:textSize="@dimen/textView_all_size_14"
+        app:layout_constraintEnd_toStartOf="@+id/btn_cagr_fall"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_filter_cagr" />
+
+    <investwell.utils.customView.CustomButton
+        android:id="@+id/btn_cagr_fall"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="?attr/secondaryBtnDrawable"
+        android:gravity="center"
+        android:padding="@dimen/padding_all_very_small"
+        android:text="@string/low_to_high"
+        android:textAllCaps="false"
+        android:textColor="?attr/secondaryButtonTextColor"
+        android:textSize="@dimen/textView_all_size_14"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_cagr_raise"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_cagr_raise" />
+
+    <investwell.utils.customView.CustomTextViewRegular
+        android:id="@+id/tv_filter_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_all_regular"
+        android:layout_marginLeft="@dimen/margin_all_regular"
+        android:layout_marginTop="8dp"
+        android:buttonTint="?attr/primaryButtonBackground"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Scheme Category"
+        android:textColor="?attr/primaryTextColor"
+        android:textSize="@dimen/textView_all_size_14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        tools:targetApi="lollipop" />
+
+
+
+    <investwell.utils.customView.CustomButton
+        android:id="@+id/btn_cat_raise"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="@dimen/margin_all_small"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="?attr/secondaryBtnDrawable"
+        android:gravity="center"
+        android:padding="@dimen/padding_all_very_small"
+        android:text="@string/btn_asc_label"
+        android:textAllCaps="false"
+        android:textColor="?attr/secondaryButtonTextColor"
+        android:textSize="@dimen/textView_all_size_14"
+        app:layout_constraintEnd_toStartOf="@+id/btn_cat_fall"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_filter_category" />
+
+    <investwell.utils.customView.CustomButton
+        android:id="@+id/btn_cat_fall"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="?attr/secondaryBtnDrawable"
+        android:gravity="center"
+        android:padding="@dimen/padding_all_very_small"
+        android:text="@string/z_to_a"
+        android:textAllCaps="false"
+        android:textColor="?attr/secondaryButtonTextColor"
+        android:textSize="@dimen/textView_all_size_14"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_cat_raise"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_cat_raise" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_apply_filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:background="?attr/primaryButtonBackground"
+        app:tint="@color/colorWhite"
+        app:backgroundTint="?attr/primaryButtonBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@mipmap/ic_check" />
+</androidx.constraintlayout.widget.ConstraintLayout>

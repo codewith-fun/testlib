@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/CardViewStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_all_small">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin_all_very_small"
+       >
+
+        <investwell.utils.customView.CustomTextViewRegular
+            android:id="@+id/tv_scheme_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textView_all_size_14"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Scheme Nname" />
+
+        <investwell.utils.customView.CustomTextViewRegular
+            android:id="@+id/tv_folio_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textView_all_size_10"
+            android:textColor="@color/colorGrey_500"
+            app:layout_constraintStart_toStartOf="@+id/tv_scheme_name"
+            app:layout_constraintTop_toBottomOf="@+id/tv_scheme_name"
+            tools:text="Folio no." />
+
+        <investwell.utils.customView.CustomTextViewRegular
+            android:id="@+id/tv_market_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_all_small"
+            android:text="Market Value"
+            android:textSize="@dimen/textView_all_size_12"
+            app:layout_constraintEnd_toStartOf="@+id/tv_purchase_cost_label"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/tv_folio_no"
+            app:layout_constraintTop_toBottomOf="@+id/tv_folio_no" />
+
+        <investwell.utils.customView.CustomTextViewRegular
+            android:id="@+id/tv_purchase_cost_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:text="Purchase Cost"
+            android:textSize="@dimen/textView_all_size_12"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tv_market_label"
+            app:layout_constraintEnd_toStartOf="@+id/tv_return_label"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tv_market_label" />
+
+        <investwell.utils.customView.CustomTextViewRegular
+            android:id="@+id/tv_return_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:text="CAGR"
+
+            android:textSize="@dimen/textView_all_size_12"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tv_purchase_cost_label"
+            app:layout_constraintEnd_toStartOf="@+id/imageView11"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tv_purchase_cost_label" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:contentDescription="@string/app_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tv_return_label"
+            app:layout_constraintTop_toTopOf="@+id/tv_market_label"
+            app:srcCompat="@drawable/forward_arrow" />
+
+        <investwell.utils.customView.CustomTextViewBold
+            android:id="@+id/tv_market_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="@dimen/padding_all_very_small"
+            android:textColor="?attr/primaryTextColor"
+            android:textSize="@dimen/textView_all_size_12"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/tv_market_label"
+            app:layout_constraintTop_toBottomOf="@+id/tv_market_label"
+            tools:text="TextView" />
+
+        <investwell.utils.customView.CustomTextViewBold
+            android:id="@+id/tv_purchase_cost_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="@dimen/padding_all_very_small"
+            android:textColor="?attr/primaryTextColor"
+            android:textSize="@dimen/textView_all_size_12"
+            android:textStyle="bold"
+
+            app:layout_constraintStart_toStartOf="@+id/tv_purchase_cost_label"
+            app:layout_constraintTop_toBottomOf="@+id/tv_purchase_cost_label"
+            tools:text="TextView" />
+
+        <investwell.utils.customView.CustomTextViewBold
+            android:id="@+id/tv_return_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/menu_up"
+            android:drawableRight="@drawable/menu_up"
+            android:gravity="center"
+            android:textColor="?attr/primaryTextColor"
+            android:textSize="@dimen/textView_all_size_12"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/tv_return_label"
+            app:layout_constraintTop_toBottomOf="@+id/tv_return_label"
+            tools:text="TextView" />
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_margin="@dimen/margin_all_very_small"
+            android:background="@color/colorGrey_250"
+            android:padding="@dimen/padding_all_very_small"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_return_value" />
+
+        <investwell.utils.customView.CustomTextViewRegular
+            android:id="@+id/tv_gain_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/portfolio_client_gain_txt"
+            android:textSize="@dimen/textView_all_size_12"
+            app:layout_constraintStart_toStartOf="@+id/tv_market_value"
+            app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+        <investwell.utils.customView.CustomTextViewBold
+            android:id="@+id/textView38"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="?attr/primaryTextColor"
+            android:textSize="@dimen/textView_all_size_12"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/tv_gain_label"
+            app:layout_constraintTop_toBottomOf="@+id/tv_gain_label"
+            tools:text="TextView" />
+
+        <investwell.utils.customView.CustomTextViewRegular
+            android:id="@+id/tv_purchase"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_all_small"
+            android:background="@drawable/bg_individual_portfolio"
+            android:gravity="center"
+            android:padding="@dimen/padding_all_very_small"
+
+            android:text="Purchase"
+            android:textSize="@dimen/textView_all_size_12"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tv_switch"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/tv_purchase_cost_value"
+            app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+        <investwell.utils.customView.CustomTextViewRegular
+            android:id="@+id/tv_switch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_all_very_small"
+            android:background="@drawable/bg_individual_portfolio"
+            android:gravity="center"
+            android:padding="@dimen/padding_all_very_small"
+            android:text="Switch"
+            android:textSize="@dimen/textView_all_size_12"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tv_purchase"
+            app:layout_constraintEnd_toStartOf="@+id/tv_redeem"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tv_purchase" />
+
+        <investwell.utils.customView.CustomTextViewRegular
+            android:id="@+id/tv_redeem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_all_very_small"
+            android:background="@drawable/bg_individual_portfolio"
+            android:gravity="center"
+            android:padding="@dimen/padding_all_very_small"
+            android:text="Redeem"
+            android:textSize="@dimen/textView_all_size_12"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tv_switch"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tv_switch" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

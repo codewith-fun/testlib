@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="investwell.client.fragment.DocUpload.FragPreDoc">
+
+
+
+    <fragment
+        android:id="@+id/frag_toolBar"
+        android:name="investwell.client.fragment.others.ToolbarFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:orientation="vertical"
+        android:layout_below="@+id/frag_toolBar">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/code_fp_margin20"
+            android:layout_gravity="center"
+            android:src="@mipmap/reach_target"/>
+
+
+        <investwell.utils.customView.CustomTextViewBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linerLogin"
+            android:layout_marginTop="@dimen/login_middle_content_top_margin_30"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="@string/txt_pre_doc_line1"
+            android:textColor="?attr/primaryTextColor"
+            android:textSize="@dimen/textView_all_size_20"
+            />
+
+        <investwell.utils.customView.CustomTextViewRegular
+            android:id="@+id/tvMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linerLogin"
+            android:layout_marginTop="@dimen/login_middle_content_top_margin_30"
+            android:layout_marginLeft="@dimen/textView_all_size_10"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text=""
+            android:textSize="@dimen/textView_all_size_16" />
+
+
+    </LinearLayout>
+
+
+
+    <investwell.utils.customView.CustomTextViewBold
+        android:id="@+id/tvContinue"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linerLogin"
+        android:padding="@dimen/code_fp_margin15"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/login_middle_content_top_margin_30"
+        android:layout_marginBottom="@dimen/code_fp_margin20"
+        android:background="@drawable/border_round_background_green"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="@string/payment_method_btn_txt"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/textView_all_size_18"
+        />
+
+
+
+
+</RelativeLayout>

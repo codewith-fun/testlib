@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/CardViewStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="24dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginRight="16dp"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_all_regular">
+        <!--IFSC Card-->
+
+        <investwell.utils.customView.CustomTextViewRegular
+            android:id="@+id/tv_label_ifs_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_all_very_small"
+            android:layout_marginLeft="@dimen/margin_all_very_small"
+            android:layout_marginTop="8dp"
+            android:hint="@string/bank_details_form_ifsc_code_txt"
+            android:textColorHint="@color/colorGrey_500"
+            android:textSize="@dimen/textView_all_size_14"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <investwell.utils.customView.CustomEditText
+            android:id="@+id/et_ifs_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionNext"
+            android:inputType="textCapCharacters"
+            android:maxLength="11"
+            android:maxLines="1"
+            android:paddingTop="@dimen/padding_all_small"
+            android:paddingBottom="@dimen/padding_all_small"
+            android:singleLine="true"
+            android:textAllCaps="true"
+            android:textSize="@dimen/textView_all_size_14"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_label_ifs_code" />
+
+        <investwell.utils.customView.CustomTextViewRegular
+            android:id="@+id/tv_err_ifs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_all_very_small"
+            android:layout_marginRight="@dimen/margin_all_very_small"
+            android:textColor="@color/colorRed"
+            android:textSize="@dimen/textView_all_size_10"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="@+id/et_ifs_code"
+            app:layout_constraintTop_toBottomOf="@+id/et_ifs_code"
+            tools:text="Error Address" />
+        <!--Acc No Card-->
+        <investwell.utils.customView.CustomTextViewRegular
+            android:id="@+id/tv_label_acc_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_all_very_small"
+            android:layout_marginLeft="@dimen/margin_all_very_small"
+            android:hint="@string/bank_details_form_account_no_txt"
+            android:textColorHint="@color/colorGrey_500"
+            android:textSize="@dimen/textView_all_size_14"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/cv_bank_detail_layout" />
+
+        <investwell.utils.customView.CustomEditText
+            android:id="@+id/et_account_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:maxLines="1"
+            android:paddingTop="@dimen/padding_all_small"
+            android:paddingBottom="@dimen/padding_all_small"
+            android:singleLine="true"
+            android:textAllCaps="true"
+            android:textSize="@dimen/textView_all_size_14"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_label_acc_no" />
+
+        <investwell.utils.customView.CustomTextViewRegular
+            android:id="@+id/tv_err_acc_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_all_very_small"
+            android:layout_marginRight="@dimen/margin_all_very_small"
+            android:textColor="@color/colorRed"
+            android:textSize="@dimen/textView_all_size_10"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="@+id/et_account_number"
+            app:layout_constraintTop_toBottomOf="@+id/et_account_number"
+            tools:text="Error Address" />
+        <!--Bank detail Card-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_bank_detail_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_all_very_small"
+            android:layout_marginLeft="@dimen/margin_all_very_small"
+            android:layout_marginTop="@dimen/margin_all_very_small"
+            android:layout_marginEnd="@dimen/margin_all_very_small"
+            android:layout_marginRight="@dimen/margin_all_very_small"
+            android:layout_marginBottom="@dimen/margin_all_very_small"
+            android:visibility="gone"
+            app:cardBackgroundColor="?attr/cardBgColor"
+            app:cardCornerRadius="@dimen/card_corner_all_radius_small"
+            app:cardElevation="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_err_ifs">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_all_small"
+                android:background="@color/colorGrey_250"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_all_very_small"
+                    android:orientation="horizontal">
+
+
+                    <investwell.utils.customView.CustomTextViewRegular
+                        android:id="@+id/bank"
+                        style="@style/spinner_text_style"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.35" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_all_very_small"
+                    android:orientation="horizontal">
+
+                    <investwell.utils.customView.CustomTextViewRegular
+                        android:id="@+id/branch"
+                        style="@style/spinner_text_style"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.35" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_all_very_small"
+                    android:orientation="horizontal">
+
+                    <investwell.utils.customView.CustomTextViewRegular
+                        android:id="@+id/address"
+                        style="@style/spinner_text_style"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.35"
+                        android:maxLines="1" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_all_very_small"
+                    android:orientation="horizontal">
+
+                    <investwell.utils.customView.CustomTextViewRegular
+                        android:id="@+id/et_city"
+                        style="@style/spinner_text_style"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.35" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!--Account Type Card-->
+        <investwell.utils.customView.CustomTextViewRegular
+            android:id="@+id/tv_label_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_all_very_small"
+            android:layout_marginLeft="@dimen/margin_all_very_small"
+            android:hint="@string/bank_details_form_account_type_txt"
+            android:textColorHint="@color/colorGrey_500"
+            android:textSize="@dimen/textView_all_size_14"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_err_acc_no" />
+
+        <Spinner
+            android:id="@+id/et_spinner"
+            style="@style/SpinnerStyling"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_all_very_small"
+            android:layout_marginLeft="@dimen/margin_all_very_small"
+            android:paddingTop="@dimen/padding_all_small"
+            android:paddingBottom="@dimen/padding_all_small"
+            android:textSize="@dimen/textView_all_size_14"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_label_state" />
+
+        <View
+            android:id="@+id/v_acc_type"
+            android:layout_width="0dp"
+            android:layout_height="0.5dp"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="@dimen/margin_all_very_small"
+            android:layout_marginLeft="@dimen/margin_all_very_small"
+            android:background="?attr/primaryButtonBackground"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_spinner" />
+
+        <investwell.utils.customView.CustomTextViewRegular
+            android:id="@+id/tv_err_acc_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_all_very_small"
+            android:layout_marginRight="@dimen/margin_all_very_small"
+            android:textColor="@color/colorRed"
+            android:textSize="@dimen/textView_all_size_10"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="@+id/v_acc_type"
+            app:layout_constraintTop_toBottomOf="@+id/v_acc_type"
+            tools:text="Error Address" />
+
+
+
+
+        <!--Micr No Card-->
+        <investwell.utils.customView.CustomTextViewRegular
+            android:id="@+id/tv_label_micr_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_all_very_small"
+            android:layout_marginLeft="@dimen/margin_all_very_small"
+            android:hint="@string/new_purcahse_form_micr_txt"
+            android:textColorHint="@color/colorGrey_500"
+            android:textSize="@dimen/textView_all_size_14"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_err_acc_type" />
+
+        <investwell.utils.customView.CustomEditText
+            android:id="@+id/et_micr_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:maxLines="1"
+            android:paddingTop="@dimen/padding_all_small"
+            android:paddingBottom="@dimen/padding_all_small"
+            android:singleLine="true"
+            android:textAllCaps="true"
+            android:textSize="@dimen/textView_all_size_14"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_label_micr_no" />
+
+
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_all_small"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_micr_number">
+
+            <investwell.utils.customView.CustomButton
+                android:id="@+id/btn_previous_nse_fatca"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/btn_height_footer"
+                android:layout_margin="@dimen/margin_all_small"
+                android:layout_weight="1"
+                android:background="?attr/secondaryBtnDrawable"
+                android:text="@string/fatca_form_btn_prev_txt"
+                app:layout_constraintTop_toTopOf="parent"
+                android:textAllCaps="false"
+                android:textColor="?attr/secondaryButtonTextColor"
+                app:layout_constraintEnd_toStartOf="@+id/btn_continue_nse_fatca"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <com.wang.avi.AVLoadingIndicatorView
+                android:id="@+id/avi_email_verify"
+                style="@style/AVLoadingIndicatorView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="50dp"
+                android:visibility="gone"
+                app:indicatorColor="@color/colorWhite"
+                app:indicatorName="BallPulseSyncIndicator"
+                app:layout_constraintBottom_toBottomOf="@+id/btn_continue_nse_fatca"
+                app:layout_constraintEnd_toEndOf="@+id/btn_continue_nse_fatca"
+                app:layout_constraintStart_toStartOf="@+id/btn_continue_nse_fatca"
+                app:layout_constraintTop_toTopOf="@+id/btn_continue_nse_fatca" />
+            <investwell.utils.customView.CustomButton
+                android:id="@+id/btn_continue_nse_fatca"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/btn_height_footer"
+                android:layout_margin="@dimen/margin_all_small"
+                android:layout_weight="1"
+                android:background="?attr/primaryBtnDrawable"
+                android:text="@string/personal_details_btn_continue_txt"
+                android:textAllCaps="false"
+                app:layout_constraintTop_toTopOf="parent"
+
+                android:textColor="?attr/primaryButtonTextColor"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/btn_previous_nse_fatca" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:visibility="gone"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_err_acc_type"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_err_acc_no" />
+
+        <ProgressBar
+            android:id="@+id/progressBar2"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:visibility="gone"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/et_ifs_code"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

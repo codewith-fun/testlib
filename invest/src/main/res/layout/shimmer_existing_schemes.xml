@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="4dp"
+        android:layout_margin="@dimen/margin_all_regular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent">
+            <View
+                android:id="@+id/v5"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginTop="@dimen/margin_all_regular"
+                android:background="@color/colorGrey_200"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/v7" />
+
+            <View
+                android:id="@+id/v1"
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:layout_marginStart="@dimen/margin_all_regular"
+                android:layout_marginLeft="@dimen/margin_all_regular"
+                android:layout_marginTop="@dimen/margin_all_regular"
+                android:layout_marginEnd="100dp"
+                android:layout_marginRight="40dp"
+                android:background="@color/colorGrey_200"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/v2"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:layout_marginStart="@dimen/margin_all_regular"
+                android:layout_marginLeft="@dimen/margin_all_regular"
+                android:layout_marginTop="@dimen/margin_all_regular"
+                android:layout_marginEnd="150dp"
+                android:layout_marginRight="40dp"
+                android:background="@color/colorGrey_200"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/v1" />
+
+            <View
+                android:id="@+id/view7"
+                android:layout_width="100dp"
+                android:layout_height="8dp"
+                android:layout_marginTop="@dimen/margin_all_large"
+                android:background="@color/colorGrey_200"
+                app:layout_constraintStart_toStartOf="@+id/v2"
+                app:layout_constraintTop_toBottomOf="@+id/v2" />
+
+            <View
+                android:id="@+id/view8"
+                android:layout_width="150dp"
+                android:layout_height="8dp"
+                android:layout_marginTop="@dimen/margin_all_small"
+                android:background="@color/colorGrey_200"
+                app:layout_constraintStart_toStartOf="@+id/view7"
+                app:layout_constraintTop_toBottomOf="@+id/view7" />
+
+            <View
+                android:id="@+id/v9"
+                android:layout_width="100dp"
+                android:layout_height="8dp"
+                android:layout_marginTop="@dimen/margin_all_large"
+                android:layout_marginEnd="@dimen/margin_all_regular"
+                android:layout_marginRight="@dimen/margin_all_regular"
+                android:background="@color/colorGrey_200"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/v2" />
+
+            <View
+                android:id="@+id/v10"
+                android:layout_width="150dp"
+                android:layout_height="8dp"
+
+                android:layout_marginTop="@dimen/margin_all_small"
+                android:background="@color/colorGrey_200"
+                app:layout_constraintEnd_toEndOf="@+id/v9"
+                app:layout_constraintTop_toBottomOf="@+id/v9" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

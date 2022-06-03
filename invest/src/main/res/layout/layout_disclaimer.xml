@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv_toolBar_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_margin="@dimen/margin_all_very_small"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_all_very_small">
+
+    <investwell.utils.customView.CustomTextViewBold
+        android:id="@+id/tv_disc_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/padding_all_small"
+        android:text="@string/disclaimer"
+        android:paddingEnd="@dimen/padding_all_small"
+        android:paddingRight="@dimen/padding_all_regular"
+        android:paddingTop="@dimen/padding_all_regular"
+        android:textColor="?attr/primaryTextColor"
+        android:textSize="@dimen/textView_all_size_12"
+        android:paddingLeft="@dimen/padding_all_regular" />
+
+    <investwell.utils.customView.CustomTextViewRegular
+        android:id="@+id/tv_disc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_all_small"
+        android:textColor="?attr/secondaryTextColor"
+        android:textSize="@dimen/textView_all_size_12" />
+</LinearLayout>
+
+
+
+
+
+
+
+
+

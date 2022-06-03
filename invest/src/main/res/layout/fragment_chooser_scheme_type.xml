@@ -1,0 +1,162 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="investwell.client.fragment.others.ChooserSchemeTypeFragment">
+    <!--Category-->
+    <investwell.utils.customView.CustomTextViewRegular
+        android:id="@+id/tv_cat_chooser_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_all_small"
+        android:layout_marginLeft="@dimen/margin_all_small"
+        android:layout_marginEnd="@dimen/margin_all_small"
+        android:layout_marginRight="@dimen/margin_all_small"
+        android:padding="@dimen/padding_all_very_small"
+        android:text="@string/tv_ct_chooser"
+        android:textAllCaps="false"
+
+        android:textColor="@color/colorGrey_400"
+        android:textSize="@dimen/textView_all_size_14" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_scheme_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="15">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:orientation="vertical">
+
+            <investwell.utils.customView.CustomButton
+                android:id="@+id/btn_equity"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_height_footer"
+                android:layout_margin="@dimen/margin_all_small"
+                android:background="?attr/primaryBtnDrawable"
+                android:text="@string/category_chooser_equity"
+
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:orientation="vertical">
+
+            <investwell.utils.customView.CustomButton
+                android:id="@+id/btn_debt"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_height_footer"
+                android:layout_margin="@dimen/margin_all_small"
+                android:background="?attr/tertiaryBtnDrawable"
+                android:text="@string/category_chooser_debt"
+                android:textAllCaps="false"
+                android:textColor="@color/colorGrey_400" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:orientation="vertical">
+
+            <investwell.utils.customView.CustomButton
+                android:id="@+id/btn_fmp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_height_footer"
+                android:layout_margin="@dimen/margin_all_small"
+                android:background="?attr/tertiaryBtnDrawable"
+                android:text="@string/category_chooser_fmp"
+                android:textAllCaps="false"
+
+                android:textColor="@color/colorGrey_400" />
+        </LinearLayout>
+    </LinearLayout>
+    <!--Scheme Type-->
+    <investwell.utils.customView.CustomTextViewRegular
+        android:id="@+id/tv_scheme_chooser_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_all_small"
+        android:layout_marginLeft="@dimen/margin_all_small"
+        android:layout_marginEnd="@dimen/margin_all_small"
+        android:layout_marginRight="@dimen/margin_all_small"
+        android:padding="@dimen/padding_all_very_small"
+        android:text="@string/tv_ct_scheme_type"
+        android:textColor="@color/colorGrey_400"
+        android:textSize="@dimen/textView_all_size_14" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:weightSum="15">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:orientation="vertical">
+
+            <investwell.utils.customView.CustomButton
+                android:id="@+id/btn_growth"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_height_footer"
+                android:layout_margin="@dimen/margin_all_small"
+
+                android:background="?attr/primaryBtnDrawable"
+                android:text="@string/scheme_chooser_growth"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:orientation="vertical">
+
+            <investwell.utils.customView.CustomButton
+                android:id="@+id/btn_dividend"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_height_footer"
+                android:layout_margin="@dimen/margin_all_small"
+                android:background="?attr/tertiaryBtnDrawable"
+                android:text="@string/scheme_chooser_dividend"
+                android:textAllCaps="false"
+                android:textColor="@color/colorGrey_400" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:orientation="vertical">
+
+            <investwell.utils.customView.CustomButton
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_height_footer"
+                android:layout_margin="@dimen/margin_all_small"
+                android:textAllCaps="false"
+
+                android:background="?attr/tertiaryBtnDrawable"
+                android:textColor="@color/colorGrey_400"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

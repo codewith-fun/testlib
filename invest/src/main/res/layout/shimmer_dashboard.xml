@@ -1,0 +1,632 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_top_dash"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_margin="@dimen/padding_all_regular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/v1"
+                android:layout_width="100dp"
+                android:layout_height="10dp"
+                android:layout_margin="@dimen/margin_all_regular"
+                android:background="@color/colorGrey_200"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/v2"
+                android:layout_width="100dp"
+                android:layout_height="10dp"
+                android:layout_margin="@dimen/margin_all_regular"
+                android:background="@color/colorGrey_200"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/v1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/v3"
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:layout_margin="@dimen/margin_all_regular"
+                android:background="@color/colorGrey_200"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/v1" />
+
+            <View
+                android:id="@+id/v4"
+                android:layout_width="150dp"
+                android:layout_height="15dp"
+                android:layout_marginTop="@dimen/margin_all_regular"
+                android:background="@color/colorGrey_200"
+
+                app:layout_constraintBottom_toBottomOf="@+id/v3"
+                app:layout_constraintStart_toStartOf="@+id/v2"
+                app:layout_constraintTop_toBottomOf="@+id/v2" />
+
+            <View
+                android:id="@+id/v6"
+                android:layout_width="100dp"
+                android:layout_height="10dp"
+                android:layout_marginStart="@dimen/margin_all_regular"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="@dimen/margin_all_regular"
+                android:background="@color/colorGrey_200"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/v3" />
+
+            <View
+                android:id="@+id/v7"
+                android:layout_width="100dp"
+                android:layout_height="10dp"
+                android:layout_marginStart="@dimen/margin_all_regular"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="@dimen/margin_all_regular"
+                android:background="@color/colorGrey_200"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/v6"
+                app:layout_constraintTop_toBottomOf="@+id/v4" />
+
+            <View
+                android:id="@+id/v8"
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:layout_margin="@dimen/margin_all_regular"
+                android:background="@color/colorGrey_200"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/v6" />
+
+            <View
+                android:id="@+id/v9"
+                android:layout_width="150dp"
+                android:layout_height="15dp"
+                android:layout_marginTop="@dimen/margin_all_regular"
+                android:background="@color/colorGrey_200"
+                app:layout_constraintBottom_toBottomOf="@+id/v8"
+                app:layout_constraintStart_toStartOf="@+id/v7"
+                app:layout_constraintTop_toBottomOf="@+id/v7" />
+
+            <View
+                android:id="@+id/v5"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginTop="@dimen/margin_all_regular"
+                android:background="@color/colorGrey_200"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/v7" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_graph_dash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/padding_all_regular"
+        app:layout_constrainedHeight="true"
+        app:layout_constrainedWidth="true"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cv_top_dash">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:id="@+id/view5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="?attr/actionBarSize"
+                android:background="@color/colorGrey_200"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/v11"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_margin="@dimen/margin_all_regular"
+                android:background="@color/colorGrey_200"
+                app:layout_constraintBottom_toTopOf="@+id/view5"
+                app:layout_constraintEnd_toStartOf="@+id/v12"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/v10"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/v12"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_margin="@dimen/margin_all_regular"
+                android:background="@color/colorGrey_200"
+                app:layout_constraintBottom_toTopOf="@+id/view5"
+                app:layout_constraintEnd_toStartOf="@+id/v13"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/v11"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/v13"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_margin="@dimen/margin_all_regular"
+                android:background="@color/colorGrey_200"
+                app:layout_constraintBottom_toTopOf="@+id/view5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/v12"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/v10"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_margin="@dimen/margin_all_regular"
+                android:background="@color/colorGrey_200"
+                app:layout_constraintBottom_toTopOf="@+id/view5"
+                app:layout_constraintEnd_toStartOf="@+id/v11"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/v14"
+                android:layout_width="100dp"
+                android:layout_height="5dp"
+                android:background="@color/colorGrey_200"
+                app:layout_constraintBottom_toBottomOf="@+id/view5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/view5" />
+
+            <View
+                android:id="@+id/view6"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/circle_background_pf_lock_screen"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view5" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="#c9c9c9"
+                android:layout_marginStart="@dimen/margin_all_regular"
+                android:layout_marginEnd="@dimen/margin_all_regular"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:showDividers="middle"
+                android:layout_marginTop="40dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view6">
+                <!-- Long term Table row one-->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#c9c9c9" />
+
+                <TableRow
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:background="?attr/tableRowHeaderColor"
+                    android:divider="#c9c9c9"
+                    android:showDividers="middle">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <investwell.utils.customView.CustomTextViewBold
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingStart="@dimen/padding_all_small"
+                            android:paddingLeft="@dimen/padding_all_small"
+                            android:paddingTop="@dimen/padding_all_small"
+                            android:paddingEnd="@dimen/padding_all_small"
+                            android:paddingRight="@dimen/padding_all_small"
+                            android:paddingBottom="@dimen/padding_all_small"
+                            android:textColor="?attr/primaryTextColor"
+                            android:textSize="@dimen/textView_all_size_12"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <investwell.utils.customView.CustomTextViewBold
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_all_small"
+                            android:textAllCaps="true"
+
+                            android:textColor="?attr/primaryTextColor"
+                            android:textSize="@dimen/textView_all_size_12"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <investwell.utils.customView.CustomTextViewBold
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_all_small"
+                            android:textAllCaps="true"
+                            android:textColor="?attr/primaryTextColor"
+                            android:textSize="@dimen/textView_all_size_12"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+
+
+
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#c9c9c9" />
+                <!-- Long term Table row Two-->
+                <TableRow
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/dialogBackground"
+                    android:divider="#c9c9c9"
+                    android:showDividers="middle">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <investwell.utils.customView.CustomTextViewBold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:gravity="start|center"
+                            android:paddingStart="@dimen/padding_all_small"
+                            android:paddingLeft="@dimen/padding_all_small"
+                            android:paddingTop="@dimen/padding_all_regular"
+                            android:paddingEnd="@dimen/padding_all_small"
+                            android:paddingRight="@dimen/padding_all_small"
+                            android:paddingBottom="@dimen/padding_all_regular"
+                            android:textColor="?attr/primaryTextColor"
+                            android:textSize="@dimen/textView_all_size_10"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <investwell.utils.customView.CustomTextViewRegular
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:gravity="center"
+
+                            android:textAllCaps="true"
+                            android:textColor="?attr/primaryTextColor"
+
+                            android:textSize="@dimen/textView_all_size_12"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <View
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:gravity="center"
+
+                            android:textAllCaps="true"
+
+                            android:textColor="?attr/primaryTextColor"
+                            android:textSize="@dimen/textView_all_size_12"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+
+
+
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#c9c9c9" />
+                <!-- Long term Table long_row Three-->
+                <TableRow
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/dialogBackground"
+                    android:divider="#c9c9c9"
+                    android:showDividers="middle">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <investwell.utils.customView.CustomTextViewBold
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center"
+                            android:paddingStart="@dimen/padding_all_small"
+                            android:paddingLeft="@dimen/padding_all_small"
+                            android:paddingTop="@dimen/padding_all_regular"
+                            android:paddingEnd="@dimen/padding_all_small"
+                            android:paddingRight="@dimen/padding_all_small"
+                            android:paddingBottom="@dimen/padding_all_regular"
+                            android:textColor="?attr/primaryTextColor"
+                            android:textSize="@dimen/textView_all_size_10"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <View
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:gravity="center"
+                            android:textAllCaps="true"
+
+
+                            android:textColor="?attr/primaryTextColor"
+                            android:textSize="@dimen/textView_all_size_12"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <View
+                            android:id="@+id/tv_row_benchmark_element_three_month"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:gravity="center"
+                            android:textAllCaps="true"
+
+
+                            android:textColor="?attr/primaryTextColor"
+                            android:textSize="@dimen/textView_all_size_12"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+
+
+
+                </TableRow><View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#c9c9c9" />
+                <!-- Long term Table row Two-->
+                <TableRow
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/dialogBackground"
+                    android:divider="#c9c9c9"
+                    android:showDividers="middle">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <investwell.utils.customView.CustomTextViewBold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:gravity="start|center"
+                            android:paddingStart="@dimen/padding_all_small"
+                            android:paddingLeft="@dimen/padding_all_small"
+                            android:paddingTop="@dimen/padding_all_regular"
+                            android:paddingEnd="@dimen/padding_all_small"
+                            android:paddingRight="@dimen/padding_all_small"
+                            android:paddingBottom="@dimen/padding_all_regular"
+                            android:textColor="?attr/primaryTextColor"
+                            android:textSize="@dimen/textView_all_size_10"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <View
+                            android:id="@+id/tv_row_scheme_element_one_month"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:gravity="center"
+
+                            android:textAllCaps="true"
+                            android:textColor="?attr/primaryTextColor"
+
+                            android:textSize="@dimen/textView_all_size_12"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <View
+                            android:id="@+id/tv_row_scheme_element_three_month"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:gravity="center"
+
+                            android:textAllCaps="true"
+
+                            android:textColor="?attr/primaryTextColor"
+                            android:textSize="@dimen/textView_all_size_12"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+
+
+
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#c9c9c9" />
+                <!-- Long term Table long_row Three-->
+                <TableRow
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/dialogBackground"
+                    android:divider="#c9c9c9"
+                    android:showDividers="middle">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <investwell.utils.customView.CustomTextViewBold
+                            android:id="@+id/tv_row_benchmark_element_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center"
+                            android:paddingStart="@dimen/padding_all_small"
+                            android:paddingLeft="@dimen/padding_all_small"
+                            android:paddingTop="@dimen/padding_all_regular"
+                            android:paddingEnd="@dimen/padding_all_small"
+                            android:paddingRight="@dimen/padding_all_small"
+                            android:paddingBottom="@dimen/padding_all_regular"
+                            android:textColor="?attr/primaryTextColor"
+                            android:textSize="@dimen/textView_all_size_10"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <View
+                            android:id="@+id/tv_row_benchmark_element_one_month"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:gravity="center"
+                            android:textAllCaps="true"
+
+
+                            android:textColor="?attr/primaryTextColor"
+                            android:textSize="@dimen/textView_all_size_12"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <View
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:gravity="center"
+                            android:textAllCaps="true"
+
+
+                            android:textColor="?attr/primaryTextColor"
+                            android:textSize="@dimen/textView_all_size_12"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+
+
+
+                </TableRow>
+            </TableLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

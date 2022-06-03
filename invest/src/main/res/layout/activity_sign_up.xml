@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_parent_signup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fl_main_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        tools:ignore="UselessParent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_login_logo"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/margin_all_small"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:src="@mipmap/header_login_logo" />
+
+            <investwell.utils.customView.CustomTextViewBold
+                android:id="@+id/tv_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_login_logo"
+                android:layout_centerHorizontal="true"
+
+                android:text="@string/let_s_get_started"
+                android:textColor="?attr/accentColor"
+                android:textSize="@dimen/textView_all_size_30"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/ll_login_child_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_header"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="@dimen/login_middle_content_top_margin_30"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp"
+                android:orientation="vertical">
+
+
+                <investwell.utils.customView.CustomTextInputLayout
+                    android:id="@+id/til_signup_full_name"
+                    style="@style/TextInputLayoutTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_all_small"
+                    android:layout_marginLeft="@dimen/margin_all_small"
+                    android:layout_marginTop="@dimen/margin_all_small"
+                    android:layout_marginEnd="@dimen/margin_all_small"
+                    android:layout_marginRight="@dimen/margin_all_small"
+                    android:layout_marginBottom="@dimen/margin_all_small">
+
+                    <investwell.utils.customView.CustomTextInputEditText
+                        android:id="@+id/et_signup_full_name"
+                        style="@style/TextInputEditTextTheme"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:drawableStart="@mipmap/ic_signup_username"
+                        android:drawableLeft="@mipmap/ic_signup_username"
+                        android:drawablePadding="12dp"
+                        android:hint="@string/signup_et_user_hint_txt"
+                        android:imeOptions="actionNext"
+                        android:inputType="textCapSentences"
+                        android:textSize="@dimen/textView_all_size_14" />
+                </investwell.utils.customView.CustomTextInputLayout>
+
+
+                <investwell.utils.customView.CustomTextInputLayout
+                    android:id="@+id/til_signup_email"
+                    style="@style/TextInputLayoutTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_all_small"
+                    android:layout_marginLeft="@dimen/margin_all_small"
+                    android:layout_marginTop="@dimen/margin_all_small"
+                    android:layout_marginEnd="@dimen/margin_all_small"
+                    android:layout_marginRight="@dimen/margin_all_small"
+                    android:layout_marginBottom="@dimen/margin_all_small">
+
+                    <investwell.utils.customView.CustomTextInputEditText
+                        android:id="@+id/et_signup_email"
+                        style="@style/TextInputEditTextTheme"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:drawableStart="@mipmap/ic_signup_email"
+                        android:drawableLeft="@mipmap/ic_signup_email"
+                        android:drawablePadding="12dp"
+
+                        android:hint="@string/signup_hint_et_email_txt"
+                        android:imeOptions="actionNext"
+                        android:inputType="textEmailAddress"
+                        android:textSize="@dimen/textView_all_size_14" />
+                </investwell.utils.customView.CustomTextInputLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_square_country_code"
+                    android:padding="7dp"
+                    android:layout_marginStart="@dimen/margin_all_small"
+                    android:layout_marginLeft="@dimen/margin_all_small"
+                    android:layout_marginTop="@dimen/margin_all_small"
+                    android:layout_marginEnd="@dimen/margin_all_small"
+                    android:layout_marginRight="@dimen/margin_all_small"
+                    android:layout_marginBottom="@dimen/margin_all_small"
+                    >
+
+                    <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+                        android:id="@+id/ccp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        app:ccp_defaultNameCode="IN"
+                        app:ccp_textSize="14sp"/>
+
+                    <EditText
+                        android:id="@+id/phone_number_edt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/ccp"
+                        android:hint="phone"
+                        android:inputType="phone"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="7dp"
+                    android:visibility="gone"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/llCode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/edittext_square_country_code"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                       android:paddingTop="15dp"
+                        >
+
+                        <ImageView
+                            android:id="@+id/ivPhoneIcon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="10dp"
+                            android:adjustViewBounds="true"
+                            android:contentDescription="@string/app_name"
+                            android:src="@mipmap/ic_signup_phone" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_toLeftOf="@+id/spCountryCode"
+
+                            android:layout_toRightOf="@+id/ivPhoneIcon"
+                            android:background="@color/colorGrey_500" />
+
+                        <Spinner
+                            android:id="@+id/spCountryCode"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/ivPhoneIcon" />
+
+
+                    </LinearLayout>
+
+
+
+                    <investwell.utils.customView.CustomTextInputLayout
+                        android:id="@+id/til_signup_phone"
+                        style="@style/TextInputLayoutTheme"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/llCode"
+
+                        >
+
+                        <investwell.utils.customView.CustomTextInputEditText
+                            android:id="@+id/et_signup_phone"
+                            style="@style/TextInputEditTextTheme"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:hint="@string/signup_hint_et_phone_txt"
+                            android:imeOptions="actionDone"
+                            android:inputType="number"
+                            android:maxLength="10"
+                            android:textSize="@dimen/textView_all_size_14" />
+                    </investwell.utils.customView.CustomTextInputLayout>
+
+
+                </RelativeLayout>
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal">
+
+                    <com.wang.avi.AVLoadingIndicatorView
+                        android:id="@+id/avi_continue"
+                        style="@style/AVLoadingIndicatorView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:elevation="50dp"
+                        android:visibility="gone"
+                        app:indicatorColor="@color/colorWhite"
+                        app:indicatorName="BallPulseSyncIndicator"
+                        app:layout_constraintBottom_toBottomOf="@+id/btnSignUp"
+                        app:layout_constraintEnd_toEndOf="@+id/btnSignUp"
+                        app:layout_constraintStart_toStartOf="@+id/btnSignUp"
+                        app:layout_constraintTop_toTopOf="@+id/btnSignUp"
+                        tools:targetApi="lollipop" />
+
+                    <investwell.utils.customView.CustomButton
+                        android:id="@+id/btnSignUp"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/btn_height_footer"
+                        android:layout_marginTop="@dimen/login_middle_content_top_margin_30"
+                        android:layout_marginBottom="0dp"
+                        android:background="?attr/primaryBtnDrawable"
+                        android:text="@string/signup_btn_txt"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/textView_all_size_14"
+                        android:textStyle="bold"
+                        app:layout_constrainedWidth="true"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintWidth_percent=".5" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal">
+
+                    <investwell.utils.customView.CustomButton
+                        android:id="@+id/btnAdvisory"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/btn_height_footer"
+                        android:layout_marginTop="@dimen/login_middle_content_top_margin_30"
+                        android:layout_marginBottom="0dp"
+                        android:background="?attr/primaryBtnDrawable"
+                        android:text="Adisory Test"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/textView_all_size_14"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+                        app:layout_constrainedWidth="true"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintWidth_percent=".5" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/llSocialLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <investwell.utils.customView.CustomTextViewBold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/textView_all_size_16"
+                        android:gravity="center"
+                        android:text="@string/signup_signup_with_txt"
+                        android:textColor="?attr/primaryTextColor"
+                        android:textSize="@dimen/textView_all_size_14"
+                        android:textStyle="bold" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:id="@+id/ivGoogle"
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+
+                            android:adjustViewBounds="true"
+                            android:contentDescription="@string/app_name"
+                            android:src="@mipmap/google" />
+
+                        <ImageView
+                            android:id="@+id/ivFacebook"
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:contentDescription="@string/app_name"
+                            android:src="@mipmap/fb" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <investwell.utils.customView.CustomTextViewRegular
+                android:id="@+id/tv_footer_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/divider"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_all_small"
+                android:padding="@dimen/padding_all_very_small"
+                android:textColor="?attr/primaryTextColor"
+                android:textSize="@dimen/textView_all_size_14" />
+
+            <LinearLayout
+                android:id="@+id/ll_footer_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_login_child_container"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_all_large"
+                android:padding="@dimen/padding_all_very_small">
+
+                <investwell.utils.customView.CustomTextViewRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_all_small"
+                    android:layout_marginRight="@dimen/margin_all_small"
+                    android:text="@string/signup_already_have_account_txt"
+                    android:textColor="@color/colorGrey_500"
+
+                    android:textSize="@dimen/textView_all_size_14" />
+
+                <investwell.utils.customView.CustomTextViewBold
+                    android:id="@+id/tv_sign_in"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_all_small"
+                    android:layout_marginRight="@dimen/margin_all_small"
+                    android:text="@string/sign_up_login_txt"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/textView_all_size_14"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/ll_footer_container"
+                android:layout_marginStart="@dimen/margin_all_regular"
+                android:layout_marginLeft="@dimen/margin_all_regular"
+                android:layout_marginEnd="@dimen/margin_all_regular"
+                android:layout_marginRight="@dimen/margin_all_regular"
+                android:background="@color/colorGrey_250" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>

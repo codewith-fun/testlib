@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true"
+    tools:context="investwell.client.flavourtypetwo.activity.ShareBondDetailActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_type_two"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="?attr/actionBarColor">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/iv_back_my_assets"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:contentDescription="@string/app_name"
+                    android:focusable="true"
+                    android:src="@mipmap/ic_arrow_back"
+                    app:tint="?attr/actionBarIconColor" />
+
+                <LinearLayout
+                    android:id="@+id/rl_middle_search_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/margin_all_small"
+                    android:layout_marginLeft="@dimen/margin_all_small"
+                    android:layout_toEndOf="@+id/iv_back_my_assets"
+                    android:layout_toRightOf="@+id/iv_back_my_assets"
+                    android:orientation="vertical"
+                    android:visibility="visible"
+                    tools:ignore="RelativeOverlap">
+
+                    <investwell.utils.customView.CustomTextViewBold
+                        android:id="@+id/tv_toolbar_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:inputType="textCapSentences"
+                        android:text="@string/toolBar_title_share_and_bond"
+                        android:textColor="?attr/actionBarTextColor"
+                        android:textSize="@dimen/textView_all_size_14"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <investwell.utils.MyNestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--Top Layout-->
+            <LinearLayout
+                android:id="@+id/ll_share_bond_detail_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/card_blank"
+                android:layout_marginStart="@dimen/margin_all_small"
+                android:layout_marginEnd="@dimen/margin_all_small"
+                android:baselineAligned="false"
+                android:orientation="vertical">
+
+                <investwell.utils.customView.CustomTextViewBold
+                    android:id="@+id/tv_user_portfolio_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_all_small"
+                    android:layout_marginTop="@dimen/margin_all_small"
+                    android:layout_marginEnd="@dimen/margin_all_small"
+                    android:paddingStart="@dimen/padding_all_very_small"
+                    android:textSize="@dimen/textView_all_size_16"
+                    android:textStyle="bold"
+                    tools:text="@string/app_name" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="false"
+                    android:padding="@dimen/padding_all_very_small"
+                    android:orientation="horizontal"
+                    tools:ignore="UselessParent">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="@dimen/margin_all_small"
+                        android:layout_marginEnd="@dimen/margin_all_small"
+                        android:layout_marginBottom="@dimen/margin_all_small"
+                        android:orientation="vertical">
+
+                        <investwell.utils.customView.CustomTextViewRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/padding_all_very_small"
+                            android:text="@string/share_bond__portfolio_tv_market_value_txt"
+                            android:textSize="@dimen/textView_all_size_14" />
+
+                        <investwell.utils.customView.CustomTextViewBold
+                            android:id="@+id/tv_market_value"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="@dimen/padding_all_very_small"
+                            android:paddingLeft="@dimen/padding_all_very_small"
+                            android:paddingEnd="@dimen/padding_all_very_small"
+                            android:paddingRight="@dimen/padding_all_very_small"
+                            android:text="@string/app_name"
+                            android:textSize="@dimen/textView_all_size_16"
+                            android:textStyle="bold" />
+
+
+                        <investwell.utils.customView.CustomTextViewRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/padding_all_very_small"
+                            android:text="@string/share_bond__portfolio_tv_gain_value_txt"
+                            android:textSize="@dimen/textView_all_size_14" />
+
+                        <investwell.utils.customView.CustomTextViewBold
+                            android:id="@+id/tv_gain_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="@dimen/padding_all_very_small"
+                            android:paddingLeft="@dimen/padding_all_very_small"
+                            android:paddingEnd="@dimen/padding_all_very_small"
+                            android:paddingRight="@dimen/padding_all_very_small"
+                            android:text="@string/app_name"
+                            android:textSize="@dimen/textView_all_size_16"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="@dimen/margin_all_small"
+                        android:layout_marginEnd="@dimen/margin_all_small"
+                        android:layout_marginBottom="@dimen/margin_all_small"
+                        android:orientation="vertical">
+
+                        <investwell.utils.customView.CustomTextViewRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:padding="@dimen/padding_all_very_small"
+                            android:text="@string/share_bond__portfolio_tv_purchase_cost_value_txt"
+                            android:textSize="@dimen/textView_all_size_14" />
+
+                        <investwell.utils.customView.CustomTextViewBold
+                            android:id="@+id/tv_purchase_cost_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:paddingStart="@dimen/padding_all_very_small"
+                            android:paddingLeft="@dimen/padding_all_very_small"
+                            android:paddingEnd="@dimen/padding_all_very_small"
+                            android:paddingRight="@dimen/padding_all_very_small"
+                            android:text="@string/app_name"
+                            android:textSize="@dimen/textView_all_size_16"
+                            android:textStyle="bold" />
+
+
+                        <investwell.utils.customView.CustomTextViewRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:padding="@dimen/padding_all_very_small"
+                            android:text="@string/share_bond__portfolio_tv_cagr_value_txt"
+
+                            android:textSize="@dimen/textView_all_size_14" />
+
+                        <investwell.utils.customView.CustomTextViewBold
+                            android:id="@+id/tv_cagr_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:paddingStart="@dimen/padding_all_very_small"
+                            android:paddingLeft="@dimen/padding_all_very_small"
+                            android:paddingEnd="@dimen/padding_all_very_small"
+                            android:paddingRight="@dimen/padding_all_very_small"
+                            android:text="@string/app_name"
+                            android:textSize="@dimen/textView_all_size_16"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <!--share & bond portfolio list-->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_share_bond_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layoutAnimation="@anim/layout_animation_fall_down" />
+        </LinearLayout>
+
+    </investwell.utils.MyNestedScrollView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_dashboard_noData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:visibility="gone"
+
+        app:cardCornerRadius="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <investwell.utils.customView.CustomTextViewRegular
+                  android:id="@+id/tvNothing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableTop="@mipmap/ic_no_data"
+                android:gravity="center"
+                android:text="@string/no_data_found"
+                    android:textColor="?attr/primaryTextColor"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/textView_all_size_14" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
