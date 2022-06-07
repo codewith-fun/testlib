@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "105725773846",
+    "project_id": "investlib-2950b",
+    "storage_bucket": "investlib-2950b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:105725773846:android:57cda32d06bc898d3e4d37",
+        "android_client_info": {
+          "package_name": "com.iw.acceleratordemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "105725773846-s613hm2rbsgbvgrnp9rvic3re25qckd0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.iw.acceleratordemo",
+            "certificate_hash": "1a1e5515568478515ef3bf39b0789e2c467b094f"
+          }
+        },
+        {
+          "client_id": "105725773846-r72qg67t5onf5jlgi70mn3bmifc9g0lp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtQbzzAlPw0czaQachmEZ-HuHPF4OMpCA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "105725773846-r72qg67t5onf5jlgi70mn3bmifc9g0lp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

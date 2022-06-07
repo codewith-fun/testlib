@@ -105,6 +105,7 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener,
     private ImageView ivErrorImage;
     private TextView tvErrorMessage;
     private AVLoadingIndicatorView avlLoading;
+    private String alphaUser,alphaPass;
 
     @Override
     public void onBackPressed() {
@@ -120,6 +121,14 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener,
         updateViewPagerView();
         setListener();
         setUpUiVisibility();
+        Intent intent = getIntent();
+        alphaUser = intent.getStringExtra("user");
+        alphaPass = intent.getStringExtra("pass");
+        if (alphaPass!= null || alphaUser!=null){
+            callLoginApi();
+        }
+
+
     }
 
     //Error Content Initializer
@@ -355,8 +364,8 @@ Sapient@123*/
             jsonObject.put(AppConstants.KEY_BROKER_ID, AppConstants.APP_BID);
             jsonObject.put(AppConstants.PASSKEY, mSession.getPassKey());
 
-            jsonObject.put(AppConstants.KEY_USERNAME, Objects.requireNonNull(mETUserName.getText()).toString().trim());
-            jsonObject.put("Userpass", Objects.requireNonNull(mETPassword.getText()).toString().trim());
+            jsonObject.put(AppConstants.KEY_USERNAME, Objects.requireNonNull(alphaUser.trim()));
+            jsonObject.put("Userpass", Objects.requireNonNull(alphaPass.trim()));
 
 
             String url = Config.LOGIN;

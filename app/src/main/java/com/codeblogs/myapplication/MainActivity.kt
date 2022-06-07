@@ -17,6 +17,8 @@ class MainActivity : AppCompatActivity() {
         button = findViewById(R.id.test)
         button!!.setOnClickListener {
             val intent = Intent(this, LoginActivity::class.java)
+            intent.putExtra("pass","1234")
+            intent.putExtra("user","user")
             startActivity(intent)
         }
     }

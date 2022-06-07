@@ -12,9 +12,9 @@ public interface AppConstants {
     String KEY_BROKER_ID ="Bid";
     String KEY_USERNAME="Username";
     String KEY_USER_PASSWORD="Password";
-    String APP_BID ="10153";
-    String APP_USERNAME ="naikAIwealth25";
-    String APP_PASSWORD ="hu45d^48@TY$qaz";
+    String APP_BID ="10250";
+    String APP_USERNAME ="AlphaCapital";
+    String APP_PASSWORD ="aaAAjg842$@*TT";
     String INVEST_VIA_LUMPSUM="lumpsum";
     String INVEST_VIA_SIP="Sip";
 
