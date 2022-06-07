@@ -125,7 +125,7 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener,
         alphaUser = intent.getStringExtra("user");
         alphaPass = intent.getStringExtra("pass");
         if (alphaPass!= null || alphaUser!=null){
-            callLoginApi();
+            callLoginApi();// when we login from another app,
         }
 
 
